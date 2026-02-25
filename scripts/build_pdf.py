@@ -2,9 +2,9 @@
 """
 Spaja sva poglavlja i generira:
 1. Integralnu HTML verziju knjige (sa SVG dijagramima)
-2. PDF verziju putem Pandoc + XeLaTeX (bez SVG, samo tekst)
+2. PDF verziju putem Chrome headless (sa svim SVG dijagramima)
 
-HTML verzija je potpuna - moze se otvoriti u pregledniku i ispisati kao PDF.
+Obje verzije su potpune i sadrže sve dijagrame.
 """
 import re
 import subprocess
@@ -854,77 +854,62 @@ def build_html_manual(merged_md: str) -> Path:
     return html_path
 
 
-def build_pdf(merged_md: str) -> Path:
-    """Build PDF using Pandoc + XeLaTeX (without SVG images for reliability)."""
+def build_pdf(merged_md: str, html_path: Path = None) -> Path:
+    """Build PDF from the HTML file using Chrome headless (includes all SVG diagrams)."""
     pdf_path = OUTPUT_DIR / "knjiga_integralna.pdf"
-    md_path = OUTPUT_DIR / "_temp_pdf_build.md"
 
-    # For PDF, strip SVG images (xelatex has trouble with them)
-    # Keep only the caption text
-    md_no_svg = re.sub(r'!\[[^\]]*\]\([^\)]*\.svg\)\s*', '', merged_md)
+    if html_path is None or not html_path.exists():
+        html_path = OUTPUT_DIR / "knjiga_integralna.html"
 
-    md_path.write_text(md_no_svg, encoding="utf-8")
-
-    pandoc = find_exe("pandoc", [
-        r"C:\Users\Benedikt\AppData\Local\Pandoc\pandoc.exe",
-        r"C:\Program Files\Pandoc\pandoc.exe",
-    ])
-
-    xelatex = find_exe("xelatex", [
-        str(Path.home() / "AppData/Local/Programs/MiKTeX/miktex/bin/x64/xelatex.exe"),
-        r"C:\Program Files\MiKTeX\miktex\bin\x64\xelatex.exe",
-    ])
-
-    if not pandoc:
-        print("  Pandoc nije pronaden!")
-        md_path.unlink(missing_ok=True)
+    if not html_path.exists():
+        print("  HTML fajl ne postoji - PDF se ne može generirati!")
         return None
 
+    chrome = None
+    for candidate in [
+        r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+        r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+        r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+    ]:
+        if Path(candidate).exists():
+            chrome = candidate
+            break
+
+    if not chrome:
+        chrome = shutil.which("chrome") or shutil.which("google-chrome")
+
+    if not chrome:
+        print("  Chrome/Edge nije pronađen! PDF se ne može generirati.")
+        print("  Koristite HTML verziju -> Ctrl+P -> Spremi kao PDF")
+        return None
+
+    print(f"  Browser: {chrome}")
+    print(f"  Generiranje PDF-a iz HTML-a (sa svim dijagramima)...")
+
+    file_url = html_path.resolve().as_uri()
+
     cmd = [
-        pandoc,
-        str(md_path),
-        "-o", str(pdf_path),
-        "--from=markdown",
-        "-V", "documentclass=report",
-        "-V", "geometry:margin=2.5cm",
-        "-V", "fontsize=11pt",
-        "-V", "lang=hr",
-        "-V", "mainfont=Cambria",
-        "-V", "sansfont=Calibri",
-        "-V", "monofont=Consolas",
-        "-V", "colorlinks=true",
-        "-V", "linkcolor=NavyBlue",
-        "-V", "urlcolor=NavyBlue",
-        "--toc",
-        "--toc-depth=3",
-        "-V", "toc-title=Sadržaj",
-        "--highlight-style=tango",
+        chrome,
+        '--headless',
+        '--disable-gpu',
+        '--no-sandbox',
+        f'--print-to-pdf={pdf_path}',
+        '--print-to-pdf-no-header',
+        file_url,
     ]
-
-    if xelatex:
-        cmd.extend(["--pdf-engine", xelatex])
-        print(f"  XeLaTeX: {xelatex}")
-    else:
-        cmd.extend(["--pdf-engine", "xelatex"])
-
-    print(f"  Pandoc: {pandoc}")
-    print(f"  Generiranje PDF-a (moze potrajati 2-5 min)...")
 
     try:
         result = subprocess.run(
-            cmd, capture_output=True, text=True, encoding="utf-8",
-            errors="replace", timeout=300,
+            cmd, capture_output=True, text=True,
+            encoding="utf-8", errors="replace", timeout=120,
         )
     except subprocess.TimeoutExpired:
-        print("  TIMEOUT: PDF generiranje prekinuto nakon 5 min")
-        md_path.unlink(missing_ok=True)
+        print("  TIMEOUT: PDF generiranje prekinuto nakon 2 min")
         return None
 
-    md_path.unlink(missing_ok=True)
-
-    if result.returncode != 0:
-        err = result.stderr[:2000] if result.stderr else "nepoznata greska"
-        print(f"  PDF greska (kod {result.returncode}): {err}")
+    if not pdf_path.exists():
+        err = result.stderr[:1000] if result.stderr else "nepoznata greska"
+        print(f"  PDF greska: {err}")
         return None
 
     return pdf_path
@@ -965,8 +950,8 @@ def main():
         print("  HTML generiranje nije uspjelo!")
 
     print()
-    print("  --- PDF (samo tekst, bez dijagrama) ---")
-    pdf_path = build_pdf(merged_for_html)
+    print("  --- PDF (sa SVG dijagramima, Chrome headless) ---")
+    pdf_path = build_pdf(merged_for_html, html_path)
     if pdf_path and pdf_path.exists():
         size_mb = pdf_path.stat().st_size / (1024 * 1024)
         print(f"  PDF GOTOV: {pdf_path.name} ({size_mb:.1f} MB)")
