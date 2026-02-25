@@ -232,11 +232,7 @@ Međutim, ovaj pristup nailazi na tvrdu granicu koju postavlja arhitektura samog
 >
 > Korisnik: „Fokusirajmo se na renesansu.“
 >
-> Agent → LLM Prompt: „Korisnik: Dobar dan, zanima me povijest dubrovačke književnosti.
->
->                      Agent: Naravno. Mislite li na razdoblje humanizma i renesanse ili Vas zanima kasnije razdoblje?
->
->                      Korisnik: Fokusirajmo se na renesansu.“
+> Agent → LLM Prompt: „Korisnik: Dobar dan, zanima me povijest dubrovačke književnosti. / Agent: Naravno. Mislite li na razdoblje humanizma i renesanse ili Vas zanima kasnije razdoblje? / Korisnik: Fokusirajmo se na renesansu."
 >
 >
 > KORAK N (Razgovor se nastavlja...):
@@ -248,9 +244,7 @@ Međutim, ovaj pristup nailazi na tvrdu granicu koju postavlja arhitektura samog
 >
 > [Najstariji dio razgovora („Dobar dan...“) se odbacuje]
 >
-> Agent → LLM Prompt: „...[središnji dio razgovora]...
->
->                      Korisnik: A tko je bio najznačajniji komediograf?“
+> Agent → LLM Prompt: „...[središnji dio razgovora]... / Korisnik: A tko je bio najznačajniji komediograf?"
 >
 >
 > │ OGRANIČENJE: Model više ne „zna“ početnu temu razgovora. │

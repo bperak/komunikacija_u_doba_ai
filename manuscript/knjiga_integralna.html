@@ -2044,16 +2044,12 @@ Referenca priručnika (APA 7)
 <p>KORAK 2:</p>
 <p>Agentov odgovor: „Naravno. Mislite li na razdoblje humanizma i renesanse ili Vas zanima kasnije razdoblje?“</p>
 <p>Korisnik: „Fokusirajmo se na renesansu.“</p>
-<p>Agent → LLM Prompt: „Korisnik: Dobar dan, zanima me povijest dubrovačke književnosti.</p>
-<pre><code>                 Agent: Naravno. Mislite li na razdoblje humanizma i renesanse ili Vas zanima kasnije razdoblje?
-
-                 Korisnik: Fokusirajmo se na renesansu.“</code></pre>
+<p>Agent → LLM Prompt: „Korisnik: Dobar dan, zanima me povijest dubrovačke književnosti. / Agent: Naravno. Mislite li na razdoblje humanizma i renesanse ili Vas zanima kasnije razdoblje? / Korisnik: Fokusirajmo se na renesansu.”</p>
 <p>KORAK N (Razgovor se nastavlja…):</p>
 <p>…kontekst se akumulira…</p>
 <p>KORAK N+1 (Dosegnut limit kontekstualnog prozora):</p>
 <p>[Najstariji dio razgovora („Dobar dan…“) se odbacuje]</p>
-<p>Agent → LLM Prompt: „…[središnji dio razgovora]…</p>
-<pre><code>                 Korisnik: A tko je bio najznačajniji komediograf?“</code></pre>
+<p>Agent → LLM Prompt: „…[središnji dio razgovora]… / Korisnik: A tko je bio najznačajniji komediograf?”</p>
 <p>│ OGRANIČENJE: Model više ne „zna“ početnu temu razgovora. │</p>
 </blockquote>
 <h4 id="dugoročna-memorija-vektorske-baze">Dugoročna memorija – vektorske baze</h4>
