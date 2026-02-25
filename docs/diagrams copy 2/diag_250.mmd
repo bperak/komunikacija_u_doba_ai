@@ -1,0 +1,17 @@
+graph TD
+subgraph A[Višezadaćno učenje (MTL)]
+direction LR
+style A fill:#f8f8f8,stroke:#333,stroke-width:2px
+Rep[Dijeljena reprezentacija]
+Z1(Zadatak 1) --> Rep
+Z2(Zadatak 2) --> Rep
+Z3(Zadatak 3) --> Rep
+end
+subgraph B[Učenje s prijenosom (Transfer Learning)]
+direction LR
+style B fill:#f8f8f8,stroke:#333,stroke-width:2px
+Znanje1[Znanje iz polazišne domene] --> |Prijenos| Znanje2(Fino ugađanje na ciljnoj domeni)
+end
+style Rep fill:#e6f3ff,stroke:#0055cc
+style Znanje1 fill:#e6ffed,stroke:#006400
+style Znanje2 fill:#fff0e6,stroke:#ff8c00

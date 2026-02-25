@@ -1,0 +1,9 @@
+graph TD
+subgraph Sustav resursa
+direction LR
+A[Agenti (npr. ribari, šumari)] -->|Odluke o djelovanju| F
+S1[Zaliha (npr. količina drvne mase)] -->|Stanje utječe na odluke| A
+F[Tokovi (ulazni/izlazni)]
+S1 -->|Izlazni tok| F
+F -->|Ulazni tok| S1
+end

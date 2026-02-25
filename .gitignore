@@ -1,0 +1,32 @@
+# Secrets
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node
+node_modules/
+package-lock.json
+
+# Build intermediates
+manuscript/knjiga_merged_for_pdf.md
+
+# Original manuscript (not for public repo)
+manuscript/Ben knjiga lektorirana_za_obradu.md
+manuscript/Ben knjiga lektorirana_za_obradu_from_chapters.md
+manuscript/diagram_captions_from_docx.json
+manuscript/diagram_placeholder_lines.txt
+manuscript/mermaid_diagrami.md
+
+# IDE / Editor
+.cursor/
+.vscode/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store

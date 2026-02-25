@@ -1,0 +1,15 @@
+graph TD
+subgraph "Klijent (Aplikacija)"
+direction TB
+A[Strukturirani zahtjev (JSON)]
+end
+subgraph "API Poslužitelj"
+direction TB
+B[Veliki jezični model]
+end
+subgraph "Klijent (Aplikacija)"
+direction TB
+C[Strukturirani odgovor (JSON)]
+end
+A -->|API poziv| B
+B -->|Obrada i generiranje| C

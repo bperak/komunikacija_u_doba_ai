@@ -1,0 +1,168 @@
+# 7. Izgradnja komunikacijskih partnera: primjeri 
+
+Nakon što smo u prethodnom poglavlju razmotrili teorijske temelje i odredili ključne sastavnice koje omogućuju „rođenje“ komunikacijskog partnera, sada prelazimo s apstraktnih načela na njihovu konkretnu primjenu. Ovo poglavlje posvećeno je praktičnoj dimenziji izgradnje takvih agenata, gdje se teorijski modeli susreću s izazovima stvarne implementacije. Promotrit ćemo kako se teorijske postavke o kontekstu, učenju i prilagodbi pretaču u arhitekturu stvarnih sustava, oblikujući njihovo ponašanje i interakcijske sposobnosti.
+
+Svrha je ovoga poglavlja dvojaka. Prvo, cilj je prikazati raznolikost pristupa u izgradnji komunikacijskih partnera kroz pomno odabrane primjere iz različitih domena – od korisničke podrške i obrazovanja do osobnih asistenata. Drugo, kroz produbljene studije slučaja istražit ćemo specifične probleme, uspješna rješenja i kompromise s kojima se suočavaju inženjeri i dizajneri. Analizom tih primjera otkrit ćemo kako se opći principi manifestiraju u praksi te koje nepredviđene poteškoće i mogućnosti izranjaju tijekom razvoja i uporabe. Time se teorijsko razumijevanje obogaćuje uvidima stečenim iz iskustva, nudeći cjelovitiju sliku o tome što je sve potrebno za uspješnu izgradnju i održavanje funkcionalnih i pouzdanih komunikacijskih partnera.
+
+## 7.1 Digitalni sugovornici: chatbotovi i virtualni asistenti u doba LLM-ova
+
+Digitalni sugovornici, utjelovljeni u chatbotovima i virtualnim asistentima, predstavljaju jedno od najistaknutijih sučelja interakcije čovjeka i računala u suvremenom tehnološkom krajoliku. Njihov strelovit razvoj i sveprisutna primjena neraskidivo su povezani s napretkom na području velikih jezičnih modela, koji su iz temelja preobrazili njihove sposobnosti i uloge. Dok su se tradicionalno chatbotovi i virtualni asistenti promatrali kao dvije razmjerno odvojene kategorije, recentni tehnološki iskoraci brišu te granice i uvode novu paradigmu inteligentnih, autonomnih sustava.
+
+Razgraničenje pojmova: od skriptiranih odgovora do složenih zadaća
+
+Povijesno gledano, temeljna razlika između chatbota i virtualnog asistenta počivala je na stupnju složenosti i širini funkcionalnosti. *Chatbotovi* su izvorno bili zamišljeni kao jednostavniji programi, često temeljeni na unaprijed definiranim pravilima ili skriptama. Njihova je primarna svrha bila vođenje usko specijaliziranih razgovora unutar određene domene, poput pružanja korisničke podrške za specifičan proizvod, odgovaranja na često postavljana pitanja ili prikupljanja osnovnih podataka od korisnika.
+
+> **Chatbot:** Program za vođenje razgovora s korisnikom, izvorno temeljen na pravilima ili skriptama; suvremeni chatbotovi često koriste LLM i mogu voditi složene, kontekstualno osviještene dijaloge.
+> **Virtualni asistent:** Složeniji digitalni sugovornik duboko integriran s uređajem i vanjskim uslugama, sposoban za širi raspon zadaća (upravljanje kalendarom, pametnim domom, pretraživanje, poruke); granica prema chatbotu se zamagljuje s pojavom LLM-ova.
+
+S druge strane, virtualni asistenti, kao što su Amazonova *Alexa*, Appleova *Siri* ili Googleov *Asistent*, od početka su projektirani kao znatno složeniji sustavi. Njihova temeljna odlika jest duboka integracija s operativnim sustavom uređaja i širokim ekosustavom vanjskih usluga i aplikacija. Takva im integracija omogućuje obavljanje raznolikih i složenih zadaća koje nadilaze puki razgovor – od upravljanja pametnim domom i postavljanja podsjetnika do slanja poruka, pretraživanja interneta i interakcije s drugim softverskim alatima.
+
+Međutim, pojava i komercijalizacija velikih jezičnih modela pokrenuli su korjenitu transformaciju. Sposobnost LLM-ova da razumiju kontekst, generiraju suvisao i kreativan tekst te rezoniraju o složenim problemima omogućila je novoj generaciji *chatbotova* da steknu, pa i nadmaše, mogućnosti tradicionalnih virtualnih asistenata. Moderni *chatbotovi*, pogonjeni tehnologijama poput onih koje razvija OpenAI (2023), više nisu ograničeni na krute skripte. Oni mogu voditi fluidne, kontekstualno osviještene razgovore, sažimati dokumente, pisati programski kôd i obavljati zadatke koji zahtijevaju višestupanjsko planiranje i zaključivanje. Time se nekoć jasna razdjelnica između dvaju pojmova zamagljuje, a u središte pozornosti stupa novi, obuhvatniji koncept – koncept agenta.
+
+Uspon autonomnih agenata
+
+Pojam agent u kontekstu umjetne inteligencije označava sustav koji može samostalno percipirati svoje okruženje i autonomno djelovati kako bi postigao zadane ciljeve. Klasična definicija opisuje agenta kao entitet koji opaža okolinu putem senzora i na nju utječe putem aktuatora (Russell & Norvig, 2021). U digitalnom svijetu „senzori“ mogu biti API pozivi koji dohvaćaju informacije s interneta ili čitaju datoteke s diska, dok „aktuatori“ mogu biti alati za slanje e-pošte, izvršavanje programskog koda ili interakciju s drugim softverskim sučeljima.
+
+
+Evolucijski put od jednostavnih chatbotova do autonomnih agenata pogonjenih velikim jezičnim modelima
+
+Veliki jezični modeli djeluju kao središnji „mozak“ ili kognitivna jezgra takvih agenata. Oni im daju sposobnost rezoniranja, planiranja i raščlambe složenih ciljeva na niz manjih, provedivih koraka. Kada se LLM-u dodijeli pristup vanjskim alatima, on prerasta ulogu pasivnog generatora teksta i postaje proaktivni izvršitelj zadataka. Takav sustav nadilazi tradicionalno poimanje chatbota te poprima obilježja autonomnog agenta. Primjeri poput projekata Auto-GPT ili AgentGPT ilustriraju ovaj pomak: korisnik postavlja općenit i složen cilj (npr. „istraži tržište električnih automobila i sastavi izvještaj o ključnim konkurentima“), a agent samostalno oblikuje plan, pretražuje internet, analizira prikupljene podatke, koristi alate za njihovu obradu i na koncu generira traženi izvještaj, pritom učeći i prilagođavajući svoje postupke bez stalne ljudske intervencije.
+
+Ovaj prijelaz s reaktivnih sugovornika na proaktivne agente predstavlja temeljnu promjenu paradigme, otvarajući vrata primjenama koje su do jučer pripadale domeni znanstvene fantastike i postavljajući nove izazove u području sigurnosti, etike i upravljanja autonomnim sustavima.
+
+## 7.2	Primjene koje mijenjaju perspektivu: gdje agenti stvaraju vrijednost?
+
+Teorijski potencijal autonomnih agenata, premda iznimno poticajan, dobiva svoj puni smisao tek uvidom u stvarne primjene gdje njihove sposobnosti donose mjerljivu i preobrazbenu vrijednost. Razmatranje agenata isključivo kao naprednih alata za izvršavanje pojedinačnih naredbi nedostatno je; njihova se istinska snaga očituje u sposobnosti samostalnog orkestriranja složenih tijekova rada, čime se otvaraju novi obzori u rješavanju problema i stvaranju vrijednosti. U nastavku se podrobnije razlažu ključna područja u kojima agenti već danas pokazuju sposobnost korjenite promjene ustaljenih praksi.
+
+Automatizacija složenih istraživačkih i analitičkih procesa
+
+Jedno od najplodnijih područja primjene agenata jest automatizacija dugotrajnih i složenih istraživačkih zadataka. Zamislimo agenta kojemu je povjeren zadatak izrade iscrpnog izvještaja o određenoj temi, primjerice o utjecaju klimatskih promjena na poljoprivredu u Sredozemlju. Takav agent svoj zadatak ne izvršava jednim upitom, već pokreće cjelovit proces. Prvo, samostalno oblikuje niz relevantnih upita za pretraživanje znanstvenih baza podataka, novinskih arhiva i službenih izvješća. Zatim, sustavno prikuplja, filtrira i procjenjuje vjerodostojnost pronađenih izvora. Ključan korak koji slijedi jest sinteza – agent analizira prikupljene informacije, prepoznaje uzorke, proturječja i ključne argumente te ih strukturira u koherentan narativ. Konačni proizvod je cjelovit izvještaj koji uključuje skupove poveznica ili sažetaka upotpunjenih urednim citatima i referencama (primjerice, u stilu koji zahtijevaju Smaldino & McElreath, 2016). Na taj način, zadaci koji bi ljudskom istraživaču oduzeli dane ili tjedne rada bivaju zgotovljeni u znatno kraćem vremenu, uz visoku razinu preciznosti.
+
+
+Primjer tijeka rada autonomnog istraživačkog agenta, od početnog naloga do isporuke konačnog proizvoda. Agent samostalno upravlja svakim korakom, od planiranja do sinteze i finalizacije
+
+Razvoj programskoga koda i softverskih rješenja
+
+U domeni softverskog inženjerstva, uloga agenata također polako nadilazi funkciju samo pomoćnika pri pisanju koda (engl. *code assistants*). Autonomni agenti sposobni su preuzeti cjelokupne razvojne cikluse. Počevši od analize zahtjeva korisnika, specificiranih prirodnim jezikom, agent može izraditi arhitektonski nacrt aplikacije, odabrati prikladne tehnološke okvire te potom napisati, testirati i ispraviti (engl. *debug*) potreban programski kôd. Njihova sposobnost ne iscrpljuje se u generiranju isječaka koda; oni mogu samostalno upravljati repozitorijima, rješavati međuovisnosti (engl. *dependencies*), pisati jedinične testove (engl. *unit tests*) te čak pokretati procese automatizirane implementacije (engl. *deployment*) na poslužitelje. Ovakav pristup omogućuje razvojnim timovima da se usredotoče na strateške i kreativne aspekte razvoja, dok agenti preuzimaju repetitivne i tehnički zahtjevne, ali dobro definirane zadatke. Time se cjelokupan proces razvoja softvera ubrzava i čini otpornijim na ljudske pogreške. Primjer takvih sustava su pomoćnici za pisanje koda koji su dostupni korisnicima su Claude Code, Codex, Cursor, Windsurf i mnogi drugi.
+
+Personalizirana interakcija s korisnicima i napredna podrška
+
+Sustavi za korisničku podršku, koji se tradicionalno oslanjaju na jednostavne *chatbotove* s unaprijed definiranim scenarijima, doživljavaju duboku preobrazbu. Agenti donose sposobnost vođenja složenih, višekoračnih dijaloga u kojima pamte kontekst razgovora, pristupaju povijesti korisničkih interakcija i dinamički koriste vanjske alate kako bi riješili specifičan problem. Primjerice, korisnik koji prijavi problem s isporukom proizvoda može stupiti u interakciju s agentom koji će samostalno provjeriti status narudžbe u logističkom sustavu, komunicirati s dostavnom službom putem njihova API-a i korisniku ponuditi konkretno rješenje, poput novog datuma isporuke ili povrata sredstava. Jednako tako, u ulozi osobnih pomoćnika, agenti mogu upravljati kalendarima, rezervirati putovanja i sastanke, uzimajući u obzir kompleksne preference korisnika i preklapanja u rasporedu, što predstavlja značajan iskorak u odnosu na postojeće digitalne asistente.
+
+Strateško upravljanje, marketing i poslovna analiza
+
+U poslovnom okruženju, agenti postaju moćan alat za donošenje odluka. Moguće im je dodijeliti zadatke kontinuiranog praćenja tržišnih kretanja, analize aktivnosti konkurencije ili praćenja sentimenta javnosti na društvenim mrežama. Agent zadužen za optimizaciju marketinške kampanje može autonomno analizirati podatke o uspješnosti oglasa na različitim platformama, alocirati budžet prema onim kanalima koji donose najbolji povrat ulaganja te čak samostalno generirati i testirati nove kreativne inačice oglasa. U financijama, agenti mogu provoditi složene analize financijskih izvještaja, identificirati rizike ili anomalije te pripremati sažete podloge za donošenje strateških odluka. Njihova vrijednost leži u sposobnosti da obrade i povežu goleme količine nestrukturiranih podataka, prepoznaju signale u buci informacija i pretvore ih u konkretne, operativne uvide, oslobađajući tako ljudske stručnjake za zadatke najviše strateške razine.
+
+### 7.2.1 Revolucija u korisničkoj podršci i marketingu
+
+Pojavnost i primjena umjetne inteligencije označavaju temeljitu preobrazbu paradigmi na kojima su do sada počivali korisnička podrška i marketing. Ta dva, nekoć razdvojena poslovna područja, pod utjecajem inteligentnih sustava konvergiraju u jedinstvenu, podatkovno vođenu funkciju čiji je cilj stvaranje cjelovitoga i duboko personaliziranog korisničkog iskustva. Prijelaz je to iz reaktivnoga modela, koji odgovara na već nastale potrebe ili probleme, prema proaktivnomu i prediktivnomu pristupu, koji anticipira buduća stanja i djeluje u skladu s njima.
+
+U domeni korisničke podrške, prvi i najočitiji pomak jest automatizacija početnih točaka interakcije s korisnicima putem inteligentnih agenata, odnosno već spomenutih *chatbotova* i glasovnih asistenata. Ti su sustavi osposobljeni za trenutačno i neprekidno rješavanje velikoga broja standardiziranih upita, čime se oslobađaju ljudski resursi. Vrijeme, kao ključan resurs, time se preusmjerava s rutinskih zadataka na rješavanje složenih, višeslojnih problema koji zahtijevaju ljudsku empatiju, kreativnost i kritičko prosuđivanje. No, doseg umjetne inteligencije obuhvaća i dubinsku analizu goleme količine nestrukturiranih podataka, poput transkripata poziva, elektroničke pošte i poruka s društvenih mreža.
+
+> **Sentiment analiza:** Automatska analiza teksta (transkripti, e-pošta, društvene mreže) radi prepoznavanja emocionalnog tona, stavova ili raspoloženja – npr. frustracija, zadovoljstvo, negativnost; koristi se u korisničkoj podršci za prioritetizaciju slučajeva, u marketingu za praćenje reakcija i u istraživanjima javnog mnijenja.
+
+Analizom sentimenta iz tih podataka sustav može prepoznati ton, stupanj frustracije ili zadovoljstva korisnika te na temelju toga odrediti prioritet i hitnost pojedinog slučaja, opskrbljujući ljudskog agenta kontekstualno bogatim sažetkom prije same interakcije.
+
+Paralelno s preobrazbom korisničke podrške, odvija se i revolucija u marketinškim strategijama. Napušta se era masovnoga marketinga, čije su poruke bile usmjerene na široke i slabo definirane demografske skupine, a ulazi se u razdoblje hiperpersonalizacije. Algoritmi strojnog učenja analiziraju cjelokupnu povijest interakcija pojedinog korisnika – od obrazaca pregledavanja internetskih stranica i prethodnih kupnji do vremena provedenog na određenim proizvodima – kako bi dinamički prilagodili marketinške poruke, ponude i cjelokupno korisničko iskustvo svakom pojedincu. Sustavi preporuka, kakve koriste platforme poput Netflixa ili Amazona, najpoznatiji su primjer takva pristupa, gdje se na temelju ponašanja sličnih korisnika i individualnih preferencija predviđa koji će sadržaj ili proizvod najvjerojatnije privući pozornost (Varian, 2018).
+
+
+Konvergencija korisničke podrške i marketinga pogonjena umjetnom inteligencijom
+
+Gornji prikaz (67) shematski ilustrira kako se različiti izvori korisničkih podataka slijevaju u središnji sustav umjetne inteligencije. Taj sustav, kroz analizu i predviđanje, istodobno generira izlazne vrijednosti koje transformiraju i korisničku podršku (proaktivnost, analiza sentimenta) i marketing (hiperpersonalizacija, prediktivne ponude), stvarajući tako jedinstven i inteligentan ciklus upravljanja odnosom s klijentima.
+
+Nadalje, sustavi umjetne inteligencije u marketingu oslanjaju se na analizu prošlih interakcija ali i ulaze u područje prediktivne analitike. Mogu s visokim stupnjem vjerojatnosti predvidjeti buduće ponašanje korisnika, kao što je mogućnost odustajanja od usluge (engl. *churn prediction*), identificirati kupce s najvećom dugoročnom vrijednošću ili procijeniti koji je optimalan trenutak za slanje promotivne ponude. Istodobno, razvoj generativnih modela omogućuje automatizaciju stvaranja marketinškog sadržaja. Od pisanja naslova za elektroničku poštu koji potiču otvaranje, preko sastavljanja objava za društvene mreže prilagođenih određenoj publici, pa sve do generiranja osnovnih verzija reklamnih tekstova, umjetna inteligencija postaje suradnik u kreativnom procesu, znatno ubrzavajući produkciju i testiranje marketinških materijala (Kaplan & Haenlein, 2019).
+
+Umjetna inteligencija preoblikuje samu bit odnosa između poduzeća i klijenta u kojima se urušavaju tradicionalne granice između odjela i stvara jedinstven, inteligentan ekosustav u kojemu se svaka interakcija bilježi, analizira i koristi za oblikovanje sljedećeg koraka na korisničkom putu. Time se ostvaruje prijelaz s transakcijskog na relacijski model poslovanja, gdje je konačni cilj izgradnja dugoročne lojalnosti kroz neprekidno, relevantno i duboko personalizirano iskustvo.
+
+### 7.2.2 Transformacija obrazovanja i personalizacije sadržaja
+
+Generativna umjetna inteligencija, posebice u obliku autonomnih agenata, ima potencijal napraviti prekretnicu u poimanju i provedbi obrazovnih procesa. Njezin utjecaj nadilazi dosadašnje tehnološke inovacije koje su služile kao pomoćna sredstva; riječ je o korjenitoj transformaciji koja obrazovanje premješta iz ustaljenoga, jedinstvenog modela za sve polaznike prema potpuno personaliziranom i dinamičkom iskustvu. Agenti preuzimaju ulogu osobnih mentora, prilagođavajući se jedinstvenim potrebama, sposobnostima i stilovima učenja svakoga pojedinca.
+
+Središnja promjena koju donose AI agenti očituje se u mogućnosti stvaranja individualiziranih obrazovnih kurikula. Sustav započinje dubinskom analizom postojećeg znanja, brzine usvajanja gradiva te kognitivnih preferencija učenika. Na temelju tih podataka, agent oblikuje prilagođeni kurikul koji nije statičan, već se neprestano mijenja i razvija usporedno s napretkom korisnika (Jones & Hrabowski, 2022). Ako učenik pokaže iznimno razumijevanje određenog područja, sustav ga može usmjeriti prema naprednijim temama ili, obratno, pružiti dodatne materijale i vježbe za područja u kojima se pojavljuju poteškoće. Time se napušta zastarjeli pristup u kojem cjelokupni razred napreduje istim tempom, neovisno o individualnim razlikama.
+
+Djelokrug AI agenata proteže se i na samo stvaranje te pročišćavanje obrazovnih materijala. Sposobni su u stvarnom vremenu generirati sažetke složenih znanstvenih radova, sastavljati kvizove za provjeru znanja ili nuditi postupna objašnjenja matematičkih problema, prilagođena razini razumijevanja pojedinog korisnika. Istodobno, agenti djeluju kao vrsni kustosi znanja, pretražujući goleme količine dostupnih informacija na internetu kako bi za učenika izdvojili najvjerodostojnije, najrelevantnije i najkvalitetnije izvore. Ta dvojaka uloga, ona stvoritelja i ona kuratora, omogućuje izgradnju bogatog i višeslojnog obrazovnog okružja.
+
+Učenje postaje aktivna, angažirana djelatnost. AI agenti mogu voditi sokratske dijaloge, potičući kritičko razmišljanje postavljanjem promišljenih pitanja umjesto pukog pružanja odgovora. Mogu stvarati složene simulacije u kojima studenti upravljaju virtualnim laboratorijem, sudjeluju u rekonstrukcijama povijesnih događaja ili rješavaju poslovne studije slučaja u dinamičkom okružju. Takvi interaktivni učenja modeli povećavaju zadržavanje znanja, te razvijaju vještine rješavanja problema i analitičkog zaključivanja koje su ključne u suvremenom svijetu.
+
+Ovaj se proces može prikazati kao neprekinuti ciklus interakcije između učenika i AI agenta, gdje se svaka faza nadovezuje na prethodnu, stvarajući spiralu znanja.
+
+
+Ciklus personaliziranog učenja
+
+Primjena inteligentnih agenata posjeduje i znatan potencijal za povećanje dostupnosti obrazovanja. Sustavi mogu pružati trenutačni prijevod nastavnih materijala na različite jezike, čime se uklanjaju jezične barijere. Mogu pretvarati tekstualni sadržaj u govor za slabovidne učenike ili pojednostavljivati složene rečenične strukture za osobe s poteškoćama u učenju, poput disleksije (Rose & Meyer, 2002). Na taj se način obrazovanje čini pravednijim i otvorenijim za sve, bez obzira na njihove fizičke, kognitivne ili geografske okolnosti.
+
+Unatoč golemim prednostima, uvođenje AI agenata u obrazovanje sa sobom nosi i određene izazove. Pretjerana ovisnost o tehnologiji mogla bi umanjiti razvoj socijalnih vještina i sposobnosti samostalnog istraživanja. Pitanje privatnosti i sigurnosti podataka učenika od presudne je važnosti, jer sustavi prikupljaju detaljne informacije o njihovu napretku i ponašanju. Potrebno je osigurati da algoritmi koji personaliziraju sadržaj ne stvaraju „informacijske mjehure“ ili ne unose pristranosti koje bi mogle ograničiti učenikovu izloženost različitim perspektivama. Naposljetku, mijenja se i uloga ljudskog nastavnika, koji sve više postaje mentor, moderator i emocionalna podrška, usmjeravajući učenike kroz proces učenja kojim upravlja tehnologija. Njegova je zadaća poticati znatiželju i razvijati one ljudske kvalitete koje stroj ne može zamijeniti.
+
+### 7.2.3 Proširenje primjenjivosti: LLM agenti u zdravstvu, poslovnim procesima i kreativnim industrijama
+
+Doseg i primjenjivost jezičnih modela u formi autonomnih agenata znatno nadilaze njihove početne uloge u obradi i generiranju teksta. Njihova sposobnost razumijevanja konteksta, planiranja i izvršavanja složenih zadataka otvara mogućnosti za duboku integraciju u različita područja ljudskog djelovanja, preoblikujući temeljne paradigme u zdravstvu, poslovanju i kreativnim industrijama. U svakom od tih sektora, LLM agenti ne predstavljaju tek tehnološko poboljšanje, već katalizator temeljnih promjena u načinu rada, odlučivanja i stvaranja.
+
+Primjena u zdravstvu
+
+U zdravstvenom sustavu, uloga LLM agenata nadilazi funkciju jednostavnih sugovornika ili virtualnih pomoćnika. Njihova sposobnost obrade i analize golemih količina nestrukturiranih podataka iz elektroničkih zdravstvenih kartona (EHR) omogućuje im da djeluju kao napredni dijagnostički suradnici. Na temelju sinteze simptoma, medicinske povijesti pacijenta i najnovijih znanstvenih spoznaja iz medicinske literature, agenti mogu predlagati diferencijalne dijagnoze i upozoravati liječnike na rijetke bolesti ili atipične prezentacije simptoma. Njihov doprinos ne zaustavlja se na dijagnostici, već se proteže i na izradu personaliziranih planova liječenja, uzimajući u obzir genetske predispozicije, životni stil i specifične komorbiditete pacijenta. Međutim, primjena u ovako osjetljivom području otvara i složena etička i tehnička pitanja, prvenstveno vezana uz zaštitu privatnosti podataka pacijenata, u skladu s regulativama poput HIPAA-e, te imperativ kliničke točnosti, gdje pogreška može imati kritične posljedice (Chen et al., 2023).
+
+Optimizacija poslovnih procesa
+
+Sličan preobražajni potencijal očituje se i u domeni poslovnih procesa. Automatizacija rutinskih zadataka, poput korisničke podrške gdje agenti mogu voditi složene razgovore i rješavati upite 24 sata dnevno, predstavlja tek početnu razinu njihove integracije. Dublja primjena očituje se u optimizaciji složenih sustava kao što je upravljanje lancem opskrbe, gdje agenti na temelju analize tržišnih trendova, logističkih podataka i internih izvješća mogu predviđati potražnju, optimizirati razine zaliha i autonomno koordinirati isporuke. Nadalje, sposobnost automatskog generiranja iscrpnih izvješća iz sirovih poslovnih podataka oslobađa ljudske resurse za strateško odlučivanje. Stoga se ne radi isključivo o pukoj automatizaciji, već o uvođenju sloja umjetne inteligencije koji omogućuje donošenje informiranijih i preciznijih poslovnih odluka, uz ključan preduvjet uspješne integracije s postojećim ERP i CRM sustavima (Davenport & Ronanki, 2018).
+
+
+Shematski prikaz proširenja primjenjivosti LLM agenata na ključne industrijske sektore, s istaknutim funkcijama unutar svake domene
+
+
+![Shematski prikaz proširenja primjenjivosti LLM agenata na ključne industrijsk...](../../docs/diagrams/diag_27.svg)
+*Slika 7.1: Shematski prikaz proširenja primjenjivosti LLM agenata na ključne industrijsk...*
+
+Suradnja u kreativnim industrijama
+
+Naposljetku, doseg LLM agenata zadire i u kreativne industrije, područje koje se tradicionalno smatralo isključivo ljudskom domenom. Ovdje agenti preuzimaju ulogu suradnika ili katalizatora kreativnog procesa. Umjetnicima, piscima, dizajnerima i glazbenicima nude se kao alati za prevladavanje kreativnih blokada i istraživanje novih estetskih pravaca. Njihova primjena obuhvaća širok spektar aktivnosti, bilo da je riječ o generiranju početnih ideja za scenarij, razradi likova, skladanju glazbenih motiva ili stvaranju vizualnih koncepata. Ključno je razumjeti kako cilj nije zamjena ljudskog stvaraoca, već augmentacija njegovih sposobnosti – pružanje novih polazišta i istraživanje neslućenih umjetničkih mogućnosti. Ta nova paradigma suradnje čovjeka i stroja neizbježno postavlja i temeljna pitanja o autorstvu, originalnosti i vlasništvu nad djelima stvorenima u takvoj sinergiji, otvarajući novu pravnu i filozofsku raspravu (Epstein et al., 2023).
+
+### 7.2.4 Paradigma personalizacije sadržaja: transverzalna primjena AI algoritama
+
+U suvremenom digitalnom okružju, paradigma personalizacije sadržaja uspostavlja se kao temeljni mehanizam interakcije između korisnika i informacijskih sustava koji transformira načina na koji se informacije, proizvodi i usluge distribuiraju i konzumiraju. U središtu te transformacije nalaze se algoritmi umjetne inteligencije, čija je zadaća dinamičko modeliranje korisničkih potreba, preferencija i ponašanja s ciljem isporuke relevantnog i pravovremenog sadržaja. Primjena ovih tehnologija posjeduje izrazito transverzalan karakter, prožimajući različite sektore i domene ljudske djelatnosti, od e-trgovine i medija do obrazovanja i zdravstva.
+
+Mehanizmi i Algoritamske Osnove
+
+Osnovni princip personalizacije počiva na kontinuiranom ciklusu prikupljanja podataka, njihove obrade i primjene naučenih obrazaca. Taj proces započinje bilježenjem korisničkih interakcija sa sustavom – od eksplicitnih radnji poput ocjenjivanja proizvoda ili odabira žanra filma, do implicitnih signala kao što su vrijeme provedeno na stranici, povijest pretraživanja, kretanje mišem ili geografska lokacija. Ovi podaci tvore ono što se naziva *digitalnim otiskom* korisnika, na temelju kojeg AI sustavi grade njegov dinamički profil ili *digitalnog blizanca*.
+
+Za analizu tih golemim skupova podataka i predviđanje budućih interesa koriste se različite klase algoritama:
+
+**Kolaborativno filtriranje (engl. *Collaborative Filtering*)**: Ovaj pristup temelji se na ideji „mudrosti mnoštva“. Sustav preporučuje sadržaj korisniku na temelju preferencija drugih, njemu sličnih korisnika. Ako su korisnik A i korisnik B u prošlosti iskazali sličan ukus za filmove, sustav će korisniku A preporučiti film koji se svidio korisniku B, a kojeg A još nije pogledao. Snaga ovog pristupa leži u sposobnosti otkrivanja neočekivanih, ali relevantnih preporuka (serendipity).
+
+**Sadržajno utemeljeno filtriranje (engl. *Content-Based Filtering*)**: Za razliku od kolaborativnog, ovaj se pristup temelji na intrinzičnim značajkama samih sadržaja. Ako korisnik često čita članke o kvantnoj fizici, sustav će mu preporučivati nove članke koji sadrže ključne riječi i koncepte vezane uz to područje. Analiziraju se atributi poput žanra, autora, ključnih riječi ili tehničkih specifikacija proizvoda kako bi se pronašli oni koji odgovaraju korisnikovu postojećem profilu interesa.
+
+**Hibridni modeli:** U praksi se najčešće primjenjuju hibridni sustavi koji nastoje objediniti prednosti obaju pristupa kako bi se prevladali njihovi pojedinačni nedostaci, poput problema „hladnog starta“ (nedostatak podataka za nove korisnike ili nove sadržaje) koji je karakterističan za kolaborativno filtriranje (Ricci, Rokach, & Shapira, 2011).
+
+U središtu ovog procesa nalazi se pojam agenta – autonomnog softverskog entiteta koji djeluje u ime korisnika ili sustava. AI agent zadužen za personalizaciju promatra korisničko ponašanje, uči iz njega te samostalno donosi odluke o tome koji sadržaj, u kojem obliku i u kojem trenutku prikazati, s ciljem maksimizacije relevantnosti i korisničkog angažmana.
+
+
+Shematski prikaz zatvorenog ciklusa u sustavima za personalizaciju sadržaja, gdje povratna sprega korisnika kontinuirano obogaćuje model i poboljšava buduće preporuke
+
+
+![Shematski prikaz zatvorenog ciklusa u sustavima za personalizaciju sadržaja, ...](../../docs/diagrams/diag_28.svg)
+*Slika 7.2: Shematski prikaz zatvorenog ciklusa u sustavima za personalizaciju sadržaja, ...*
+
+Transverzalnost primjene
+
+Sposobnost AI algoritama da uče i prilagođavaju se čini personalizaciju univerzalno primjenjivim alatom. Njezina transverzalnost očituje se u brojnim domenama:
+
+**E-trgovina i maloprodaja:** Platforme poput Amazona koriste personalizaciju za preporuku proizvoda, dinamičko prilagođavanje cijena i slanje ciljanih marketinških poruka, čime izravno utječu na povećanje prodaje i lojalnosti kupaca.
+
+**Mediji i zabava:** Streaming servisi kao što su *Netflix* i *Spotify* temelje svoj poslovni model na sofisticiranim sustavima preporuka koji korisnicima kuriraju filmski, serijski i glazbeni sadržaj, održavajući ih angažiranima unutar vlastitog ekosustava.
+
+**Informacijski portali i društvene mreže:** Portali s vijestima i društvene mreže personaliziraju prikaz sadržaja (engl. *news feed*) kako bi svakom korisniku prikazali informacije za koje algoritam procijeni da su mu najzanimljivije, oblikujući time njegovu percepciju svijeta.
+
+**Obrazovanje:** Adaptivni sustavi učenja (engl. *Adaptive Learning Systems*) prilagođavaju tempo i vrstu obrazovnog materijala individualnim sposobnostima i znanju učenika, omogućujući personalizirano obrazovno iskustvo (Brusilovsky & Peylo, 2003).
+
+**Zdravstvo:** U području digitalnog zdravstva, personalizacija se koristi za pružanje individualiziranih savjeta o prehrani i tjelovježbi, podsjetnike za uzimanje lijekova ili čak za rano prepoznavanje rizika od određenih bolesti na temelju podataka prikupljenih s nosivih uređaja.
+
+Izazovi i etičke implikacije
+
+Unatoč golemim prednostima, paradigma personalizacije suočava se sa značajnim izazovima i etičkim dilemama. Jedan od najpoznatijih fenomena jest filtarski mjehur (engl. *filter bubble*), pojam koji opisuje stanje intelektualne izolacije do kojeg može doći kada algoritmi korisniku neprestano serviraju sadržaj koji potvrđuje njegova postojeća uvjerenja, istodobno ga štiteći od suprotstavljenih gledišta (Pariser, 2011). Takva prekomjerna personalizacija može osiromašiti intelektualni diskurs i doprinijeti društvenoj polarizaciji.
+
+Nadalje, masovno prikupljanje i analiza osobnih podataka otvaraju složena pitanja vezana uz privatnost i sigurnost. Način na koji se podaci pohranjuju, tko im ima pristup i u koje se svrhe koriste predmet je intenzivne javne i zakonodavne rasprave, što je rezultiralo regulativama poput Opće uredbe o zaštiti podataka (GDPR) u Europskoj uniji. Konačno, postoji i stalan rizik od algoritamske pristranosti, gdje sustavi, učeći na povijesnim podacima koji odražavaju postojeće društvene nejednakosti, mogu perpetuirati ili čak pojačavati diskriminaciju prema određenim demografskim skupinama (O'Neil, 2016).
+
+Zaključno, personalizacija sadržaja pogonjena umjetnom inteligencijom predstavlja moćnu i sveprisutnu silu koja preoblikuje digitalno iskustvo. Njezin razvoj ne postavlja samo tehničke, već i duboke društvene, etičke i filozofske izazove. Budućnost ovih sustava ovisit će o sposobnosti da se uspostavi ravnoteža između tehnoloških mogućnosti i ljudskih vrijednosti, osiguravajući da personalizacija služi obogaćivanju, a ne osiromašenju ljudskog iskustva.
+
+### 7.2.5 Izvan funkcionalnosti: početak širih razmatranja
+
+Dosegnuvši granice rasprave o pukoj funkcionalnosti tehnoloških sustava, otvara se nužnost zaokreta prema širim i dubljim razmatranjima. Pitanja koja se sada postavljaju ne tiču se više samo toga *što* digitalni agenti mogu učiniti, već *kako* njihova sveprisutnost mijenja temeljne postavke ljudskoga društva, etičke okvire i, u konačnici, sam doživljaj čovjeka. Time napuštamo područje tehničke izvedivosti i stupamo na tlo filozofskih, socioloških i antropoloških propitivanja, gdje se oblikuje budućnost suživota čovjeka i stroja. Ovaj iskorak označava početak složenijeg promišljanja koje će nas voditi u narednim poglavljima.

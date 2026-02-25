@@ -1,0 +1,16 @@
+graph TD
+subgraph "Klaster A"
+direction TB
+A[Agent A]
+B[Agent B]
+end
+subgraph "Klaster B"
+direction TB
+D[Agent D]
+E[Agent E]
+end
+C[Agent C Posrednik]
+A---C
+B---C
+C---D
+C---E

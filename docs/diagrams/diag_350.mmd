@@ -1,0 +1,40 @@
+graph TD
+subgraph "Korisnički Ulaz"
+direction TB
+A[Profil korisnika:
+Vrijeme buđenja
+Postavke svjetla
+Postavke zvuka
+Željena temperatura]
+end
+subgraph "Orkestracija i Izvršavanje"
+direction TB
+B[Agent-Dirigent]
+C[Agent za Rasvjetu]
+D[Agent za Zvuk]
+E[Agent za Klimatizaciju]
+F[Agent za Informiranje]
+end
+subgraph "Ambijentalni Izlaz"
+direction TB
+G[Postupno pojačavanje svjetla]
+H[Postupno pojačavanje zvuka]
+I[Postizanje ciljane temperature]
+J[Priprema dnevnog sažetka]
+end
+K[Korisnik se budi u optimalnom okruženju]
+L[Prezentacija informacija]
+A --> B
+B --> C
+B --> D
+B --> E
+B --> F
+C --> G
+D --> H
+E --> I
+F --> J
+G --> K
+H --> K
+I --> K
+J -.-> L
+K --> L

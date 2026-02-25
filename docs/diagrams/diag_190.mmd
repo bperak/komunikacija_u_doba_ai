@@ -1,0 +1,23 @@
+graph TD
+subgraph "Ulazni resursi"
+direction TB
+A[Goleme količine podataka]
+B[Složeni algoritmi]
+end
+subgraph "Proces"
+direction TB
+C[Uvježbavanje i inferencija modela]
+end
+subgraph "Cijena inteligencije (Posljedice)"
+direction TB
+D[Potreba za računskom snagom (GPU/TPU)]
+E[Visoki financijski troškovi]
+F[Ekstremna potrošnja energije]
+G[Ekološki utjecaj (Ugljični otisak)]
+end
+A --> C
+B --> C
+C --> D
+D --> E
+D --> F
+F --> G

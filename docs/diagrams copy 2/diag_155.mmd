@@ -1,0 +1,11 @@
+graph TD
+subgraph "Grafički prikaz procesa predtreniranja"
+A[Golemi, neoznačeni skupovi podataka] --> B(Arhitektura neuronske mreže);
+B --> C{Samonadzirani zadatak<br>(npr. predviđanje sljedeće riječi)};
+C -- Ažuriranje parametara modela --> B;
+B -- Nakon iscrpnog treniranja --> D[Temeljni model];
+end
+style A fill:#f9f9f9,stroke:#333,stroke-width:2px
+style B fill:#f9f9f9,stroke:#333,stroke-width:2px
+style C fill:#e6f3ff,stroke:#0055cc,stroke-width:2px
+style D fill:#d4edda,stroke:#155724,stroke-width:2px

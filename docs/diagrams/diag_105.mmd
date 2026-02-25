@@ -1,0 +1,8 @@
+graph TD
+subgraph "Grafički prikaz procesa predtreniranja"
+direction TB
+A[Golemi, neoznačeni skupovi podataka] --> B[Arhitektura neuronske mreže]
+B --> C[Samonadzirani zadatak (npr. predviđanje sljedeće rij...]
+C -->|Ažuriranje parametara modela| B
+B -->|Nakon iscrpnog treniranja| D[Temeljni model]
+end

@@ -1,0 +1,11 @@
+---
+title: "LoRA: niskorangirana prilagodba težina"
+---
+flowchart TD
+W["W, d_in x d_out, zamrznuto"]
+A["A, d_in x r"]
+B["B, r x d_out"]
+A --> AB["Delta W = A * B"]
+B --> AB
+W --> Wpr["W_prilagođeno = W + Delta W"]
+AB --> Wpr

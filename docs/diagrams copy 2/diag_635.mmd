@@ -1,0 +1,13 @@
+graph TD
+subgraph Standardna uputa
+direction LR
+A[ULAZ: Pitanje: U kafeteriji je bilo 23 jabuke. Ako su za ručak iskoristili 20, a zatim kupili još 6, koliko jabuka sada imaju?] --> B{IZLAZ (Vjerojatno pogrešan): 29};
+end
+subgraph Uputa s lancem misli
+direction LR
+C[ULAZ: Pitanje: U kafeteriji je bilo 23 jabuke. Ako su za ručak iskoristili 20, a zatim kupili još 6, koliko jabuka sada imaju? Razmislimo korak po korak.] --> D["IZLAZ (Vjerojatno ispravan): <br>Naravno, razmislimo korak po korak.<br>1. Početni broj jabuka je 23.<br>2. Iskoristili su 20 jabuka: 23 - 20 = 3.<br>3. Ostale su 3 jabuke.<br>4. Kupili su još 6 jabuka: 3 + 6 = 9.<br>Kafeterija sada ima 9 jabuka."];
+end
+style A fill:#fff,stroke:#333,stroke-width:2px
+style B fill:#fff,stroke:#333,stroke-width:2px
+style C fill:#fff,stroke:#333,stroke-width:2px
+style D fill:#fff,stroke:#333,stroke-width:2px

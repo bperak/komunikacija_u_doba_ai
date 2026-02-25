@@ -1,0 +1,15 @@
+graph TD
+subgraph "Digitalni svijet"
+direction TB
+A[Digitalni agenti i algoritmi]
+B[Podatkovni odraz stvarnosti]
+end
+subgraph "Fizički svijet"
+direction TB
+C[Djelovanje u stvarnosti (npr. robot, pametni uređaj)]
+D[Senzori i ulazne jedinice (npr. kamera, GPS)]
+end
+A -->|Naredba / Utjelovljenje| C
+D -->|Mjerenje / Digitalizacija| B
+B -->|Analiza i odluka| A
+C -->|Promjena stanja| D

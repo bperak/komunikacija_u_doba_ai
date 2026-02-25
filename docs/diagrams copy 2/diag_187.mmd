@@ -1,0 +1,9 @@
+graph TD
+subgraph "Dijagram procesa inferencije"
+A(Ulazni podatak<br/>/Novi, neviđeni podatak/) --> B{Prethodna obrada};
+B --> C((Obučeni model<br/>/Statični parametri/));
+C -- Prolazak unaprijed (Forward Pass) --> D(Izlaz<br/>/Predviđanje, klasifikacija/);
+end
+style A fill:#e6f2ff,stroke:#333,stroke-width:2px
+style D fill:#e6ffe6,stroke:#333,stroke-width:2px
+style C fill:#fff2e6,stroke:#333,stroke-width:2px

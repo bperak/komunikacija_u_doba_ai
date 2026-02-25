@@ -1,0 +1,15 @@
+graph TD
+subgraph Agentova obrada
+A[Početna namjera: Personalizacija] --> B[Upit dugoročnom pamćenju]
+B -->|Parametri: "korisnik_id: Ana", "ključne_riječi: umje...| C[Opažanje 1: Pamćenje vraća podatak "Ana je pozitivno...]
+C --> D[Formuliranje novog upita]
+D --> E[Upit sustavu za utemeljenje (RAG)]
+E -->|Parametri: "muzeji s impresionističkom umjetnošću u...| F[Opažanje 2: Vanjsko znanje "Marmottan Monet", "Orang...]
+C --> G[Sinteza]
+F --> G[Sinteza]
+G --> H[Ishod: Personalizirani prijedlog]
+end
+classDef memory fill:#FFF3CD,stroke:#333,stroke-width:1px
+classDef rag fill:#F8D7DA,stroke:#333,stroke-width:1px
+class B,C memory
+class E,F rag

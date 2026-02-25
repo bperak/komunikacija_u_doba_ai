@@ -1,0 +1,14 @@
+graph TD
+subgraph "Proces suočavanja s neočekivanim"
+A[Automatizirana rutina] -->|Neočekivani događaj / Greška sustava| B(Prekid automatizma)
+B --> C{Potreba za intervencijom}
+C --> D[Aktivno ljudsko djelovanje]
+D --> E[Rješavanje problema i prilagodba]
+E --> F(Uspostava novog stanja)
+end
+style A fill:#f9f9f9,stroke:#333,stroke-width:2px
+style B fill:#ffcccb,stroke:#b22222,stroke-width:2px
+style C fill:#add8e6,stroke:#4682b4,stroke-width:2px
+style D fill:#f9f9f9,stroke:#333,stroke-width:2px
+style E fill:#f9f9f9,stroke:#333,stroke-width:2px
+style F fill:#d4edda,stroke:#155724,stroke-width:2px

@@ -1,0 +1,9 @@
+graph TD
+A[Korisnikov upit] --> B[Agent / Orkestrator]
+B -->|1. Vektorizira upit| C[Vektorska baza podataka Dugoročno pamćenje]
+C -->|2. Pretraga po sličnosti| |"3. Dohvaća relevantna sjećanja"| D[Kontekstualni prozor Obogaćeni prompt]
+B --> |"Povijest razgovora i trenutni upit"| D
+D --> E[Veliki jezični model LLM]
+E -->|Generira odgovor na temelju konteksta| B
+B -->|6. Šalje personalizirani odgovor| A
+B -->|4. Analizira razgovor i ekstrahira činjenice| |"Pohranjuje nova sjećanja"| C

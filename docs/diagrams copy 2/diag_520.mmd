@@ -1,0 +1,17 @@
+graph TD
+style A fill:#fff,stroke:#333,stroke-width:2px
+style B fill:#fff,stroke:#333,stroke-width:2px
+style C fill:#fff,stroke:#333,stroke-width:2px
+style D fill:#fff,stroke:#333,stroke-width:2px
+style E fill:#f9f9f9,stroke:#333,stroke-width:1px,stroke-dasharray: 5 5
+style F fill:#f9f9f9,stroke:#333,stroke-width:1px,stroke-dasharray: 5 5
+subgraph "Rukopisna kultura"
+direction LR
+A(Skriptorij: Ručno prepisivanje) --> B(Jedinstven, skup rukopis)
+end
+subgraph "Tiskarska kultura"
+direction LR
+C(Tiskara: Pomična slova) --> D(Standardizirane, dostupne knjige)
+end
+B --> E(Ograničena diseminacija znanja)
+D --> F(Masovna diseminacija znanja)

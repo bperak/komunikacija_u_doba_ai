@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1204.765 884" width="1205" height="884" style="--bg:#FFFFFF;--fg:#27272A;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 30%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="4.8" refX="8" refY="2.4" orient="auto">
+    <polygon points="0 0, 8 2.4, 0 4.8" fill="var(--_arrow)" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="4.8" refX="0" refY="2.4" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.4, 8 4.8" fill="var(--_arrow)" />
+  </marker>
+  <path id="edge-path-0" d="M 124.163125 325 L 334.04937500000005 325" fill="none"/>
+  <path id="edge-path-1" d="M 233.11812500000005 325 L 513.469375 325" fill="none"/>
+  <path id="edge-path-2" d="M 167.375 430.05 L 167.375 662.95" fill="none"/>
+  <path id="edge-path-3" d="M 455.75 430.05 L 455.75 662.95" fill="none"/>
+  <path id="edge-path-4" d="M 804.9 430.05 L 804.9 662.95" fill="none"/>
+  <path id="edge-path-5" d="M 37.21875 806 L 669.40625 806" fill="none"/>
+  <path id="edge-path-6" d="M 455.75 596.75 L 455.75 860.25" fill="none"/>
+  <path id="edge-path-7" d="M 804.9 596.75 L 804.9 860.25" fill="none"/>
+  <path id="edge-path-8" d="M 178.47087500000006 152 L 724.251625 152" fill="none"/>
+  <path id="edge-path-9" d="M 1097.845 -76.89999999999998 L 1097.845 1034.9" fill="none"/>
+</defs>
+<rect x="40" y="213" width="970.925" height="285" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="40" y="213" width="970.925" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="52" y="227" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">&quot;Duhovni i intelektualni procesi&quot;</text>
+<rect x="225.02499999999998" y="40" width="918.6324999999999" height="112" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="225.02499999999998" y="40" width="918.6324999999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="237.02499999999998" y="54" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">&quot;Tehnološki pokretač&quot;</text>
+<rect x="43.575000000000045" y="559" width="1100.0825" height="285" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="43.575000000000045" y="559" width="1100.0825" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="55.575000000000045" y="573" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">&quot;Ishod&quot;</text>
+<polyline points="290.83750000000003,305 290.83750000000003,325 167.375,325 167.375,442" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="290.83750000000003,305 290.83750000000003,325 455.75,325 455.75,442" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="167.375,478 167.375,615" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="455.75,478 455.75,615" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="804.9,478 804.9,615" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="167.375,651 167.375,806 539.25,806" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="455.75,651 455.75,806 539.25,806" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="804.9,651 804.9,806 721.4000000000001,806" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="611.885,132 611.885,152 290.83750000000003,152 290.83750000000003,269" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="611.885,132 611.885,152 1097.845,152 1097.845,806 721.4000000000001,806" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<text font-size="11" font-weight="400" fill="var(--_text)" style="letter-spacing:0.03em"><textPath href="#edge-path-0" startOffset="50%" text-anchor="middle">potiče</textPath></text>
+<text font-size="11" font-weight="400" fill="var(--_text)" style="letter-spacing:0.03em"><textPath href="#edge-path-1" startOffset="50%" text-anchor="middle">osnažuje</textPath></text>
+<text font-size="11" font-weight="400" fill="var(--_text)" style="letter-spacing:0.03em"><textPath href="#edge-path-2" startOffset="50%" text-anchor="middle">omogućuje</textPath></text>
+<text font-size="11" font-weight="400" fill="var(--_text)" style="letter-spacing:0.03em"><textPath href="#edge-path-3" startOffset="50%" text-anchor="middle">oblikuje</textPath></text>
+<text font-size="11" font-weight="400" fill="var(--_text)" style="letter-spacing:0.03em"><textPath href="#edge-path-4" startOffset="50%" text-anchor="middle">promiče</textPath></text>
+<text font-size="11" font-weight="400" fill="var(--_text)" style="letter-spacing:0.03em"><textPath href="#edge-path-5" startOffset="50%" text-anchor="middle">vode k</textPath></text>
+<text font-size="11" font-weight="400" fill="var(--_text)" style="letter-spacing:0.03em"><textPath href="#edge-path-6" startOffset="50%" text-anchor="middle">vode k</textPath></text>
+<text font-size="11" font-weight="400" fill="var(--_text)" style="letter-spacing:0.03em"><textPath href="#edge-path-7" startOffset="50%" text-anchor="middle">vode k</textPath></text>
+<text font-size="11" font-weight="400" fill="var(--_text)" style="letter-spacing:0.03em"><textPath href="#edge-path-8" startOffset="50%" text-anchor="middle">ubrzava širenje ideja</textPath></text>
+<text font-size="11" font-weight="400" fill="var(--_text)" style="letter-spacing:0.03em"><textPath href="#edge-path-9" startOffset="50%" text-anchor="middle">ubrzava širenje znanja</textPath></text>
+<rect x="235.51250000000005" y="269" width="110.65" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="61.999999999999986" y="442" width="210.75000000000003" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="314.625" y="442" width="282.25" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="65.57499999999999" y="615" width="203.60000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="293.17499999999995" y="615" width="325.15000000000003" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="620.875" y="442" width="368.05" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="667.3499999999999" y="615" width="275.1" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="542.26" y="96" width="139.25" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="539.25" y="788" width="182.15" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<text x="290.83750000000003" y="287" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Reformacija</text>
+<text x="167.375" y="460" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Preispitivanje autoriteta</text>
+<text x="455.75" y="460" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Individualizam i osobna odgovornost</text>
+<text x="167.375" y="633" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Razvoj znanstvene metode</text>
+<text x="455.75" y="633" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Uloga znanstvenika kao samostalnog agenta</text>
+<text x="804.9" y="460" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Protestantska etika (Weber, 1930; Merton, 1970)</text>
+<text x="804.8999999999999" y="633" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Racionalizacija i radna disciplina</text>
+<text x="611.885" y="114" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Tiskarski stroj</text>
+<text x="630.325" y="806" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Znanstvena revolucija</text>
+</svg>

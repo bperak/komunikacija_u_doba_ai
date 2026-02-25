@@ -1,0 +1,11 @@
+graph TD
+style A fill:#fff,stroke:#333,stroke-width:2px
+style B fill:#fff,stroke:#333,stroke-width:2px
+style C fill:#fff,stroke:#333,stroke-width:2px
+style D fill:#fff,stroke:#333,stroke-width:2px
+style E fill:#fff,stroke:#333,stroke-width:2px
+A[Korisnik] -- Delegiranje odluke --> B((Agent));
+B -- ispoljava --> C{Proaktivnost};
+B -- ispoljava --> D{Autonomija};
+C -- pokreće --> E[Samostalno djelovanje];
+D -- omogućuje --> E;

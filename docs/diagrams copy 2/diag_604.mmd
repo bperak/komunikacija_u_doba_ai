@@ -1,0 +1,25 @@
+graph TD
+subgraph "KORAK 1: Obrada i ekstrakcija"
+A[Razgovor] --> B{Analiza i sažimanje};
+B --> C[Ključne činjenice i preferencije];
+end
+subgraph "KORAK 2: Vektorizacija i pohrana"
+C --> D{Pretvorba u vektore};
+D --> E[("Vektorska baza podataka")];
+end
+subgraph "KORAK 3: Dohvat i primjena"
+F[Novi korisnikov upit] --> G{Vektorizacija upita};
+G --> H{Semantička pretraga};
+E --> H;
+H --> I[Dohvaćena relevantna sjećanja];
+I --> J[Obogaćeni kontekst za LLM];
+F --> J;
+J --> K[Personalizirani odgovor];
+end
+style A fill:#f9f9f9,stroke:#333,stroke-width:2px
+style C fill:#f9f9f9,stroke:#333,stroke-width:2px
+style F fill:#f9f9f9,stroke:#333,stroke-width:2px
+style I fill:#f9f9f9,stroke:#333,stroke-width:2px
+style J fill:#e6ffed,stroke:#2a9d8f,stroke-width:2px
+style K fill:#e6ffed,stroke:#2a9d8f,stroke-width:2px
+style E fill:#daeaf6,stroke:#335b85,stroke-width:2px,stroke-dasharray: 5 5

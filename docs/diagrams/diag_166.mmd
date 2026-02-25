@@ -1,0 +1,9 @@
+---
+title: Transformatorska arhitektura (prikaz)
+---
+flowchart TD
+A[Ulazni tekst] -->|embed+poz| B[Koder]
+B -->|attn+FFN| C[Koderski izlaz]
+C -->|kontekst| D[Dekoder]
+D -->|generira| E[Izlazni tekst]
+A -.->|skip| D

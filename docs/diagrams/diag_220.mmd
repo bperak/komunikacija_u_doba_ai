@@ -1,0 +1,12 @@
+---
+title: Ciklus djelovanja agenta
+---
+flowchart TD
+A["Opažanje okoline (jezični opis događaja)"] --> B["Agent (LLM jezgra)"]
+B --> C[Pohrana opažanja u memoriju]
+C --> D["Refleksija i sažimanje (generiranje uvida)"]
+D --> E[Ažuriranje plana djelovanja]
+E --> B
+B --> F["Generiranje akcije (jezični opis namjere)"]
+F --> G[Djelovanje na okolinu]
+G --> A

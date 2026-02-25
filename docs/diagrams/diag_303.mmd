@@ -1,0 +1,6 @@
+graph TD
+A[Korisnički upit] --> B[1. Dohvatnik/Retriever]
+C[Baza znanja (Dokumenti, Vektori)] --> B
+B -->|Relevantni dokumenti| D[2. Generator/LLM]
+A -->|Izvorni upit| D
+D --> E[Konačan odgovor (Utemeljen i kontekstualiziran)]

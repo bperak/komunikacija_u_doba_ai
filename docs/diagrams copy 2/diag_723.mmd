@@ -1,0 +1,8 @@
+graph TD
+style A fill:#ffffff,stroke:#333,stroke-width:2px
+style B fill:#ffffff,stroke:#333,stroke-width:2px
+style C fill:#ffffff,stroke:#333,stroke-width:2px
+style D fill:#ffffff,stroke:#333,stroke-width:2px
+A["<b>Korisnički nalog:</b><br/><i>'Rezerviraj mi put u Berlin...'</i>"] --> B["<b>MISAO (Agent):</b><br/>Nalog je složen.<br/>Koraci: 1. Letovi, 2. Hotel, 3. Rezervacija, 4. Kalendar.<br/>Počinjem s pretragom letova."]
+B --> C["<b>AKCIJA:</b><br/>Poziv oruđa <code>pretraga_letova_api</code><br/>(odredište: Berlin, datumi: sljedeći tjedan)"]
+C --> D["<b>OPAŽAJ:</b><br/>Povratna informacija sustava:<br/>Popis dostupnih letova s cijenama."]

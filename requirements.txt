@@ -1,0 +1,7 @@
+openai-agents
+python-docx
+lxml
+Pillow
+pytest
+importlib-metadata
+python-dotenv

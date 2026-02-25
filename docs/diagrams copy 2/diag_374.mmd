@@ -1,0 +1,21 @@
+graph TD
+%%{init: { 'theme': 'base', 'themeVariables': { 'background': '#ffffff'}}}%%
+subgraph "Simbioza Čovjeka i Agenta"
+Čovjek(Čovjek)
+Agent(AI Agent)
+end
+subgraph "Dvojaka Funkcija Agenta"
+Suradnik(Uloga Suradnika)
+Mentor(Uloga Mentora)
+end
+RadniZadatak(Radni Zadatak)
+ProcesUčenja(Kontinuirano Učenje)
+Čovjek -- Interakcija i upravljanje --> Agent
+Agent -- Djeluje kao --> Suradnik
+Agent -- Djeluje kao --> Mentor
+Suradnik -- Podržava izvršenje --> RadniZadatak
+Mentor -- Omogućuje --> ProcesUčenja
+RadniZadatak -- Generira iskustvo za --> ProcesUčenja
+ProcesUčenja -- Unaprjeđuje vještine --> Čovjek
+style Agent fill:#e0f7fa,stroke:#00796b,stroke-width:2px
+style Čovjek fill:#fffde7,stroke:#fbc02d,stroke-width:2px

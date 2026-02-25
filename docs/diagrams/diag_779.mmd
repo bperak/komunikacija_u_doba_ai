@@ -1,0 +1,6 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'background': '#ffffff'}}}%%
+graph TD
+A[Misaoni slijed: "Nedostaju mi podatci."] --> B[Radnja 1: Poziv oruđa za pretragu letova]
+B -->|Nalog: flight_search_api.call[]| C[Opažanje 1: Popis letova zaprimljen. Najpovoljniji l...]
+C --> D[Radnja 2: Poziv oruđa za pretragu smještaja]
+D -->|Nalog: hotel_booking_api.call[]| E[Opažanje 2: Popis smještaja zaprimljen. Nekoliko opc...]

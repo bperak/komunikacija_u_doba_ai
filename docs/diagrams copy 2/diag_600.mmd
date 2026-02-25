@@ -1,0 +1,15 @@
+graph TD
+subgraph "Klijent (Aplikacija)"
+A[Strukturirani zahtjev (JSON)]
+end
+subgraph "API Poslužitelj"
+B(Veliki jezični model)
+end
+subgraph "Klijent (Aplikacija)"
+C[Strukturirani odgovor (JSON)]
+end
+A -- API poziv --> B
+B -- Obrada i generiranje --> C
+style A fill:#ffffff,stroke:#333,stroke-width:2px
+style B fill:#e6f3ff,stroke:#333,stroke-width:2px
+style C fill:#ffffff,stroke:#333,stroke-width:2px

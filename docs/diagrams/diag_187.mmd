@@ -1,0 +1,7 @@
+graph TD
+subgraph "Dijagram procesa inferencije"
+direction TB
+A[Ulazni podatak /Novi, neviđeni podatak/] --> B[Prethodna obrada]
+B --> C[Obučeni model /Statični parametri/]
+C -->|Prolazak unaprijed (Forward Pass)| D[Izlaz /Predviđanje, klasifikacija/]
+end

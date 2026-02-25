@@ -1,0 +1,26 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'background': 'white'}}}%%
+graph TD
+subgraph Razvojni putevi pisma
+A[Piktogram <br><i>(slika predmeta)</i>] --> B[Ideogram <br><i>(slika ideje)</i>];
+B --> C{Logografsko pismo <br><i>(znak = riječ)</i>};
+C -- Načelo rebusa --> D{Fonografski sustavi};
+D --> E[Slogovno pismo <br><i>(znak = slog)</i>];
+D -- Akrofonijsko načelo --> F[Alfabet <br><i>(znak = glas)</i>];
+end
+subgraph Primjeri
+C_EX[Egipatski hijeroglifi, <br>sumerski klinopis]
+E_EX[Japanska kana, <br>linearno pismo B]
+F_EX[Feničko, grčko <br>i latinično pismo]
+end
+C --> C_EX;
+E --> E_EX;
+F --> F_EX;
+style A fill:#f9f9f9,stroke:#333,stroke-width:2px
+style B fill:#f9f9f9,stroke:#333,stroke-width:2px
+style C fill:#e6e6fa,stroke:#333,stroke-width:2px
+style D fill:#e6e6fa,stroke:#333,stroke-width:2px
+style E fill:#d4fada,stroke:#333,stroke-width:2px
+style F fill:#d4fada,stroke:#333,stroke-width:2px
+style C_EX fill:#fff5ee,stroke:#333,stroke-width:1px,stroke-dasharray: 5 5
+style E_EX fill:#fff5ee,stroke:#333,stroke-width:1px,stroke-dasharray: 5 5
+style F_EX fill:#fff5ee,stroke:#333,stroke-width:1px,stroke-dasharray: 5 5

@@ -1,0 +1,9 @@
+graph TD
+style A fill:#fff,stroke:#333,stroke-width:2px
+style B fill:#fff,stroke:#333,stroke-width:2px
+style C fill:#fff,stroke:#333,stroke-width:2px
+style D fill:#fff,stroke:#333,stroke-width:2px
+A[Okolina] -->|Stanje| B(Percepcija);
+B --> C{Agent};
+C -- Rezoniranje i odlučivanje --> D(Akcija);
+D -->|Utjecaj| A;

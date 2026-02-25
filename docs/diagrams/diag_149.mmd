@@ -1,0 +1,10 @@
+---
+title: Povratna informacija u ciklusu agenta - Tool Use
+---
+flowchart TD
+A[Agent prima zadatak] --> B[Planiranje i razmisljanje]
+B --> C[Poziv vanjskog alata]
+C --> D[Vanjski sustav vraca rezultat]
+D --> E[Agent analizira povratnu informaciju]
+E -->|iteracija| B
+E --> F[Efikasno djelovanje]

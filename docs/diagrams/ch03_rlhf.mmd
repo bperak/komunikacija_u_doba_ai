@@ -1,0 +1,9 @@
+---
+title: "RLHF: učenje s ljudskim povratnim informacijama"
+---
+flowchart TD
+A[Upit] --> B[LLM generira više odgovora]
+B --> C[Ljudski ocjenjivači rangiraju odgovore]
+C --> D[Model nagrade uči preferencije]
+D --> E[PPO ažurira LLM, maksimizira nagradu]
+E --> B

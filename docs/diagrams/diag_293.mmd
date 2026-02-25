@@ -1,0 +1,32 @@
+graph TD
+subgraph "Klijentska Aplikacija"
+A[Klijent]
+end
+subgraph "API Poslužitelj"
+D[API Endpoint]
+end
+subgraph "Veliki Jezični Model"
+E[LLM Procesor]
+F[Generirani Odgovor]
+end
+A -->|1. Slanje HTTP POST Zahtjeva| D
+D -->|2. Prosljeđivanje podataka| E
+E -->|3. Vraćanje rezultata| D
+D -->|4. Slanje HTTP Odgovora| A
+subgraph "Struktura HTTP Zahtjeva"
+direction LR
+B_Header[Zaglavlje (Authorization, Content-Type)]
+C_Body[Tijelo (JSON)]
+end
+subgraph "Struktura JSON Tijela"
+direction TB
+C1[Model: "gpt-4-turbo"]
+C2[Messages: [{role, content}]]
+C3[Parametri: temperature, max_tokens]
+end
+A -->|Sadrži| B_Header
+A -->|Sadrži| C_Body
+C_Body --- C1
+C_Body --- C2
+C_Body --- C3
+E --> F

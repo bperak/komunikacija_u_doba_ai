@@ -1,0 +1,26 @@
+graph TD
+style A fill:#ffffff,stroke:#333,stroke-width:2px
+style B fill:#ffffff,stroke:#333,stroke-width:2px
+style C fill:#ffffff,stroke:#333,stroke-width:2px
+subgraph A[Pojedinačni Agenti]
+direction LR
+Ag1(Jednostavna pravila)
+Ag2(Lokalna percepcija)
+end
+subgraph B[Mehanizmi Interakcije]
+direction LR
+Com(Posredna komunikacija <br><i>Stigmergija</i>)
+Coop(Suradnja)
+end
+subgraph C[Kolektivna Svojstva]
+direction LR
+Emergence(Emergentno ponašanje)
+Synergy(Sinergija Sustava)
+end
+Ag1 --> Com
+Ag2 --> Com
+Ag1 --> Coop
+Ag2 --> Coop
+Com --> Emergence
+Coop --> Emergence
+Emergence --> Synergy

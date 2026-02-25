@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 734.435 285" width="734.435" height="285" style="--bg:#FFFFFF;--fg:#27272A;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 30%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="4.8" refX="8" refY="2.4" orient="auto">
+    <polygon points="0 0, 8 2.4, 0 4.8" fill="var(--_arrow)" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="4.8" refX="0" refY="2.4" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.4, 8 4.8" fill="var(--_arrow)" />
+  </marker>
+  <path id="edge-path-0" d="M 341.1975 62 L 341.1975 130" fill="none"/>
+  <path id="edge-path-1" d="M 117.58687500000002 180.5 L 399.170625 180.5" fill="none"/>
+  <path id="edge-path-2" d="M 283.224375 180.5 L 564.808125 180.5" fill="none"/>
+</defs>
+<polyline points="341.1975,76 341.1975,116" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="341.1975,152 341.1975,180.5 175.56,180.5 175.56,209" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="341.1975,152 341.1975,180.5 506.83500000000004,180.5 506.83500000000004,209" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<text font-size="9" font-weight="400" fill="var(--_text)" style="letter-spacing:0.03em"><textPath href="#edge-path-1" startOffset="50%" text-anchor="middle">Usklađenost s interesima (korist, status, moć)</textPath></text>
+<text font-size="10" font-weight="400" fill="var(--_text)" style="letter-spacing:0.03em"><textPath href="#edge-path-2" startOffset="50%" text-anchor="middle">Prijetnja poretku (narušavanje statusa quo)</textPath></text>
+<rect x="293.0225" y="40" width="96.35000000000001" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="271.5725" y="116" width="139.25" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="55.88499999999999" y="209" width="239.35000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="319.235" y="209" width="375.20000000000005" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<text x="341.1975" y="58" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Inovacija</text>
+<text x="341.1975" y="134" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Društvena elita</text>
+<text x="175.56" y="227" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Prihvaćanje i ubrzano širenje</text>
+<text x="506.83500000000004" y="227" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Odbacivanje, ograničavanje i usporavanje širenja</text>
+</svg>

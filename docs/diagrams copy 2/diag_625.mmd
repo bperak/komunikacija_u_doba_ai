@@ -1,0 +1,16 @@
+graph TD
+subgraph "Modalni model pamćenja (Atkinson i Shiffrin, 1968)"
+A[Senzorni ulaz] --> B(Senzorno pamćenje);
+B -- Pažnja --> C{Kratkoročno pamćenje};
+C -- Ponavljanje --> C;
+C -- Kodiranje --> D[Dugoročno pamćenje];
+D -- Dohvaćanje --> C;
+B --> E[Zaborav];
+C --> F[Zaborav];
+end
+style B fill:#fff,stroke:#333,stroke-width:2px
+style C fill:#fff,stroke:#333,stroke-width:2px
+style D fill:#fff,stroke:#333,stroke-width:2px
+style E fill:#fff,stroke:#333,stroke-width:1px,stroke-dasharray: 5 5
+style F fill:#fff,stroke:#333,stroke-width:1px,stroke-dasharray: 5 5
+style A fill:#fff,stroke:#333,stroke-width:2px

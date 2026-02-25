@@ -1,0 +1,8 @@
+graph TD
+subgraph Aplikacijsko Programsko Sučelje (API) kao most
+style A fill:#ffffff,stroke:#333,stroke-width:2px
+style B fill:#ffffff,stroke:#333,stroke-width:2px
+A(Aplikacija A <br> Korisnik usluge)
+B(Aplikacija B / Usluga <br> Pružatelj usluge)
+A -- API Poziv (Zahtjev) --> B
+B -- API Odgovor (Podaci/Funkcija) --> A

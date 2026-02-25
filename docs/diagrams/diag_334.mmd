@@ -1,0 +1,12 @@
+graph TD
+subgraph "Tijek Korisničkog Upita"
+direction TB
+direction LR
+A[Korisnički upit] --> B[AI Agent]
+B -->|Rješiv upit| C[Trenutačno rješenje]
+B -->|Složen/Emotivan upit| D[Ljudski agent]
+D --> E[Konačno rješenje]
+C --> F[Baza znanja]
+E --> F
+F --> B
+end

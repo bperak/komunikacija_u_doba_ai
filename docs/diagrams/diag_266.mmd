@@ -1,0 +1,12 @@
+graph TD
+%%{init: {'theme': 'base', 'themeVariables': { 'background': '#ffffff'}}}%%
+subgraph Ciklus Autonomnog Agenta
+A[Korisnički Cilj] --> B[Agent]
+B --1. Stvaranje zadataka--> C[Lista zadataka]
+C --2. Prioritizacija--> D[Prioritizirana lista]
+D --3. Odabir zadatka--> E[Agent za izvršavanje]
+E --Koristi alate (npr. Internet)--> F[Izvor informacija]
+F --> E
+E --4. Izvršenje i rezultat--> G[Kontekst/Pamćenje]
+G --> B
+end

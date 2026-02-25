@@ -1,0 +1,14 @@
+graph TD
+subgraph "Podatkovni sloj"
+direction TB
+A[Ljudski tekstualni podaci] --> B[Sadržani okviri i pristranosti]
+end
+subgraph "Algoritamski sloj"
+direction TB
+C[AI Agent (Veliki jezični model)] -->|Uči iz| B
+C -->|Stvara| D[Algoritamska leća]
+end
+subgraph "Sloj percepcije"
+direction TB
+D -->|Filtrira i uokviruje| E[Predočena stvarnost]
+E -->|Utječe na| F[Ljudsko poimanje i zaključivanje]

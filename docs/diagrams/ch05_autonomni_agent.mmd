@@ -1,0 +1,13 @@
+flowchart TD
+    A[Korisnik zadaje opći cilj] --> B[LLM kao kognitivni mehanizam]
+    B --> C[Rastavljanje cilja na podzadatke]
+    C --> D[Prioritizacija zadataka]
+    D --> E[Izvršavanje zadatka]
+    E --> F{Korištenje alata}
+    F -->|pretraživanje weba| G[Vanjski alati i API-ji]
+    F -->|pristup datotekama| G
+    F -->|izvršavanje koda| G
+    G --> H[Pohrana rezultata u memoriju]
+    H --> I{Cilj ostvaren?}
+    I -->|ne| C
+    I -->|da| J[Konačni rezultat]

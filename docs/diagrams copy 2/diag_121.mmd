@@ -1,0 +1,17 @@
+graph TD
+style A fill:#f9f9f9,stroke:#333,stroke-width:2px
+style B fill:#f9f9f9,stroke:#333,stroke-width:2px
+style C fill:#f9f9f9,stroke:#333,stroke-width:2px
+style D fill:#f9f9f9,stroke:#333,stroke-width:2px
+subgraph "Digitalni svijet"
+A[Digitalni agenti i algoritmi]
+B[Podatkovni odraz stvarnosti]
+end
+subgraph "Fizički svijet"
+C[Djelovanje u stvarnosti <br>(npr. robot, pametni uređaj)]
+D[Senzori i ulazne jedinice <br>(npr. kamera, GPS)]
+end
+A -- Naredba / Utjelovljenje --> C
+D -- Mjerenje / Digitalizacija --> B
+B -- Analiza i odluka --> A
+C -- Promjena stanja --> D

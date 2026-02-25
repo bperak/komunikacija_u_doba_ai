@@ -1,0 +1,21 @@
+graph TD
+subgraph "KORAK 1: Obrada i ekstrakcija"
+direction TB
+A[Razgovor] --> B[Analiza i sažimanje]
+B --> C[Ključne činjenice i preferencije]
+end
+subgraph "KORAK 2: Vektorizacija i pohrana"
+direction TB
+C --> D[Pretvorba u vektore]
+D --> E[Vektorska baza podataka]
+end
+subgraph "KORAK 3: Dohvat i primjena"
+direction TB
+F[Novi korisnikov upit] --> G[Vektorizacija upita]
+G --> H[Semantička pretraga]
+E --> H
+H --> I[Dohvaćena relevantna sjećanja]
+I --> J[Obogaćeni kontekst za LLM]
+F --> J
+J --> K[Personalizirani odgovor]
+end

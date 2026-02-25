@@ -1,0 +1,17 @@
+graph TD
+subgraph "Globalna sfera"
+direction LR
+A[Globalni medijski agenti] -->|Stvaranje| B[Izvorni medijski sadržaj]
+end
+subgraph "Proces distribucije i prilagodbe"
+direction TB
+B -->|Tehnološki kanali| C[Globalno tržište]
+C -->|Prilagodba lokalnom ukusu| D[Glokalizirani sadržaj]
+C -->|Izravno preuzimanje| E[Homogenizirani sadržaj]
+end
+subgraph "Lokalna sfera"
+direction LR
+F[Lokalna publika]
+end
+D --> F
+E --> F

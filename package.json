@@ -1,0 +1,14 @@
+{
+  "name": "book-builder-diagrams",
+  "version": "1.0.0",
+  "description": "Mermaid diagram rendering for Book Builder (beautiful-mermaid)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node scripts/render_mermaid.mjs",
+    "render:ascii": "node scripts/render_mermaid.mjs --ascii"
+  },
+  "dependencies": {
+    "beautiful-mermaid": "^0.1.3"
+  }
+}

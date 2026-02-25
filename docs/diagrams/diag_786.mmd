@@ -1,0 +1,19 @@
+graph TD
+subgraph "Ulazni podatci"
+direction TB
+A[Logistički okviri (Let, Smještaj, Proračun)]
+B[Korisnički kontekst (Sklonosti, Prethodni razgovori)]
+D[Proaktivno istraživanje (Srodni sadržaji, Nove moguć...]
+end
+subgraph "Obrada"
+direction TB
+C[Sintetička jezgra agenta]
+end
+subgraph "Izlaz"
+direction TB
+E[Oblikovani prijedlog (Jedinstven, suvisao i privlača...]
+end
+A --> C
+B --> C
+D --> C
+C --> E

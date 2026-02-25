@@ -1,0 +1,26 @@
+graph TD
+%%{init: {'theme': 'base', 'themeVariables': { 'background': 'white'}}}%%
+subgraph Korisnik
+A[Čovjek]
+end
+subgraph Agent
+B[Jezgra: NLP/NLU]
+C[Kontekstualna Svijest]
+D[Personalizacija]
+E[Analiza Sentimenta]
+F[Višekanalnost]
+end
+subgraph Poslovni Sustavi
+G[CRM]
+H[Baza Znanja]
+I[ERP]
+end
+A <--> B
+B --> C
+C --> D
+B --> E
+D <--> F
+A <--> F
+Agent <--> G
+Agent <--> H
+Agent <--> I

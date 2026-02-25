@@ -1,0 +1,7 @@
+graph TD
+A["Korisnik: 'Zašto gubimo korisnike?'"] --> B[Agent]
+B -->|Protupitanje: Kako definiramo 'odljev'?| C["Korisnik: 'Neaktivnost > 30 dana.'"]
+B -->|Protupitanje: Koju dimenziju istražiti?| D["Korisnik: 'Korištenje značajki.'"]
+C --> E[Analiza]
+D --> E[Analiza]
+E -->|Modeliranje i interpretacija| F["Agentov zaključak: 'Korisnici koji ne koriste znača...]

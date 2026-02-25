@@ -1,0 +1,27 @@
+graph TD
+classDef nodeStyle fill:#ffffff,stroke:#333,stroke-width:2px
+subgraph "Ulazni elementi"
+direction LR
+A[Rukopis ili ideja]:::nodeStyle
+B[Tehnološki preduvjeti (vijčana preša, metalurgija)]:::nodeStyle
+end
+subgraph "Gutenbergova sinteza"
+direction TB
+C[Tiskarski stroj]:::nodeStyle
+D[Pomična metalna slova]:::nodeStyle
+E[Preša za tisak]:::nodeStyle
+F[Boja na bazi ulja]:::nodeStyle
+C --> D
+C --> E
+C --> F
+end
+subgraph "Proces i posljedice"
+direction LR
+G[Masovna proizvodnja knjiga]:::nodeStyle
+H[Širenje znanja i ideja]:::nodeStyle
+I[Revolucija u religiji, znanosti i kulturi]:::nodeStyle
+G --> H --> I
+end
+A --> C
+B --> C
+F --> G

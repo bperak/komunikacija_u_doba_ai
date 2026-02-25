@@ -1,0 +1,15 @@
+graph TD
+subgraph Mjerenje uspjeha (Evaluacija)
+direction TB
+A[Vrste metrika] --> B[Kvantitativne metrike]
+A --> C[Kvalitativne metrike]
+subgraph Kvantitativne (objektivne)
+direction TB
+B --> B1[Preciznost]
+B --> B2[Odziv]
+B --> B3[F1-mjera]
+end
+subgraph Kvalitativne (subjektivne)
+direction TB
+C --> C1[Zadovoljstvo korisnika]
+C --> C2[Uporabljivost]
