@@ -118,17 +118,26 @@ blockquote p:last-child { margin-bottom: 0; }
 /* --- Images: centered, constrained size --- */
 img {
     max-width: 90%;
-    max-height: 600px;
+    max-height: 500px;
     width: auto;
     height: auto;
     display: block;
     margin: 0.5em auto;
 }
 
-/* Paragraphs that contain only an image */
+/* Paragraphs that contain only an image or SVG */
 .img-wrap {
     text-align: center;
     margin: 1.2em 0 0.3em 0;
+}
+
+.img-wrap svg {
+    max-width: 85%;
+    max-height: 420px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Pandoc figure element */
@@ -140,7 +149,7 @@ figure {
 
 figure img {
     max-width: 100%;
-    max-height: 600px;
+    max-height: 500px;
     margin: 0 auto;
 }
 
@@ -674,11 +683,13 @@ def inline_svg_images(html_text: str, base_dir: Path) -> str:
             if svg_start < 0:
                 return full_tag
             svg_content = svg_content[svg_start:]
-            svg_content = re.sub(r'width="[^"]*"', '', svg_content, count=1)
-            svg_content = svg_content.replace('width="100%"', '', 1)
+            # Strip fixed width/height so CSS can control sizing via viewBox
+            svg_content = re.sub(r'\s+width="[^"]*"', '', svg_content, count=1)
+            svg_content = re.sub(r'\s+height="[^"]*"', '', svg_content, count=1)
+            # Remove any existing inline max-width style from Mermaid
             svg_content = re.sub(
-                r'<svg ',
-                '<svg style="max-width:100%; height:auto; display:block; margin:0 auto;" ',
+                r'style="[^"]*max-width:\s*[\d.]+px[^"]*"',
+                '',
                 svg_content, count=1
             )
             return svg_content
