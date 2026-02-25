@@ -316,64 +316,23 @@ Za jezične modele upravo uporaba alata razbija te stege, omogućujući mu da po
 
 
 
-Temeljni krug promišljanja i djelovanja (ReAct)
 
-
-
-KORISNIKOV NALOG    „Kakvo će vrijeme biti  sutra u Londonu?“       
-
-             │
-
-             ▼
-
-  1. MISAO (Promišljanje)  „Korisnik pita za vrijeme  u Londonu. Nemam pristup  podacima u stvarnom  vremenu. Moram se poslužiti oruđem    `vremenska_prognoza_api`.“
-
-             │
-
-             ▼
-
- 2. AKCIJA (Zahvat)   Tvorba poziva alatima:      {
-
-    „tool_name“:  „vremenska_prognoza_api“,
-
-    „tool_input“:  „grad“: „London“,     
-
-    „datum“: „sutra“   } 
-
-  }                          
-
-             │
-
-             ▼
-
-3. OPAŽAJ (Povratna informacija) Vanjski sustav izvršava poziv i vraća ishod:   
-
-
+> **Temeljni krug promišljanja i djelovanja (ReAct)**
+>
+> **KORISNIKOV NALOG:** „Kakvo će vrijeme biti sutra u Londonu?"
+>
+> **1. MISAO (Promišljanje):** „Korisnik pita za vrijeme u Londonu. Nemam pristup podacima u stvarnom vremenu. Moram se poslužiti oruđem `vremenska_prognoza_api`."
+>
+> **2. AKCIJA (Zahvat):** Tvorba poziva alatima: { „tool_name": „vremenska_prognoza_api", „tool_input": { „grad": „London", „datum": „sutra" } }
+>
+> **3. OPAŽAJ (Povratna informacija):** Vanjski sustav izvršava poziv i vraća ishod: { „temperatura": „15°C", „stanje": „Oblačno" }
+>
+> **4. MISAO (Sinteza):** „Primio sam opažaj. Temperatura je 15°C i vrijeme je oblačno. Sada posjedujem sve sastavnice za cjelovit odgovor."
+>
+> **5. KONAČNI ODGOVOR:** „Sutra će u Londonu biti oblačno s temperaturom od 15°C."
 
 ![](../../docs/diagrams/diag_149.svg)
 *Slika 6.3: Povratna informacija od vanjskog sustava u ciklusu agenta (Tool Use – opažaj).*
-  {                          
-
-   „temperatura“: „15°C“,  
-
-  „stanje“: „Oblačno“     
-
-  }                       
-
-             │
-
-             ▼
-
-
-  4. MISAO (Sinteza)     „Primio sam opažaj.   Temperatura je 15°C i  vrijeme je oblačno. Sada   posjedujem sve sastavnice za cjelovit odgovor.“   
-
-             │
-
-             ▼
-
- 5. KONAČNI ODGOVOR    
-
-  „Sutra će u Londonu biti oblačno s temperaturom  od 15°C.“  
 
 
 Taj krug omogućuje agentu rješavanje različitih zadataka od svakodnevnih upita do visoko specijaliziranih domena. U ulozi osobnoga pomoćnika agent može upravljati kalendarom, slati elektroničku poštu ili nadzirati pametne uređaje u domu. Kao planer putovanja, on može pretraživati letove putem API-a zrakoplovnih tvrtki, uspoređivati cijene, provjeravati dostupnost hotela i naposljetku izvršiti rezervaciju. U području stručne analize, sposoban je izvršavati Pythonove skripte za složenu obradu podataka, slati SQL upite opsežnim bazama podataka ili sažimati sadržaj mrežnih stranica do kojih dolazi u stvarnom vremenu.
@@ -406,69 +365,71 @@ Programska okružja poput *LangChaina* ili mislećih modela, poput OpenAI-evog o
 Jezična jezgra agenta najprije podvrgava Anin upit dubinskoj raščlambi. Koristeći se svojom sposobnošću promišljanja, nalik na misaone lance (*Chain-of-Thought*), ona razlaže složeni cilj na niz manjih, dohvatljivih i provedivih podzadataka. Taj početni unutarnji monolog temelj je cjelokupne operacije.
 
 
-**Shema 1:** Dekompozicija cilja Glavni cilj: Isplanirati vikend-putovanje u Pariz (prvi vikend u listopadu, solo, umjetnost/impresionizam, budžet ~500 €, centralni smještaj).
-
-**Misaoni slijed (unutarnja razgradnja):** Odrediti točne datume: Utvrditi koji su dani „prvi vikend u listopadu“.
-
-**Provjeriti logistiku (let):** Pretražiti i pronaći najpovoljnije povratne letove za zadane datume.
-
-**Provjeriti logistiku (smještaj):** Pronaći cjenovno prihvatljiv i centralno smješten smještaj za iste datume.
-
-**Uskladiti s proračunom:** Provjeriti ne premašuje li zbroj troškova leta i smještaja zadani okvir od 500 eura.
-
-**Istražiti interese:** Istražiti muzeje i znamenitosti povezane s impresionizmom.
-
-**Sastaviti prijedlog:** Oblikovati jasan i suvisao plan puta.
-
-**Sintetizirati odgovor:** Sve prikupljene podatke uobličiti u konačan, personaliziran odgovor za korisnicu.
-
-
+> **Shema 1:** Dekompozicija cilja Glavni cilj: Isplanirati vikend-putovanje u Pariz (prvi vikend u listopadu, solo, umjetnost/impresionizam, budžet ~500 €, centralni smještaj).
+>
+> **Misaoni slijed (unutarnja razgradnja):** Odrediti točne datume: Utvrditi koji su dani „prvi vikend u listopadu“.
+>
+> **Provjeriti logistiku (let):** Pretražiti i pronaći najpovoljnije povratne letove za zadane datume.
+>
+> **Provjeriti logistiku (smještaj):** Pronaći cjenovno prihvatljiv i centralno smješten smještaj za iste datume.
+>
+> **Uskladiti s proračunom:** Provjeriti ne premašuje li zbroj troškova leta i smještaja zadani okvir od 500 eura.
+>
+> **Istražiti interese:** Istražiti muzeje i znamenitosti povezane s impresionizmom.
+>
+> **Sastaviti prijedlog:** Oblikovati jasan i suvisao plan puta.
+>
+> **Sintetizirati odgovor:** Sve prikupljene podatke uobličiti u konačan, personaliziran odgovor za korisnicu.
+>
+>
 **2.** Stupanj: Djelovanje i uporaba oruđa (Ruke)
 
 Agent odmah uviđa da mu za ispunjenje zadatka nedostaju vanjski, promjenjivi podaci u stvarnome vremenu. Stoga mora posegnuti za svojim oruđima, odnosno za sučeljima za programiranje aplikacija (API-ima) koja mu omogućuju pristup vanjskim bazama podataka.
 
 
-**Shema 2:** Slijed uporabe oruđa Misaoni slijed: „Nedostaju mi podaci o cijenama letova i hotela. Moram pozvati odgovarajuća oruđa.“
-
-**Radnja 1:** Poziv oruđa za pretragu letova Nalog: flight_search_api.call()
-
-**Parametri:** { odredište: „Pariz, Francuska“, datum_polaska: „2025-10-03“, datum_povratka: „2025-10-05“, klasa: „ekonomska“ }
-
-**Ishod (opažanje 1):** Alat vraća popis dostupnih letova. Najpovoljnija opcija iznosi 150 € (povratna karta).
-
-**Radnja 2:** Poziv alata za pretragu smještaja Nalog: hotel_booking_api.call()
-
-**Parametri:** { grad: „Pariz“, datum_prijave: „2025-10-03“, datum_odjave: „2025-10-05“, maksimalna_cijena: 350, lokacija: „središnja“, tip_smještaja: „hotel/apartman“ }
-
-**Ishod (opažanje 2):** Oruđe vraća popis dostupnih smještajnih jedinica. Nekoliko ih zadovoljava kriterije.
-
-
+> **Shema 2:** Slijed uporabe oruđa Misaoni slijed: „Nedostaju mi podaci o cijenama letova i hotela. Moram pozvati odgovarajuća oruđa.“
+>
+> **Radnja 1:** Poziv oruđa za pretragu letova Nalog: flight_search_api.call()
+>
+> **Parametri:** { odredište: „Pariz, Francuska“, datum_polaska: „2025-10-03“, datum_povratka: „2025-10-05“, klasa: „ekonomska“ }
+>
+> **Ishod (opažanje 1):** Alat vraća popis dostupnih letova. Najpovoljnija opcija iznosi 150 € (povratna karta).
+>
+> **Radnja 2:** Poziv alata za pretragu smještaja Nalog: hotel_booking_api.call()
+>
+> **Parametri:** { grad: „Pariz“, datum_prijave: „2025-10-03“, datum_odjave: „2025-10-05“, maksimalna_cijena: 350, lokacija: „središnja“, tip_smještaja: „hotel/apartman“ }
+>
+> **Ishod (opažanje 2):** Oruđe vraća popis dostupnih smještajnih jedinica. Nekoliko ih zadovoljava kriterije.
+>
+>
 **3.** Stupanj: Posezanje za znanjem i pamćenjem (Iskustvo)
 
 Nakon što su logistički okviri putovanja postavljeni i potvrđeni unutar proračuna, agent se okreće profinjenijem dijelu zadatka: prilagodbi Aninim osobnim sklonostima. Ovdje do izražaja dolazi sprega dvaju oblika znanja – onoga pohranjenog u dugoročnom pamćenju o korisnici i onoga dohvaćenog iz vanjskih izvora putem utemeljenja.
 
 
-**Shema 3:** Povezivanje pamćenja i utemeljenog znanja (RAG) Misaoni slijed: „Logistika je riješena. Sada se moram usredotočiti na impresionizam i personalizirati plan.“
-
-**Radnja 3:** Upit u dugoročno pamćenje Nalog: memory_storage.query()
-
-**Parametri:** { korisnik_id: „Ana“, ključne_riječi: [„umjetnost“, „Pariz“, „impresionizam“] }
-
-**Ishod (opažanje 3):** Pamćenje vraća zapis iz prethodne interakcije: {„zapis“: „Korisnica Ana je posjet Musée d'Orsay ocijenila vrlo pozitivno.“, „datum“: „2024-03-12“}.
-
-**Radnja 4:** Upit sustavu za utemeljenje (RAG) Nalog: web_search_tool.call()
-
-**Parametri:** { upit: „muzeji s impresionističkom umjetnošću u Parizu osim Musée d'Orsay“ }
-
-**Ishod (opažanje 4):** Sustav pretražuje provjerene izvore i dohvaća sažete podatke o muzejima *Marmottan Monet* (najveća zbirka Monetovih djela) i *Orangerie* (poznat po Vodenim lopočima), uključujući podatke o radnom vremenu, cijenama ulaznica i lokaciji.
-
-
+> **Shema 3:** Povezivanje pamćenja i utemeljenog znanja (RAG) Misaoni slijed: „Logistika je riješena. Sada se moram usredotočiti na impresionizam i personalizirati plan.“
+>
+> **Radnja 3:** Upit u dugoročno pamćenje Nalog: memory_storage.query()
+>
+> **Parametri:** { korisnik_id: „Ana“, ključne_riječi: [„umjetnost“, „Pariz“, „impresionizam“] }
+>
+> **Ishod (opažanje 3):** Pamćenje vraća zapis iz prethodne interakcije: {„zapis“: „Korisnica Ana je posjet Musée d'Orsay ocijenila vrlo pozitivno.“, „datum“: „2024-03-12“}.
+>
+> **Radnja 4:** Upit sustavu za utemeljenje (RAG) Nalog: web_search_tool.call()
+>
+> **Parametri:** { upit: „muzeji s impresionističkom umjetnošću u Parizu osim Musée d'Orsay“ }
+>
+> **Ishod (opažanje 4):** Sustav pretražuje provjerene izvore i dohvaća sažete podatke o muzejima *Marmottan Monet* (najveća zbirka Monetovih djela) i *Orangerie* (poznat po Vodenim lopočima), uključujući podatke o radnom vremenu, cijenama ulaznica i lokaciji.
+>
+>
 **4.** Stupanj: Sinteza i priopćenje (Glas)
 
 Sa svim prikupljenim, obrađenim i kontekstualiziranim podacima, jezična jezgra sada preuzima ulogu konačnog pripovjedača. Ona više ne razlaže, već spaja – let, smještaj, proračun, osobne sklonosti i novoistražene mogućnosti – u jedinstven, suvisao i privlačan prijedlog.
 
 
-**Shema 4:** Konačna sinteza i oblikovanje odgovora Misaoni slijed: „Pronašao sam let i smještaj unutar zadanog proračuna. Iz pamćenja znam da korisnica cijeni Musée d'Orsay, a istraživanjem sam pronašao još dva srodna muzeja. Mogu sastaviti cjelovit prijedlog koji povezuje sve elemente.“
+> **Shema 4: Konačna sinteza i oblikovanje odgovora**
+>
+> **Misaoni slijed:** „Pronašao sam let i smještaj unutar zadanog proračuna. Iz pamćenja znam da korisnica cijeni Musée d'Orsay, a istraživanjem sam pronašao još dva srodna muzeja. Mogu sastaviti cjelovit prijedlog koji povezuje sve elemente.“
 
 **Konačni odgovor (generiran za Anu):**
 

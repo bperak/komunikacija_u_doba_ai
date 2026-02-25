@@ -1,0 +1,12 @@
+---
+title: Pametni sustav za buđenje
+---
+flowchart TD
+    KP["Korisnički profil<br>(biometrija, raspored,<br>preferencije)"] --> CA["Centralni agent<br>(Tempo)"]
+    CA --> A1["Agent za spavanje<br>analiza sna"]
+    CA --> A2["Agent za ambijent<br>rasvjeta, zvuk, temperatura"]
+    CA --> A3["Agent za informacije<br>kalendar, vijesti, vrijeme"]
+    A1 -->|"optimalno buđenje"| A2
+    A2 -->|"prilagodba okruženja"| IS["Ugodno buđenje"]
+    A3 -->|"dnevni sažetak"| IS
+    IS --> K["Korisnik:<br>informiran i odmoren"]

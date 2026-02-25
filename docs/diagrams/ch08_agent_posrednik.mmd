@@ -1,0 +1,25 @@
+---
+title: Agent C kao posrednik između klastera
+---
+flowchart LR
+    subgraph KA ["Klaster A"]
+        A1["Agent A1"]
+        A2["Agent A2"]
+        A3["Agent A3"]
+        A1 --- A2
+        A2 --- A3
+        A1 --- A3
+    end
+
+    subgraph KB ["Klaster B"]
+        B1["Agent B1"]
+        B2["Agent B2"]
+        B3["Agent B3"]
+        B1 --- B2
+        B2 --- B3
+        B1 --- B3
+    end
+
+    C["Agent C<br>(posrednik)"]
+    KA ---|"strukturna rupa"| C
+    C ---|"strukturna rupa"| KB

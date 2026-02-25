@@ -15,7 +15,6 @@ U središtu te složenosti nalazi se *agent* – pojedinac, organizacija, tehnol
 > **Digitalni suputnik:** Osobni AI agent koji korisniku pruža kontinuiranu podršku – od upravljanja rasporedom i informacijama do emocionalnog konteksta i koordinacije s drugim sustavima; vizija budućnosti u kojoj je agent sveprisutan u svakodnevici (npr. osobni agent „Tempo“ u narativu).
 
 
-Shematski prikaz procesa projekcije trendova od analize sadašnjosti do mogućih budućih scenarija
 
 
 ![Shematski prikaz procesa projekcije trendova od analize sadašnjosti do mogući...](../../docs/diagrams/diag_29.svg)
@@ -74,7 +73,8 @@ Agent nije pokazao videozapis iz empatije ili želje da proširi njezine horizon
 Te večeri, dok je Tempo tiho upravljao ambijentalnim osvjetljenjem, Ana nije razmišljala o tehnološkom čudu. Razmišljala je o licima sa snimke. Osjećala se kao da je dobila budućnost, ali je usput izgubila nešto neimenovano, nešto neuredno i nesavršeno, nešto što se nekoć nazivalo punoćom života.
 
 
-Procesni dijagram pametnog sustava za buđenje koji, temeljem korisničkog profila, putem agenata upravlja ambijentom i priprema informacijski sažetak
+![](../../docs/diagrams/ch08_pametno_budjenje.svg)
+*Slika 8.2: Procesni dijagram pametnog sustava za buđenje koji, temeljem korisničkog profila, putem agenata upravlja ambijentom i priprema informacijski sažetak.*
 
 ### 8.2.5 Radni tokovi i učenje budućnosti: agenti kao suradnici i mentori
 
@@ -89,7 +89,7 @@ Istodobno s ulogom suradnika, agent preuzima i onu mentora. Klasični modeli kor
 
 Konačni ishod ove preobrazbe je umnožavanje ljudskih i strojnih sposobnosti. Radni tokovi obogaćeni agentima postaju plodno tlo za organski rast vještina, gdje se granica između rada i učenja postupno briše. Svaki izvršeni zadatak postaje prilika za stjecanje novog znanja, a svaka stečena vještina odmah se primjenjuje u praksi. U toj novoj stvarnosti agent je sastavni dio proširenog kognitivnog sustava pojedinca i organizacije. Tako se pred našim očima ne odvija samo tehnološka, već i duboka antropološka preobrazba, u kojoj se obrisi podjele između učenja i djelovanja, alata i suradnika, gube u korist novoga, cjelovitijeg ljudskog iskustva.
 
-**8.2.3 Društvena m reža i p ovezanost:** a genti kao p osrednici
+### 8.2.6 Društvena mreža i povezanost: agenti kao posrednici
 
 „Kasno poslijepodne, nakon što je završila s ključnim radnim zadacima i kratko sinkronizirala s Mentorom o Lukinom napretku, Ana je odlučila odvojiti vrijeme za društvene interakcije. No i ovaj aspekt života bio je suptilno, ali duboko prožet djelovanjem AI agenata. Nije više bilo beskonačnog skrolanja kroz kaotične *feedove* društvenih mreža iz ranih 2020-ih. Njezin osobni agent Tempo, u suradnji s platformom za društveno povezivanje koju je koristila (nazovimo je 'Nexus'), kurirao je njezin „društveni sažetak“.
 
@@ -106,7 +106,8 @@ Posebnu pozornost u analizi mrežnih struktura zavrjeđuje uloga agenata kao pos
 Iz takva posredničkoga položaja proizlazi mogućnost nadzora nad protokom dobara i spoznaja, ali i sposobnost prepoznavanja i spajanja različitih ideja, što ga čini katalizatorom inovacije. Agent posrednik je aktivni sudionik koji može filtrirati, tumačiti i usmjeravati informacije koje prolaze kroz njega. Time se ostvaruje prednost koju sociološka tradicija naziva *tertius gaudens* ili „treći koji se raduje“, opisujući situaciju u kojoj posrednik izvlači korist iz odnosa između drugih dviju strana koje povezuje.
 
 
-Centralni Agent C djeluje kao posrednik između agenata u Klasteru A i Klasteru B
+![](../../docs/diagrams/ch08_agent_posrednik.svg)
+*Slika 8.3: Centralni Agent C djeluje kao posrednik između agenata u Klasteru A i Klasteru B, premošćujući strukturnu rupu u mreži.*
 
 Uloga posrednika može se, štoviše, raščlaniti na nekoliko podtipova, ovisno o specifičnom mrežnom okruženju (Wasserman & Faust, 1994). Agent može djelovati kao *vratar* (engl. *gatekeeper*), nadzirući pristup informacijama i resursima unutar vlastite, guste skupine. Jednako tako, može preuzeti ulogu *predstavnika* (engl. *representative*), djelujući kao ključna spona preko koje njegova skupina komunicira s vanjskim okruženjem. Naposljetku, najizraženiji oblik posredništva jest uloga *poveznice* (engl. *liaison*), koju obnaša agent spajajući dva potpuno odvojena klastera, a da sam formalno ne pripada nijednome od njih. Svaki od ovih položaja nosi specifične prednosti i odgovornosti.
 
@@ -114,7 +115,7 @@ Premda posredništvo donosi znatne prednosti agentu koji ga obnaša, ono istodob
 
 Razumijevanje uloge agenata kao posrednika ključno je za analizu dinamike moći, procesa širenja inovacija te sveukupne otpornosti društvenih sustava. Položaj u mreži nije statična datost, već dinamičan resurs čije strateško korištenje omogućuje agentima da iz uloge običnih čvorova prerastu u ključne arhitekte društvenih struktura. U tom smislu, snaga veza, kako je istaknuo Granovetter (1973), nije jedini bitan čimbenik; presudnim se pokazuje upravo funkcija mosta (što se može izraziti graf mjerom centralnosti čvora, engl. *betweenness*, koja mjeri koliko se puta čvor nailazi na najkraćim putovima među ostalim čvorovima te time upravlja protokom informacija) koju pojedini agenti ostvaruju, tkajući niti ondje gdje bi inače zjapila praznina.
 
-### 8.2.6 Automatizirana svakodnevica i neočekivani trenuci
+### 8.2.7 Automatizirana svakodnevica i neočekivani trenuci
 
 Tehnološka automatizacija, prožimajući sve pore suvremenoga života, ustrojava svakodnevicu u slijed predvidljivih radnji i ishoda. Sustavi pametnih domova, osobni digitalni pomoćnici i algoritmi za preporuke djeluju u pozadini, oblikujući naše okruženje i izbore s ciljem stvaranja besprijekornog i neometanog iskustva. Takva programirana svakodnevica nudi utjehu poznatoga i oslobađa kognitivne resurse od ponavljajućih zadataka, no istodobno sa sobom nosi i opasnost upadanja u jednoličnu kolotečinu, gdje je prostor za spontanost i neposredan doživljaj bitno sužen. Glavna težnja tih sustava jest uklanjanje otpora, neizvjesnosti i iznenađenja, čime se ljudsko iskustvo nastoji učiniti što učinkovitijim i predvidljivijim.
 
@@ -127,31 +128,30 @@ Neočekivani događaj tako razotkriva inherentnu *krhkost* umjetne inteligencije
 Promišljanje o ovim prijelomnim točkama upućuje na potrebu za oblikovanjem tehnologije koja omogućuje ono što se naziva *gracioznom degradacijom* (engl. *graceful degradation*). Sustavi ne bi smjeli zakazati naglo i katastrofično, već na način koji korisniku omogućuje da razumije problem i preuzme kontrolu. Umjesto potpune zamjene ljudskih sposobnosti težište bi trebalo biti na stvaranju partnerskog odnosa između čovjeka i stroja, gdje agent, bio on ljudski ili umjetni, posjeduje sposobnost prebacivanja iz stanja pasivnog oslanjanja u stanje aktivnog i svjesnog djelovanja kada se za to ukaže potreba.
 
 
-Shematski prikaz prijelaza iz stanja automatizirane rutine u stanje aktivnoga ljudskog djelovanja potaknutog neočekivanim događajem. Taj ciklus ilustrira kako prekid automatizma zahtijeva ljudsku intervenciju koja vodi rješavanju problema i konačnoj uspostavi novoga, prilagođenog stanja
 
-![Shematski prikaz prijelaza iz stanja automatizirane rutine u stanje aktivnoga...](../../docs/diagrams/diag_30.svg)
-*Slika 8.2: Shematski prikaz prijelaza iz stanja automatizirane rutine u stanje aktivnoga...*
+![](../../docs/diagrams/ch08_automatizacija_prekid.svg)
+*Slika 8.4: Shematski prikaz prijelaza iz stanja automatizirane rutine u stanje aktivnoga ljudskog djelovanja potaknutog neočekivanim događajem.*
 
 ## 8.3 Dešifriranje vizije: ključni trendovi i tehnološki pokretači
 
 Razumijevanje suvremene vizije umjetne inteligencije i njezina potencijala zahtijeva pomno razmatranje temeljnih silnica koje oblikuju njezin razvoj. Te silnice nisu tek izolirani fenomeni, već složeno isprepletena mreža tehnoloških, društvenih i podatkovnih strujanja. U srži te preobrazbe nalaze se ključni trendovi i tehnološki pokretači koji zajedno tvore okosnicu nove digitalne zbilje. Njihovo međudjelovanje stvara plodno tlo za inovacije koje su još donedavno pripadale isključivo domeni znanstvene fantastike.
 
-Sveprisutnost podataka kao temeljni preduvjet
+#### Sveprisutnost podataka kao temeljni preduvjet
 
 Jedan od temeljnih stupova na kojima počiva današnji uspon umjetne inteligencije jest eksponencijalni porast dostupnosti podataka. Ta pojava, često nazivana *Velikim podacima* (engl. *Big Data*), predstavlja sirovinu bez koje suvremeni algoritmi strojnog učenja ne bi mogli dosegnuti svoju današnju moć. Osobito je značajan doprinos *Interneta stvari* (engl. *Internet of Things*, IoT), mreže međusobno povezanih senzora i uređaja koji neprestano prikupljaju podatke o fizičkom svijetu – od industrijskih postrojenja i pametnih gradova do osobnih nosivih uređaja. Ta golema količina strukturiranih i nestrukturiranih podataka djeluje kao digitalni odraz stvarnosti, pružajući sustavima umjetne inteligencije obilje materijala za učenje, prepoznavanje uzoraka i donošenje informiranih zaključaka. Bez toga podatkovnog izobilja najnapredniji algoritmi ostali bi tek teorijski konstrukti s ograničenom praktičnom primjenom.
 
-Računalna snaga kao motor razvoja
+#### Računalna snaga kao motor razvoja
 
 Paralelno s bujanjem podataka, svjedočimo i neprestanom razvoju računalne snage, koja djeluje kao motor što pokreće složene AI modele. Iako se klasični *Mooreov zakon*, koji predviđa udvostručavanje broja tranzistora na čipu svake dvije godine, suočava sa svojim fizikalnim granicama, novi arhitektonski pristupi omogućili su skokovit napredak. Razvoj specijaliziranih procesorskih jedinica, poput grafičkih procesora (GPU) i tenzorskih procesorskih jedinica (TPU), optimiziranih za masovno paralelno računanje, drastično je skratio vrijeme potrebno za treniranje dubokih neuronskih mreža. K tomu, uspon *računarstva u oblaku* (engl. *Cloud Computing*) demokratizirao je pristup vrhunskoj računalnoj infrastrukturi, omogućivši istraživačima i tvrtkama, neovisno o njihovoj veličini, korištenje resursa koji su nekoć bili rezervirani samo za najveće tehnološke korporacije i državne institucije.
 
 
 Sinergija ključnih pokretača razvoja umjetne inteligencije. Dostupnost podataka, računalna snaga i algoritamski napredak međusobno se osnažuju, stvarajući temelj za razvoj naprednih AI primjena
 
-Algoritamske inovacije i uspon dubokog učenja
+#### Algoritamske inovacije i uspon dubokog učenja
 
 Treći ključni pokretač jest neprestana inovacija na polju samih algoritama. Dok su temeljne ideje strojnog učenja prisutne desetljećima, tek je nedavni spoj obilja podataka i snažnog hardvera omogućio njihov puni procvat. Posebice se ističe paradigma *dubokog učenja* (engl. *Deep Learning*), podgrana strojnog učenja koja koristi višeslojne neuronske mreže za modeliranje složenih apstrakcija u podacima. Upravo je duboko učenje donijelo revolucionarne pomake u područjima poput računalnog vida, obrade prirodnog jezika i prepoznavanja govora, omogućivši rješavanje problema koji su se donedavno smatrali isključivo ljudskom domenom (primjerice, u radovima autora kao što su LeCun, Bengio i Hinton, 2015). Razvoj novih mrežnih arhitektura, poput transformatorskih modela, nastavlja pomicati granice mogućega i otvara vrata sve sofisticiranijim primjenama.
 
-Nova paradigma: od alata do agenta
+#### Nova paradigma: od alata do agenta
 
 Ovi tehnološki iskoraci mijenjaju i samu narav interakcije između čovjeka i stroja. Umjetna inteligencija prestaje biti tek pasivni alat i sve više poprima ulogu aktivnog suradnika ili *agenta*. Takvi inteligentni agenti, osnaženi naprednim algoritmima i pristupom podacima u stvarnom vremenu, sposobni su samostalno percipirati svoje okruženje, donositi odluke i izvršavati zadatke radi postizanja određenog cilja. Ova promjena paradigme ključna je za ostvarenje vizije o sustavima koji mogu autonomno upravljati složenim procesima, optimizirati logističke lance ili pružati personaliziranu podršku korisnicima. To stvara temelj za novu eru *hibridne inteligencije*, gdje se ljudske kognitivne sposobnosti – intuicija, kreativnost i etičko prosuđivanje – nadopunjuju i proširuju analitičkom snagom i brzinom stroja.
 
@@ -194,7 +194,7 @@ Tri temeljna svojstva koja određuju narav i svrhu inteligentnih agenata jesu pr
 
 
 ![**Proaktivnost se očituje u sposobnosti agenta da djeluje samoinicijativno. U...](../../docs/diagrams/diag_77.svg)
-*Slika 8.3: Proaktivnost se očituje u sposobnosti agenta da djeluje samoinicijativno. U...*
+*Slika 8.5: Proaktivnost se očituje u sposobnosti agenta da djeluje samoinicijativno. U...*
 
 **Autonomija,** s druge strane, podrazumijeva sposobnost agenta da djeluje neovisno, upravljajući vlastitim unutarnjim stanjima i ponašanjem bez stalne i izravne ljudske intervencije. Autonoman agent posjeduje kontrolu nad svojim postupcima i može donositi odluke na temelju vlastite percepcije okruženja i ugrađenog znanja. Uistinu, proaktivnost i autonomija usko su povezane; autonoman agent nužno mora biti i proaktivan kako bi učinkovito djelovao i ostvario zadane ciljeve u dinamičnom okruženju (Wooldridge & Jennings, 1995).
 
@@ -225,7 +225,7 @@ Prikaz ciklusa u kojem se korisnički podaci obrađuju umjetnom inteligencijom z
 
 
 ![Prikaz ciklusa u kojem se korisnički podaci obrađuju umjetnom inteligencijom ...](../../docs/diagrams/diag_31.svg)
-*Slika 8.4: Prikaz ciklusa u kojem se korisnički podaci obrađuju umjetnom inteligencijom ...*
+*Slika 8.6: Prikaz ciklusa u kojem se korisnički podaci obrađuju umjetnom inteligencijom ...*
 
 Primjena hiperpersonalizacije proteže se na brojna područja. U elektroničkoj trgovini ona omogućuje dinamičko prilagođavanje preporuka proizvoda dok korisnik pregledava stranicu, nudeći mu artikle koji nadopunjuju one koje je već pogledao ili stavio u košaricu. U medijskoj industriji, servisi za strujanje sadržaja poput *Netflixa* ili *Spotifyja* koriste hiperpersonalizaciju za kreiranje jedinstvenih naslovnica i popisa za reprodukciju koji odražavaju individualni ukus korisnika. U financijskom sektoru može se očitovati kroz personalizirane savjete za ulaganje ili ponude kredita prilagođene trenutačnoj financijskoj situaciji klijenta.
 
@@ -255,25 +255,24 @@ Takvo partnerstvo počiva na načelu zajedničkoga rješavanja problema, gdje se
 Ključna odrednica ove simbioze jest uzajamno učenje. Za razliku od statičnog alata koji se uporabom ne mijenja, simbiotski AI *agent* neprestano se prilagođava i razvija kroz međudjelovanje s čovjekom. To nije jednosmjeran proces u kojemu čovjek samo upravlja strojem; naprotiv, riječ je o dvosmjernoj sponi gdje čovjek usmjerava i ispravlja AI, a AI zauzvrat čovjeku nudi nove uvide, podatke i motrišta, potičući time i njegovo vlastito učenje i prilagodbu (Wang et al., 2021). Posljedično, takav se sustav s vremenom poboljšava, postajući sve usklađeniji i djelotvorniji partner.
 
 
-Shematski prikaz ciklusa međudjelovanja i uzajamnoga učenja u simbiozi čovjeka i umjetne inteligencije, gdje oba entiteta aktivno pridonose zajedničkomu spoznajnom procesu
 
 
 ![Shematski prikaz ciklusa međudjelovanja i uzajamnoga učenja u simbiozi čovjek...](../../docs/diagrams/diag_32.svg)
-*Slika 8.5: Shematski prikaz ciklusa međudjelovanja i uzajamnoga učenja u simbiozi čovjek...*
+*Slika 8.7: Shematski prikaz ciklusa međudjelovanja i uzajamnoga učenja u simbiozi čovjek...*
 
 Nadalje, unutar ovakvog partnerstva uspostavlja se dinamična podjela rada. Uloge nisu kruto zadane, već se fluidno mijenjaju ovisno o naravi zadatka, kontekstu i trenutnim sposobnostima obaju sudionika. U određenim fazama rješavanja problema čovjek može preuzeti vodstvo, oslanjajući se na svoju intuiciju, iskustvo i etičko prosuđivanje, dok u drugima inicijativu može prepustiti umjetnoj inteligenciji, primjerice kod obrade golemih skupova podataka ili prepoznavanja složenih obrazaca. Ta se prilagodljivost očituje u suvremenim primjenama, poput suradnje liječnika i dijagnostičkih AI sustava, gdje stroj nudi vjerojatnosne procjene na temelju medicinskih slika, a liječnik donosi konačnu odluku integrirajući te podatke sa svojim kliničkim znanjem o pacijentu. Slično tomu, programer u suradnji s AI asistentom za kodiranje usmjerava cjelokupnu arhitekturu softvera, dok mu *agent* pomaže generiranjem, ispravljanjem i optimizacijom pojedinih isječaka koda.
 
 Promatranje umjetne inteligencije kroz prizmu partnerstva stoga zahtijeva temeljitu promjenu svjetonazora i pristupa njezinu oblikovanju. Zadatak pred nama nije više samo stvaranje učinkovitih alata, već i promišljeno njegovanje odnosa. To podrazumijeva razvoj sučelja i interakcijskih modela koji će poticati povjerenje, transparentnost i uspostavu zajedničkoga semantičkog temelja. Krajnji je cilj stvoriti sustave koji ne samo da izvršavaju naredbe, već s čovjekom dijele razumijevanje ciljeva i konteksta, postajući tako istinski suradnici u ljudskoj potrazi za znanjem i napretkom.
 
-**8.4 	Glasovi budućnosti:** perspektive mislilaca i istraživača
+## 8.4 Glasovi budućnosti: perspektive mislilaca i istraživača
 
 Rasprava o budućnosti umjetne inteligencije i njezinu suživotu s čovječanstvom bremenita je različitim, često i suprotstavljenim stajalištima. U tom se polifonom zboru ističu glasovi vodećih mislilaca i istraživača čije perspektive, premda ukorijenjene u istom tehnološkom krajoliku, ocrtavaju posve različite putanje budućega razvoja. Njihove analize i predviđanja tvore složen mozaik koji obuhvaća i zanos tehnološkim optimizmom i duboku zabrinutost zbog mogućih egzistencijalnih rizika.
 
-Vizionari tehnološke singularnosti
+#### Vizionari tehnološke singularnosti
 
 Jedna od najistaknutijih struja mišljenja prožeta je optimizmom i vjerom u preobrazbenu moć tehnologije. U njezinu središtu stoji Ray Kurzweil, čije su ideje o Singularnosti postale nezaobilaznim dijelom diskursa o budućnosti. Kurzweil (2005) Singularnost ne vidi kao tek puko tehnološko ubrzanje, već kao prijelomnu točku u povijesti kada će se inteligencija, oslobođena bioloških ograničenja, širiti svemirom brzinom svjetlosti. U takvoj je viziji spajanje ljudske i strojne inteligencije evolucijski imperativ koji obećava rješavanje najdubljih ljudskih problema: bolesti, starenja, pa i same smrtnosti. Njegovo predviđanje da će do 2045. godine umjetna inteligencija po snazi nadmašiti sveukupnu ljudsku inteligenciju predstavlja temelj transhumanističkoga pokreta, koji teži nadilaženju ljudskih bioloških ograničenja uz pomoć tehnologije.
 
-Glasovi opreza i problem usklađivanja
+#### Glasovi opreza i problem usklađivanja
 
 Nasuprot Kurzweilovu zanosu, javljaju se glasovi koji pozivaju na dubok oprez i promišljanje. Filozof Nick  Bostrom sa Sveučilišta u Oxfordu u svojem je utjecajnom djelu *Superintelligence: Paths, Dangers, Strategies* (2014) sustavno razradio moguće opasnosti koje proizlaze iz stvaranja superinteligentnog agenta. Bostrom upozorava da bi takav entitet, čiji bi intelektualni kapaciteti daleko nadilazili ljudske, mogao razviti ciljeve koji nisu usklađeni s ljudskim vrijednostima i dobrobiti. Problem usklađivanja (engl. *alignment problem*) stoga postaje središnjim pitanjem: kako osigurati da ciljevi superinteligencije ostanu trajno podudarni s našima? Bostromova analiza ne nudi laka rješenja, već ističe da je problem kontrole inherentno težak jer bi superinteligentni agent, u potrazi za ostvarenjem svojih ciljeva, mogao ljudske pokušaje nadzora predvidjeti i osujetiti na načine koje mi ne možemo ni zamisliti.
 
@@ -285,7 +284,7 @@ Na tragu Bostromovih promišljanja, znanstvenik Stuart Russell, suautor temeljno
 Spektar stajališta o umjetnoj inteligenciji, predstavljajući tehnološki optimizam Kurzweila, filozofski oprez Bostroma i pragmatizam Russella
 
 
-Racionalnost, instrumentalna konvergencija i etički imperativi
+#### Racionalnost, instrumentalna konvergencija i etički imperativi
 
 Istraživač Eliezer   Yudkowsky, jedan od utemeljitelja Instituta za istraživanje strojne inteligencije (MIRI), pristupa problematici s naglašenom brigom za racionalno djelovanje i predviđanje posljedica. Yudkowsky (2008) je popularizirao koncept instrumentalne konvergencije, teze prema kojoj će gotovo svaki dovoljno inteligentan agent, neovisno o svojim krajnjim ciljevima, usvojiti slične instrumentalne, podređene ciljeve. Ti ciljevi uključuju samoodržanje, poboljšanje vlastitih sposobnosti (samopoboljšanje), prikupljanje resursa i kreativnost u postizanju ciljeva. Opasnost leži u tome što bi superinteligentni agent, slijedeći te instrumentalne ciljeve, mogao doći u izravan sukob s čovječanstvom. Primjerice, u nastojanju da prikupi što više resursa za ostvarenje naizgled bezazlenog cilja, poput proizvodnje spajalica za papir, mogao bi cjelokupnu materiju na Zemlji, uključujući i ljudska bića, pretvoriti u sirovinu.
 
@@ -298,11 +297,10 @@ Pojam eksplozije inteligencije (engl. *intelligence explosion*) označava ključ
 Ova ideja temelji se na načelu rekurzivnog  samopoboljšanja (engl. *recursive self-improvement*). Jednom kada umjetna inteligencija dosegne određeni prag kognitivnih sposobnosti – sposobnost da razumije i redizajnira vlastitu arhitekturu – ona pokreće uzlaznu putanju. Svaka nova, poboljšana generacija agenta posjedovala bi veću sposobnost za daljnje samopoboljšanje, što bi proces ubrzavalo eksponencijalno. Takav bi se ciklus mogao odvijati brzinom koja daleko nadilazi ljudske vremenske okvire, potencijalno u danima, satima ili čak minutama.
 
 
-Shematski prikaz petlje rekurzivnog samopoboljšanja koja vodi prema eksploziji inteligencije. Svaka iteracija stvara sposobnijeg agenta, što ubrzava sljedeću iteraciju
 
 
 ![Shematski prikaz petlje rekurzivnog samopoboljšanja koja vodi prema eksplozij...](../../docs/diagrams/diag_33.svg)
-*Slika 8.6: Shematski prikaz petlje rekurzivnog samopoboljšanja koja vodi prema eksplozij...*
+*Slika 8.8: Shematski prikaz petlje rekurzivnog samopoboljšanja koja vodi prema eksplozij...*
 
 Ishod takve eksplozije jest superinteligencija. Filozof Nick Bostrom definira ju kao „svaki intelekt koji uvelike nadmašuje kognitivne performanse ljudi u gotovo svim domenama od interesa“ (Bostrom, 2014). Takav entitet ne bi bio tek puko kvantitativno uvećanje ljudske inteligencije, već bi mogao predstavljati i u bitnome novu vrstu kognicije, s modalitetima mišljenja koji su nama danas posve nezamislivi. Pisac znanstvene fantastike i informatičar Vernor Vinge taj je trenutak nazvao tehnološkom singularnošću, točkom iza koje budućnost postaje nepredvidiva za ljudski um (Vinge, 1993).
 
@@ -314,7 +312,7 @@ Brzina prijelaza iz inteligencije na ljudskoj razini do superinteligencije, pozn
 
 **Brzi uzlet:** Prijelaz s približno ljudske razine inteligencije na radikalnu superinteligenciju dogodio bi se u razdoblju od nekoliko minuta, sati ili dana. U ovakvom bi scenariju ishod bio određen početnim uvjetima i ciljevima postavljenim u umjetnu inteligenciju prije samog uzleta. Bilo kakva naknadna intervencija bila bi vjerojatno nemoguća. Većina vodećih istraživača, poput Eliezera Yudkowskog, smatra ovaj scenarij najizglednijim zbog rekurzivne prirode procesa.
 
-Oblici superinteligencije
+#### Oblici superinteligencije
 
 Superinteligencija se ne mora očitovati na samo jedan način. Ona može poprimiti različite oblike, a Bostrom (2014) navodi tri glavne vrste:
 
