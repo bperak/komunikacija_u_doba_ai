@@ -1,6 +1,0 @@
-%%{init: {'theme': 'base', 'themeVariables': { 'background': '#ffffff'}}}%%
-graph TD
-A[Misaoni slijed: <br> "Nedostaju mi podatci."] --> B{Radnja 1: Poziv oruđa <br> za pretragu letova};
-B -- Nalog: flight_search_api.call() --> C[Opažanje 1: <br> Popis letova zaprimljen. <br> Najpovoljniji let: 150 €];
-C --> D{Radnja 2: Poziv oruđa <br> za pretragu smještaja};
-D -- Nalog: hotel_booking_api.call() --> E[Opažanje 2: <br> Popis smještaja zaprimljen. <br> Nekoliko opcija zadovoljava kriterije.];

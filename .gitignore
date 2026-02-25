@@ -30,3 +30,6 @@ manuscript/mermaid_diagrami.md
 # OS
 Thumbs.db
 .DS_Store
+
+# Backup copies of diagrams
+docs/diagrams copy*/
