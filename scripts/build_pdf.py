@@ -658,6 +658,37 @@ def _extract_div(html_text: str, css_class: str):
     return extracted, remaining
 
 
+def inline_svg_images(html_text: str, base_dir: Path) -> str:
+    """Replace <img src="...svg"> with inline SVG content for a self-contained HTML."""
+    def _replace_svg_img(m):
+        full_tag = m.group(0)
+        src = m.group(1)
+        if not src.endswith('.svg'):
+            return full_tag
+        svg_path = (base_dir / src).resolve()
+        if not svg_path.exists():
+            return full_tag
+        try:
+            svg_content = svg_path.read_text(encoding='utf-8')
+            svg_start = svg_content.find('<svg')
+            if svg_start < 0:
+                return full_tag
+            svg_content = svg_content[svg_start:]
+            svg_content = re.sub(r'width="[^"]*"', '', svg_content, count=1)
+            svg_content = svg_content.replace('width="100%"', '', 1)
+            svg_content = re.sub(
+                r'<svg ',
+                '<svg style="max-width:100%; height:auto; display:block; margin:0 auto;" ',
+                svg_content, count=1
+            )
+            return svg_content
+        except Exception:
+            return full_tag
+
+    html_text = re.sub(r'<img\s+src="([^"]+\.svg)"[^>]*/?\s*>', _replace_svg_img, html_text)
+    return html_text
+
+
 def postprocess_html(html_text: str) -> str:
     """Add CSS classes to image paragraphs and caption paragraphs in generated HTML."""
 
@@ -777,8 +808,10 @@ def build_html(merged_md: str) -> Path:
     # Post-process: add classes for images and captions
     raw_html = html_path.read_text(encoding="utf-8")
     processed = postprocess_html(raw_html)
+    processed = inline_svg_images(processed, OUTPUT_DIR)
     html_path.write_text(processed, encoding="utf-8")
     print("  Post-processing: klase za slike i opise dodane.")
+    print("  SVG dijagrami ugrađeni inline u HTML.")
 
     return html_path
 
@@ -816,6 +849,7 @@ def build_html_manual(merged_md: str) -> Path:
 </html>"""
 
     full_html = postprocess_html(full_html)
+    full_html = inline_svg_images(full_html, OUTPUT_DIR)
     html_path.write_text(full_html, encoding="utf-8")
     return html_path
 
