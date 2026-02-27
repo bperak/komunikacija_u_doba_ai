@@ -41,6 +41,11 @@ BOOK_CSS = """
     h1:first-of-type { page-break-before: avoid; }
     blockquote, figure, .img-wrap, pre, table { page-break-inside: avoid; }
     body { font-size: 11pt; }
+    body {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 body {
@@ -368,7 +373,7 @@ em { font-style: italic; }
 
 /* ── Inner title page (naslovni list) ── */
 .title-page {
-    page-break-before: always;
+    page-break-before: auto;
     page-break-after: always;
     min-height: 900px;
     display: flex;
@@ -430,7 +435,7 @@ em { font-style: italic; }
 
 /* ── Impresum / Colophon page ── */
 .impresum-page {
-    page-break-before: always;
+    page-break-before: auto;
     page-break-after: always;
     min-height: 860px;
     display: flex;
@@ -489,7 +494,7 @@ em { font-style: italic; }
 
 /* ── Predgovor ── */
 .predgovor-page {
-    page-break-before: always;
+    page-break-before: auto;
     page-break-after: always;
     max-width: 700px;
     margin: 0 auto;
@@ -538,11 +543,69 @@ em { font-style: italic; }
 
 @media print {
     .book-cover {
+        width: 100%;
+        margin: 0;
         page-break-after: always;
-        min-height: 100vh;
+        page-break-inside: avoid;
+        break-inside: avoid-page;
+        min-height: 225mm;
+        height: 225mm;
+        overflow: hidden;
+    }
+    .cover-content {
+        min-height: 225mm;
+        height: 225mm;
+        padding: 1.2rem 1.4rem 1.2rem 1.4rem;
+    }
+    .cover-top,
+    .cover-middle {
+        padding: 0;
+    }
+    .cover-author {
+        font-size: 1.35em;
+        letter-spacing: 0.14em;
+    }
+    .cover-title {
+        font-size: 2.0em !important;
+        line-height: 1.15 !important;
+        margin-bottom: 0.35em !important;
+    }
+    .cover-subtitle {
+        font-size: 1.15em;
+        line-height: 1.35;
+    }
+    .cover-institution {
+        font-size: 0.82em;
+        letter-spacing: 0.1em;
+        white-space: nowrap;
+    }
+    .cover-year {
+        font-size: 0.8em;
+    }
+    .cover-bottom {
+        display: none;
     }
     .title-page {
-        min-height: 100vh;
+        min-height: 225mm;
+        height: 225mm;
+        padding: 1.5rem 1rem;
+        justify-content: space-between;
+        page-break-inside: avoid;
+        break-inside: avoid-page;
+    }
+    .title-page-author {
+        margin-bottom: 1.8em;
+    }
+    .title-page-title {
+        font-size: 2em;
+        margin-bottom: 0.4em;
+    }
+    .title-page-subtitle {
+        margin-bottom: 1.8em;
+    }
+    .title-page-bottom {
+        margin-top: 0;
+        padding-top: 0;
     }
     .impresum-page {
         min-height: 100vh;

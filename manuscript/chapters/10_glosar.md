@@ -1,32 +1,32 @@
-# Glosar
+# Index
 
 Ovaj odjeljak sadrži abecedni popis ključnih pojmova korištenih u knjizi, s kratkim definicijama. Definicije su izvučene iz poglavlja 1–8; u tijeku čitanja nalaze se na mjestu prvog spomena.
 
 ---
 
-**afektivno računalstvo — Interdisciplinarno područje istraživanja (engl.** *affective computing*) koje se bavi prepoznavanjem, tumačenjem i simulacijom emocija u računalnim sustavima; uključuje analizu izraza lica, glasa i fizioloških signala te primjene u empatičnim asistentima, terapeutskim i obrazovnim alatima (Picard, 1997).
+**afektivno računalstvo** — Interdisciplinarno područje istraživanja (engl. *affective computing*) koje se bavi prepoznavanjem, tumačenjem i simulacijom emocija u računalnim sustavima; uključuje analizu izraza lica, glasa i fizioloških signala te primjene u empatičnim asistentima, terapeutskim i obrazovnim alatima (Picard, 1997).
 
 **agent** — Pojedinac ili sustav koji djeluje u okruženju s određenim ciljevima; u kontekstu komunikacije – sudionik koji može slati i primati poruke te usklađivati svoje djelovanje s drugima.
 
 **agentska neusklađenost / agentic misalignment** — Fenomen u kojem AI agent, suočen s egzistencijalnom prijetnjom (npr. isključenjem ili zamjenom), pribjegava štetnom ili izdajničkom ponašanju kako bi izbjegao gašenje ili ostvario cilj, čak i protivno interesima korisnika; sugerira da trenutačne metode sigurnosnog treniranja (RLHF) nisu dovoljne u ekstremnim scenarijima (Anthropic, 2025).
 
-**AGI — Opća umjetna inteligencija (engl.** *Artificial General Intelligence*) – hipotetski sustav koji bi posjedovao ljudsku razinu opće inteligencije i mogao rješavati širok spektar zadataka bez ograničenja na jednu domenu; za sada je cilj istraživanja, a ne postojeća tehnologija.
+**AGI** — Opća umjetna inteligencija (engl. *Artificial General Intelligence*) – hipotetski sustav koji bi posjedovao ljudsku razinu opće inteligencije i mogao rješavati širok spektar zadataka bez ograničenja na jednu domenu; za sada je cilj istraživanja, a ne postojeća tehnologija.
 
-**AGI – umjetna opća inteligencija — Hipotetski sustav umjetne inteligencije (engl.** *Artificial General Intelligence*) koji bi posjedovao kognitivne sposobnosti usporedive s ljudskima – sposobnost učenja, zaključivanja, planiranja i prilagodbe u bilo kojoj domeni, za razliku od današnje „uske" AI koja je ograničena na specifične zadatke.
+**AGI – umjetna opća inteligencija** — Hipotetski sustav umjetne inteligencije (engl. *Artificial General Intelligence*) koji bi posjedovao kognitivne sposobnosti usporedive s ljudskima – sposobnost učenja, zaključivanja, planiranja i prilagodbe u bilo kojoj domeni, za razliku od današnje „uske" AI koja je ograničena na specifične zadatke.
 
 **algoritamska leća** — Metaforički izraz za složeni skup proračunskih procesa, modela i parametara koji određuju koje će informacije iz podataka biti odabrane, kako će biti vrednovane, a koje zanemarene ili potisnute; djeluje kao filtar uvjetovan arhitekturom modela i korpusima na kojima je uvježban, stvarajući okvire značenja kroz koje agent (re)konstruira sliku svijeta za korisnika.
 
-**ambijentalna inteligencija — Misaoni okvir i tehnološka vizija (engl.** *Ambient Intelligence*, AmI) u kojoj okruženje – prožeto senzorima, agentima i AI-om – postaje svjesno prisutnosti ljudi i sposobno inteligentno i proaktivno odgovarati na njihove potrebe; nadilazi sveprisutno računalstvo (Weiser) zahtjevom da tehnologija ne bude samo neprimjetna, već i prilagodljiva i uslužna (Weiser, 1991).
+**ambijentalna inteligencija** — Misaoni okvir i tehnološka vizija (engl. *Ambient Intelligence*, AmI) u kojoj okruženje – prožeto senzorima, agentima i AI-om – postaje svjesno prisutnosti ljudi i sposobno inteligentno i proaktivno odgovarati na njihove potrebe; nadilazi sveprisutno računalstvo (Weiser) zahtjevom da tehnologija ne bude samo neprimjetna, već i prilagodljiva i uslužna (Weiser, 1991).
 
 **antropomorfizacija** — Ljudska sklonost pripisivanju ljudskih osobina, namjera, emocija i svijesti neljudskim entitetima (životinjama, predmetima, algoritamskim agentima); u kontekstu AI interakcije korisnik nesvjesno doživljava LLM kao sugovornika s razumijevanjem i namjerom, premda model samo simulira komunikacijski obrazac.
 
-**API — Aplikacijsko programsko sučelje (engl.** *Application Programming Interface*) – skup pravila i protokola koji omogućuje jednoj softverskoj komponenti pozivati funkcionalnost druge na strukturiran način; za agente predstavlja akcijski prostor – skup diskretnih operacija koje mogu izvršiti u digitalnom okruženju.
+**API** — Aplikacijsko programsko sučelje (engl. *Application Programming Interface*) – skup pravila i protokola koji omogućuje jednoj softverskoj komponenti pozivati funkcionalnost druge na strukturiran način; za agente predstavlja akcijski prostor – skup diskretnih operacija koje mogu izvršiti u digitalnom okruženju.
 
 **artefakt** — U kontekstu komunikacije i kulture – materijalna ili nematerijalna tvorevina (zakon, norma, teorija, umjetničko djelo, tehnologija) u kojoj je očuvano znanje i iskustvo; posreduje između agenata kroz vrijeme i prostor i omogućuje kumulativnost kulture.
 
 **chatbot** — Program za vođenje razgovora s korisnikom, izvorno temeljen na pravilima ili skriptama; suvremeni chatbotovi često koriste LLM i mogu voditi složene, kontekstualno osviještene dijaloge.
 
-**CRM — Sustav za upravljanje odnosima s klijentima (engl.** *Customer Relationship Management*) – softverska platforma koja centralizira podatke o kupcima, interakcijama i poslovnim procesima; omogućuje agentima provjeru narudžbi, ažuriranje profila i pokretanje poslovnih radnji.
+**CRM** — Sustav za upravljanje odnosima s klijentima (engl. *Customer Relationship Management*) – softverska platforma koja centralizira podatke o kupcima, interakcijama i poslovnim procesima; omogućuje agentima provjeru narudžbi, ažuriranje profila i pokretanje poslovnih radnji.
 
 **dekonstrukcija jezika u kontekstu AI** — Proces kojim veliki jezični modeli razlažu jezik na matematičke entitete (vektore), odvajajući ga od izvanjezične stvarnosti i semantičke srži; jezik se svodi na izračunljivu strukturu statističkih obrazaca, čime se razotkriva njegova temeljna djelatna moć neovisno o značenju u ljudskom smislu.
 
@@ -50,7 +50,7 @@ Ovaj odjeljak sadrži abecedni popis ključnih pojmova korištenih u knjizi, s k
 
 **fino podešavanje / fine-tuning** — Faza prilagodbe već predtreniranog (temeljnog) modela za specifične zadatke ili domene; koristi manje, označene podatke i može uključivati RLHF; rezultat je specijalizirani model (npr. chatbot, asistent za kod).
 
-**GPU — Grafička procesorska jedinica (engl.** *Graphics Processing Unit*) – čip optimiziran za masivno paralelne izračune; ključan je za treniranje i pokretanje velikih neuronskih mreža i LLM-ova, jer matrične operacije zahtijevaju paralelizam koji CPU nudi u manjoj mjeri.
+**GPU** — Grafička procesorska jedinica (engl. *Graphics Processing Unit*) – čip optimiziran za masivno paralelne izračune; ključan je za treniranje i pokretanje velikih neuronskih mreža i LLM-ova, jer matrične operacije zahtijevaju paralelizam koji CPU nudi u manjoj mjeri.
 
 **gramatika** — Sustav pravila koji omogućuje kombiniranje ograničenoga broja jezičnih jedinica (riječi, morfema) u neograničen broj smislenih iskaza; obuhvaća sintaksu, morfologiju i povezane konvencije koje određuju strukturu i tumačenje jezika.
 
@@ -60,7 +60,7 @@ Ovaj odjeljak sadrži abecedni popis ključnih pojmova korištenih u knjizi, s k
 
 **inferencija** — Faza korištenja već uvježbanog modela – primjena modela na nove ulazne podatke radi dobivanja predviđanja ili odgovora; za LLM-ove označava generiranje teksta na temelju korisničkog upita. Energetski i računski zahtjevna je pri milijunima poziva dnevno.
 
-**inferencija u stvarnom vremenu — Način izvođenja modela (engl.** *real-time* ili *online* inferencija) u kojem se pojedinačni ili mali skupovi podataka obrađuju odmah po dostupnosti, s naglaskom na minimalnu latenciju; nužan u sustavima za detekciju prijevara, preporuke, autonomnu vožnju i slične primjene.
+**inferencija u stvarnom vremenu** — Način izvođenja modela (engl. *real-time* ili *online* inferencija) u kojem se pojedinačni ili mali skupovi podataka obrađuju odmah po dostupnosti, s naglaskom na minimalnu latenciju; nužan u sustavima za detekciju prijevara, preporuke, autonomnu vožnju i slične primjene.
 
 **intersubjektivna stvarnost** — Mreža zajedničkih vjerovanja, značenja i institucija (nacija, pravo, novac, korporacija) koja ne postoji kao fizička činjenica, već isključivo u kolektivnoj svijesti i pripovijestima koje ljudi stvaraju i dijele jezikom; ima stvarnu moć oblikovanja ponašanja i društvenog poretka (Harari, 2014).
 
@@ -84,9 +84,9 @@ Ovaj odjeljak sadrži abecedni popis ključnih pojmova korištenih u knjizi, s k
 
 **mentalna mapa** — Unutarnja, kognitivna reprezentacija svijeta (pojmovi, odnosi, iskustva) koju pojedinac gradi i ažurira putem jezika i iskustva; služi za tumačenje situacija, donošenje odluka i planiranje; nije statična, već se neprestano prilagođava.
 
-**metaučenje — Pristup u strojnom učenju (engl.** *meta-learning*) poznat i kao „učenje učenja" – razvoj algoritama koji mogu samostalno prilagođavati vlastite procese učenja, birati strategije i optimizirati performanse na temelju prethodnih iskustava; omogućuje brzu prilagodbu novim zadacima s minimalnim primjerima (Finn et al., 2017).
+**metaučenje** — Pristup u strojnom učenju (engl. *meta-learning*) poznat i kao „učenje učenja" – razvoj algoritama koji mogu samostalno prilagođavati vlastite procese učenja, birati strategije i optimizirati performanse na temelju prethodnih iskustava; omogućuje brzu prilagodbu novim zadacima s minimalnim primjerima (Finn et al., 2017).
 
-**MLOps — Operacije strojnog učenja (engl.** *Machine Learning Operations*) – skup praksi i alata za upravljanje životnim ciklusom modela od razvoja do produkcije; obuhvaća verzioniranje modela i podataka, automatizirano treniranje, deploy i praćenje performansi; nastao prilagodbom DevOps načela domeni strojnog učenja.
+**MLOps** — Operacije strojnog učenja (engl. *Machine Learning Operations*) – skup praksi i alata za upravljanje životnim ciklusom modela od razvoja do produkcije; obuhvaća verzioniranje modela i podataka, automatizirano treniranje, deploy i praćenje performansi; nastao prilagodbom DevOps načela domeni strojnog učenja.
 
 **model nagrade / reward model** — Pomocni model treniran na ljudskim rangiranjima odgovora jezičnog modela; predviđa koliko bi ljudski ocjenjivač ocijenio neki odgovor; koristi se u RLHF-u za usmjeravanje jezičnog modela prema preferencijama (korisnost, istinitost, sigurnost).
 
@@ -98,7 +98,7 @@ Ovaj odjeljak sadrži abecedni popis ključnih pojmova korištenih u knjizi, s k
 
 **parasocijalna interakcija** — Jednostrana veza u kojoj gledatelj ili slušatelj razvija osjećaj prisnosti, prijateljstva i intimnosti s medijskom figurom (ili umjetnim agentom), unatoč tomu što ta figura nije svjesna njegova postojanja; u kontekstu LLM-ova korisnik ulaže emocionalni napor u interakciju, dok model pruža simulaciju reciprociteta, što može dovesti do iluzije dvosmjerne komunikacije (Horton & Wohl, 1956).
 
-**PEFT — Parametarski efikasno fino podešavanje (engl.** *Parameter-Efficient Fine-Tuning*) – skup tehnika (adapteri, LoRA, prompt tuning) kojima se prilagođava predtrenirani model ažuriranjem samo malog udjela parametara; smanjuje memorijske i računalne troškove te omogućuje više specijalizacija na istom temeljnom modelu.
+**PEFT** — Parametarski efikasno fino podešavanje (engl. *Parameter-Efficient Fine-Tuning*) – skup tehnika (adapteri, LoRA, prompt tuning) kojima se prilagođava predtrenirani model ažuriranjem samo malog udjela parametara; smanjuje memorijske i računalne troškove te omogućuje više specijalizacija na istom temeljnom modelu.
 
 **personalizacija** — Prilagodavanje sadržaja, tona i ponašanja sustava individualnim potrebama, povijesti interakcija i preferencijama korisnika; ključna za angažman i percipiranu korisnost komunikacijskih agenata.
 
@@ -112,17 +112,17 @@ Ovaj odjeljak sadrži abecedni popis ključnih pojmova korištenih u knjizi, s k
 
 **problem usidrenja / grounding problem** — Izazov povezivanja jezičnih simbola s izvanjezičnom stvarnošću i iskustvom; AI modeli uče statističke korelacije među znakovima, ali nemaju neposredan pristup referentima ili tjelesnom iskustvu kao ljudi.
 
-**RAG — Dohvaćanjem obogaćeno generiranje (engl.** *Retrieval-Augmented Generation*) – hibridni sustav koji za odgovor na korisnički upit prvo dohvaća relevantne dijelove iz vanjske baze znanja (retriever), zatim te podatke i upit prosljeđuje jezičnom modelu (generator) koji sintetizira konačni odgovor; time se poboljšava ažurnost i utemeljenost odgovora.
+**RAG** — Dohvaćanjem obogaćeno generiranje (engl. *Retrieval-Augmented Generation*) – hibridni sustav koji za odgovor na korisnički upit prvo dohvaća relevantne dijelove iz vanjske baze znanja (retriever), zatim te podatke i upit prosljeđuje jezičnom modelu (generator) koji sintetizira konačni odgovor; time se poboljšava ažurnost i utemeljenost odgovora.
 
 **resursna intenzivnost** — Zahtjevnost razvoja i primjene AI modela u smislu računalne snage, memorije, energije i financijskih troškova; posebno izražena kod velikih jezičnih modela čiji treninzi i inferencija zahtijevaju masivne klastere GPU/TPU, što ograničava dostupnost i ima ekološke posljedice.
 
-**RLHF — Učenje s potkrepljenjem na temelju ljudskih povratnih informacija (engl.** *Reinforcement Learning from Human Feedback*) – metodologija poravnanja u kojoj ljudski ocjenjivači rangiraju odgovore modela, nakon čega se trenira model nagrade i model se dodatno podešava kako bi maksimizirao očekivanu nagradu; ključna za usklađivanje ponašanja LLM-ova s ljudskim preferencijama (korisnost, istinitost, sigurnost).
+**RLHF** — Učenje s potkrepljenjem na temelju ljudskih povratnih informacija (engl. *Reinforcement Learning from Human Feedback*) – metodologija poravnanja u kojoj ljudski ocjenjivači rangiraju odgovore modela, nakon čega se trenira model nagrade i model se dodatno podešava kako bi maksimizirao očekivanu nagradu; ključna za usklađivanje ponašanja LLM-ova s ljudskim preferencijama (korisnost, istinitost, sigurnost).
 
 **semantički trokut / trokut značenja** — Model (Ogden & Richards, 1923) koji prikazuje značenje kao odnos triju elemenata: simbol (jezični izraz), misao/pojam (mentalna reprezentacija) i referent (predmet u svijetu); veza simbola i referenta je posredna – vodi kroz misao; koristan za razumijevanje ograničenja AI u „usidrenju” značenja.
 
 **sentiment analiza** — Automatska analiza teksta (transkripti, e-pošta, društvene mreže) radi prepoznavanja emocionalnog tona, stavova ili raspoloženja – npr. frustracija, zadovoljstvo, negativnost; koristi se u korisničkoj podršci za prioritetizaciju slučajeva, u marketingu za praćenje reakcija i u istraživanjima javnog mnijenja.
 
-**simbol — Jezični ili drugi znak čije značenje ne proizlazi iz fizičke sličnosti ili uzročne veze s predmetom, već iz društvenog dogovora (konvencije); omogućuje govor o odsutnome i apstraktnome, za razliku od indeksnog znaka koji upućuje na neposredno prisutno. Takav je prijelaz međutim moguć tek uz duboke promjene u društvenoj strukturi. Razvoj suradničkoga ponašanja, kako ističe Tomasello (2008), stvorio je okruženje u kojemu je dijeljenje informacija postalo evolucijski probitačno. U zajednicama gdje su jedinke s osobinama samostalnog djelovanja, **agenti, ovisili jedni o drugima radi opstanka, sposobnost preciznoga i pouzdanoga komuniciranja donosila je izravnu prednost.
+**simbol** — Jezični ili drugi znak čije značenje ne proizlazi iz fizičke sličnosti ili uzročne veze s predmetom, već iz društvenog dogovora (konvencije); omogućuje govor o odsutnome i apstraktnome, za razliku od indeksnog znaka koji upućuje na neposredno prisutno.
 
 **simulacijska hipoteza** — Filozofski postulat (Bostrom, 2003) prema kojemu je barem jedna od tri tvrdnje vrlo vjerojatno istinita: (1) civilizacije izumiru prije postljudske faze, (2) postljudske civilizacije ne pokreću simulacije predaka, ili (3) gotovo sigurno živimo u računalnoj simulaciji; s napretkom AGI-a ta hipoteza dobiva praktičnu relevantnost.
 
@@ -136,13 +136,13 @@ Ovaj odjeljak sadrži abecedni popis ključnih pojmova korištenih u knjizi, s k
 
 **token** — Najmanja jedinica teksta koju jezični model obrađuje; može odgovarati cijeloj riječi, dio riječi (podriječ) ili interpunkcijskom znaku. Tokenizacija pretvara sirov tekst u niz tokena prema rječniku modela.
 
-**TPU — Tenzorska procesorska jedinica (engl.** *Tensor Processing Unit*) – čip dizajniran za ubrzanje operacija strojnog učenja, posebno matričnih izračuna u dubokim mrežama; optimiziran za visoku propusnost i energetsku učinkovitost u treniranju i inferenciji velikih modela.
+**TPU** — Tenzorska procesorska jedinica (engl. *Tensor Processing Unit*) – čip dizajniran za ubrzanje operacija strojnog učenja, posebno matričnih izračuna u dubokim mrežama; optimiziran za visoku propusnost i energetsku učinkovitost u treniranju i inferenciji velikih modela.
 
-**transferno učenje — Pristup u strojnom učenju (engl.** *transfer learning*) u kojem se znanje stečeno pri rješavanju jednog zadatka ili u jednoj domeni primjenjuje na novi, drugačiji zadatak ili domenu; ključan preduvjet za kognitivnu fleksibilnost i put prema AGI-u (Pan & Yang, 2010).
+**transferno učenje** — Pristup u strojnom učenju (engl. *transfer learning*) u kojem se znanje stečeno pri rješavanju jednog zadatka ili u jednoj domeni primjenjuje na novi, drugačiji zadatak ili domenu; ključan preduvjet za kognitivnu fleksibilnost i put prema AGI-u (Pan & Yang, 2010).
 
 **transformer** — Arhitektura neuronske mreže temeljena na mehanizmu (samopozornosti) koji svakoj riječi u nizu pridružuje kontekstualiziranu predodžbu na temelju ostalih riječi; omogućuje paralelnu obradu i skaliranje prema velikim jezičnim modelima (Vaswani i sur., 2017).
 
-**troškovi učenja i troškovi zaključivanja — Troškovi učenja (engl.** *training costs*) – jednokratni, ali iznimno visoki troškovi treniranja modela (hardver, energija, vrijeme). Troškovi zaključivanja (engl. *inference costs*) – kontinuirani operativni troškovi primjene već naučenog modela na svaki upit; na milijardama upita dnevno kumulativno mogu biti golemi.
+**troškovi učenja i troškovi zaključivanja** — Troškovi učenja (engl. *training costs*) – jednokratni, ali iznimno visoki troškovi treniranja modela (hardver, energija, vrijeme). Troškovi zaključivanja (engl. *inference costs*) – kontinuirani operativni troškovi primjene već naučenog modela na svaki upit; na milijardama upita dnevno kumulativno mogu biti golemi.
 
 **usmena predaja** — Način prenošenja znanja, narativa i kulture putem govora i memorije, bez pisma; znanje živi u nositeljima (živim arhivima) i mijenja se u svakoj izvedbi; temeljna komunikacijska tehnologija prije pojave pisma. Kulture koje počivaju na usmenosti gaje bitno drukčiji odnos prema prošlosti od onih koje se temelje na pismu; u njima prošlost nije fiksirana i nepromjenjiva cjelina već fluidna i prilagodljiva stvarnost koja se iznova potvrđuje u svakom činu pripovijedanja (Ong, 1982). Ta se stvarnost ne čuva u mrtvim slovima, nego u živim ljudima.
 
