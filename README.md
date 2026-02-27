@@ -8,6 +8,8 @@ Filozofski fakultet, Sveučilište u Rijeci · Rijeka, 2025.
 
 ISBN (elektroničko izdanje): 978-953-361-147-1
 
+![Naslovnica knjige](https://github.com/bperak/komunikacija_u_doba_ai/releases/download/v1.0.0/Perak_Komunikacija_u_doba_AI_2025_naslovnica.png)
+
 ---
 
 ## O knjizi
@@ -29,6 +31,11 @@ Ovo izdanje ima novi oblik — **agentno obnavljajuće knjige**. Prvo izdanje bi
 
 Knjiga je dostupna u **HTML** i **PDF** formatu.
 
+Trenutni release asseti:
+
+- `Perak_Komunikacija_u_doba_AI_2025.pdf`
+- `Perak_Komunikacija_u_doba_AI_2025.html`
+
 ---
 
 ## Sadržaj knjige
@@ -41,6 +48,8 @@ Knjiga je dostupna u **HTML** i **PDF** formatu.
 6. **Od modela do partnera** — tehnike upućivanja, lanci misli, memorija i kontekst
 7. **Izgradnja komunikacijskog partnera** — RAG, agentura, alati
 8. **Digitalni suputnici** — višeagentski sustavi, etički izazovi, budućnost
+9. **Referencije**
+10. **Index**
 
 ---
 
@@ -65,7 +74,7 @@ Knjiga je dostupna u **HTML** i **PDF** formatu.
 
 - **Python 3.10+**
 - **Pandoc** (za konverziju Markdown → HTML/PDF)
-- **XeLaTeX** (MiKTeX ili TeX Live, za PDF generiranje)
+- **Google Chrome / Microsoft Edge** (headless print za PDF)
 - **Node.js** (za regeneriranje Mermaid dijagrama, opcionalno)
 
 ### Koraci
@@ -86,6 +95,9 @@ python scripts/build_pdf.py
 ```
 
 Generirane datoteke nalaze se u `manuscript/` direktoriju.
+
+PDF izlaz je podešen bez browser header/footer artefakata (datum, URL, vrijeme), s
+running headerom i numeracijom koja kreće od poglavlja **Uvod**.
 
 ---
 
