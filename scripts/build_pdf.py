@@ -37,6 +37,7 @@ BOOK_CSS = """
 <style>
 @media print {
     @page { size: A4; margin: 2.5cm 2cm 2.5cm 2.5cm; }
+    @page:first { size: A4; margin: 0; }
     h1 { page-break-before: always; }
     h1:first-of-type { page-break-before: avoid; }
     blockquote, figure, .img-wrap, pre, table { page-break-inside: avoid; }
@@ -548,14 +549,16 @@ em { font-style: italic; }
         page-break-after: always;
         page-break-inside: avoid;
         break-inside: avoid-page;
-        min-height: 225mm;
-        height: 225mm;
+        min-height: 296mm;
+        height: 296mm;
         overflow: hidden;
+        box-sizing: border-box;
     }
     .cover-content {
-        min-height: 225mm;
-        height: 225mm;
+        min-height: 100%;
+        height: 100%;
         padding: 1.2rem 1.4rem 1.2rem 1.4rem;
+        box-sizing: border-box;
     }
     .cover-top,
     .cover-middle {
@@ -968,6 +971,7 @@ def build_pdf(merged_md: str, html_path: Path = None) -> Path:
         '--disable-gpu',
         '--no-sandbox',
         f'--print-to-pdf={pdf_path}',
+        '--no-pdf-header-footer',
         '--print-to-pdf-no-header',
         file_url,
     ]
@@ -987,6 +991,119 @@ def build_pdf(merged_md: str, html_path: Path = None) -> Path:
         return None
 
     return pdf_path
+
+
+def add_page_numbers(pdf_path: Path, skip_first_pages: int = 1) -> bool:
+    """Add clean running headers and page numbers to PDF."""
+    try:
+        import fitz  # PyMuPDF
+    except ImportError:
+        print("  Instaliram PyMuPDF za numeraciju stranica...")
+        install = subprocess.run(
+            [sys.executable, "-m", "pip", "install", "pymupdf", "-q"],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=120,
+        )
+        if install.returncode != 0:
+            print("  Upozorenje: PyMuPDF nije instaliran, preskačem numeraciju stranica.")
+            return False
+        import fitz
+
+    try:
+        doc = fitz.open(str(pdf_path))
+        total = len(doc)
+        if total <= skip_first_pages:
+            doc.close()
+            return False
+
+        # Numbering starts from the first page that contains "1. Uvod".
+        start_page = None
+        uvod_rx = re.compile(r"\b1\.?\s+Uvod\b", re.IGNORECASE)
+        for i, page in enumerate(doc):
+            txt = page.get_text("text")
+            lines = [ln.strip() for ln in txt.splitlines() if ln.strip()]
+            if lines and uvod_rx.match(lines[0]):
+                start_page = i + 1
+                break
+
+        if start_page is None:
+            for i, page in enumerate(doc):
+                txt = page.get_text("text")
+                if uvod_rx.search(txt):
+                    start_page = i + 1
+                    break
+
+        if start_page is None:
+            start_page = max(1, skip_first_pages + 1)
+            print(f"  Upozorenje: '1. Uvod' nije pronađen, numeracija kreće od stranice {start_page}.")
+
+        book_title = "Komunikacija u doba umjetne inteligencije"
+        heading_rx = re.compile(r"^\d+(?:\.\d+)*\.?\s+.+")
+        current_heading = ""
+
+        for idx, page in enumerate(doc):
+            page_no = idx + 1
+            if page_no < start_page:
+                continue
+
+            rect = page.rect
+            page_text = page.get_text("text") or ""
+            lines = [ln.strip() for ln in page_text.splitlines() if ln.strip()]
+            for ln in lines[:40]:
+                if heading_rx.match(ln):
+                    current_heading = ln
+                    break
+
+            # Running header: left=book title, right=current chapter/section (if detected).
+            header_y = 18
+            page.insert_text(
+                fitz.Point(24, header_y),
+                book_title,
+                fontname="helv",
+                fontsize=8,
+                color=(0.45, 0.45, 0.45),
+                overlay=True,
+            )
+            if current_heading:
+                chapter_text = current_heading
+                if len(chapter_text) > 60:
+                    chapter_text = chapter_text[:57] + "..."
+                ch_w = fitz.get_text_length(chapter_text, fontname="helv", fontsize=8)
+                ch_x = max(24, rect.width - 24 - ch_w)
+                page.insert_text(
+                    fitz.Point(ch_x, header_y),
+                    chapter_text,
+                    fontname="helv",
+                    fontsize=8,
+                    color=(0.45, 0.45, 0.45),
+                    overlay=True,
+                )
+
+            label = str(page_no - start_page + 1)
+            width = fitz.get_text_length(label, fontname="helv", fontsize=9)
+            x = (rect.width - width) / 2
+            y = rect.height - 18
+            page.insert_text(
+                fitz.Point(x, y),
+                label,
+                fontname="helv",
+                fontsize=9,
+                color=(0.35, 0.35, 0.35),
+                overlay=True,
+            )
+
+        tmp_pdf = pdf_path.with_name(f"{pdf_path.stem}._numbered{pdf_path.suffix}")
+        doc.save(str(tmp_pdf), deflate=True)
+        doc.close()
+        tmp_pdf.replace(pdf_path)
+        print(f"  Numeracija dodana od Uvoda: PDF {start_page} -> logička stranica 1.")
+        return True
+    except Exception as exc:
+        print(f"  Upozorenje: numeracija stranica nije uspjela ({exc}).")
+        return False
 
 
 def main():
@@ -1027,6 +1144,7 @@ def main():
     print("  --- PDF (sa SVG dijagramima, Chrome headless) ---")
     pdf_path = build_pdf(merged_for_html, html_path)
     if pdf_path and pdf_path.exists():
+        add_page_numbers(pdf_path, skip_first_pages=1)
         size_mb = pdf_path.stat().st_size / (1024 * 1024)
         print(f"  PDF GOTOV: {pdf_path.name} ({size_mb:.1f} MB)")
     else:

@@ -174,6 +174,7 @@
   <style>
   @media print {
       @page { size: A4; margin: 2.5cm 2cm 2.5cm 2.5cm; }
+      @page:first { size: A4; margin: 0; }
       h1 { page-break-before: always; }
       h1:first-of-type { page-break-before: avoid; }
       blockquote, figure, .img-wrap, pre, table { page-break-inside: avoid; }
@@ -685,14 +686,16 @@
           page-break-after: always;
           page-break-inside: avoid;
           break-inside: avoid-page;
-          min-height: 225mm;
-          height: 225mm;
+          min-height: 296mm;
+          height: 296mm;
           overflow: hidden;
+          box-sizing: border-box;
       }
       .cover-content {
-          min-height: 225mm;
-          height: 225mm;
+          min-height: 100%;
+          height: 100%;
           padding: 1.2rem 1.4rem 1.2rem 1.4rem;
+          box-sizing: border-box;
       }
       .cover-top,
       .cover-middle {
