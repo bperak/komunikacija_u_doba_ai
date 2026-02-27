@@ -10,6 +10,7 @@ import re
 import subprocess
 import sys
 import shutil
+import base64
 from pathlib import Path
 from urllib.parse import quote
 
@@ -37,7 +38,7 @@ BOOK_CSS = """
 <style>
 @media print {
     @page { size: A4; margin: 2.5cm 2cm 2.5cm 2.5cm; }
-    @page:first { size: A4; margin: 0; }
+    @page :first { size: A4; margin: 0; }
     h1 { page-break-before: always; }
     h1:first-of-type { page-break-before: avoid; }
     blockquote, figure, .img-wrap, pre, table { page-break-inside: avoid; }
@@ -766,6 +767,40 @@ def inline_svg_images(html_text: str, base_dir: Path) -> str:
     return html_text
 
 
+def inline_cover_image(html_text: str, base_dir: Path) -> str:
+    """Inline cover image as data URI for reliable print rendering."""
+    candidates = [
+        Path("../docs/book_cover_bg.jpg"),
+        Path("../../docs/book_cover_bg.jpg"),
+        Path("docs/book_cover_bg.jpg"),
+        Path("../docs/book_cover_bg.png"),
+        Path("../../docs/book_cover_bg.png"),
+        Path("docs/book_cover_bg.png"),
+    ]
+    cover_path = None
+    for rel in candidates:
+        p = (base_dir / rel).resolve()
+        if p.exists():
+            cover_path = p
+            break
+    if not cover_path:
+        return html_text
+
+    try:
+        b64 = base64.b64encode(cover_path.read_bytes()).decode("ascii")
+        mime = "image/jpeg" if cover_path.suffix.lower() in {".jpg", ".jpeg"} else "image/png"
+        data_uri = f"data:{mime};base64,{b64}"
+        html_text = html_text.replace("../docs/book_cover_bg.jpg", data_uri)
+        html_text = html_text.replace("../../docs/book_cover_bg.jpg", data_uri)
+        html_text = html_text.replace("docs/book_cover_bg.jpg", data_uri)
+        html_text = html_text.replace("../docs/book_cover_bg.png", data_uri)
+        html_text = html_text.replace("../../docs/book_cover_bg.png", data_uri)
+        html_text = html_text.replace("docs/book_cover_bg.png", data_uri)
+    except Exception:
+        return html_text
+    return html_text
+
+
 def postprocess_html(html_text: str) -> str:
     """Add CSS classes to image paragraphs and caption paragraphs in generated HTML."""
 
@@ -797,9 +832,18 @@ def postprocess_html(html_text: str) -> str:
         1,
     )
 
-    # 1. Add .img-wrap class to <p> that contains only an <img>
+    # 0d. Keep cover image as direct child (no paragraph wrapper).
     html_text = re.sub(
-        r'<p>(\s*<img [^>]*/?>\s*)</p>',
+        r'<p>\s*(<img [^>]*class="cover-img"[^>]*>)\s*</p>',
+        r'\1',
+        html_text,
+        flags=re.DOTALL,
+    )
+
+    # 1. Add .img-wrap class to <p> that contains only an <img>
+    #    Skip cover image, which must keep its absolute layout.
+    html_text = re.sub(
+        r'<p>(\s*<img (?![^>]*class="cover-img")[^>]*/?>\s*)</p>',
         r'<p class="img-wrap">\1</p>',
         html_text
     )
@@ -886,6 +930,7 @@ def build_html(merged_md: str) -> Path:
     raw_html = html_path.read_text(encoding="utf-8")
     processed = postprocess_html(raw_html)
     processed = inline_svg_images(processed, OUTPUT_DIR)
+    processed = inline_cover_image(processed, OUTPUT_DIR)
     html_path.write_text(processed, encoding="utf-8")
     print("  Post-processing: klase za slike i opise dodane.")
     print("  SVG dijagrami ugrađeni inline u HTML.")
@@ -927,6 +972,7 @@ def build_html_manual(merged_md: str) -> Path:
 
     full_html = postprocess_html(full_html)
     full_html = inline_svg_images(full_html, OUTPUT_DIR)
+    full_html = inline_cover_image(full_html, OUTPUT_DIR)
     html_path.write_text(full_html, encoding="utf-8")
     return html_path
 
@@ -1106,6 +1152,81 @@ def add_page_numbers(pdf_path: Path, skip_first_pages: int = 1) -> bool:
         return False
 
 
+def normalize_front_matter_cover(pdf_path: Path) -> bool:
+    """Replace page 1 with clean full-bleed cover and remove top strip on page 2."""
+    try:
+        import fitz  # PyMuPDF
+    except ImportError:
+        return False
+
+    cover_img = None
+    for candidate in [PROJECT_ROOT / "docs" / "book_cover_bg.jpg", PROJECT_ROOT / "docs" / "book_cover_bg.png"]:
+        if candidate.exists():
+            cover_img = candidate
+            break
+    if not cover_img:
+        return False
+
+    try:
+        src = fitz.open(str(pdf_path))
+        if len(src) < 2:
+            src.close()
+            return False
+
+        new = fitz.open()
+        first_rect = src[0].rect
+        first = new.new_page(width=first_rect.width, height=first_rect.height)
+        first.insert_image(first.rect, filename=str(cover_img), keep_proportion=False, overlay=True)
+
+        # Rebuild title typography on top of the cover background.
+        white = (0.96, 0.96, 0.96)
+        gold = (0.81, 0.66, 0.26)
+        first.insert_textbox(
+            fitz.Rect(0, 34, first_rect.width, 90),
+            "Benedikt Perak",
+            fontname="helv",
+            fontsize=18,
+            align=1,
+            color=white,
+        )
+        first.insert_textbox(
+            fitz.Rect(54, first_rect.height * 0.40, first_rect.width - 54, first_rect.height * 0.58),
+            "Komunikacija u doba umjetne inteligencije",
+            fontname="helv",
+            fontsize=28,
+            align=1,
+            color=white,
+        )
+        first.insert_textbox(
+            fitz.Rect(70, first_rect.height * 0.56, first_rect.width - 70, first_rect.height * 0.66),
+            "Razvoj velikih jezičnih modela\ni komunikacijskih agenata",
+            fontname="helv",
+            fontsize=15,
+            align=1,
+            color=gold,
+        )
+
+        # Copy the rest as-is.
+        new.insert_pdf(src, from_page=1, to_page=len(src) - 1)
+        src.close()
+
+        # Drop accidental blank page (often contains only a tiny overflow strip).
+        if len(new) > 1:
+            p2_text = (new[1].get_text("text") or "").strip()
+            if not p2_text:
+                new.delete_page(1)
+
+        tmp_pdf = pdf_path.with_name(f"{pdf_path.stem}._frontmatter{pdf_path.suffix}")
+        new.save(str(tmp_pdf), deflate=True)
+        new.close()
+        tmp_pdf.replace(pdf_path)
+        print("  Naslovnica normalizirana (full-bleed + bez trake na 2. stranici).")
+        return True
+    except Exception as exc:
+        print(f"  Upozorenje: normalizacija naslovnice nije uspjela ({exc}).")
+        return False
+
+
 def main():
     print("=" * 60)
     print(" GENERIRANJE INTEGRALNE VERZIJE KNJIGE")
@@ -1144,6 +1265,7 @@ def main():
     print("  --- PDF (sa SVG dijagramima, Chrome headless) ---")
     pdf_path = build_pdf(merged_for_html, html_path)
     if pdf_path and pdf_path.exists():
+        normalize_front_matter_cover(pdf_path)
         add_page_numbers(pdf_path, skip_first_pages=1)
         size_mb = pdf_path.stat().st_size / (1024 * 1024)
         print(f"  PDF GOTOV: {pdf_path.name} ({size_mb:.1f} MB)")

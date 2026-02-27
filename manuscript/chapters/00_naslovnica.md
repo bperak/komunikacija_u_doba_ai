@@ -1,6 +1,6 @@
 <div class="book-cover">
 <div class="cover-bg">
-<img src="../../docs/book_cover_bg.png" alt="" class="cover-img" />
+<img src="../../docs/book_cover_bg.jpg" alt="" class="cover-img" />
 </div>
 <div class="cover-content">
 <div class="cover-top">
