@@ -126,7 +126,7 @@ Upravo na tim kognitivnim temeljima izrastaju složeni sustavi znanja. Znanost, 
 
 U tom složenom univerzumu znanja, pismeni pojedinac postaje *agent* – djelatnik koji kroz pismenost stječe sredstva za razumijevanje postojećih sustava, kao i za aktivno sudjelovanje u njima. On može tumačiti, preispitivati, osporavati i, konačno, doprinositi korpusu znanja. Kroz čin čitanja, agent stupa u dijalog s misliocima iz prošlosti, a kroz čin pisanja, artikulira vlastite spoznaje i upućuje ih budućim generacijama (Ong, 1982). 
 
-![](../../docs/diagrams/diag_902.svg)
+<p class="img-wrap slika24"><img src="../../docs/diagrams/diag_902.svg" alt=""></p>
 *Slika 2.4: Uloge pismenosti u omogućavanju agentu pristupa složenim sustavima znanja te poticanju kognitivne i društvene preobrazbe.*
 
 ### 2.3.1 Različite staze do pisma

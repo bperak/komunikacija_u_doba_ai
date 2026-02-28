@@ -1,0 +1,14 @@
+flowchart TD
+    A[API poziv] --> B[HTTP metoda]
+    A --> C[URL i endpoint]
+    A --> D[Zaglavlja]
+    A --> E[Tijelo zahtjeva]
+
+    C --> C1[Putni parametri]
+    C --> C2[Query parametri]
+
+    D --> D1[Authorization]
+    D --> D2[Content-Type]
+    D --> D3[Accept]
+
+    E --> E1[JSON payload]

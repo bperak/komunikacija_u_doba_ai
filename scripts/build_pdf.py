@@ -12,7 +12,15 @@ import sys
 import shutil
 import base64
 from pathlib import Path
+from typing import Optional
 from urllib.parse import quote
+
+# Ensure Unicode logging works on Windows consoles.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 CHAPTERS_DIR = PROJECT_ROOT / "manuscript" / "chapters"
@@ -159,6 +167,15 @@ img {
     max-width: 115% !important;
     max-height: none !important;
     margin-left: -7.5% !important;
+}
+
+/* Slika 3.5 (diag_169): dovoljno visine da se labele u kućicama ne trimaju */
+.img-wrap.slika35 svg {
+    max-height: 520px !important;
+    overflow: visible !important;
+}
+.img-wrap.slika35 {
+    padding-bottom: 0.5em;
 }
 
 /* Pandoc figure element */
@@ -629,7 +646,14 @@ em { font-style: italic; }
         min-height: 100vh;
     }
     .predgovor-page {
-        min-height: 100vh;
+        page-break-inside: avoid;
+        min-height: 0;
+        max-height: none;
+        padding: 1.5em 1em 1em;
+    }
+    .predgovor-signature {
+        margin-top: 1.5em;
+        page-break-inside: avoid;
     }
 }
 </style>
@@ -1240,6 +1264,37 @@ def normalize_front_matter_cover(pdf_path: Path) -> bool:
             color=gold,
             **font_kwargs,
         )
+
+        # Logos UNIRI + FFRI u podnožju, centrirano
+        docs_dir = PROJECT_ROOT / "docs"
+        logo_h = 28
+        gap = 16
+        logos = []
+        for name in ["logo-uniri.png", "logo-ffri.png"]:
+            p = docs_dir / name
+            if p.exists():
+                logos.append(p)
+        if logos:
+            try:
+                total_w = 0
+                rects = []
+                for fp in logos:
+                    img = fitz.open(str(fp))
+                    r = img[0].rect
+                    img.close()
+                    w = r.width * (logo_h / r.height)
+                    rects.append((fp, w))
+                    total_w += w
+                total_w += gap * (len(rects) - 1)
+                x_start = (first_rect.width - total_w) / 2
+                y_bottom = first_rect.height - 40
+                x_cur = x_start
+                for fp, w in rects:
+                    r = fitz.Rect(x_cur, y_bottom - logo_h, x_cur + w, y_bottom)
+                    first.insert_image(r, filename=str(fp), keep_proportion=True)
+                    x_cur += w + gap
+            except Exception:
+                pass
 
         # Copy the rest as-is.
         new.insert_pdf(src, from_page=1, to_page=len(src) - 1)

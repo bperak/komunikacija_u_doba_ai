@@ -1,0 +1,5 @@
+flowchart LR
+    A[Klijent] -->|HTTP zahtjev| B[API sloj]
+    B -->|Prosljeđivanje zahtjeva| C[Poslužitelj]
+    C -->|Obrada i odgovor| B
+    B -->|Standardizirani odgovor| A

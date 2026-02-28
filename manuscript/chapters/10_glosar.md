@@ -92,6 +92,10 @@ Ovaj odjeljak sadrži abecedni popis ključnih pojmova korištenih u knjizi, s k
 
 **Mooreov zakon** — Empirijsko pravilo (Moore, 1965) prema kojemu se broj tranzistora na integriranom sklopu približno udvostručava svake dvije godine; desetljećima je predvidjelo eksponencijalni rast računalne snage i bio glavni pokretač IT industrije.
 
+**nestrukturirani podaci** — Podaci koji nisu organizirani u fiksnu shemu (tablice, stupci, oznake); uključuju slobodan tekst, slike, audio, video i mješovite izvore. Za razliku od strukturiranih podataka (npr. baze podataka), nemaju unaprijed definiran format pa ih je potrebno pretvoriti u oblik pogodan za računalnu obradu. Predtreniranje LLM-ova temelji se na golemim količinama nestrukturiranog teksta (web, knjige, članci).
+
+**objašnjivost (engl. explainability)** — Sposobnost da se korisniku ili nadzorniku pruži razumljiv razlog zašto je sustav donio određenu odluku ili predviđanje; u AI kontekstu često se istražuje putem XAI (explainable AI) metoda. Ključna je u područjima visokog rizika (medicina, pravo, kredit) gdje je potrebno opravdati i provjeriti ishod algoritma (Pasquale, 2015).
+
 **oblikovanje uputa / prompt engineering** — Umijeće oblikovanja ulaznih uputa (prompta) kako bi se iz jezičnog modela izvukao željeni odgovor ili ponašanje; uključuje preciznost formulacije, dodjelu uloge modelu, primjere (few-shot), lanac misli (chain-of-thought) i sustavnu uputu (system prompt).
 
 **obrezivanje / pruning** — Uklanjanje manje važnih parametara ili cijelih struktura (neuroni, slojevi, glave pozornosti) iz modela kako bi se smanjila veličina i ubrzala inferencija; može biti nestrukturirano (pojedinačne težine) ili strukturirano (cijele jedinice); često se kombinira s dodatnim finim podešavanjem (LeCun et al., 1990; Han et al., 2015).
@@ -118,6 +122,8 @@ Ovaj odjeljak sadrži abecedni popis ključnih pojmova korištenih u knjizi, s k
 
 **RLHF** — Učenje s potkrepljenjem na temelju ljudskih povratnih informacija (engl. *Reinforcement Learning from Human Feedback*) – metodologija poravnanja u kojoj ljudski ocjenjivači rangiraju odgovore modela, nakon čega se trenira model nagrade i model se dodatno podešava kako bi maksimizirao očekivanu nagradu; ključna za usklađivanje ponašanja LLM-ova s ljudskim preferencijama (korisnost, istinitost, sigurnost).
 
+**samonadzirano učenje / self-supervised learning** — Način učenja u kojem model ne koristi ljudski označene podatke (parove ulaz–izlaz), već sam iz strukture podataka izvodi zadatak: npr. predviđa skriveni dio ulaza (sljedeću riječ, maskirani token) ili drugi izvedeni cilj. Podaci su neoznačeni (unlabeled); signal za učenje dolazi iz samih podataka. Ključno je za predtreniranje velikih jezičnih modela na ogromnim korpusima teksta bez ručnog označavanja.
+
 **semantički trokut / trokut značenja** — Model (Ogden & Richards, 1923) koji prikazuje značenje kao odnos triju elemenata: simbol (jezični izraz), misao/pojam (mentalna reprezentacija) i referent (predmet u svijetu); veza simbola i referenta je posredna – vodi kroz misao; koristan za razumijevanje ograničenja AI u „usidrenju” značenja.
 
 **sentiment analiza** — Automatska analiza teksta (transkripti, e-pošta, društvene mreže) radi prepoznavanja emocionalnog tona, stavova ili raspoloženja – npr. frustracija, zadovoljstvo, negativnost; koristi se u korisničkoj podršci za prioritetizaciju slučajeva, u marketingu za praćenje reakcija i u istraživanjima javnog mnijenja.
@@ -141,6 +147,8 @@ Ovaj odjeljak sadrži abecedni popis ključnih pojmova korištenih u knjizi, s k
 **transferno učenje** — Pristup u strojnom učenju (engl. *transfer learning*) u kojem se znanje stečeno pri rješavanju jednog zadatka ili u jednoj domeni primjenjuje na novi, drugačiji zadatak ili domenu; ključan preduvjet za kognitivnu fleksibilnost i put prema AGI-u (Pan & Yang, 2010).
 
 **transformer** — Arhitektura neuronske mreže temeljena na mehanizmu (samopozornosti) koji svakoj riječi u nizu pridružuje kontekstualiziranu predodžbu na temelju ostalih riječi; omogućuje paralelnu obradu i skaliranje prema velikim jezičnim modelima (Vaswani i sur., 2017).
+
+**transparentnost (u kontekstu AI)** — Dostupnost informacija o načinu rada sustava – koji se podaci i algoritmi koriste, kako se donose odluke i tko je odgovoran; preduvjet je za nadzor, povjerenje i odgovornost. Kod složenih modela (npr. dubokih mreža) transparentnost je ograničena jer je unutarnja logika teško pročitljiva („crna kutija“).
 
 **troškovi učenja i troškovi zaključivanja** — Troškovi učenja (engl. *training costs*) – jednokratni, ali iznimno visoki troškovi treniranja modela (hardver, energija, vrijeme). Troškovi zaključivanja (engl. *inference costs*) – kontinuirani operativni troškovi primjene već naučenog modela na svaki upit; na milijardama upita dnevno kumulativno mogu biti golemi.
 
