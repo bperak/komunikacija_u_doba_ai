@@ -141,10 +141,24 @@ img {
 .img-wrap svg {
     max-width: 85%;
     max-height: 420px;
-    width: auto;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+/* Slika 2.4 (diag_902): allow wider rendering for legibility */
+.img-wrap svg[viewBox*="807.9375 410"] {
+    max-width: 100%;
+    max-height: none;
+}
+
+.img-wrap.slika24 svg,
+.img-wrap.slika24 img {
+    width: 115% !important;
+    max-width: 115% !important;
+    max-height: none !important;
+    margin-left: -7.5% !important;
 }
 
 /* Pandoc figure element */
@@ -876,6 +890,20 @@ def find_exe(name: str, extra_paths=None) -> str:
     return None
 
 
+def find_unicode_font() -> Path | None:
+    """Pick an installed font with Croatian diacritics support."""
+    candidates = [
+        Path(r"C:\Windows\Fonts\segoeui.ttf"),
+        Path(r"C:\Windows\Fonts\arial.ttf"),
+        Path(r"C:\Windows\Fonts\calibri.ttf"),
+        Path(r"C:\Windows\Fonts\tahoma.ttf"),
+    ]
+    for path in candidates:
+        if path.exists():
+            return path
+    return None
+
+
 def build_html(merged_md: str) -> Path:
     """Build a beautiful standalone HTML from merged markdown using Pandoc."""
     html_path = OUTPUT_DIR / "knjiga_integralna.html"
@@ -1064,6 +1092,10 @@ def add_page_numbers(pdf_path: Path, skip_first_pages: int = 1) -> bool:
         if total <= skip_first_pages:
             doc.close()
             return False
+        unicode_font = find_unicode_font()
+        font_kwargs = {"fontname": "helv"}
+        if unicode_font:
+            font_kwargs = {"fontname": "F0", "fontfile": str(unicode_font)}
 
         # Numbering starts from the first page that contains "1. Uvod".
         start_page = None
@@ -1105,40 +1137,39 @@ def add_page_numbers(pdf_path: Path, skip_first_pages: int = 1) -> bool:
 
             # Running header: left=book title, right=current chapter/section (if detected).
             header_y = 18
-            page.insert_text(
-                fitz.Point(24, header_y),
+            page.insert_textbox(
+                fitz.Rect(24, header_y - 10, rect.width * 0.55, header_y + 8),
                 book_title,
-                fontname="helv",
                 fontsize=8,
                 color=(0.45, 0.45, 0.45),
                 overlay=True,
+                align=0,
+                **font_kwargs,
             )
             if current_heading:
                 chapter_text = current_heading
                 if len(chapter_text) > 60:
                     chapter_text = chapter_text[:57] + "..."
-                ch_w = fitz.get_text_length(chapter_text, fontname="helv", fontsize=8)
-                ch_x = max(24, rect.width - 24 - ch_w)
-                page.insert_text(
-                    fitz.Point(ch_x, header_y),
+                page.insert_textbox(
+                    fitz.Rect(rect.width * 0.45, header_y - 10, rect.width - 24, header_y + 8),
                     chapter_text,
-                    fontname="helv",
                     fontsize=8,
                     color=(0.45, 0.45, 0.45),
                     overlay=True,
+                    align=2,
+                    **font_kwargs,
                 )
 
             label = str(page_no - start_page + 1)
-            width = fitz.get_text_length(label, fontname="helv", fontsize=9)
-            x = (rect.width - width) / 2
             y = rect.height - 18
-            page.insert_text(
-                fitz.Point(x, y),
+            page.insert_textbox(
+                fitz.Rect(0, y - 10, rect.width, y + 8),
                 label,
-                fontname="helv",
                 fontsize=9,
                 color=(0.35, 0.35, 0.35),
                 overlay=True,
+                align=1,
+                **font_kwargs,
             )
 
         tmp_pdf = pdf_path.with_name(f"{pdf_path.stem}._numbered{pdf_path.suffix}")
@@ -1172,6 +1203,10 @@ def normalize_front_matter_cover(pdf_path: Path) -> bool:
         if len(src) < 2:
             src.close()
             return False
+        unicode_font = find_unicode_font()
+        font_kwargs = {"fontname": "helv"}
+        if unicode_font:
+            font_kwargs = {"fontname": "F0", "fontfile": str(unicode_font)}
 
         new = fitz.open()
         first_rect = src[0].rect
@@ -1184,26 +1219,26 @@ def normalize_front_matter_cover(pdf_path: Path) -> bool:
         first.insert_textbox(
             fitz.Rect(0, 34, first_rect.width, 90),
             "Benedikt Perak",
-            fontname="helv",
             fontsize=18,
             align=1,
             color=white,
+            **font_kwargs,
         )
         first.insert_textbox(
             fitz.Rect(54, first_rect.height * 0.40, first_rect.width - 54, first_rect.height * 0.58),
             "Komunikacija u doba umjetne inteligencije",
-            fontname="helv",
             fontsize=28,
             align=1,
             color=white,
+            **font_kwargs,
         )
         first.insert_textbox(
             fitz.Rect(70, first_rect.height * 0.56, first_rect.width - 70, first_rect.height * 0.66),
             "Razvoj velikih jezičnih modela\ni komunikacijskih agenata",
-            fontname="helv",
             fontsize=15,
             align=1,
             color=gold,
+            **font_kwargs,
         )
 
         # Copy the rest as-is.
@@ -1225,6 +1260,30 @@ def normalize_front_matter_cover(pdf_path: Path) -> bool:
     except Exception as exc:
         print(f"  Upozorenje: normalizacija naslovnice nije uspjela ({exc}).")
         return False
+
+
+def export_cover_for_readme(pdf_path: Path) -> Optional[Path]:
+    """Export first page of PDF to docs/cover_naslovnica.png for README (full cover with text)."""
+    try:
+        import fitz  # PyMuPDF
+    except ImportError:
+        return None
+    out = PROJECT_ROOT / "docs" / "cover_naslovnica.png"
+    try:
+        doc = fitz.open(str(pdf_path))
+        if len(doc) == 0:
+            doc.close()
+            return None
+        page = doc[0]
+        pix = page.get_pixmap(dpi=150, alpha=False)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        pix.save(str(out))
+        doc.close()
+        print(f"  Naslovnica za README: {out.name}")
+        return out
+    except Exception as exc:
+        print(f"  Upozorenje: export naslovnice za README nije uspio ({exc}).")
+        return None
 
 
 def main():
@@ -1267,6 +1326,7 @@ def main():
     if pdf_path and pdf_path.exists():
         normalize_front_matter_cover(pdf_path)
         add_page_numbers(pdf_path, skip_first_pages=1)
+        export_cover_for_readme(pdf_path)
         size_mb = pdf_path.stat().st_size / (1024 * 1024)
         print(f"  PDF GOTOV: {pdf_path.name} ({size_mb:.1f} MB)")
     else:

@@ -8,9 +8,7 @@ Filozofski fakultet, Sveučilište u Rijeci · Rijeka, 2025.
 
 ISBN (elektroničko izdanje): 978-953-361-147-1
 
-Naslovnica knjige (full-bleed pozadina):
-
-![Naslovnica knjige — pozadina s full bleed](https://raw.githubusercontent.com/bperak/komunikacija_u_doba_ai/main/docs/book_cover_bg.jpg)
+![Naslovnica knjige](https://raw.githubusercontent.com/bperak/komunikacija_u_doba_ai/main/docs/cover_naslovnica.png)
 
 ---
 
