@@ -412,21 +412,23 @@ Taj se proces najjasnije očituje u nekoliko ključnih domena. U području audio
 
 Posebno je znakovit utjecaj na **jezik**, kao temeljni nositelj kulturnoga identiteta. Širenje engleskoga jezika kao globalne *lingua franca* putem medijskih sadržaja dovodi do masovnog usvajanja anglizama u nacionalnim jezicima. To naizgled jednoznačno jezično posuđivanje postaje proces koji može utjecati na dublje semantičke i sintaktičke strukture jezika, mijenjajući načine na koje se izražavaju misli i osjećaji unutar pojedine jezične zajednice. Time se jezična raznolikost, jedno od najvećih bogatstava čovječanstva, izlaže pritisku unifikacije.
 
----
 
-Prikaz odnosa masovne komunikacije, homogenizacije i glokalizacije kulture
+
+
+Ipak, bilo bi pogrešno proces kulturne homogenizacije smatrati jednosmjernim i apsolutnim. Suvremene teorije globalizacije upozoravaju na postojanje otpora i protutendencija, pri čemu lokalne kulture često aktivno reinterpretiraju globalne utjecaje, prilagođavaju ih vlastitim kontekstima i spajaju ih s autohtonim elementima. Taj se složeni proces naziva hibridizacijom ili glokalizacijom – pojavom u kojoj se globalno i lokalno prožimaju stvarajući nove, jedinstvene kulturne oblike (Robertson, 1994). Primjerice, globalno popularni glazbeni žanrovi obogaćuju se tradicionalnim instrumentima ili lokalnim napjevima, a međunarodni televizijski formati prilagođavaju se nacionalnom humoru i društvenim specifičnostima.
 
 
 ![](../../docs/diagrams/ch02_masovna_kultura.svg)
 *Slika 2.24: Prikaz odnosa masovne komunikacije, homogenizacije i glokalizacije kulture – medijski i idejni krajolici te hibridizacija globalnog i lokalnog.*
 
 
+
+Odnos masovne komunikacije i kulture ostaje inherentno dijalektičan. Dok masovni mediji nedvojbeno posjeduju golem potencijal za unificiranje kulturnih praksi i vrijednosti na globalnoj razini, istodobno pružaju i platforme za afirmaciju i vidljivost lokalnih identiteta. Kulturna homogenizacija stoga ostaje trajna napetost između sila globalne integracije i potrebe za očuvanjem lokalne posebnosti, napetost koja će presudno oblikovati kulturni krajolik 21. stoljeća.
+
+
 ![](../../docs/diagrams/ch02_glokalizacija.svg)
 *Slika 2.25: Prikaz odnosa masovne komunikacije, homogenizacije i glokalizacije kulture – dijalektika globalne integracije i lokalne posebnosti.*
 
-Ipak, bilo bi pogrešno proces kulturne homogenizacije smatrati jednosmjernim i apsolutnim. Suvremene teorije globalizacije upozoravaju na postojanje otpora i protutendencija, pri čemu lokalne kulture često aktivno reinterpretiraju globalne utjecaje, prilagođavaju ih vlastitim kontekstima i spajaju ih s autohtonim elementima. Taj se složeni proces naziva hibridizacijom ili glokalizacijom – pojavom u kojoj se globalno i lokalno prožimaju stvarajući nove, jedinstvene kulturne oblike (Robertson, 1994). Primjerice, globalno popularni glazbeni žanrovi obogaćuju se tradicionalnim instrumentima ili lokalnim napjevima, a međunarodni televizijski formati prilagođavaju se nacionalnom humoru i društvenim specifičnostima.
-
-Odnos masovne komunikacije i kulture ostaje inherentno dijalektičan. Dok masovni mediji nedvojbeno posjeduju golem potencijal za unificiranje kulturnih praksi i vrijednosti na globalnoj razini, istodobno pružaju i platforme za afirmaciju i vidljivost lokalnih identiteta. Kulturna homogenizacija stoga ostaje trajna napetost između sila globalne integracije i potrebe za očuvanjem lokalne posebnosti, napetost koja će presudno oblikovati kulturni krajolik 21. stoljeća.
 
 ### 2.7.4 Politička sfera i elektroničko javno mnijenje
 

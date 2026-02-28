@@ -48,7 +48,6 @@ BOOK_CSS = """
     @page { size: A4; margin: 2.5cm 2cm 2.5cm 2.5cm; }
     @page :first { size: A4; margin: 0; }
     h1 { page-break-before: always; }
-    h1:first-of-type { page-break-before: avoid; }
     blockquote, figure, .img-wrap, pre, table { page-break-inside: avoid; }
     body { font-size: 11pt; }
     body {
@@ -407,7 +406,7 @@ em { font-style: italic; }
 /* ── Inner title page (naslovni list) ── */
 .title-page {
     page-break-before: auto;
-    page-break-after: always;
+    page-break-after: auto;
     min-height: 900px;
     display: flex;
     flex-direction: column;
@@ -469,7 +468,7 @@ em { font-style: italic; }
 /* ── Impresum / Colophon page ── */
 .impresum-page {
     page-break-before: auto;
-    page-break-after: always;
+    page-break-after: auto;
     min-height: 860px;
     display: flex;
     flex-direction: column;
@@ -528,7 +527,7 @@ em { font-style: italic; }
 /* ── Predgovor ── */
 .predgovor-page {
     page-break-before: auto;
-    page-break-after: always;
+    page-break-after: auto;
     max-width: 700px;
     margin: 0 auto;
     padding: 2em 1em;
@@ -554,11 +553,12 @@ em { font-style: italic; }
 }
 
 .predgovor-signature {
-    margin-top: 2.5em;
+    margin-top: 1.5em;
     text-align: right;
     font-style: italic;
     color: #555;
     line-height: 1.6;
+    page-break-before: avoid;
 }
 
 /* ── TOC heading ── */
@@ -644,6 +644,12 @@ em { font-style: italic; }
     }
     .impresum-page {
         min-height: 100vh;
+        page-break-inside: avoid;
+        break-inside: avoid-page;
+    }
+    .impresum-content {
+        page-break-inside: avoid;
+        break-inside: avoid-page;
     }
     .predgovor-page {
         page-break-inside: avoid;
@@ -652,8 +658,10 @@ em { font-style: italic; }
         padding: 1.5em 1em 1em;
     }
     .predgovor-signature {
-        margin-top: 1.5em;
+        margin-top: 1em;
         page-break-inside: avoid;
+        page-break-before: avoid;
+        break-before: avoid-page;
     }
 }
 </style>
@@ -1300,10 +1308,12 @@ def normalize_front_matter_cover(pdf_path: Path) -> bool:
         new.insert_pdf(src, from_page=1, to_page=len(src) - 1)
         src.close()
 
-        # Drop accidental blank page (often contains only a tiny overflow strip).
+        # Drop accidental "strip" page: page 2 often has only a thin colored bar
+        # (print artifact from title-page/heading) and is otherwise blank.
+        # Remove if empty or very little text (e.g. < 80 chars = strip-only).
         if len(new) > 1:
             p2_text = (new[1].get_text("text") or "").strip()
-            if not p2_text:
+            if len(p2_text) < 80:
                 new.delete_page(1)
 
         tmp_pdf = pdf_path.with_name(f"{pdf_path.stem}._frontmatter{pdf_path.suffix}")

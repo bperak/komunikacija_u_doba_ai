@@ -86,10 +86,6 @@ Središnji mehanizam koji transformerima daje njihovu iznimnu moć jest samopozo
 Budući da transformerska arhitektura podatke ne obrađuje slijedno, kao što je to bio slučaj s rekurentnim mrežama, već ih sagledava kao cjelinu, gubi se inherentna informacija o poretku riječi. Taj se nedostatak premostio uvođenjem pozicijskih kodiranja (engl. *positional encodings*), vektora koji se zbrajaju s ulaznim vektorima riječi kako bi modelu pružili informaciju o njihovu relativnom ili apsolutnom položaju u slijedu. Uz mehanizam pozornosti ključni dio svakoga bloka transformatora jest i mreža s propuštanjem unaprijed (engl. *feed-forward network*), koja dodatno obrađuje izlaz iz sloja pozornosti i pridonosi nelinearnoj transformaciji podataka.
 
 
-Pojednostavnjeni dijagram toka podataka kroz jedan blok transformerske arhitekture, ističući ključne komponente: pozicijsko kodiranje, mehanizam samopozornosti te mrežu s propuštanjem unaprijed, uz korake normalizacije
-
-Arhitektonski obrasci
-
 
 <p class="img-wrap slika35">![](../../docs/diagrams/diag_169.svg)</p>
 *Slika 3.5: Proces obuke LLM-a (temeljni model, fino podešavanje, poravnanje, specijalizirani agent).*
@@ -102,7 +98,7 @@ Na temelju tih građevnih blokova razvila su se tri temeljna arhitektonska obras
 
 **Enkodersko-dekoderske arhitekture:** Poznate i kao *sequence-to-sequence* modeli, ove arhitekture spajaju snage obaju pristupa. Enkoder najprije stvara cjelovit, kontekstualiziran prikaz ulaznoga slijeda, a dekoder zatim na temelju toga prikaza generira izlazni slijed. Taj je obrazac idealan za zadatke transformacije, kao što su strojno prevođenje, gdje se rečenica s jednog jezika pretvara u rečenicu na drugom, ili sažimanje teksta, gdje se duži dokument pretvara u kraći. Modeli poput *T5* (*Text-to-Text Transfer Transformer*) i *BART*-a (*Bidirectional and Auto-Regressive Transformers*) primjeri su ove hibridne strukture.
 
-Proces obuke (temeljni model, fino podešavanje, poravnanje)
+#### Proces obuke (temeljni model, fino podešavanje, poravnanje)
 
 Razvoj velikih jezičnih modela ovisi o arhitekturi, ali i o specifičnom, dvostupanjskom procesu obuke. U prvoj fazi, fazi predobuke (engl. *pre-training*), model se izlaže golemim, nestrukturiranim korpusima teksta s interneta, iz knjiga i drugih izvora. Cilj je da model samostalno, bez ljudskoga nadzora (na tzv. samonadzirani način), nauči temeljne obrasce jezika: gramatiku, sintaksu, semantiku i opće znanje o svijetu. To se najčešće postiže zadatkom predviđanja maskiranih ili sljedećih riječi u rečenici.
 
@@ -110,7 +106,7 @@ Nakon predobuke slijedi faza finoga podešavanja (ugađanja) (engl. *fine-tuning
 
 > **Fino podešavanje / fine-tuning:** Faza prilagodbe već predtreniranog (temeljnog) modela za specifične zadatke ili domene; koristi manje, označene podatke i može uključivati RLHF; rezultat je specijalizirani model (npr. chatbot, asistent za kod).
 
-Od modela do agenta: korak prema djelovanju
+#### Od modela do agenta: korak prema djelovanju
 
 Pojam agenta u kontekstu velikih jezičnih modela označava kvalitativni iskorak: prijelaz s pasivnoga generiranja teksta na aktivno djelovanje u digitalnom ili fizičkom okruženju. Agent je sustav koji koristi *LLM* kao svoj središnji kognitivni pogon za rasuđivanje, planiranje i izvršavanje zadataka. Takav sustav posjeduje sposobnost dekompozicije složenih ciljeva na jednostavnije korake, korištenja vanjskih alata (poput pretraživača, kalkulatora ili programskih sučelja), pohranjivanja informacija u memoriju te učenja iz vlastitih pogrešaka. Anatomija agenta tako nadilazi unutarnju strukturu jezičnoga modela i uključuje petlje za percepciju, planiranje i akciju, čime se otvara put prema stvaranju autonomnijih i sposobnijih sustava umjetne inteligencije.
 
@@ -122,7 +118,7 @@ Pojam agenta u kontekstu velikih jezičnih modela označava kvalitativni iskorak
 
 Temeljna je svrha *MLOpsa* premostiti jaz između razvoja modela, koji je često eksperimentalne prirode, i njegove pouzdane operativne primjene. Proces započinje razumijevanjem poslovnog problema i definiranjem ciljeva, nakon čega slijedi niz tehničkih faza koje se mogu sažeti u nekoliko ključnih cjelina.
 
-Faze životnog ciklusa modela
+#### Faze životnog ciklusa modela
 
 **1. Prikupljanje i priprema podataka**: Polazišna točka i temeljni preduvjet cjelokupnog procesa jest definiranje i prikupljanje podataka. Kvaliteta i relevantnost podataka izravno određuju gornju granicu uspješnosti budućeg modela. Ta faza obuhvaća aktivnosti poput prikupljanja sirovih podataka iz različitih izvora, njihova čišćenja radi uklanjanja pogrešaka i nedosljednosti, te transformacije i inženjeringa značajki (engl. *feature engineering*). Potonje je osobito važno jer se pravilnim oblikovanjem ulaznih varijabli može znatno poboljšati sposobnost modela da uoči relevantne uzorke. U ovoj fazi često se primjenjuju tehnike poput normalizacije, skaliranja i kodiranja kategoričkih varijabli kako bi se podaci pripremili za algoritme strojnog učenja.
 
