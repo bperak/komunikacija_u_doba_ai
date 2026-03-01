@@ -374,7 +374,7 @@ em { font-style: italic; }
     font-size: 1.4em;
     font-weight: 300;
     line-height: 1.5;
-    color: #d4a843;
+    color: #ffffff;
     text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
     letter-spacing: 0.04em;
 }
@@ -1248,7 +1248,6 @@ def normalize_front_matter_cover(pdf_path: Path) -> bool:
 
         # Rebuild title typography on top of the cover background.
         white = (0.96, 0.96, 0.96)
-        gold = (0.81, 0.66, 0.26)
         first.insert_textbox(
             fitz.Rect(0, 34, first_rect.width, 90),
             "Benedikt Perak",
@@ -1270,7 +1269,7 @@ def normalize_front_matter_cover(pdf_path: Path) -> bool:
             "Razvoj velikih jezičnih modela\ni komunikacijskih agenata",
             fontsize=15,
             align=1,
-            color=gold,
+            color=white,
             **font_kwargs,
         )
 
