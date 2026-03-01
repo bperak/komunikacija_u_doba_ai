@@ -26,7 +26,7 @@ Ovo izdanje ima novi oblik — **agentno obnavljajuće knjige**. Prvo izdanje bi
 
 | Verzija | Opis | Preuzmi |
 |---------|------|---------|
-| **Najnovija** | Zadnje izdanje knjige | [⬇ Preuzmi najnoviju verziju](https://github.com/bperak/komunikacija_u_doba_ai/releases/latest) |
+| **Najnovija** | Zadnje izdanje knjige (v1.0.1) | [⬇ Preuzmi najnoviju verziju](https://github.com/bperak/komunikacija_u_doba_ai/releases/tag/v1.0.1) |
 | Sve verzije | Arhiva svih prošlih izdanja | [📦 Sve verzije](https://github.com/bperak/komunikacija_u_doba_ai/releases) |
 
 Knjiga je dostupna u **HTML** i **PDF** formatu.
