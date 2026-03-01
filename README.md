@@ -24,17 +24,14 @@ Ovo izdanje ima novi oblik — **agentno obnavljajuće knjige**. Prvo izdanje bi
 
 ## Preuzimanje knjige
 
-| Verzija | Opis | Preuzmi |
-|---------|------|---------|
-| **Najnovija** | Zadnje izdanje knjige (v1.0.1) | [⬇ Preuzmi najnoviju verziju](https://github.com/bperak/komunikacija_u_doba_ai/releases/tag/v1.0.1) |
-| Sve verzije | Arhiva svih prošlih izdanja | [📦 Sve verzije](https://github.com/bperak/komunikacija_u_doba_ai/releases) |
+Svaki push na `main` ažurira ove datoteke — preuzimaš uvijek najnoviju inačicu (bez posebnih releasea).
 
-Knjiga je dostupna u **HTML** i **PDF** formatu.
+| Format | Preuzmi |
+|--------|---------|
+| **PDF** | [⬇ knjiga_integralna.pdf](https://github.com/bperak/komunikacija_u_doba_ai/raw/main/manuscript/knjiga_integralna.pdf) |
+| **HTML** | [⬇ knjiga_integralna.html](https://github.com/bperak/komunikacija_u_doba_ai/raw/main/manuscript/knjiga_integralna.html) |
 
-Trenutni release asseti:
-
-- `Perak_Komunikacija_u_doba_AI_2025.pdf`
-- `Perak_Komunikacija_u_doba_AI_2025.html`
+Označene verzije (npr. v1.0.0): [📦 Releases](https://github.com/bperak/komunikacija_u_doba_ai/releases)
 
 ---
 
