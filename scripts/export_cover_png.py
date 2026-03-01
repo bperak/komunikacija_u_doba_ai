@@ -8,7 +8,7 @@ except ImportError:
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 ROOT = SCRIPT_DIR.parent
-PDF = ROOT / "manuscript" / "knjiga_integralna.pdf"
+PDF = ROOT / "manuscript" / "Perak_Komunikacija_u_doba_AI.pdf"
 OUT = ROOT / "docs" / "cover_naslovnica.png"
 
 if not PDF.exists():

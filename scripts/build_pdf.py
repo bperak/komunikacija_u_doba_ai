@@ -26,6 +26,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 CHAPTERS_DIR = PROJECT_ROOT / "manuscript" / "chapters"
 DIAGRAMS_DIR = PROJECT_ROOT / "docs" / "diagrams"
 OUTPUT_DIR = PROJECT_ROOT / "manuscript"
+BOOK_BASENAME = "Perak_Komunikacija_u_doba_AI"
 
 CHAPTER_FILES = [
     "00_naslovnica.md",
@@ -938,7 +939,7 @@ def find_unicode_font() -> Path | None:
 
 def build_html(merged_md: str) -> Path:
     """Build a beautiful standalone HTML from merged markdown using Pandoc."""
-    html_path = OUTPUT_DIR / "knjiga_integralna.html"
+    html_path = OUTPUT_DIR / f"{BOOK_BASENAME}.html"
     md_path = OUTPUT_DIR / "_temp_build.md"
     header_path = OUTPUT_DIR / "_temp_header.html"
 
@@ -1007,7 +1008,7 @@ def build_html_manual(merged_md: str) -> Path:
         subprocess.run([sys.executable, "-m", "pip", "install", "markdown", "-q"])
         import markdown
 
-    html_path = OUTPUT_DIR / "knjiga_integralna.html"
+    html_path = OUTPUT_DIR / f"{BOOK_BASENAME}.html"
 
     extensions = [
         'markdown.extensions.tables',
@@ -1039,10 +1040,10 @@ def build_html_manual(merged_md: str) -> Path:
 
 def build_pdf(merged_md: str, html_path: Path = None) -> Path:
     """Build PDF from the HTML file using Chrome headless (includes all SVG diagrams)."""
-    pdf_path = OUTPUT_DIR / "knjiga_integralna.pdf"
+    pdf_path = OUTPUT_DIR / f"{BOOK_BASENAME}.pdf"
 
     if html_path is None or not html_path.exists():
-        html_path = OUTPUT_DIR / "knjiga_integralna.html"
+        html_path = OUTPUT_DIR / f"{BOOK_BASENAME}.html"
 
     if not html_path.exists():
         print("  HTML fajl ne postoji - PDF se ne može generirati!")
