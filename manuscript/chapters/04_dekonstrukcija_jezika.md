@@ -30,7 +30,7 @@ Međutim, istinska moć jezika počiva na složenoj mreži odnosa u koju su oni 
 Ta vanjska, lingvistička struktura izravno se preslikava na unutarnju, kognitivnu razinu. Putem jezika, u umu svakog pojedinca oblikuju se **mentalne** mape – unutarnji modeli svijeta koji služe kao referentni okviri za razumijevanje, pamćenje, zaključivanje i planiranje.
 
 > **Mentalna mapa:** Unutarnja, kognitivna reprezentacija svijeta (pojmovi, odnosi, iskustva) koju pojedinac gradi i ažurira putem jezika i iskustva; služi za tumačenje situacija, donošenje odluka i planiranje; nije statična, već se neprestano prilagođava.
- Te mape nisu statične fotografije stvarnosti već dinamične i prilagodljive konstrukcije koje se neprestano nadograđuju novim informacijama i iskustvima. One predstavljaju kognitivnu arhitekturu unutar koje agent, bio on čovjek ili umjetna inteligencija, interpretira podražaje iz okoline, predviđa buduće događaje i donosi odluke o vlastitom djelovanju. Jezik tako postaje oruđe kojim se gradi i održava naš unutarnji svijet; on je skela naše spoznaje (Vigotski, 1978).
+Te mape nisu statične fotografije stvarnosti već dinamične i prilagodljive konstrukcije koje se neprestano nadograđuju novim informacijama i iskustvima. One predstavljaju kognitivnu arhitekturu unutar koje agent, bio on čovjek ili umjetna inteligencija, interpretira podražaje iz okoline, predviđa buduće događaje i donosi odluke o vlastitom djelovanju. Jezik tako postaje oruđe kojim se gradi i održava naš unutarnji svijet; on je skela naše spoznaje (Vygotsky, 1978).
 
 Taj se proces, od percepcije stvarnosti do svrhovitog djelovanja vođenog unutarnjim modelom, može shematski prikazati na sljedeći način:
 

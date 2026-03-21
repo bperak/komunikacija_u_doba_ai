@@ -11,6 +11,8 @@ import subprocess
 import sys
 import shutil
 import base64
+import uuid
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Optional
 from urllib.parse import quote
@@ -41,6 +43,7 @@ CHAPTER_FILES = [
     "08_digitalni_suputnici.md",
     "09_referencije.md",
     "10_glosar.md",
+    "11_zavrsna_biljeska.md",
 ]
 
 BOOK_CSS = """
@@ -48,8 +51,10 @@ BOOK_CSS = """
 @media print {
     @page { size: A4; margin: 2.5cm 2cm 2.5cm 2.5cm; }
     @page :first { size: A4; margin: 0; }
+    @page fullbleed { size: A4; margin: 0; }
     h1 { page-break-before: always; }
-    blockquote, figure, .img-wrap, pre, table { page-break-inside: avoid; }
+blockquote, figure, .img-wrap, pre, table { page-break-inside: avoid; }
+.figure-block { page-break-inside: avoid; break-inside: avoid-page; }
     body { font-size: 11pt; }
     body {
         max-width: none;
@@ -132,8 +137,8 @@ blockquote p:last-child { margin-bottom: 0; }
 
 /* --- Images: centered, constrained size --- */
 img {
-    max-width: 90%;
-    max-height: 500px;
+    max-width: 100%;
+    max-height: 560px;
     width: auto;
     height: auto;
     display: block;
@@ -146,16 +151,29 @@ img {
     margin: 1.2em 0 0.3em 0;
 }
 
+.figure-block {
+    text-align: center;
+    margin: 1.2em 0 1.2em 0;
+    page-break-inside: avoid;
+    break-inside: avoid-page;
+}
+
+.figure-block .img-wrap {
+    margin: 0 0 0.3em 0;
+    page-break-inside: avoid;
+    break-inside: avoid-page;
+}
+
 .img-wrap svg {
-    max-width: 85%;
-    max-height: 420px;
+    max-width: 100%;
+    max-height: 520px;
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* Slika 2.4 (diag_902): allow wider rendering for legibility */
+/* Slika 2.4 (diag_902): držati unutar margina — plave kućice ne smiju izlaziti */
 .img-wrap svg[viewBox*="807.9375 410"] {
     max-width: 100%;
     max-height: none;
@@ -163,10 +181,19 @@ img {
 
 .img-wrap.slika24 svg,
 .img-wrap.slika24 img {
-    width: 115% !important;
-    max-width: 115% !important;
-    max-height: none !important;
-    margin-left: -7.5% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+}
+
+/* Slika 2.11 (diag_10), Slika 2.12 (ch02_reformacija_znanost): povećati */
+.img-wrap.slika211 svg,
+.img-wrap.slika211 img,
+.img-wrap.slika212 svg,
+.img-wrap.slika212 img {
+    max-width: 100% !important;
+    width: 100% !important;
 }
 
 /* Slika 3.5 (diag_169): dovoljno visine da se labele u kućicama ne trimaju */
@@ -182,12 +209,12 @@ img {
 figure {
     margin: 1.5em auto;
     text-align: center;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 figure img {
     max-width: 100%;
-    max-height: 500px;
+    max-height: 560px;
     margin: 0 auto;
 }
 
@@ -210,6 +237,12 @@ figcaption {
     margin-top: 0;
     margin-bottom: 1.2em;
     line-height: 1.4;
+}
+
+.figure-block .caption {
+    margin-bottom: 0;
+    page-break-inside: avoid;
+    break-inside: avoid-page;
 }
 
 code {
@@ -268,20 +301,32 @@ em { font-style: italic; }
 
 /* Table of contents */
 #TOC {
-    background: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 1.5em 2em;
-    margin: 2em 0;
+    background: #fbfcfe;
+    border: 1px solid #d7e1ec;
+    border-radius: 8px;
+    padding: 1.1em 1.2em 1.2em 1.15em;
+    margin: 1.4em 0 2em 0;
 }
 
-#TOC ul { list-style: none; padding-left: 1em; }
+#TOC ul {
+    list-style: none;
+    padding-left: 0.7em;
+    margin: 0;
+}
 #TOC > ul { padding-left: 0; }
-#TOC li { margin-bottom: 0.3em; }
+#TOC li {
+    margin-bottom: 0.22em;
+    padding-left: 0;
+}
+#TOC li ul {
+    padding-left: 0.9em;
+    margin-top: 0.18em;
+}
 #TOC a { color: #2a5a8c; }
 
 /* ── Book cover ── */
-.book-cover {
+.book-cover,
+.back-cover {
     position: relative;
     width: calc(100% + 4rem);
     min-height: 960px;
@@ -290,6 +335,10 @@ em { font-style: italic; }
     border-radius: 0;
     page-break-after: always;
     background: #0f1932;
+}
+
+.back-cover {
+    page-break-after: auto;
 }
 
 .cover-bg {
@@ -402,6 +451,50 @@ em { font-style: italic; }
     font-weight: 300;
     color: rgba(255, 255, 255, 0.65);
     letter-spacing: 0.15em;
+}
+
+.back-cover {
+    page-break-before: always;
+    page-break-after: auto;
+    margin: 0 -2rem -2rem -2rem;
+}
+
+.back-cover .cover-content {
+    justify-content: center;
+    text-align: center;
+}
+
+.back-cover .cover-middle {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.back-cover-kicker {
+    font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+    font-size: 0.95em;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(219, 234, 254, 0.9);
+    margin-bottom: 1.2em;
+}
+
+.back-cover-title {
+    margin-bottom: 0.55em !important;
+}
+
+.back-cover-subtitle {
+    font-size: 1.18em;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+}
+
+.back-cover-link {
+    margin-top: 1.8em;
+    font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+    font-size: 0.98em;
+    letter-spacing: 0.04em;
+    color: rgba(219, 234, 254, 0.95);
 }
 
 /* ── Inner title page (naslovni list) ── */
@@ -562,6 +655,30 @@ em { font-style: italic; }
     page-break-before: avoid;
 }
 
+/* Glosar */
+.glossary-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0.5em 0 1em 0;
+}
+
+.glossary-page h1 {
+    margin-top: 2em;
+}
+
+.glossary-page p {
+    text-align: left;
+    hyphens: none;
+    -webkit-hyphens: none;
+    line-height: 1.55;
+    margin-bottom: 0.5em;
+    font-size: 0.96em;
+}
+
+.glossary-page hr {
+    margin: 1.2em 0 1.4em;
+}
+
 /* ── TOC heading ── */
 .toc-heading {
     font-family: 'Segoe UI', Calibri, Arial, sans-serif;
@@ -573,10 +690,12 @@ em { font-style: italic; }
     margin-bottom: 0.8em;
     padding-bottom: 0.3em;
     border-bottom: 2px solid #1a3a5c;
+    page-break-before: always;
 }
 
 @media print {
-    .book-cover {
+    .book-cover,
+    .back-cover {
         width: 100%;
         margin: 0;
         page-break-after: always;
@@ -586,6 +705,12 @@ em { font-style: italic; }
         height: 296mm;
         overflow: hidden;
         box-sizing: border-box;
+    }
+    .back-cover {
+        page: fullbleed;
+        page-break-after: auto !important;
+        width: 100%;
+        margin: 0;
     }
     .cover-content {
         min-height: 100%;
@@ -664,6 +789,37 @@ em { font-style: italic; }
         page-break-before: avoid;
         break-before: avoid-page;
     }
+    .back-cover {
+        page: fullbleed;
+        page-break-before: always;
+        min-height: 297mm;
+        height: 297mm;
+        width: 100%;
+        margin: 0;
+        page-break-inside: avoid;
+        break-inside: avoid-page;
+    }
+    .back-cover .cover-content {
+        min-height: 100%;
+        height: 100%;
+        padding: 1.4rem 1.4rem 1.2rem 1.4rem;
+    }
+    .back-cover-kicker {
+        font-size: 0.82em;
+        letter-spacing: 0.14em;
+        margin-bottom: 1em;
+    }
+    .back-cover-title {
+        font-size: 2.05em !important;
+        line-height: 1.15 !important;
+    }
+    .back-cover-subtitle {
+        font-size: 1.05em;
+        line-height: 1.55;
+    }
+    .back-cover-link {
+        font-size: 0.88em;
+    }
 }
 </style>
 """
@@ -704,7 +860,7 @@ def fix_truncated_captions(md_text: str) -> str:
         # Clean trailing punctuation debris and ensure single period
         body = body.rstrip(' ,;:.')
         return f'{prefix}{body}.*'
-    return re.sub(r'^(\*Slika \d+\.\d+: )(.+?)\.\.\.\*$', _fix, md_text, flags=re.MULTILINE)
+    return re.sub(r'^(\*Slika \d+\.\d+[a-z]?: )(.+?)\.\.\.\*$', _fix, md_text, flags=re.MULTILINE)
 
 
 def fix_caption_newlines(md_text: str) -> str:
@@ -719,6 +875,78 @@ def fix_caption_newlines(md_text: str) -> str:
                 and lines[i + 1].strip().startswith("*Slika")):
             result.append("")
     return "\n".join(result)
+
+
+def remove_duplicate_caption_paragraphs(md_text: str) -> str:
+    """Remove standalone paragraphs that duplicate the caption of the image below.
+
+    Some chapter sources contain a short summary sentence immediately before an
+    image, followed by the proper `*Slika X.Y:*` caption under the image. When
+    the sentence substantially repeats that caption, it should not appear in the
+    running text.
+    """
+    lines = md_text.splitlines()
+    ranges_to_remove: list[tuple[int, int]] = []
+
+    def _normalize(text: str) -> str:
+        text = re.sub(r'<[^>]+>', ' ', text)
+        text = re.sub(r'^\*?Slika \d+\.\d+[a-z]?:\s*', '', text, flags=re.IGNORECASE)
+        text = re.sub(r'[^0-9A-Za-zčćžšđČĆŽŠĐ\s-]', ' ', text)
+        text = re.sub(r'\s+', ' ', text).strip().lower()
+        return text
+
+    for i, line in enumerate(lines):
+        if not line.strip().startswith("!["):
+            continue
+
+        j = i + 1
+        while j < len(lines) and not lines[j].strip():
+            j += 1
+        if j >= len(lines) or not lines[j].strip().startswith("*Slika "):
+            continue
+
+        k = i - 1
+        while k >= 0 and not lines[k].strip():
+            k -= 1
+        if k < 0:
+            continue
+        para_end = k
+        while k >= 0 and lines[k].strip():
+            k -= 1
+        para_start = k + 1
+
+        paragraph_lines = lines[para_start:para_end + 1]
+        if not paragraph_lines:
+            continue
+
+        paragraph = " ".join(part.strip() for part in paragraph_lines).strip()
+        if not paragraph or paragraph.startswith(("#", ">", "*", "-", "<")):
+            continue
+        if re.search(r'\([A-ZČĆŽŠĐ][^)]*\d{4}[a-z]?\)', paragraph):
+            continue
+
+        caption = lines[j].strip().strip("*")
+        paragraph_norm = _normalize(paragraph)
+        caption_norm = _normalize(caption)
+        if len(paragraph_norm) < 80 or len(paragraph_norm) > 360:
+            continue
+        if len(caption_norm) < 80:
+            continue
+
+        similarity = SequenceMatcher(None, paragraph_norm, caption_norm).ratio()
+        if similarity >= 0.82:
+            ranges_to_remove.append((para_start, para_end))
+
+    if not ranges_to_remove:
+        return md_text
+
+    remove_idx = {
+        idx
+        for start, end in ranges_to_remove
+        for idx in range(start, end + 1)
+    }
+    cleaned_lines = [line for idx, line in enumerate(lines) if idx not in remove_idx]
+    return "\n".join(cleaned_lines)
 
 
 def fix_image_paths_for_manuscript(md_text: str) -> str:
@@ -756,6 +984,40 @@ def merge_chapters() -> str:
     return "\n\n".join(parts)
 
 
+def extract_cover_metadata() -> dict[str, str]:
+    """Read cover text from the source chapter so HTML and PDF covers stay aligned."""
+    cover_path = CHAPTERS_DIR / "00_naslovnica.md"
+    defaults = {
+        "author": "Benedikt Perak",
+        "title": "Komunikacija u doba umjetne inteligencije",
+        "subtitle": "Razvoj velikih jezičnih modela\ni komunikacijskih agenata",
+    }
+    if not cover_path.exists():
+        return defaults
+
+    text = cover_path.read_text(encoding="utf-8")
+
+    def _extract(pattern: str, default: str) -> str:
+        match = re.search(pattern, text, flags=re.DOTALL)
+        if not match:
+            return default
+        value = match.group(1).strip()
+        value = re.sub(r'<br\s*/?>', '\n', value, flags=re.IGNORECASE)
+        value = re.sub(r'<[^>]+>', '', value)
+        value = re.sub(r'[ \t]+\n', '\n', value)
+        value = re.sub(r'\n[ \t]+', '\n', value)
+        value = re.sub(r'[ \t]{2,}', ' ', value)
+        value = re.sub(r'\n{3,}', '\n\n', value)
+        value = value.strip()
+        return value or default
+
+    return {
+        "author": _extract(r'<div class="cover-author">(.*?)</div>', defaults["author"]),
+        "title": _extract(r'<h1 class="cover-title">(.*?)</h1>', defaults["title"]),
+        "subtitle": _extract(r'<div class="cover-subtitle">(.*?)</div>', defaults["subtitle"]),
+    }
+
+
 def _extract_div(html_text: str, css_class: str):
     """Extract a top-level div by CSS class and return (extracted_html, remaining_html)."""
     marker = f'<div class="{css_class}">'
@@ -787,6 +1049,11 @@ def inline_svg_images(html_text: str, base_dir: Path) -> str:
         full_tag = m.group(0)
         src = m.group(1)
         if not src.endswith('.svg'):
+            return full_tag
+        # Chapter 6 custom SVGs render correctly as external files, but Chrome
+        # can mix up their content when many inline SVGs with repeated internal
+        # ids live in the same long HTML document.
+        if "/ch06_" in src or "\\ch06_" in src or src.split("/")[-1].startswith("ch06_"):
             return full_tag
         svg_path = (base_dir / src).resolve()
         if not svg_path.exists():
@@ -894,19 +1161,39 @@ def postprocess_html(html_text: str) -> str:
         r'<p class="img-wrap">\1</p>',
         html_text
     )
+    # 1b. Slika 2.11 (diag_10), Slika 2.12 (ch02_reformacija_znanost): add class so CSS can enlarge
+    html_text = re.sub(
+        r'<p class="img-wrap">(\s*<img [^>]*src="[^"]*diag_10\.svg[^"]*"[^>]*/?>\s*)</p>',
+        r'<p class="img-wrap slika211">\1</p>',
+        html_text
+    )
+    html_text = re.sub(
+        r'<p class="img-wrap">(\s*<img [^>]*src="[^"]*ch02_reformacija_znanost\.svg[^"]*"[^>]*/?>\s*)</p>',
+        r'<p class="img-wrap slika212">\1</p>',
+        html_text
+    )
 
     # 2. Add .caption class to <p><em>Slika X.Y: ...</em></p>
     html_text = re.sub(
-        r'<p><em>(Slika \d+\.\d+:.*?)</em></p>',
+        r'<p><em>(Slika \d+\.\d+[a-z]?:.*?)</em></p>',
         r'<p class="caption"><em>\1</em></p>',
         html_text
     )
 
     # 3. Also handle *Slika 0.X* patterns (chapter 0 naslovnica)
     html_text = re.sub(
-        r'<p><em>(\*?Slika \d+\.\d+:.*?)</em></p>',
+        r'<p><em>(\*?Slika \d+\.\d+[a-z]?:.*?)</em></p>',
         r'<p class="caption"><em>\1</em></p>',
         html_text
+    )
+
+    # 4. Wrap image + caption pairs into a single block so Chrome does not
+    #    place the caption on the next page during PDF pagination.
+    html_text = re.sub(
+        r'(<p class="img-wrap(?: [^"]+)?">.*?</p>\s*<p class="caption">.*?</p>)',
+        r'<div class="figure-block">\1</div>',
+        html_text,
+        flags=re.DOTALL,
     )
 
     return html_text
@@ -1041,6 +1328,9 @@ def build_html_manual(merged_md: str) -> Path:
 def build_pdf(merged_md: str, html_path: Path = None) -> Path:
     """Build PDF from the HTML file using Chrome headless (includes all SVG diagrams)."""
     pdf_path = OUTPUT_DIR / f"{BOOK_BASENAME}.pdf"
+    tmp_pdf_path = OUTPUT_DIR / f"{BOOK_BASENAME}._fresh.pdf"
+    profile_root = Path.home() / ".codex" / "memories" / "chrome-headless-profiles"
+    user_data_dir = profile_root / f"profile-{uuid.uuid4().hex}"
 
     if html_path is None or not html_path.exists():
         html_path = OUTPUT_DIR / f"{BOOK_BASENAME}.html"
@@ -1071,13 +1361,18 @@ def build_pdf(merged_md: str, html_path: Path = None) -> Path:
     print(f"  Generiranje PDF-a iz HTML-a (sa svim dijagramima)...")
 
     file_url = html_path.resolve().as_uri()
-
+    if tmp_pdf_path.exists():
+        tmp_pdf_path.unlink()
+    user_data_dir.mkdir(parents=True, exist_ok=False)
     cmd = [
         chrome,
         '--headless',
         '--disable-gpu',
         '--no-sandbox',
-        f'--print-to-pdf={pdf_path}',
+        '--disable-crash-reporter',
+        '--disable-crashpad',
+        f'--user-data-dir={user_data_dir}',
+        f'--print-to-pdf={tmp_pdf_path}',
         '--no-pdf-header-footer',
         '--print-to-pdf-no-header',
         file_url,
@@ -1091,12 +1386,17 @@ def build_pdf(merged_md: str, html_path: Path = None) -> Path:
     except subprocess.TimeoutExpired:
         print("  TIMEOUT: PDF generiranje prekinuto nakon 2 min")
         return None
+    finally:
+        shutil.rmtree(user_data_dir, ignore_errors=True)
 
-    if not pdf_path.exists():
+    if result.returncode != 0 or not tmp_pdf_path.exists():
         err = result.stderr[:1000] if result.stderr else "nepoznata greska"
         print(f"  PDF greska: {err}")
         return None
 
+    if pdf_path.exists():
+        pdf_path.unlink()
+    tmp_pdf_path.replace(pdf_path)
     return pdf_path
 
 
@@ -1122,6 +1422,7 @@ def add_page_numbers(pdf_path: Path, skip_first_pages: int = 1) -> bool:
     try:
         doc = fitz.open(str(pdf_path))
         total = len(doc)
+        last_page_original_text = (doc[-1].get_text("text") or "").strip() if total else ""
         if total <= skip_first_pages:
             doc.close()
             return False
@@ -1153,7 +1454,108 @@ def add_page_numbers(pdf_path: Path, skip_first_pages: int = 1) -> bool:
 
         book_title = "Komunikacija u doba umjetne inteligencije"
         heading_rx = re.compile(r"^\d+(?:\.\d+)*\.?\s+.+")
+        special_headings = {"Predgovor", "Referencije", "Glosar", "Kazalo pojmova", "Index", "Bilješka o izdanju"}
         current_heading = ""
+
+        def normalize_heading(text: str) -> str:
+            return re.sub(r"\s+", " ", text).strip().rstrip(".")
+
+        def fit_header_fontsize(text: str, available_width: float, base_size: float = 6.8) -> float:
+            """Shrink long running headers just enough to fit, without trimming."""
+            if available_width <= 0:
+                return base_size
+            text_width = fitz.get_text_length(text, fontname="helv", fontsize=base_size)
+            if text_width <= available_width:
+                return base_size
+            scaled = base_size * (available_width / max(text_width, 1))
+            return max(4.8, min(base_size, scaled))
+
+        def wrap_header_text(text: str, available_width: float, fontsize: float) -> str:
+            """Wrap long running headers into two balanced lines."""
+            words = text.split()
+            if len(words) < 3:
+                return text
+
+            best = text
+            best_score = float("inf")
+            for i in range(1, len(words)):
+                line1 = " ".join(words[:i])
+                line2 = " ".join(words[i:])
+                width1 = fitz.get_text_length(line1, fontname="helv", fontsize=fontsize)
+                width2 = fitz.get_text_length(line2, fontname="helv", fontsize=fontsize)
+                overflow = max(0, width1 - available_width) + max(0, width2 - available_width)
+                balance = abs(width1 - width2)
+                score = overflow * 1000 + balance
+                if score < best_score:
+                    best_score = score
+                    best = f"{line1}\n{line2}"
+            return best
+
+        def detect_heading(page) -> str:
+            blocks = page.get_text("dict").get("blocks", [])
+            candidates = []
+            for idx, block in enumerate(blocks):
+                block_lines = []
+                block_sizes = []
+                block_fonts = []
+                min_y = None
+                bbox = block.get("bbox", [0, 0, 0, 0])
+                for line in block.get("lines", []):
+                    spans = line.get("spans", [])
+                    if not spans:
+                        continue
+                    text = normalize_heading("".join(span.get("text", "") for span in spans))
+                    if not text:
+                        continue
+                    block_lines.append(text)
+                    block_sizes.extend(span.get("size", 0) for span in spans)
+                    block_fonts.extend(span.get("font", "") for span in spans)
+                    line_min_y = min(span.get("bbox", [0, 0, 0, 0])[1] for span in spans)
+                    min_y = line_min_y if min_y is None else min(min_y, line_min_y)
+                if not block_lines:
+                    continue
+                first_line = block_lines[0]
+                if not (heading_rx.match(first_line) or first_line in special_headings):
+                    continue
+                max_size = max(block_sizes) if block_sizes else 0
+                if max_size < 13:
+                    continue
+                text = normalize_heading(" ".join(block_lines))
+                fonts = " ".join(block_fonts)
+                block_x0, _, _, block_y1 = bbox
+
+                # Some long headings are split into a second PDF block on the next line.
+                for next_block in blocks[idx + 1: idx + 4]:
+                    next_lines = []
+                    next_sizes = []
+                    next_bbox = next_block.get("bbox", [0, 0, 0, 0])
+                    for line in next_block.get("lines", []):
+                        spans = line.get("spans", [])
+                        if not spans:
+                            continue
+                        next_text = normalize_heading("".join(span.get("text", "") for span in spans))
+                        if next_text:
+                            next_lines.append(next_text)
+                            next_sizes.extend(span.get("size", 0) for span in spans)
+                    if not next_lines or not next_sizes:
+                        break
+                    next_max_size = max(next_sizes)
+                    next_x0, next_y0, _, _ = next_bbox
+                    next_text = normalize_heading(" ".join(next_lines))
+                    if heading_rx.match(next_text) or next_text in special_headings:
+                        break
+                    if next_max_size < 13 or abs(next_max_size - max_size) > 1.0:
+                        break
+                    if next_y0 - block_y1 > 18 or abs(next_x0 - block_x0) > 24:
+                        break
+                    text = normalize_heading(f"{text} {next_text}")
+                    block_y1 = next_bbox[3]
+
+                candidates.append((min_y or 0, -max_size, "bold" not in fonts.lower() and "semibold" not in fonts.lower(), text))
+            if not candidates:
+                return ""
+            candidates.sort()
+            return candidates[0][3]
 
         for idx, page in enumerate(doc):
             page_no = idx + 1
@@ -1161,37 +1563,92 @@ def add_page_numbers(pdf_path: Path, skip_first_pages: int = 1) -> bool:
                 continue
 
             rect = page.rect
-            page_text = page.get_text("text") or ""
-            lines = [ln.strip() for ln in page_text.splitlines() if ln.strip()]
-            for ln in lines[:40]:
-                if heading_rx.match(ln):
-                    current_heading = ln
-                    break
+            page_text = page.get_text("text")
+            if (
+                "ZAVRŠNA BIL" in page_text
+                or "Ova knjiga završava, ali ostaje" in page_text
+                or "github.com/bperak/komunikacija_u_doba_ai" in page_text
+            ):
+                continue
+            if (
+                "Bilješka o izdanju" in page_text
+                or "BIL JEŠKA O IZDANJU" in page_text
+                or "Ova knjiga ostaje otvorena za" in page_text
+            ):
+                detected_heading = "Bilješka o izdanju"
+            else:
+                detected_heading = detect_heading(page)
+            if detected_heading:
+                current_heading = detected_heading
 
-            # Running header: left=book title, right=current chapter/section (if detected).
-            header_y = 18
-            page.insert_textbox(
-                fitz.Rect(24, header_y - 10, rect.width * 0.55, header_y + 8),
-                book_title,
-                fontsize=8,
-                color=(0.45, 0.45, 0.45),
-                overlay=True,
-                align=0,
-                **font_kwargs,
-            )
+            # Running header: centered group with book title + current chapter/section.
+            header_left = 32
+            header_right = rect.width - 32
+            header_width = header_right - header_left
+            header_color = (0.45, 0.45, 0.45)
+            divider_color = (0.76, 0.80, 0.86)
+            divider_y = 27
+
             if current_heading:
-                chapter_text = current_heading
-                if len(chapter_text) > 60:
-                    chapter_text = chapter_text[:57] + "..."
+                chapter_text = normalize_heading(current_heading)
+                combined_header = f"{book_title} · {chapter_text}"
+                combined_fontsize = fit_header_fontsize(combined_header, header_width, 6.4)
+                combined_width = fitz.get_text_length(combined_header, fontname="helv", fontsize=combined_fontsize)
+
+                if combined_width <= header_width:
+                    page.insert_textbox(
+                        fitz.Rect(header_left, 7, header_right, 20),
+                        combined_header,
+                        fontsize=combined_fontsize,
+                        color=header_color,
+                        overlay=True,
+                        align=1,
+                        **font_kwargs,
+                    )
+                    divider_y = 27
+                else:
+                    title_fontsize = 6.5
+                    chapter_fontsize = 5.2
+                    wrapped_heading = wrap_header_text(chapter_text, header_width, chapter_fontsize)
+                    page.insert_textbox(
+                        fitz.Rect(header_left, 4, header_right, 15),
+                        book_title,
+                        fontsize=title_fontsize,
+                        color=header_color,
+                        overlay=True,
+                        align=1,
+                        **font_kwargs,
+                    )
+                    page.insert_textbox(
+                        fitz.Rect(header_left, 13, header_right, 30),
+                        wrapped_heading,
+                        fontsize=chapter_fontsize,
+                        color=header_color,
+                        overlay=True,
+                        align=1,
+                        **font_kwargs,
+                    )
+                    divider_y = 33 if "\n" in wrapped_heading else 29
+            else:
                 page.insert_textbox(
-                    fitz.Rect(rect.width * 0.45, header_y - 10, rect.width - 24, header_y + 8),
-                    chapter_text,
-                    fontsize=8,
-                    color=(0.45, 0.45, 0.45),
+                    fitz.Rect(header_left, 7, header_right, 20),
+                    book_title,
+                    fontsize=6.5,
+                    color=header_color,
                     overlay=True,
-                    align=2,
+                    align=1,
                     **font_kwargs,
                 )
+                divider_y = 27
+
+            shape = page.new_shape()
+            divider_half = rect.width * 0.16
+            shape.draw_line(
+                fitz.Point(rect.width / 2 - divider_half, divider_y),
+                fitz.Point(rect.width / 2 + divider_half, divider_y),
+            )
+            shape.finish(color=divider_color, width=0.6)
+            shape.commit(overlay=True)
 
             label = str(page_no - start_page + 1)
             y = rect.height - 18
@@ -1204,6 +1661,9 @@ def add_page_numbers(pdf_path: Path, skip_first_pages: int = 1) -> bool:
                 align=1,
                 **font_kwargs,
             )
+
+        if len(doc) > 1 and len(last_page_original_text) < 8:
+            doc.delete_page(len(doc) - 1)
 
         tmp_pdf = pdf_path.with_name(f"{pdf_path.stem}._numbered{pdf_path.suffix}")
         doc.save(str(tmp_pdf), deflate=True)
@@ -1236,6 +1696,7 @@ def normalize_front_matter_cover(pdf_path: Path) -> bool:
         if len(src) < 2:
             src.close()
             return False
+        cover_meta = extract_cover_metadata()
         unicode_font = find_unicode_font()
         font_kwargs = {"fontname": "helv"}
         if unicode_font:
@@ -1250,7 +1711,7 @@ def normalize_front_matter_cover(pdf_path: Path) -> bool:
         white = (0.96, 0.96, 0.96)
         first.insert_textbox(
             fitz.Rect(0, 34, first_rect.width, 90),
-            "Benedikt Perak",
+            cover_meta["author"],
             fontsize=18,
             align=1,
             color=white,
@@ -1258,7 +1719,7 @@ def normalize_front_matter_cover(pdf_path: Path) -> bool:
         )
         first.insert_textbox(
             fitz.Rect(54, first_rect.height * 0.40, first_rect.width - 54, first_rect.height * 0.58),
-            "Komunikacija u doba umjetne inteligencije",
+            cover_meta["title"],
             fontsize=28,
             align=1,
             color=white,
@@ -1266,7 +1727,7 @@ def normalize_front_matter_cover(pdf_path: Path) -> bool:
         )
         first.insert_textbox(
             fitz.Rect(70, first_rect.height * 0.56, first_rect.width - 70, first_rect.height * 0.66),
-            "Razvoj velikih jezičnih modela\ni komunikacijskih agenata",
+            cover_meta["subtitle"],
             fontsize=15,
             align=1,
             color=white,
@@ -1368,6 +1829,7 @@ def main():
     merged = clear_image_alt_text(merged)
     merged = fix_truncated_captions(merged)
     merged = fix_caption_newlines(merged)
+    merged = remove_duplicate_caption_paragraphs(merged)
     merged_for_html = fix_image_paths_for_manuscript(merged)
     print("  Putanje slika popravljene.")
     print("  Alt-tekst slika obrisan (sprječava duple opise).")

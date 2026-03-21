@@ -66,7 +66,7 @@ Sva prava pridržana. Niti jedan dio ovog izdanja ne može biti objavljen, preti
 </div>
 
 <div class="impresum-cite">
-<div class="impresum-label">Referenca priručnika (APA 7)</div>
+<div class="impresum-label">Referenca</div>
 Perak, Benedikt (2025). <em>Komunikacija u doba umjetne inteligencije: Razvoj velikih jezičnih modela i komunikacijskih agenata</em>. Rijeka: Filozofski fakultet u Rijeci.
 </div>
 

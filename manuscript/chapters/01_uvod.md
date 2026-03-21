@@ -58,11 +58,14 @@ Već usmena predaja, ta prva i najdugovječnija komunikacijska tehnologija, preo
 
 
 
-![](../../docs/diagrams/diag_05.svg)
+
+
+
+![](../../docs/diagrams/ch01_funkcije_usmene_predaje.svg)
 *Slika 1.4: Funkcije usmene predaje.*
 
 
-Suvremeno doba svjedoči tehnološkom prijelomu koji svojom dubinom i dosegom nadilazi mnoge prethodne. Riječ je o pojavi velikih jezičnih modela (engl. *Large Language Model*, LLM), naprednih sustava umjetne inteligencije poput modela GPT (OpenAI, 2024b), Gemini (Google), Claude (Anthropic, 2024) ili Llama (Meta AI, 2024). Ustrojeni na nepojmljivo golemim korpusima digitaliziranoga ljudskog jezika i znanja, ti su sustavi osposobljeni za prepoznavanje i reproduciranje najsuptilnijih obrazaca ljudskoga sporazumijevanja. U njima se očituje fascinantna dvojnost koju je elegantno sažela akademkinja Milena Žic Fuchs (Žic Fuchs 1990), razlikujući znanje o svijetu (činjenice, pojmovi, odnosi) i znanje o jeziku (gramatika, stilistika, pragmatika). Današnji veliki jezični modeli s iznimnom vještinom ovladavaju jezičnim kodom, tvoreći tekstove koji su gramatički suvisli, stilski prilagođeni, a često i činjenično točni te kontekstualno primjereni. Oni s nevjerojatnom uvjerljivošću oponašaju ljudsku jezičnu proizvodnju, nerijetko dostižući, a u nekim usko određenim zadacima i nadmašujući ljudsku izvedbu.
+Suvremeno doba svjedoči tehnološkom prijelomu koji svojom dubinom i dosegom nadilazi mnoge prethodne. Riječ je o pojavi velikih jezičnih modela (engl. *Large Language Model*, LLM), naprednih sustava umjetne inteligencije poput modela GPT (OpenAI, 2024b), Claude (Anthropic, 2024), Gemini ili Llama. Ustrojeni na nepojmljivo golemim korpusima digitaliziranoga ljudskog jezika i znanja, ti su sustavi osposobljeni za prepoznavanje i reproduciranje najsuptilnijih obrazaca ljudskoga sporazumijevanja. U njima se očituje fascinantna dvojnost koju je elegantno sažela akademkinja Milena Žic Fuchs (Žic-Fuchs, 1991), razlikujući znanje o svijetu (činjenice, pojmovi, odnosi) i znanje o jeziku (gramatika, stilistika, pragmatika). Današnji veliki jezični modeli s iznimnom vještinom ovladavaju jezičnim kodom, tvoreći tekstove koji su gramatički suvisli, stilski prilagođeni, a često i činjenično točni te kontekstualno primjereni. Oni s nevjerojatnom uvjerljivošću oponašaju ljudsku jezičnu proizvodnju, nerijetko dostižući, a u nekim usko određenim zadacima i nadmašujući ljudsku izvedbu.
 
 > **LLM – veliki jezični model:** Sustav umjetne inteligencije treniran na ogromnim korpusima teksta koji predviđa sljedeći token (riječ ili dio riječi) i na temelju toga generira ili dopunjuje tekst; primjeri uključuju GPT, Claude, Gemini, Llama.
 
@@ -98,17 +101,17 @@ S tehnološkim razumijevanjem kao osnovom ulazimo u dublju, pojmovnu raščlambu
 
 
 
-Budući da je o umjetnoj inteligenciji teško govoriti bez razumijevanja njezina materijalnog temelja, istražit ćemo (**Poglavlje 5**) neraskidivu vezu između eksponencijalnog rasta procesorske snage i napretka umjetne inteligencije, povlačeći pritom usporedbe s evolucijom ljudskoga mozga. Razmotrit ćemo kako ta snaga omogućuje današnje modele i kakve horizonte otvara za buduće, još moćnije sustave, uključujući potencijalne multi-agentske rojeve i dugoročnu potragu za općom umjetnom inteligencijom (AGI).
+Budući da je o umjetnoj inteligenciji teško govoriti bez razumijevanja njezina materijalnog temelja, istražit ćemo (**Poglavlje 5**) neraskidivu vezu između eksponencijalnog rasta procesorske snage i napretka umjetne inteligencije, povlačeći pritom usporedbe s evolucijom ljudskoga mozga. Razmotrit ćemo kako ta snaga omogućuje današnje modele i kakve horizonte otvara za buduće, još moćnije sustave, uključujući potencijalne višeagentske sustave i agentske rojeve te dugoročnu potragu za općom umjetnom inteligencijom (AGI).
 
 > **AGI:** Opća umjetna inteligencija (engl. *Artificial General Intelligence*) – hipotetski sustav koji bi posjedovao ljudsku razinu opće inteligencije i mogao rješavati širok spektar zadataka bez ograničenja na jednu domenu; za sada je cilj istraživanja, a ne postojeća tehnologija.
 
 
 
-Nakon teorijskih i tehnoloških temelja prelazimo na praktičnu izgradnju komunikacijskih partnera (Poglavlje 6). Ovo poglavlje detaljno opisuje put od temeljne jezgre velikog jezičnog modela do funkcionalnog i korisnog AI agenta. Istražit ćemo ključne tehnike poput inženjerstva upita (engl. *Prompt Engineering*), odnosno umijeća preciznog upravljanja modelom, zatim obogaćenog dohvaćanja podataka (engl. *Retrieval-Augmented Generation*, RAG) koje agentima omogućuje pristup vanjskom, ažurnom znanju, te mehanizama za korištenje alata (engl. *Tool Use*) koji im daju sposobnost djelovanja u digitalnom svijetu.
+Nakon teorijskih i tehnoloških temelja prelazimo na praktičnu izgradnju komunikacijskih partnera (**Poglavlje 6**). Ovo poglavlje detaljno opisuje put od temeljne jezgre velikog jezičnog modela do funkcionalnog i korisnog AI agenta. Istražit ćemo ključne tehnike poput inženjerstva upita (engl. *Prompt Engineering*), odnosno umijeća preciznog upravljanja modelom, zatim obogaćenog dohvaćanja podataka (engl. *Retrieval-Augmented Generation*, RAG) koje agentima omogućuje pristup vanjskom, ažurnom znanju, te mehanizama za korištenje alata (engl. *Tool Use*) koji im daju sposobnost djelovanja u digitalnom svijetu.
 
 
 
-Kako ovi agenti djeluju u praksi? Poglavlje 7 donosi konkretne primjere i studije slučaja, ilustrirajući kako se koriste za preobrazbu korisničke podrške, personalizaciju obrazovnih procesa, unaprjeđenje marketinških strategija te kako pronalaze primjenu u zdravstvu, poslovnim procesima i kreativnim industrijama. Analizirat ćemo načine na koje stvaraju novu vrijednost, ali i nove izazove koje sa sobom donose.
+Kako ovi agenti djeluju u praksi? **Poglavlje 7** donosi konkretne primjere i studije slučaja, ilustrirajući kako se koriste za preobrazbu korisničke podrške, personalizaciju obrazovnih procesa, unaprjeđenje marketinških strategija te kako pronalaze primjenu u zdravstvu, poslovnim procesima i kreativnim industrijama. Analizirat ćemo načine na koje stvaraju novu vrijednost, ali i nove izazove koje sa sobom donose.
 
 
 

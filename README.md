@@ -24,12 +24,23 @@ Ovo izdanje ima novi oblik — **agentno obnavljajuće knjige**. Prvo izdanje bi
 
 ## Preuzimanje knjige
 
-| Format | Preuzmi |
-|--------|---------|
+### Službeno izdanje (izdavač)
+
+Elektroničko izdanje dostupno je na **izdavačkoj stranici Filozofskog fakulteta** u Rijeci — to je primarni kanal za citiranje i dijeljenje kad je stranica objavljena. *(Umetni ovdje točan URL kad bude na FFRI webu.)*
+
+### GitHub (izvor + arhiv izdanja)
+
+| Što | Opis |
+|-----|------|
+| **Zadnji build** | Release **[latest](https://github.com/bperak/komunikacija_u_doba_ai/releases/tag/latest)** — automatski se ažurira pri pushu PDF/HTML na `main`; praktičan za razvoj, ne zamjenjuje službeni broj izdanja. |
+| **Označena izdanja** | Pojedina izdanja (npr. `v1.0.0`, `v1.1.0`) — trajni zapisi za arhiv i stabilne poveznice. **Kad FFRI objavi novo izdanje**, napravi novi Release s novim tagom. Upute: [docs/IZDANJE_GITHUB.md](docs/IZDANJE_GITHUB.md). |
+
+| Format | Preuzmi (grana `main`) |
+|--------|-------------------------|
 | **PDF** | [⬇ Perak_Komunikacija_u_doba_AI.pdf](https://github.com/bperak/komunikacija_u_doba_ai/raw/main/manuscript/Perak_Komunikacija_u_doba_AI.pdf) |
 | **HTML** | [⬇ Perak_Komunikacija_u_doba_AI.html](https://github.com/bperak/komunikacija_u_doba_ai/raw/main/manuscript/Perak_Komunikacija_u_doba_AI.html) |
 
-[📦 Releases](https://github.com/bperak/komunikacija_u_doba_ai/releases)
+[📦 Svi releasei](https://github.com/bperak/komunikacija_u_doba_ai/releases)
 
 ---
 
@@ -52,15 +63,20 @@ Ovo izdanje ima novi oblik — **agentno obnavljajuće knjige**. Prvo izdanje bi
 
 ```
 ├── manuscript/
-│   └── chapters/          # Markdown poglavlja knjige
+│   ├── chapters/          # Markdown poglavlja knjige
+│   ├── Perak_Komunikacija_u_doba_AI.pdf
+│   └── Perak_Komunikacija_u_doba_AI.html
 ├── docs/
 │   └── diagrams/          # Mermaid izvori (.mmd) i SVG dijagrami
 ├── scripts/
-│   └── build_pdf.py       # Skripta za generiranje HTML/PDF knjige
-├── book_builder/          # Agentni alati za izgradnju knjige
-├── tests/                 # Testovi
-├── requirements.txt       # Python ovisnosti
-└── package.json           # Node.js ovisnosti (Mermaid dijagrami)
+│   ├── build_pdf.py      # Generiranje HTML/PDF knjige
+│   ├── export_cover_png.py
+│   └── ostale skripte (formatting, split, dijagrami, glosar)
+├── book_builder/         # Agentni alati za izgradnju knjige
+├── tests/                # Testovi
+├── dodatno/              # Arhiva: stari rukopisi, planiranje, opcionalne skripte
+├── requirements.txt
+└── package.json
 ```
 
 ## Izgradnja knjige iz izvora

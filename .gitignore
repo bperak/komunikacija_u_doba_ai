@@ -11,15 +11,8 @@ __pycache__/
 node_modules/
 package-lock.json
 
-# Build intermediates
-manuscript/knjiga_merged_for_pdf.md
-
-# Original manuscript (not for public repo)
-manuscript/Ben knjiga lektorirana_za_obradu.md
-manuscript/Ben knjiga lektorirana_za_obradu_from_chapters.md
-manuscript/diagram_captions_from_docx.json
-manuscript/diagram_placeholder_lines.txt
-manuscript/mermaid_diagrami.md
+# Arhiva / nepotrebno za build (pomaknuto u dodatno/)
+dodatno/
 
 # IDE / Editor
 .cursor/
@@ -33,3 +26,6 @@ Thumbs.db
 
 # Backup copies of diagrams
 docs/diagrams copy*/
+
+# Interna promocija (planovi, kontakti — ne u git)
+promocija/

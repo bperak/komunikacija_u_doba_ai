@@ -15,8 +15,8 @@ U središtu te složenosti nalazi se *agent* – pojedinac, organizacija, tehnol
 
 
 
-![Shematski prikaz procesa projekcije trendova od analize sadašnjosti do mogući...](../../docs/diagrams/diag_29.svg)
-*Slika 8.1: Shematski prikaz procesa projekcije trendova od analize sadašnjosti do mogući...*
+![Shematski prikaz procesa projekcije trendova od analize sadašnjosti do mogućih budućnosti.](../../docs/diagrams/ch08_projekcija_trendova.svg)
+*Slika 8.1: Shematski prikaz procesa projekcije trendova od analize sadašnjosti do mogućih budućnosti i strateškog djelovanja u sadašnjosti.*
 
 Ovo poglavlje stoga ne nudi proročanstva, već teži analizi koja identificira i tumači ključne vektore promjena. Razmatrat će se konvergencija tehnologija poput umjetne inteligencije i biotehnologije, transformacija paradigmi rada i ekonomske vrijednosti te promjene u načinima na koje stvaramo, provjeravamo i distribuiramo znanje. Svaki od tih trendova bit će prikazan ne kao izolirana pojava, već kao dio širega mozaika koji čini našu suvremenost.
 
@@ -44,7 +44,7 @@ Tempo je također označio potencijalni sukob u rasporedu: školska priredba nje
 
 Anin radni dan započinjao je pregledom dinamičke „radne ploče“ koju je Tempo projicirao. Prvi zadatak: pregled simulacija za projekt 'Orion'. Agent za analizu 'Synapse' već je obradio terabajte podataka, istaknuo tri najperspektivnija smjera, identificirao anomaliju u podacima i predložio tri hipoteze za njezino objašnjenje.
 
-Ovdje se očitovala srž „jaza u djelatnosti“ (engl. *agency gap*), opisanog u tadašnjim scenarijskim izvješćima s polovice dvadesetih (Geneva Report, 2025). Anina sposobnost nije bila zamijenjena, već eksponencijalno umnožena. Ona je postavljala strateška pitanja agentima, vodila dijalog sa Synapseom i Scholarom, dok je AI obavljao analitički posao koji bi prije zahtijevao cijeli tim. Znala je da su radna mjesta laboratorijskih tehničara i mlađih analitičara podataka, koja su prije deset godina bila ulazna točka u njezinu struku, gotovo u potpunosti nestala, apsorbirana u funkcije agenata. Napredak koji je njoj dao krila, drugima je oduzeo tlo pod nogama.
+Ovdje se očitovala srž „jaza u djelatnosti“ (engl. *agency gap*), opisanog u tadašnjim scenarijskim izvješćima s polovice dvadesetih. Anina sposobnost nije bila zamijenjena, već eksponencijalno umnožena. Ona je postavljala strateška pitanja agentima, vodila dijalog sa Synapseom i Scholarom, dok je AI obavljao analitički posao koji bi prije zahtijevao cijeli tim. Znala je da su radna mjesta laboratorijskih tehničara i mlađih analitičara podataka, koja su prije deset godina bila ulazna točka u njezinu struku, gotovo u potpunosti nestala, apsorbirana u funkcije agenata. Napredak koji je njoj dao krila, drugima je oduzeo tlo pod nogama.
 
 > **Jaz u djelatnosti / agency gap:** Asimetrija između onih čija je djelatnost umnožena pomoću AI agenata (strateško pitanje, viša razina odlučivanja) i onih čija su radna mjesta apsorbirana ili zamijenjena automatizacijom; opisuje društvenu nejednakost u eri sveprisutnih agenata.
 
@@ -71,7 +71,7 @@ Agent nije pokazao videozapis iz empatije ili želje da proširi njezine horizon
 Te večeri, dok je Tempo tiho upravljao ambijentalnim osvjetljenjem, Ana nije razmišljala o tehnološkom čudu. Razmišljala je o licima sa snimke. Osjećala se kao da je dobila budućnost, ali je usput izgubila nešto neimenovano, nešto neuredno i nesavršeno, nešto što se nekoć nazivalo punoćom života.
 
 
-![](../../docs/diagrams/ch08_pametno_budjenje.svg)
+![Procesni dijagram pametnog sustava za buđenje.](../../docs/diagrams/ch08_pametno_budjenje.svg)
 *Slika 8.2: Procesni dijagram pametnog sustava za buđenje koji, temeljem korisničkog profila, putem agenata upravlja ambijentom i priprema informacijski sažetak.*
 
 ### 8.2.5 Radni tokovi i učenje budućnosti: agenti kao suradnici i mentori
@@ -102,7 +102,7 @@ Posebnu pozornost u analizi mrežnih struktura zavrjeđuje uloga agenata kao pos
 Iz takva posredničkoga položaja proizlazi mogućnost nadzora nad protokom dobara i spoznaja, ali i sposobnost prepoznavanja i spajanja različitih ideja, što ga čini katalizatorom inovacije. Agent posrednik je aktivni sudionik koji može filtrirati, tumačiti i usmjeravati informacije koje prolaze kroz njega. Time se ostvaruje prednost koju sociološka tradicija naziva *tertius gaudens* ili „treći koji se raduje“, opisujući situaciju u kojoj posrednik izvlači korist iz odnosa između drugih dviju strana koje povezuje.
 
 
-![](../../docs/diagrams/ch08_agent_posrednik.svg)
+![Agent C djeluje kao posrednik između dvaju klastera.](../../docs/diagrams/ch08_agent_posrednik.svg)
 *Slika 8.3: Centralni Agent C djeluje kao posrednik između agenata u Klasteru A i Klasteru B, premošćujući strukturnu rupu u mreži.*
 
 Uloga posrednika može se, štoviše, raščlaniti na nekoliko podtipova, ovisno o specifičnom mrežnom okruženju (Wasserman & Faust, 1994). Agent može djelovati kao *vratar* (engl. *gatekeeper*), nadzirući pristup informacijama i resursima unutar vlastite, guste skupine. Jednako tako, može preuzeti ulogu *predstavnika* (engl. *representative*), djelujući kao ključna spona preko koje njegova skupina komunicira s vanjskim okruženjem. Naposljetku, najizraženiji oblik posredništva jest uloga *poveznice* (engl. *liaison*), koju obnaša agent spajajući dva potpuno odvojena klastera, a da sam formalno ne pripada nijednome od njih. Svaki od ovih položaja nosi specifične prednosti i odgovornosti.
@@ -125,7 +125,7 @@ Promišljanje o ovim prijelomnim točkama upućuje na potrebu za oblikovanjem te
 
 
 
-![](../../docs/diagrams/ch08_automatizacija_prekid.svg)
+![Prijelaz iz automatizirane rutine u aktivno ljudsko djelovanje.](../../docs/diagrams/ch08_automatizacija_prekid.svg)
 *Slika 8.4: Shematski prikaz prijelaza iz stanja automatizirane rutine u stanje aktivnoga ljudskog djelovanja potaknutog neočekivanim događajem.*
 
 ## 8.3 Dešifriranje vizije: ključni trendovi i tehnološki pokretači
@@ -185,8 +185,8 @@ Tri temeljna svojstva koja određuju narav i svrhu inteligentnih agenata jesu pr
 **Proaktivnost se očituje u sposobnosti agenta da djeluje samoinicijativno.** Umjesto da reaktivno čeka izravne upute korisnika, proaktivan agent poduzima korake usmjerene k ostvarenju svojih ciljeva. Njegovo djelovanje nije potaknuto isključivo vanjskim događajima, već i unutarnjim stanjem i namjerama. On ne samo da odgovara na promjene u okruženju, već ih i predviđa te djeluje unaprijed kako bi iskoristio prilike ili spriječio nepovoljne ishode.
 
 
-![](../../docs/diagrams/diag_77.svg)
-*Slika 8.5: Proaktivnost se očituje u sposobnosti agenta da djeluje samoinicijativno. U...*
+![Proaktivnost, autonomija i delegiranje odluka kao povezane sastavnice djelovanja agenta.](../../docs/diagrams/ch08_proaktivnost_autonomija.svg)
+*Slika 8.5: Proaktivnost, autonomija i delegiranje odluka kao povezane sastavnice samostalnog djelovanja agenta.*
 
 **Autonomija,** s druge strane, podrazumijeva sposobnost agenta da djeluje neovisno, upravljajući vlastitim unutarnjim stanjima i ponašanjem bez stalne i izravne ljudske intervencije. Autonoman agent posjeduje kontrolu nad svojim postupcima i može donositi odluke na temelju vlastite percepcije okruženja i ugrađenog znanja. Uistinu, proaktivnost i autonomija usko su povezane; autonoman agent nužno mora biti i proaktivan kako bi učinkovito djelovao i ostvario zadane ciljeve u dinamičnom okruženju (Wooldridge & Jennings, 1995).
 
@@ -200,7 +200,7 @@ Zaključno, proaktivnost, autonomija i mogućnost delegiranja odluka konstitutiv
 
 ### 8.3.3	Hiperpersonalizacija
 
-Hiperpersonalizacija predstavlja stupanj razvoja u pristupu korisniku koji bitno nadilazi okvire tradicionalne personalizacije. Dok se potonja uglavnom oslanja na statične podatke poput demografskih obilježja ili povijesti kupnje kako bi prilagodila ponudu, hiperpersonalizacija se temelji na dinamičkoj obradi podataka u stvarnom vremenu težeći stvaranju jedinstvenog i kontekstualno osviještenog iskustva za svakog pojedinca. U temelju ovoga pristupa leži sposobnost sustava da razumije, predvidi, pa čak i oblikuje potrebe korisnika u trenutku njihova nastanka, koristeći se pritom naprednim tehnologijama umjetne inteligencije i strojnog učenja (Novak i sur., 2021).
+Hiperpersonalizacija predstavlja stupanj razvoja u pristupu korisniku koji bitno nadilazi okvire tradicionalne personalizacije. Dok se potonja uglavnom oslanja na statične podatke poput demografskih obilježja ili povijesti kupnje kako bi prilagodila ponudu, hiperpersonalizacija se temelji na dinamičkoj obradi podataka u stvarnom vremenu, težeći stvaranju jedinstvenog i kontekstualno osviještenog iskustva za svakog pojedinca. U temelju ovoga pristupa leži sposobnost sustava da razumije, predvidi, pa čak i oblikuje potrebe korisnika u trenutku njihova nastanka, koristeći se pritom naprednim tehnologijama umjetne inteligencije i strojnog učenja (Chen i sur., 2021).
 
 Svrha hiperpersonalizacije jest uspostava dubljeg i smislenijeg odnosa s korisnikom putem isporuke relevantnog sadržaja, proizvoda ili usluga točno u onom trenutku i putem onog kanala koji pojedincu najviše odgovara. To se postiže sintezom različitih vrsta podataka, primjerice:
 
@@ -213,12 +213,12 @@ Svrha hiperpersonalizacije jest uspostava dubljeg i smislenijeg odnosa s korisni
 Ovi se podatkovni skupovi neprestano prikupljaju i obrađuju pomoću algoritama strojnog učenja koji stvaraju slojevit i fluidan profil korisnika. Takav profil nije statičan dokument, već živi model koji se mijenja sa svakom novom interakcijom. Na temelju njega, sustavi donose autonomne odluke. U tom procesu ključnu ulogu imaju programski agenti – inteligentni softverski entiteti zaduženi za izvršavanje specifičnih zadataka. Ovi agenti u stvarnom vremenu odlučuju koji će se sadržaj prikazati, koju će promotivnu ponudu korisnik dobiti ili kako će se sučelje aplikacije prilagoditi njegovim trenutačnim namjerama.
 
 
-![Prikaz ciklusa u kojem se korisnički podaci obrađuju umjetnom inteligencijom ...](../../docs/diagrams/diag_31.svg)
-*Slika 8.6: Prikaz ciklusa u kojem se korisnički podaci obrađuju umjetnom inteligencijom ...*
+![Prikaz ciklusa hiperpersonalizacije temeljenog na korisničkim podacima.](../../docs/diagrams/ch08_hiperpersonalizacija_ciklus.svg)
+*Slika 8.6: Prikaz ciklusa hiperpersonalizacije u kojem se korisnički podaci obrađuju umjetnom inteligencijom radi prilagodbe sadržaja, ponuda i sučelja.*
 
 Primjena hiperpersonalizacije proteže se na brojna područja. U elektroničkoj trgovini ona omogućuje dinamičko prilagođavanje preporuka proizvoda dok korisnik pregledava stranicu, nudeći mu artikle koji nadopunjuju one koje je već pogledao ili stavio u košaricu. U medijskoj industriji, servisi za strujanje sadržaja poput *Netflixa* ili *Spotifyja* koriste hiperpersonalizaciju za kreiranje jedinstvenih naslovnica i popisa za reprodukciju koji odražavaju individualni ukus korisnika. U financijskom sektoru može se očitovati kroz personalizirane savjete za ulaganje ili ponude kredita prilagođene trenutačnoj financijskoj situaciji klijenta.
 
-Ipak, ovako duboko zadiranje u podatke i ponašanje korisnika otvara i značajna etička te praktična pitanja. Nužno je uspostaviti ravnotežu između stvaranja vrijednosti za korisnika i zaštite njegove privatnosti (Petrović, 2022). Opasnost od stvaranja takozvanih „filtarskih mjehura“ (engl. *filter bubbles*), u kojima je korisnik izložen isključivo sadržaju koji potvrđuje njegova postojeća stajališta, stvarna je prijetnja koja može ograničiti intelektualne i društvene vidike. Nadalje, transparentnost algoritamskog odlučivanja i pitanje moguće diskriminacije na temelju podataka predstavljaju izazove koji zahtijevaju pažljivu regulaciju i etički nadzor. Stoga, premda hiperpersonalizacija nudi golem potencijal za unaprjeđenje korisničkog iskustva, njezin razvoj mora biti praćen snažnom sviješću o odgovornosti i mogućim društvenim posljedicama.
+Ipak, ovako duboko zadiranje u podatke i ponašanje korisnika otvara i značajna etička te praktična pitanja. Nužno je uspostaviti ravnotežu između stvaranja vrijednosti za korisnika i zaštite njegove privatnosti. Opasnost od stvaranja takozvanih „filtarskih mjehura“ (engl. *filter bubbles*), u kojima je korisnik izložen isključivo sadržaju koji potvrđuje njegova postojeća stajališta, stvarna je prijetnja koja može ograničiti intelektualne i društvene vidike. Nadalje, transparentnost algoritamskog odlučivanja i pitanje moguće diskriminacije na temelju podataka predstavljaju izazove koji zahtijevaju pažljivu regulaciju i etički nadzor. Stoga, premda hiperpersonalizacija nudi golem potencijal za unaprjeđenje korisničkog iskustva, njezin razvoj mora biti praćen snažnom sviješću o odgovornosti i mogućim društvenim posljedicama.
 
 ### 8.3.4	Sinergija rojeva
 
@@ -239,13 +239,13 @@ Pojam simbioze čovjeka i umjetne inteligencije otvara misaoni prostor koji znat
 
 Takvo partnerstvo počiva na načelu zajedničkoga rješavanja problema, gdje se ljudske i strojne sposobnosti isprepliću radi postizanja ciljeva koji bi za svakog sudionika pojedinačno bili ili nedostižni ili znatno teži. Riječ je o ostvarenju vizije koju je još davne 1960. godine iznio J. C. R. Licklider, predviđajući suradnju u kojoj će čovjek postavljati ciljeve i pružati motivaciju, dok će stroj obavljati proceduralne poslove i tako oslobađati ljudski um za višu, kreativnu i spoznajnu djelatnost (Licklider, 1960). U tom smislu, umjetna inteligencija djeluje kao produžetak i pojačanje ljudskih kognitivnih sposobnosti, što odjekuje filozofskom idejom proširenog uma (engl. *extended mind*), prema kojoj se granice ljudske spoznaje ne završavaju na koži, već obuhvaćaju i vanjske sustave s kojima stupamo u interakciju (Clark & Chalmers, 1998).
 
-Ključna odrednica ove simbioze jest uzajamno učenje. Za razliku od statičnog alata koji se uporabom ne mijenja, simbiotski AI *agent* neprestano se prilagođava i razvija kroz međudjelovanje s čovjekom. To nije jednosmjeran proces u kojemu čovjek samo upravlja strojem; naprotiv, riječ je o dvosmjernoj sponi gdje čovjek usmjerava i ispravlja AI, a AI zauzvrat čovjeku nudi nove uvide, podatke i motrišta, potičući time i njegovo vlastito učenje i prilagodbu (Wang et al., 2021). Posljedično, takav se sustav s vremenom poboljšava, postajući sve usklađeniji i djelotvorniji partner.
+Ključna odrednica ove simbioze jest uzajamno učenje. Za razliku od statičnog alata koji se uporabom ne mijenja, simbiotski AI *agent* neprestano se prilagođava i razvija kroz međudjelovanje s čovjekom. To nije jednosmjeran proces u kojemu čovjek samo upravlja strojem; naprotiv, riječ je o dvosmjernoj sponi gdje čovjek usmjerava i ispravlja AI, a AI zauzvrat čovjeku nudi nove uvide, podatke i motrišta, potičući time i njegovo vlastito učenje i prilagodbu. Posljedično, takav se sustav s vremenom poboljšava, postajući sve usklađeniji i djelotvorniji partner.
 
 
 
 
-![Shematski prikaz ciklusa međudjelovanja i uzajamnoga učenja u simbiozi čovjek...](../../docs/diagrams/diag_32.svg)
-*Slika 8.7: Shematski prikaz ciklusa međudjelovanja i uzajamnoga učenja u simbiozi čovjek...*
+![Shematski prikaz ciklusa međudjelovanja i uzajamnoga učenja u simbiozi čovjeka i AI agenta.](../../docs/diagrams/ch08_simbioza_covjek_ai.svg)
+*Slika 8.7: Shematski prikaz ciklusa međudjelovanja i uzajamnoga učenja u simbiozi čovjeka i AI agenta.*
 
 Nadalje, unutar ovakvog partnerstva uspostavlja se dinamična podjela rada. Uloge nisu kruto zadane, već se fluidno mijenjaju ovisno o naravi zadatka, kontekstu i trenutnim sposobnostima obaju sudionika. U određenim fazama rješavanja problema čovjek može preuzeti vodstvo, oslanjajući se na svoju intuiciju, iskustvo i etičko prosuđivanje, dok u drugima inicijativu može prepustiti umjetnoj inteligenciji, primjerice kod obrade golemih skupova podataka ili prepoznavanja složenih obrazaca. Ta se prilagodljivost očituje u suvremenim primjenama, poput suradnje liječnika i dijagnostičkih AI sustava, gdje stroj nudi vjerojatnosne procjene na temelju medicinskih slika, a liječnik donosi konačnu odluku integrirajući te podatke sa svojim kliničkim znanjem o pacijentu. Slično tomu, programer u suradnji s AI asistentom za kodiranje usmjerava cjelokupnu arhitekturu softvera, dok mu *agent* pomaže generiranjem, ispravljanjem i optimizacijom pojedinih isječaka koda.
 
@@ -283,8 +283,8 @@ Ova ideja temelji se na načelu rekurzivnog samopoboljšanja (engl. *recursive s
 
 
 
-![Shematski prikaz petlje rekurzivnog samopoboljšanja koja vodi prema eksplozij...](../../docs/diagrams/diag_33.svg)
-*Slika 8.8: Shematski prikaz petlje rekurzivnog samopoboljšanja koja vodi prema eksplozij...*
+![Shematski prikaz petlje rekurzivnog samopoboljšanja koja vodi prema superinteligenciji.](../../docs/diagrams/ch08_rekurzivno_samopoboljsanje.svg)
+*Slika 8.8: Shematski prikaz petlje rekurzivnog samopoboljšanja koja vodi prema eksploziji inteligencije i superinteligenciji.*
 
 Ishod takve eksplozije jest superinteligencija. Filozof Nick Bostrom definira ju kao „svaki intelekt koji uvelike nadmašuje kognitivne performanse ljudi u gotovo svim domenama od interesa“ (Bostrom, 2014). Takav entitet ne bi bio tek puko kvantitativno uvećanje ljudske inteligencije, već bi mogao predstavljati i u bitnome novu vrstu kognicije, s modalitetima mišljenja koji su nama danas posve nezamislivi. Pisac znanstvene fantastike i informatičar Vernor Vinge taj je trenutak nazvao tehnološkom singularnošću, točkom iza koje budućnost postaje nepredvidiva za ljudski um (Vinge, 1993).
 

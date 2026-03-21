@@ -1,0 +1,9 @@
+%%{init: {'themeVariables': {'fontSize': '16px'}, 'flowchart': {'nodeSpacing': 35, 'rankSpacing': 40}}}%%
+flowchart TD
+    A[Podaci o ponašanju] --> D[AI profil korisnika]
+    B[Kontekstualni podaci] --> D
+    C[Transakcijski podaci] --> D
+    D --> E[Odluka agenta]
+    E --> F[Personalizirani sadržaj]
+    F --> G[Nova interakcija]
+    G --> A

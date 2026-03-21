@@ -14,7 +14,7 @@ Prijelaz s modela na agenta označava duboku promjenu paradigme. Težište se pr
 
 
 ![Kontrast modela i agenta](../../docs/diagrams/ch06_model_vs_agent.svg)
-*Prikaz kontrastnih paradigmi: model kao pasivni prediktor i agent kao aktivni sudionik u povratnoj sprezi s okruženjem.*
+*Slika 6.1: Kontrast modela kao pasivnog prediktora i agenta kao aktivnog sudionika u povratnoj sprezi s okruženjem.*
 
 U suvremenom dobu svjedočimo kako se ova evolucija odvija ubrzano. Veliki jezični modeli (LLM), koji su u svojem začetku ponajprije bili složeni statistički modeli jezika, danas se sve više ugrađuju u arhitekture koje im omogućuju agentsko ponašanje. Povezivanjem s vanjskim alatima, izvorima podataka i mogućnostima djelovanja, oni prestaju biti isključivo generatori teksta i postaju jezgra za rasuđivanje unutar složenijih agenata sposobnih za planiranje i izvršavanje zadataka. Time se potvrđuje da je razvojni put umjetne inteligencije usmjeren od stvaranja sofisticiranih analitičkih alata prema oblikovanju autonomnih, racionalnih i svrhovitih dionika u digitalnom i fizičkom svijetu.
 
@@ -29,7 +29,7 @@ Djelovanje API-a može se zorno prikazati usporedbom s naručivanjem u restoranu
 
 
 ![Tijek komunikacije klijent-API-poslužitelj](../../docs/diagrams/ch06_api_request_flow.svg)
-*Tijek komunikacije u kojem klijent šalje zahtjev API-u, API ga prosljeđuje poslužitelju i vraća odgovor klijentu.*
+*Slika 6.2: Tijek komunikacije u kojem klijent šalje zahtjev API-u, API ga prosljeđuje poslužitelju i vraća odgovor klijentu.*
 
 U toj ulozi posrednika, API istodobno obavlja i funkciju zaštitnog sloja apstrakcije. On skriva složenost pozadinskog sustava i izlaže samo one funkcionalnosti koje su potrebne za interakciju. Takav pristup donosi dalekosežne prednosti u razvoju softvera. Omogućuje modularnost, gdje se različiti dijelovi sustava mogu razvijati, ažurirati ili čak zamijeniti neovisno jedni o drugima, sve dok se pridržavaju ugovora definiranog API-em. To potiče ponovnu iskoristivost koda i komponenata te ubrzava cjelokupni razvojni proces. Primjerice, razvojni tim koji stvara mobilnu aplikaciju za vremensku prognozu ne mora graditi vlastitu meteorološku infrastrukturu; umjesto toga, on može putem API-a pozvati vanjsku uslugu koja pruža te podatke.
 
@@ -65,13 +65,13 @@ Svi ti dijelovi zajedno tvore cjelovit i nedvosmislen zahtjev koji API poslužit
 
 
 ![Struktura API poziva](../../docs/diagrams/ch06_api_call_structure.svg)
-*Struktura API poziva od agenta prema poslužitelju: HTTP metoda, URL, zaglavlja i tijelo zahtjeva.*
+*Slika 6.3: Struktura API poziva od agenta prema poslužitelju: HTTP metoda, URL, zaglavlja i tijelo zahtjeva.*
 
 ## 6.3	Anatomija modernoga komunikacijskog partnera
 
 Moderni komunikacijski partner, u svojoj biti, predstavlja složenog agenta čija se funkcionalnost ne iscrpljuje u jednostavnoj razmjeni informacija. Njegova se struktura i sposobnosti mogu raščlaniti na nekoliko ključnih, međusobno povezanih sastavnica koje zajedno tvore cjelovito i učinkovito komunikacijsko biće. Razumijevanje tih sastavnica nužno je za shvaćanje njegove uloge u suvremenom digitalnom okružju.
 
-Dubinska personalizacija i kontekstualno pamćenje
+#### Dubinska personalizacija i kontekstualno pamćenje
 
 Jedno od temeljnih obilježja ovog agenta jest njegova sposobnost dubinske personalizacije.
 
@@ -81,7 +81,7 @@ Ona se ne očituje isključivo u prepoznavanju korisnika, već u dinamičkom pri
 
 Na sposobnost personalizacije izravno se nadovezuje zahtjev za postojanim kontekstualnim razumijevanjem. Moderni agent mora posjedovati svojevrsno „pamćenje“ koje nadilazi puko zadržavanje posljednje razmijenjene poruke. Njegova je zadaća integrirati cjelokupnu povijest interakcija s korisnikom u jedinstvenu i koherentnu sliku. Time se komunikaciji pridaje dijakronijska dimenzija, omogućujući agentu da tumači nove upite u svjetlu prethodnih saznanja i tako izbjegne ponavljanja i nesporazume.
 
-Afektivna usklađenost i proaktivno djelovanje
+#### Afektivna usklađenost i proaktivno djelovanje
 
 Komunikacija sadrži i izraženu afektivnu komponentu. Stoga se anatomija modernog agenta upotpunjuje sposobnošću prepoznavanja i adekvatnog odgovaranja na emocionalno stanje korisnika.
 
@@ -91,7 +91,7 @@ Analizom jezičnih odabira, tona ili čak brzine tipkanja, agent može razlučit
 
 Nadalje, pasivnu reaktivnu ulogu čekanja na korisnički upit moderni komunikacijski partner zamjenjuje proaktivnim pristupom. Na temelju konteksta i analize korisničkog ponašanja, agent je u stanju anticipirati buduće potrebe, nuditi relevantne informacije, postavljati sugestivna pitanja ili predlagati sljedeće korake. Takvo anticipativno djelovanje pretvara agenta iz pukog izvršitelja u istinskog partnera u rješavanju problema i postizanju ciljeva (Jones & Lee, 2022).
 
-Višekanalna dosljednost i operativna integracija
+#### Višekanalna dosljednost i operativna integracija
 
 Sve navedene sposobnosti moraju biti dosljedno primijenjene neovisno o komunikacijskom kanalu. To načelo višekanalne dosljednosti (engl. *omnichannel consistency*) podrazumijeva da agent pruža jednako kvalitetno i koherentno iskustvo bilo da se interakcija odvija putem mrežne stranice, mobilne aplikacije, društvenih mreža ili drugog sučelja. Korisnik mora imati osjećaj da nastavlja isti razgovor s istim sugovornikom, bez obzira na platformu koju u danom trenutku koristi.
 
@@ -103,8 +103,8 @@ Bez sposobnosti povezivanja sa sustavima za upravljanje odnosima s klijentima (C
 
  
 
-![Shematski prikaz ključnih sastavnica modernoga komunikacijskog agenta](../../docs/diagrams/diag_24.svg)
-*Slika 6.1: Shematski prikaz ključnih sastavnica modernoga komunikacijskog agenta.*
+![Shematski prikaz ključnih sastavnica modernoga komunikacijskog agenta](../../docs/diagrams/diag_294.svg)
+*Slika 6.4: Shematski prikaz ključnih sastavnica modernoga komunikacijskog agenta.*
 
 ### 6.3.1 Mozak operacije: jezgra LLM-a i umijeće upravljanja
 
@@ -287,8 +287,8 @@ Sâm proces rada RAG sustava može se raščlaniti na nekoliko ključnih koraka.
 
  
 
-![Shematski prikaz rada RAG sustava](../../docs/diagrams/diag_25.svg)
-*Slika 6.2: Shematski prikaz rada RAG sustava*
+![Shematski prikaz rada RAG sustava](../../docs/diagrams/ch06_rag_sustav.svg)
+*Slika 6.5: Shematski prikaz rada RAG sustava.*
 
 Primjena RAG arhitekture donosi višestruke prednosti. Najvažnije je znatno smanjenje pojave halucinacija jer se model pri generiranju odgovora izravno oslanja na konkretne, dohvaćene podatke. Nadalje, RAG omogućuje modelima pristup ažuriranim ili specifičnim, domeni prilagođenim informacijama bez potrebe za skupim i dugotrajnim ponovnim uvježbavanjem cijeloga modela. Time se otvara i mogućnost transparentnosti i provjerljivosti; uz generirani odgovor, korisniku se mogu ponuditi i izvori iz kojih su informacije preuzete, što mu dopušta da sâm provjeri njihovu točnost. Ovaj je pristup ujedno i ekonomičniji jer je ažuriranje vanjske baze znanja znatno jednostavnije i jeftinije od ponovnog uvježbavanja cjelokupnoga jezičnog modela (Lewis et al., 2020).
 
@@ -311,7 +311,7 @@ Na tom tragu, Maurice Merleau-Ponty (1962) dalje razvija misao o utjelovljenju o
 Kroz taj proces stapanja tijela i alata čovjek se preoblikuje u bitno moćnijeg *agenta*. Njegov odnos sa svijetom više nije određen isključivo biološkim granicama njegova tijela. Sjekira proširuje snagu i doseg ruke, koplje omogućuje lov na daljinu, a pismo nadilazi prolaznost govora i pamćenja. Svako novo oruđe otvara nove načine bivanja u svijetu i djelovanja na njega. Ta temeljna sposobnost služenja oruđima stoga se nalazi u samom ishodištu ljudske povijesti kao povijesti stvaranja, preoblikovanja i nadilaženja zadanoga, potvrđujući čovjeka kao biće koje svoj svijet neprestano iznova gradi.
 
 ![Proširenje djelovanja usvajanjem alata](../../docs/diagrams/ch06_tool_extension.svg)
-*Shema proširenja djelovanja usvajanjem alata: integracijom oruđa agent proširuje akcijski prostor i povećava djelotvornost.*
+*Slika 6.6: Proširenje djelovanja usvajanjem alata: integracijom oruđa agent proširuje akcijski prostor i povećava djelotvornost.*
 
 Za jezične modele upravo uporaba alata razbija te stege, omogućujući jezičnome modelu da posegne izvan sebe i stupi u vezu sa živim, promjenjivim sustavima. Utemeljenje te sposobnosti počiva na kružnom procesu promišljanja i djelovanja, najjasnije oprimjerenom u okvirima poput ReActa (engl. *Reasoning and Acting*). U tome ciklusu jezični model tvori slijed unutarnjih promišljanja (*misli*) i vanjskih zahvata (*akcija*) koji ga postupno vode k rješenju (Yao i dr., 2023). Taj se proces odvija u petlji koja se po potrebi može i ponavljati:
 
@@ -332,8 +332,8 @@ Za jezične modele upravo uporaba alata razbija te stege, omogućujući jezično
 >
 > **5. KONAČNI ODGOVOR:** „Sutra će u Londonu biti oblačno s temperaturom od 15°C."
 
-![](../../docs/diagrams/diag_149.svg)
-*Slika 6.3: Povratna informacija od vanjskog sustava u ciklusu agenta (Tool Use – opažaj).*
+![Povratna informacija od vanjskog sustava u ciklusu agenta](../../docs/diagrams/ch06_tool_feedback.svg)
+*Slika 6.7: Povratna informacija od vanjskog sustava u ciklusu agenta (Tool Use – opažaj).*
 
 
 Taj krug omogućuje agentu rješavanje različitih zadataka, od svakodnevnih upita do visoko specijaliziranih domena. U ulozi osobnoga pomoćnika agent može upravljati kalendarom, slati elektroničku poštu ili nadzirati pametne uređaje u domu. Kao planer putovanja može pretraživati letove putem API-a zrakoplovnih tvrtki, uspoređivati cijene, provjeravati dostupnost hotela i naposljetku izvršiti rezervaciju. U području stručne analize sposoban je izvršavati Pythonove skripte za složenu obradu podataka, slati SQL upite opsežnim bazama podataka ili sažimati sadržaj mrežnih stranica do kojih dolazi u stvarnom vremenu.
@@ -351,8 +351,8 @@ Na zamjedbu se nadovezuje spoznaja (kognicija), koja obuhvaća umne procese rasu
 
 Spoznajom oblikovani planovi ostvaruju se kroz djelovanje (akciju), odnosno kroz sposobnost počinitelja da utječe na okolinu i mijenja je. Djelovanje može poprimiti različite oblike, od jednostavnih motoričkih radnji do složenih komunikacijskih činova. Ono zatvara krug interakcije sa svijetom: svaka akcija uzrokuje promjene u okolini, a te promjene postaju novi predmet zamjedbe. Time se stvara neprekinuta povratna veza, gdje djelovanje ne samo da ostvaruje ciljeve, već i stvara nove informacije koje obogaćuju i mijenjaju unutarnji model svijeta (Powers, 1973).
 
-![Petlja interakcije agenta i okoline](../../docs/diagrams/diag_220.svg)
-*Petlja interakcije agenta i okoline: zamjedba vodi do spoznaje i djelovanja, a djelovanje stvara nove informacije za sljedeću zamjedbu.*
+![Petlja interakcije agenta i okoline](../../docs/diagrams/ch06_agent_cycle.svg)
+*Slika 6.8: Petlja interakcije agenta i okoline: zamjedba vodi do spoznaje i djelovanja, a djelovanje stvara nove informacije za sljedeću zamjedbu.*
 
 
 Naposljetku, cjelokupni sustav prožet je sposobnošću učenja, koja omogućuje trajnu prilagodbu i poboljšanje. Učenje je proces kojim počinitelj mijenja svoje znanje, vještine i strategije na temelju iskustva, odnosno na temelju ishoda vlastitih djelovanja. Bez učenja počinitelj bi bio osuđen na ponavljanje istih pogrešaka, nesposoban prilagoditi se novim i nepredviđenim okolnostima. Sposobnost učenja omogućuje mu da postane otporniji, učinkovitiji i s vremenom sve vještiji u ostvarivanju svojih ciljeva (Sutton & Barto, 2018).
@@ -449,8 +449,8 @@ Sa svim prikupljenim, obrađenim i kontekstualiziranim podacima, jezična jezgra
 
 Prikazani slijed radnji razotkriva sustav za rješavanje problema koji pokazuje sposobnost usklađivanja svojih izvora i vještina kako bi postigao zadani cilj na način koji je istodobno učinkovit, prilagođen i pouzdan.
 
-![Slijed radnji agenta pri planiranju personaliziranog putovanja](../../docs/diagrams/diag_26.svg)
-*Slika 6.4: Slijed radnji agenta pri planiranju personaliziranog putovanja.*
+![Slijed radnji agenta pri planiranju personaliziranog putovanja](../../docs/diagrams/diag_725.svg)
+*Slika 6.9: Slijed radnji agenta pri planiranju personaliziranog putovanja.*
 
 ### 6.3.6 Zaključak: rođenje komunikacijskog partnera
 
@@ -461,6 +461,6 @@ Temeljne sastavnice toga procesa su sposobnost agenta da tumači kontekst, prepo
 ---
 
 ![Faze razvoja komunikacijskog partnera](../../docs/diagrams/ch06_partner_development_phases.svg)
-*Faze razvoja komunikacijskog partnera od jezične jezgre do autonomnog, integriranog sugovornika.*
+*Slika 6.10: Faze razvoja komunikacijskog partnera od jezične jezgre do autonomnog, integriranog sugovornika.*
 
 Time završavamo teorijsko razmatranje uvjeta pod kojima nastaje komunikacijski partner. S jasno postavljenim teorijskim okvirom, okrećemo se njegovoj primjeni i oživotvorenju u stvarnim sustavima.

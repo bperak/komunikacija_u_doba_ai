@@ -1,19 +1,18 @@
 ---
 title: Složeni odnos reformacije i znanosti
 ---
+%%{init: {'themeVariables': {'fontSize': '19px'}, 'flowchart': {'nodeSpacing': 34, 'rankSpacing': 56}}}%%
 flowchart TD
-    R["Reformacija"] --> P["Poticajni učinci"]
-    R --> S["Ograničavajući učinci"]
+    R[Reformacija] --> P[Poticaji]
+    P --> P1[Slabljenje autoriteta]
+    P1 --> P2[Osobno tumačenje]
+    P2 --> Z[Znanstvena revolucija]
 
-    P --> P1["Fragmentacija<br>crkvenog autoriteta"]
-    P --> P2["Naglasak na osobnom<br>čitanju i tumačenju"]
-    P1 --> Z["Znanstvena revolucija"]
-    P2 --> Z
+    R --> S[Ograničenja]
+    S --> S1[Skepsa prema novim idejama]
+    S1 --> S2[Obnova vjere]
 
-    S --> S1["Skepticizam prema<br>pojedinim znanstvenim idejama"]
-    S --> S2["Primarni cilj:<br>obnova vjere, ne znanosti"]
-
-    K["Katolički doprinos"] --> K1["Kopernik, Galileo,<br>Descartes"]
+    K[Katolički doprinos] --> K1[Kopernik, Galileo, Descartes]
     K1 --> Z
 
-    Z --> ZZ["Nije isključivo<br>protestantski fenomen"]
+    Z --> ZZ[Širi europski proces]

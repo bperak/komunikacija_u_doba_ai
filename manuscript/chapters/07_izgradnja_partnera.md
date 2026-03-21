@@ -98,8 +98,8 @@ U zdravstvenom sustavu, uloga LLM agenata nadilazi funkciju jednostavnih sugovor
 Sličan preobražajni potencijal očituje se i u domeni poslovnih procesa. Automatizacija rutinskih zadataka, poput korisničke podrške gdje agenti mogu voditi složene razgovore i rješavati upite 24 sata dnevno, predstavlja tek početnu razinu njihove integracije. Dublja primjena očituje se u optimizaciji složenih sustava kao što je upravljanje lancem opskrbe, gdje agenti na temelju analize tržišnih trendova, logističkih podataka i internih izvješća mogu predviđati potražnju, optimizirati razine zaliha i autonomno koordinirati isporuke. Nadalje, sposobnost automatskog generiranja iscrpnih izvješća iz sirovih poslovnih podataka oslobađa ljudske resurse za strateško odlučivanje. Stoga se ne radi isključivo o pukoj automatizaciji, već o uvođenju sloja umjetne inteligencije koji omogućuje donošenje informiranijih i preciznijih poslovnih odluka, uz ključan preduvjet uspješne integracije s postojećim ERP i CRM sustavima (Davenport & Ronanki, 2018).
 
 
-![Shematski prikaz proširenja primjenjivosti LLM agenata na ključne industrijsk...](../../docs/diagrams/diag_27.svg)
-*Slika 7.1: Shematski prikaz proširenja primjenjivosti LLM agenata na ključne industrijsk...*
+![Shematski prikaz proširenja primjenjivosti LLM agenata na ključne industrijske domene.](../../docs/diagrams/ch07_llm_primjene.svg)
+*Slika 7.1: Shematski prikaz proširenja primjenjivosti LLM agenata na ključne industrijske domene: zdravstvo, poslovanje i kreativne industrije.*
 
 ### Suradnja u kreativnim industrijama
 
@@ -124,8 +124,8 @@ Za analizu tih golemih skupova podataka i predviđanje budućih interesa koriste
 U središtu ovog procesa nalazi se pojam agenta – autonomnog softverskog entiteta koji djeluje u ime korisnika ili sustava. AI agent zadužen za personalizaciju promatra korisničko ponašanje, uči iz njega te samostalno donosi odluke o tome koji sadržaj, u kojem obliku i u kojem trenutku prikazati, s ciljem maksimizacije relevantnosti i korisničkog angažmana.
 
 
-![Shematski prikaz zatvorenog ciklusa u sustavima za personalizaciju sadržaja, ...](../../docs/diagrams/diag_28.svg)
-*Slika 7.2: Shematski prikaz zatvorenog ciklusa u sustavima za personalizaciju sadržaja, ...*
+![Shematski prikaz zatvorenog ciklusa u sustavima za personalizaciju sadržaja.](../../docs/diagrams/ch07_personalizacija_ciklus.svg)
+*Slika 7.2: Shematski prikaz zatvorenog ciklusa u sustavima za personalizaciju sadržaja: od korisničkih signala i profiliranja do preporuke, reakcije i novog učenja sustava.*
 
 ### Transverzalnost primjene
 

@@ -1,8 +1,11 @@
 ---
-title: "Evolucijski koraci prvih sustava za jezičnu interakciju"
+title: Evolucijski koraci prvih sustava za jezičnu interakciju
 ---
+%%{init: {'themeVariables': {'fontSize': '18px'}, 'flowchart': {'nodeSpacing': 36, 'rankSpacing': 52}}}%%
 flowchart TD
-A["ELIZA 1966<br>Prepoznavanje uzoraka"] --> B["PARRY 1972<br>Simulacija s afektivnim stanjem"]
-A --> C["SHRDLU 1972<br>Sinteza jezika i logike"]
-B --> D[Daljnji razvoj dijaloških agenata i NLP-a]
-C --> D
+A[ELIZA 1966] --> B[Prepoznavanje uzoraka]
+B --> G[Daljnji razvoj dijaloških agenata i NLP-a]
+C[PARRY 1972] --> D[Afektivno stanje]
+D --> G
+E[SHRDLU 1972] --> F[Jezik i logika]
+F --> G

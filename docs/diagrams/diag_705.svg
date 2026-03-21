@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 379.95000000000005 296" width="379.95000000000005" height="296" style="--bg:#FFFFFF;--fg:#1b2a4a;--line:#5c7caa;--accent:#5c7caa;--surface:#dceefb;--border:#4a86c8;--muted:#6c84a3;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 30%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="4.8" refX="8" refY="2.4" orient="auto">
+    <polygon points="0 0, 8 2.4, 0 4.8" fill="var(--_arrow)" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="4.8" refX="0" refY="2.4" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.4, 8 4.8" fill="var(--_arrow)" />
+  </marker>
+</defs>
+<rect x="40" y="40" width="299.95000000000005" height="216" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="40" y="40" width="299.95000000000005" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="52" y="54" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">&quot;Dijagram 2: Proces obogaćivanja odzivnika&quot;</text>
+<rect x="81.02500000000002" y="88" width="217.9" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="56" y="148" width="267.95000000000005" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="159.97500000000002" y="208" width="60" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<text x="189.97500000000002" y="106" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Izvorno korisničko pitanje</text>
+<text x="189.97500000000002" y="166" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Dohvaćeni kontekst iz baze znanja</text>
+<text x="189.97500000000002" y="226" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">C</text>
+</svg>

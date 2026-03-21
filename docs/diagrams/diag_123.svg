@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1850.25 428" width="1850.25" height="428" style="--bg:#FFFFFF;--fg:#1b2a4a;--line:#5c7caa;--accent:#5c7caa;--surface:#dceefb;--border:#4a86c8;--muted:#6c84a3;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 30%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="4.8" refX="8" refY="2.4" orient="auto">
+    <polygon points="0 0, 8 2.4, 0 4.8" fill="var(--_arrow)" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="4.8" refX="0" refY="2.4" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.4, 8 4.8" fill="var(--_arrow)" />
+  </marker>
+</defs>
+<rect x="380.36250000000007" y="40" width="1267.8" height="112" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="380.36250000000007" y="40" width="1267.8" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="392.36250000000007" y="54" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">Digitalna Dvojnost</text>
+<rect x="40.00000000000006" y="216" width="833.8000000000001" height="172" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="40.00000000000006" y="216" width="833.8000000000001" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="52.00000000000006" y="230" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">&quot;Dimenzije Obećanja&quot;</text>
+<rect x="897.8000000000001" y="216" width="912.45" height="172" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="897.8000000000001" y="216" width="912.45" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="909.8000000000001" y="230" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">&quot;Izvori Nejednakosti&quot;</text>
+<polyline points="905.4625000000001,132 905.4625000000001,152 456.9000000000001,152 456.9000000000001,282 442.6000000000001,282" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="905.4625000000001,132 905.4625000000001,152 1354.025,152 1354.025,282 1382.625,282" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="442.6000000000001,300 442.6000000000001,320 175.675,320 175.675,340" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="442.6000000000001,300 442.6000000000001,340" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="442.6000000000001,300 442.6000000000001,320 723.825,320 723.825,340" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="1382.625,300 1382.625,320 1054.9250000000002,320 1054.9250000000002,340" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="1382.625,300 1382.625,340" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="1382.625,300 1382.625,320 1681.7250000000001,320 1681.7250000000001,340" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<rect x="814.3875" y="96" width="182.15" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1194.9625" y="96" width="203.60000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1422.5625000000002" y="96" width="203.60000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="340.80000000000007" y="264" width="203.60000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="56" y="340" width="239.35000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="319.3500000000001" y="340" width="246.50000000000003" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="589.8500000000001" y="340" width="267.95000000000005" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1280.825" y="264" width="203.60000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="913.8000000000001" y="340" width="282.25" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1220.0500000000002" y="340" width="325.15000000000003" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1569.2000000000003" y="340" width="225.05" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<text x="905.4625000000001" y="114" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Digitalna Tehnologija</text>
+<text x="1296.7625" y="114" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Obećanje Demokratizacije</text>
+<text x="1524.3625000000002" y="114" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Sjena Novih Nejednakosti</text>
+<text x="442.6000000000001" y="282" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Obećanje Demokratizacije</text>
+<text x="175.675" y="358" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Povećan pristup informacijama</text>
+<text x="442.6000000000001" y="358" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Nove platforme za sudjelovanje</text>
+<text x="723.8250000000002" y="358" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Globalna povezanost i osnaživanje</text>
+<text x="1382.625" y="282" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Sjena Novih Nejednakosti</text>
+<text x="1054.9250000000002" y="358" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Digitalni jaz (pristup i pismenost)</text>
+<text x="1382.6250000000002" y="358" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Algoritamska pristranost i diskriminacija</text>
+<text x="1681.7250000000004" y="358" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Koncentracija moći i nadzor</text>
+</svg>

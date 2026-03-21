@@ -1,10 +1,16 @@
-flowchart LR
-    A[Ulazni podaci] --> B[Model]
-    B --> C[Predikcija ili klasifikacija]
-    C --> D[Čovjek ili vanjski sustav odlučuje o akciji]
+%%{init: {'themeVariables': {'fontSize': '16px'}, 'flowchart': {'nodeSpacing': 35, 'rankSpacing': 40}}}%%
+flowchart TB
+    subgraph M[Model]
+        direction TB
+        A[Ulaz] --> B[Model]
+        B --> C[Predikcija]
+        C --> D[Odluka o akciji]
+    end
 
-    E[Okruženje] --> F[Agent]
-    F --> G[Akcija]
-    G --> E
-
-    F --> H[Ciljevi i mjera uspješnosti]
+    subgraph AG[Agent]
+        direction TB
+        E[Okolina] --> F[Agent]
+        F --> G[Akcija]
+        G --> E
+        F --> H[Cilj i uspjeh]
+    end

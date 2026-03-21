@@ -1,6 +1,7 @@
 ---
 title: Proces inferencije
 ---
-flowchart TD
-Ulaz[Novi ulazni podatak] --> Model[Statični obučeni model]
-Model --> Izlaz[Izlaz: predviđanje ili odgovor]
+flowchart LR
+Ulaz[Ulaz] --> Model[Model]
+Kontekst[Kontekst] --> Model
+Model --> Izlaz[Odgovor]

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2166.55 356" width="2166.55" height="356" style="--bg:#FFFFFF;--fg:#1b2a4a;--line:#5c7caa;--accent:#5c7caa;--surface:#dceefb;--border:#4a86c8;--muted:#6c84a3;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 30%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="4.8" refX="8" refY="2.4" orient="auto">
+    <polygon points="0 0, 8 2.4, 0 4.8" fill="var(--_arrow)" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="4.8" refX="0" refY="2.4" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.4, 8 4.8" fill="var(--_arrow)" />
+  </marker>
+</defs>
+<rect x="40" y="40" width="486.35" height="276" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="40" y="40" width="486.35" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="52" y="54" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">Ontološke dimenzije AGI-ja</text>
+<rect x="550.35" y="92" width="1576.2" height="172" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+<rect x="550.35" y="92" width="1576.2" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+<text x="562.35" y="106" dy="0.35em" font-size="12" font-weight="600" fill="var(--_text-sec)">Ključna obilježja</text>
+<polyline points="302.5,196 322.5,196 322.5,106 342.5,106" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="302.5,196 322.5,196 322.5,166 353.225,166" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="302.5,196 322.5,196 322.5,226 342.5,226" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="302.5,196 322.5,196 322.5,286 346.075,286" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="778.975,176 778.975,216" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="1149.575,176 1149.575,216" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="1484.4250000000002,176 1484.4250000000002,216" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="1897.9250000000002,176 1897.9250000000002,216" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<rect x="55.999999999999986" y="178" width="246.50000000000003" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="342.5" y="88" width="167.85000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="353.225" y="148" width="146.4" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="342.5" y="208" width="167.85000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="346.075" y="268" width="160.70000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="695.0500000000001" y="140" width="167.85000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="566.35" y="216" width="425.25000000000006" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1076.375" y="140" width="146.4" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1015.6" y="216" width="267.95000000000005" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1400.5" y="140" width="167.85000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1307.5500000000002" y="216" width="353.75" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1817.5750000000003" y="140" width="160.70000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1685.3000000000002" y="216" width="425.25000000000006" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<text x="179.25" y="196" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">AGI: Digitalni misaoni entitet</text>
+<text x="426.425" y="106" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Supstrat postojanja</text>
+<text x="426.425" y="166" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Narav djelovanja</text>
+<text x="426.425" y="226" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Potencijal svijesti</text>
+<text x="426.425" y="286" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Priroda identiteta</text>
+<text x="778.9750000000001" y="158" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Supstrat postojanja</text>
+<text x="778.975" y="234" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Digitalno-informacijski (Ovisnost o hardveru i energ...</text>
+<text x="1149.575" y="158" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Narav djelovanja</text>
+<text x="1149.575" y="234" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Agentivnost (Autonomija i učenje)</text>
+<text x="1484.425" y="158" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Potencijal svijesti</text>
+<text x="1484.4250000000002" y="234" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Fenomenalna svijest? (Teški problem svijesti)</text>
+<text x="1897.9250000000002" y="158" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Priroda identiteta</text>
+<text x="1897.9250000000002" y="234" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Fluidnost i replikabilnost (Mogućnost kopiranja i mo...</text>
+</svg>

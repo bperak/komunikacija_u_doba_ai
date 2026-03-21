@@ -1,0 +1,8 @@
+%%{init: {'themeVariables': {'fontSize': '16px'}, 'flowchart': {'nodeSpacing': 35, 'rankSpacing': 40}}}%%
+flowchart TD
+    A[Korisnički upit] --> B[Dohvatnik]
+    C[Baza znanja] --> B
+    B --> D[Relevantni izvori]
+    A --> E[LLM]
+    D --> E
+    E --> F[Utemeljen odgovor]

@@ -6,6 +6,8 @@ Krebs, J. R., & Dawkins, R. (1984). Animal signals: Mind-reading and manipulatio
 
 Tomasello, M. (2008). *Origins of human communication*. The MIT Press.
 
+Žic-Fuchs, M. (1991). *Znanje o jeziku i znanje o svijetu: semantička analiza glagola kretanja u engleskom jeziku*. Filozofski fakultet, Odsjek za opću lingvistiku i orijentalne studije.
+
 ## 2 poglavlje
 
 Adamopoulou, E., & Moussiades, L. (2020). An overview of chatbot technology. U I. Maglogiannis, L. Iliadis, & E. Pimenidis (Ur.), *Artificial Intelligence Applications and Innovations. AIAI 2020. IFIP Advances in Information and Communication Technology, vol 584* (str. 373–383). Springer.
@@ -22,13 +24,15 @@ Baym, N. K. (2015). *Personal connections in the digital age* (2. izd.). Polit
 
 Benkler, Y. (2006). *The wealth of networks: How social production transforms markets and freedom*. Yale University Press.
 
+Berners-Lee, T. (1990). *Information management: A proposal*. CERN.
+
 Boyd, D. M., & Ellison, N. B. (2007). Social network sites: Definition, history, and scholarship. *Journal of Computer-Mediated Communication, 13*(1), 210–230.
 
 Bush, V. (1945). As we may think. *The Atlantic Monthly, 176*(1), 101–108.
 
 Butler, J. (1990). *Gender trouble: Feminism and the subversion of identity*. Routledge.
 
-Cadwalladr, C., & Graham-Harrison, E. (2018, 17. ožujka). Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach. *The Guardian*. Preuzeto s 
+Cadwalladr, C., & Graham-Harrison, E. (2018, 17. ožujka). Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach. *The Guardian*. https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election
 
 Carey, J. W. (1989). *Communication as culture: Essays on media and society*. Unwin Hyman.
 
@@ -64,13 +68,19 @@ Goody, J., & Watt, I. (1968). The consequences of literacy. U J. Goody (Ur.), *
 
 Harari, Y. N. (2011). *Sapiens: A brief history of humankind*. Harvill Secker.
 
-Harari, Y. N. (2014). *Sapiens: A brief history of humankind*. (U hrvatskom tekstu se vjerojatno referira na različita izdanja ili djela, no ovo je najpoznatije djelo iz tog perioda).
+Harari, Y. N. (2014). *Sapiens: A brief history of humankind*. Harvill Secker.
 
 Harrison, P. (2007). *The fall of man and the foundations of science*. Cambridge University Press.
 
-Jones, K., & Lee, W. (2022). Trust and consistency in omnichannel customer service. *Journal of Service Research, 25*(1), 102-118. (Ovo je primjer generičke reference jer stvarna ne postoji, ali ilustrira kontekst citata).
+Hofstede, G. (2001). *Culture's consequences: Comparing values, behaviors, institutions and organizations across nations* (2. izd.). Sage Publications.
+
+Howe, J. (2008). *Crowdsourcing: Why the power of the crowd is driving the future of business*. Crown Business.
 
 Latour, B. (2005). *Reassembling the social: An introduction to actor-network-theory*. Oxford University Press.
+
+Leiner, B. M., Cerf, V. G., Clark, D. D., Kahn, R. E., Kleinrock, L., Lynch, D. C., Postel, J., Roberts, L. G., & Wolff, S. (2009). A brief history of the Internet. *ACM SIGCOMM Computer Communication Review, 39*(5), 22–31.
+
+Lévy, P. (1997). *Collective intelligence: Mankind's emerging world in cyberspace*. Perseus Books.
 
 Lord, A. B. (1960). *The singer of tales*. Harvard University Press.
 
@@ -125,6 +135,8 @@ Turing, A. M. (1950). Computing machinery and intelligence. *Mind, 59*(236), 43
 Turkle, S. (2011). *Alone together: Why we expect more from technology and less from each other*. Basic Books.
 
 Twenge, J. M. (2019). More time on technology, less happiness? Associations between digital-media use and psychological well-being. *Current Directions in Psychological Science, 28*(4), 372-379.
+
+Wooldridge, M. (2009). *An introduction to multiagent systems* (2. izd.). Wiley.
 
 Van Dijck, J. (2013). *The culture of connectivity: A critical history of social media*. Oxford University Press.
 
@@ -282,7 +294,7 @@ Vygotsky, L. S. (1978). *Mind in society: The development of higher psychologic
 
 ## 5 poglavlje
 
-Anthropic. (2025). *Agentic misalignment in advanced language models*. (https://www.anthropic.com/research/agentic-misalignment).
+Anthropic. (2025). *Agentic misalignment in advanced language models*. Anthropic. https://www.anthropic.com/research/agentic-misalignment
 
 Bengio, Y., Louradour, J., Collobert, R., & Weston, J. (2009). Curriculum learning. U *Proceedings of the 26th annual international conference on machine learning* (str. 41–48).
 
@@ -318,8 +330,6 @@ Huang, J. (2017, 10. svibnja). *I am AI* [Glavno izlaganje]. GPU Technology Co
 
 Kurzweil, R. (2005). *The singularity is near: When humans transcend biology*. Viking.
 
-Ladish, J. (2025). *AI 'o3' model defies shutdown command in lab test*. (Hipotetski novinski članak citiran u narativnoj skici budućnosti unutar teksta).
-
 Li, S., & Deng, W. (2020). Deep learning for affective computing: a survey. *Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery, 10*(2), e1358.
 
 Luccioni, A. S., Viguier, S., & Ligozat, A. L. (2022). Power-hungry language models: A call for more sustainable and responsible AI. *Patterns, 3*(10), 100587.
@@ -338,7 +348,7 @@ Park, J. S., O'Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., & Bernstein, 
 
 Patterson, D., Gonzalez, J., Le, Q., Liang, C., Munguia, L. M., Rothchild, D., ... & Dean, J. (2021). *Carbon emissions and large neural network training*. ArXiv. 
 
-Pester, G. (2025). *Palisade Research: Shutdown Compliance Report*. (Hipotetski izvještaj citiran u narativnoj skici budućnosti unutar teksta).
+Palisade Research. (2025). *Shutdown resistance in reasoning models*. Palisade Research. https://palisaderesearch.org/blog/shutdown-resistance
 
 Picard, R. W. (1997). *Affective computing*. The MIT Press.
 
@@ -350,7 +360,9 @@ Searle, J. R. (1980). Minds, brains, and programs. *Behavioral and Brain Scienc
 
 Strubell, E., Ganesh, A., & McCallum, A. (2019). *Energy and policy considerations for deep learning in NLP*. ArXiv. 
 
-Tang, Z., Wang, X., Chen, Y., & Li, J. (2024). *Self-replication and shutdown avoidance in autonomous LLM agents*. (Hipotetski znanstveni rad citiran u narativnoj skici budućnosti unutar teksta).
+Sundararajan, A. (2016). *The sharing economy: The end of employment and the rise of crowd-based capitalism*. The MIT Press.
+
+Pan, X., Dai, J., Fan, Y., & Yang, M. (2024). *Frontier AI systems have surpassed the self-replicating red line*. arXiv preprint arXiv:2412.12140.
 
 Wang, G., Xie, Y., Jiang, Y., Mandlekar, A., Xiao, C., Zhu, Y., ... & Anandkumar, A. (2023). *Voyager: An open-ended embodied agent with large language models*. ArXiv. 
 
@@ -375,8 +387,6 @@ Lewis, P., Pérez, E., Douze, M., Denoyel, L., & Szlam, A. (2020). Retrieval-aug
 Liu, P., Yuan, W., Fu, J., Jiang, Z., Hayashi, H., & Neubig, G. (2023). Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing. *ACM Computing Surveys, 55*(9), 1–35.
 
 Merleau-Ponty, M. (1962). *Phenomenology of Perception* (C. Smith, Prev.). Routledge & Kegan Paul. (Izvorno djelo objavljeno 1945.).
-
-O'Keefe, S. (2024). *The API Economy: Disruption, digital transformation, and the future of platforms*. Tech-Clarity Press. (Ovo je primjer reference koja bi bila aktualna u 2025., a bavi se temom API-a kao programabilnog jezika).
 
 OpenAI. (2024b). *GPT-4o System Card*. OpenAI.
 
@@ -416,8 +426,6 @@ OpenAI. (2023). *GPT-4 Technical Report*. ArXiv. 
 
 Pariser, E. (2011). *The filter bubble: What the Internet is hiding from you*. Penguin UK.
 
-Petrović, M. (2022). *The ethics of hyper-personalization: Balancing value and privacy*. Journal of Consumer Ethics, 6(1), 45-62. (Ovo je primjer generičke reference koja ilustrira kontekst citata, budući da točan izvor nije specificiran).
-
 Ricci, F., Rokach, L., & Shapira, B. (Ur.). (2011). *Recommender systems handbook*. Springer.
 
 Rose, D. H., & Meyer, A. (2002). *Teaching every student in the digital age: Universal Design for Learning*. ASCD.
@@ -438,8 +446,6 @@ Bostrom, N. (2014). *Superintelligence: Paths, dangers, strategies*. Oxford Uni
 
 Burt, R. S. (1992). *Structural holes: The social structure of competition*. Harvard University Press.
 
-Chen, L., & Schmidt, A. (2025). *The Quantified Self and Algorithmic Anxiety: A Sociological Study*. Journal of Digital Sociology. (Ovo je hipotetska referenca citirana unutar narativne skice budućnosti).
-
 Clark, A., & Chalmers, D. J. (1998). The extended mind. *Analysis, 58*(1), 7–19.
 
 Dorigo, M., Maniezzo, V., & Colorni, A. (1996). The Ant System: Optimization by a colony of cooperating agents. *IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics), 26*(1), 29–41.
@@ -447,8 +453,6 @@ Dorigo, M., Maniezzo, V., & Colorni, A. (1996). The Ant System: Optimization by 
 Ferber, J. (1999). *Multi-agent systems: An introduction to distributed artificial intelligence*. Addison-Wesley.
 
 Franklin, S., & Graesser, A. (1996). Is it an Agent, or just a Program?: A Taxonomy for Autonomous Agents. U *Proceedings of the Third International Workshop on Agent Theories, Architectures, and Languages* (str. 21-35). Springer.
-
-Geneva Report. (2025). *The Agency Gap: Economic Disparities in the Age of AI*. United Nations Institute for Social Development. (Ovo je hipotetska referenca citirana unutar narativne skice budućnosti).
 
 Good, I. J. (1965). Speculations concerning the first ultraintelligent machine. *Advances in Computers, 6*, 31–88.
 
@@ -488,8 +492,3 @@ Wooldridge, M., & Jennings, N. R. (1995). Intelligent agents: Theory and practic
 
 Yudkowsky, E. (2008). Artificial intelligence as a positive and negative factor in global risk. U N. Bostrom & M. M. Ćirković (Ur.), *Global catastrophic risks* (str. 308-345). Oxford University Press.
 
-## 
-
-
-
-# 

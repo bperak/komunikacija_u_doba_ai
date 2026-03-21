@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1683.75 236" width="1684" height="236" style="--bg:#FFFFFF;--fg:#27272A;background:var(--bg)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1683.75 236" width="1683.75" height="236" style="--bg:#FFFFFF;--fg:#1b2a4a;--line:#5c7caa;--accent:#5c7caa;--surface:#dceefb;--border:#4a86c8;--muted:#6c84a3;background:var(--bg)">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
   text { font-family: 'Inter', system-ui, sans-serif; }
@@ -25,12 +25,6 @@
   <marker id="arrowhead-start" markerWidth="8" markerHeight="4.8" refX="0" refY="2.4" orient="auto-start-reverse">
     <polygon points="8 0, 0 2.4, 8 4.8" fill="var(--_arrow)" />
   </marker>
-  <path id="edge-path-0" d="M 181.25 136 L 249.25 136" fill="none"/>
-  <path id="edge-path-1" d="M 532.1 136 L 600.1 136" fill="none"/>
-  <path id="edge-path-2" d="M 925.85 136 L 993.85 136" fill="none"/>
-  <path id="edge-path-3" d="M 1112.25 136 L 1180.25 136" fill="none"/>
-  <path id="edge-path-4" d="M 1332.65 95.5 L 1332.65 146.5" fill="none"/>
-  <path id="edge-path-5" d="M 1309.3837500000002 166 L 1422.39125 166" fill="none"/>
 </defs>
 <rect x="40" y="40" width="1603.75" height="156" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
 <rect x="40" y="40" width="1603.75" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />

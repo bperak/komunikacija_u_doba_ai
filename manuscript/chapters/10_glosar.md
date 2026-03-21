@@ -1,4 +1,6 @@
-# Index
+# Glosar
+
+<div class="glossary-page">
 
 Ovaj odjeljak sadrži abecedni popis ključnih pojmova korištenih u knjizi, s kratkim definicijama. Definicije su izvučene iz poglavlja 1–8; u tijeku čitanja nalaze se na mjestu prvog spomena.
 

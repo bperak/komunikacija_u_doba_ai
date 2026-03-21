@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 405.6625 268" width="405.6625" height="268" style="--bg:#FFFFFF;--fg:#1b2a4a;--line:#5c7caa;--accent:#5c7caa;--surface:#dceefb;--border:#4a86c8;--muted:#6c84a3;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 30%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="4.8" refX="8" refY="2.4" orient="auto">
+    <polygon points="0 0, 8 2.4, 0 4.8" fill="var(--_arrow)" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="4.8" refX="0" refY="2.4" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.4, 8 4.8" fill="var(--_arrow)" />
+  </marker>
+</defs>
+<polyline points="121.47500000000002,76 121.47500000000002,116" fill="none" stroke="var(--_line)" stroke-width="0.75" />
+<polyline points="121.47500000000002,76 121.47500000000002,96 54.875,96 54.875,210 40.00000000000001,210" fill="none" stroke="var(--_line)" stroke-width="0.75" />
+<polyline points="121.47500000000002,76 121.47500000000002,96 275.18750000000006,96 275.18750000000006,116" fill="none" stroke="var(--_line)" stroke-width="0.75" />
+<polyline points="275.18750000000006,152 275.18750000000006,172 225.73750000000004,172 225.73750000000004,192" fill="none" stroke="var(--_line)" stroke-width="0.75" />
+<polyline points="275.18750000000006,152 275.18750000000006,172 324.63750000000005,172 324.63750000000005,192" fill="none" stroke="var(--_line)" stroke-width="0.75" />
+<polyline points="121.47500000000002,152 121.47500000000002,210 136.35000000000002,210" fill="none" stroke="var(--_line)" stroke-width="0.75" />
+<rect x="84.02500000000002" y="40" width="74.9" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="76.87500000000003" y="116" width="89.2" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="40.00000000000001" y="192" width="96.35000000000001" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="241.31250000000006" y="116" width="67.75" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="191.86250000000004" y="192" width="67.75" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="283.61250000000007" y="192" width="82.05000000000001" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<text x="121.47500000000002" y="58" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Pravda</text>
+<text x="121.47500000000002" y="134" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Poštenje</text>
+<text x="88.17500000000001" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Jednakost</text>
+<text x="275.18750000000006" y="134" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Zakon</text>
+<text x="225.73750000000004" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Pravo</text>
+<text x="324.63750000000005" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Dužnost</text>
+</svg>

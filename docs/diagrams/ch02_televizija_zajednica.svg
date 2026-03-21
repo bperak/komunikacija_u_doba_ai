@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 418.25 420" width="418.25" height="420" style="--bg:#FFFFFF;--fg:#1b2a4a;--line:#5c7caa;--accent:#5c7caa;--surface:#dceefb;--border:#4a86c8;--muted:#6c84a3;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 30%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="4.8" refX="8" refY="2.4" orient="auto">
+    <polygon points="0 0, 8 2.4, 0 4.8" fill="var(--_arrow)" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="4.8" refX="0" refY="2.4" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.4, 8 4.8" fill="var(--_arrow)" />
+  </marker>
+</defs>
+<polyline points="203.7625,76 203.7625,96 113.19999999999999,96 113.19999999999999,116" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="203.7625,76 203.7625,96 294.325,96 294.325,116" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="113.19999999999999,152 113.19999999999999,192" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="294.325,152 294.325,192" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="113.19999999999999,228 113.19999999999999,286 109.11249999999998,286" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="294.325,228 294.325,286 298.4125,286" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="203.7625,304 203.7625,344" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<rect x="152.0125" y="40" width="103.5" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="61.44999999999999" y="116" width="103.5" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="239" y="116" width="110.65" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="39.999999999999986" y="192" width="146.4" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="210.39999999999998" y="192" width="167.85000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="109.11249999999998" y="268" width="189.3" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="123.41249999999998" y="344" width="160.70000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<text x="203.7625" y="58" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Televizija</text>
+<text x="113.19999999999999" y="134" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Vizualnost</text>
+<text x="294.325" y="134" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Istodobnost</text>
+<text x="113.19999999999999" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Zajedničke slike</text>
+<text x="294.325" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Kolektivno iskustvo</text>
+<text x="203.7625" y="286" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Zajednička imaginacija</text>
+<text x="203.7625" y="362" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Kohezija zajednice</text>
+</svg>

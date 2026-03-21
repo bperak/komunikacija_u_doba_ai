@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2996.95 268" width="2996.95" height="268" style="--bg:#FFFFFF;--fg:#1b2a4a;--line:#5c7caa;--accent:#5c7caa;--surface:#dceefb;--border:#4a86c8;--muted:#6c84a3;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 30%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="4.8" refX="8" refY="2.4" orient="auto">
+    <polygon points="0 0, 8 2.4, 0 4.8" fill="var(--_arrow)" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="4.8" refX="0" refY="2.4" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.4, 8 4.8" fill="var(--_arrow)" />
+  </marker>
+</defs>
+<polyline points="1443.0625,76 1443.0625,96 303.86249999999995,96 303.86249999999995,116" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="1443.0625,76 1443.0625,96 866.3125,96 866.3125,116" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="1443.0625,76 1443.0625,116" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="1443.0625,76 1443.0625,96 2087.7374999999997,96 2087.7374999999997,116" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="1443.0625,76 1443.0625,96 2682.3624999999997,96 2682.3624999999997,116" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="303.86249999999995,152 303.86249999999995,172 163.25000000000003,172 163.25000000000003,192" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="303.86249999999995,152 303.86249999999995,172 444.475,172 444.475,192" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="866.3125,152 866.3125,172 729.2750000000001,172 729.2750000000001,192" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="866.3125,152 866.3125,172 1003.35,172 1003.35,192" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="1443.0625,152 1443.0625,172 1284.5749999999998,172 1284.5749999999998,192" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="1443.0625,152 1443.0625,172 1601.5499999999997,172 1601.5499999999997,192" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="2087.7374999999997,152 2087.7374999999997,172 1932.8249999999998,172 1932.8249999999998,192" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="2087.7374999999997,152 2087.7374999999997,172 2242.6499999999996,172 2242.6499999999996,192" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="2682.3624999999997,152 2682.3624999999997,172 2538.1749999999997,172 2538.1749999999997,192" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<polyline points="2682.3624999999997,152 2682.3624999999997,172 2826.5499999999997,172 2826.5499999999997,192" fill="none" stroke="var(--_line)" stroke-width="0.75" marker-end="url(#arrowhead)" />
+<rect x="1355.5625" y="40" width="175" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="205.63749999999993" y="116" width="196.45000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="775.2375" y="116" width="182.15" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1355.5625" y="116" width="175" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="2014.5374999999997" y="116" width="146.4" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="2602.0125" y="116" width="160.70000000000002" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="40.000000000000014" y="192" width="246.50000000000003" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="310.5" y="192" width="267.95000000000005" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="602.45" y="192" width="253.65" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="880.1" y="192" width="246.50000000000003" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1150.6" y="192" width="267.95000000000005" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1442.5499999999997" y="192" width="318" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="1784.5499999999997" y="192" width="296.55" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="2105.0999999999995" y="192" width="275.1" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="2404.2" y="192" width="267.95000000000005" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<rect x="2696.1499999999996" y="192" width="260.8" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+<text x="1443.0625" y="58" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Tehnološki pokretači</text>
+<text x="303.86249999999995" y="134" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Ambientna inteligencija</text>
+<text x="866.3125" y="134" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Proaktivna autonomija</text>
+<text x="1443.0625" y="134" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Hiperpersonalizacija</text>
+<text x="2087.7374999999997" y="134" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Sinergija rojeva</text>
+<text x="2682.3624999999997" y="134" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Čovjek-AI simbioza</text>
+<text x="163.25000000000003" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Osnaživanje: Fluidno okruženje</text>
+<text x="444.475" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Isključivanje: Digitalna barijera</text>
+<text x="729.2750000000001" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Osnaživanje: Delegiranje odluka</text>
+<text x="1003.35" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Isključivanje: Gubitak poslova</text>
+<text x="1284.5749999999998" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Osnaživanje: Personalizirana skrb</text>
+<text x="1601.5499999999997" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Isključivanje: Algoritamsko prosuđivanje</text>
+<text x="1932.8249999999998" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Osnaživanje: Suradnička inteligencija</text>
+<text x="2242.6499999999996" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Isključivanje: Centralizacija moći</text>
+<text x="2538.1749999999997" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Osnaživanje: Uloga &quot;AI-dirigenta&quot;</text>
+<text x="2826.5499999999997" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Isključivanje: Atrofija vještina</text>
+</svg>

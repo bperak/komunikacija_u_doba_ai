@@ -1,6 +1,7 @@
-flowchart LR
-    A[Agent bez alata] --> B[Ograničen akcijski prostor]
-    C[Vanjski alati API, baze, pretraga, kalkulator] --> D[Integracija alata]
-    D --> E[Proširen akcijski prostor]
-    E --> F[Složenije djelovanje i bogatija povratna sprega]
+%%{init: {'themeVariables': {'fontSize': '16px'}, 'flowchart': {'nodeSpacing': 35, 'rankSpacing': 40}}}%%
+flowchart TD
+    A[Agent bez alata] --> B[Ograničen prostor]
+    C[API baze pretraga alati] --> D[Integracija alata]
     A --> D
+    D --> E[Proširen prostor]
+    E --> F[Veća djelotvornost]

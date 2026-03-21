@@ -1,8 +1,9 @@
 ---
 title: Prijelaz od znaka do vektora
 ---
-flowchart TD
-A[Sirovi tekst, znakovi] --> B[Tokenizacija]
+flowchart LR
+A[Tekst] --> B[Tokenizacija]
 B --> C[Tokeni]
-C --> D[Embedding sloj]
-D --> E[Vektorska reprezentacija]
+B --> D[Embedding]
+C --> E[Vektori]
+D --> E

@@ -1,5 +1,7 @@
+%%{init: {'themeVariables': {'fontSize': '16px'}, 'flowchart': {'nodeSpacing': 35, 'rankSpacing': 40}}}%%
 flowchart LR
-    A[Klijent] -->|HTTP zahtjev| B[API sloj]
-    B -->|Prosljeđivanje zahtjeva| C[Poslužitelj]
-    C -->|Obrada i odgovor| B
-    B -->|Standardizirani odgovor| A
+    A[Klijent] --> B[API sloj]
+    B --> C[Poslužitelj]
+    C --> D[Odgovor]
+    D --> B
+    B --> A

@@ -1,13 +1,15 @@
 ---
 title: Od reformacije do znanstvene revolucije
 ---
+%%{init: {'themeVariables': {'fontSize': '19px'}, 'flowchart': {'nodeSpacing': 34, 'rankSpacing': 56}}}%%
 flowchart TD
-A[Reformacija] -->|potiče| B[Preispitivanje autoriteta]
-A -->|osnažuje| C[Individualizam i osobna odgovornost]
-B -->|omogućuje| D[Razvoj znanstvene metode]
-C -->|oblikuje| E[Uloga znanstvenika kao samostalnog agenta]
-F["Protestantska etika (Weber, 1930; Merton, 1970)"] -->|promiče| G[Racionalizacija i radna disciplina]
-I[Tiskarski stroj]
-D & E & G -->|vode k| H[Znanstvena revolucija]
-I -->|ubrzava širenje ideja| A
-I -->|ubrzava širenje znanja| H
+I[Tiskarski stroj] --> A[Reformacija]
+A --> B[Pad autoriteta]
+A --> C[Osobna spoznaja]
+A --> D[Radna etika]
+B --> E[Znanstvena metoda]
+C --> F[Samostalni istraživač]
+D --> G[Racionalna disciplina]
+E --> H[Znanstvena revolucija]
+F --> H
+G --> H

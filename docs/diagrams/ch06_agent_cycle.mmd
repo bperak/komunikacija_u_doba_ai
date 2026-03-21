@@ -1,0 +1,10 @@
+%%{init: {'themeVariables': {'fontSize': '16px'}, 'flowchart': {'nodeSpacing': 35, 'rankSpacing': 40}}}%%
+flowchart TD
+    A[Opažanje okoline] --> B[Agent / LLM]
+    B --> C[Memorija]
+    C --> D[Refleksija]
+    D --> E[Plan]
+    B --> F[Akcija]
+    F --> G[Djelovanje]
+    G --> A
+    E --> B
