@@ -27,7 +27,7 @@ Ovo je **obnavljajuća knjiga**: s obzirom na to da se područje umjetne intelig
 Knjiga je javno dostupna u ovom GitHub repozitoriju:
 
 - [Perak_Komunikacija_u_doba_AI.pdf](https://github.com/bperak/komunikacija_u_doba_ai/raw/main/manuscript/Perak_Komunikacija_u_doba_AI.pdf) — cjelovito izdanje za čitanje i ispis
-- [Perak_Komunikacija_u_doba_AI.html](https://github.com/bperak/komunikacija_u_doba_ai/raw/main/manuscript/Perak_Komunikacija_u_doba_AI.html) — ista sadržina u pregledniku
+- [Perak_Komunikacija_u_doba_AI.html](https://bperak.github.io/komunikacija_u_doba_ai/manuscript/Perak_Komunikacija_u_doba_AI.html) — čitanje u pregledniku
 
 Izvorna poglavlja u Markdownu: mapa [`manuscript/chapters/`](https://github.com/bperak/komunikacija_u_doba_ai/tree/main/manuscript/chapters). Cijeli projekt možete klonirati s [`github.com/bperak/komunikacija_u_doba_ai`](https://github.com/bperak/komunikacija_u_doba_ai).
 
