@@ -18,6 +18,8 @@ Ova knjiga prati razvoj komunikacijskih tehnologija od usmene predaje i pisma do
 
 Knjiga je nastala u nastavku promišljanja oblikovanih kroz kolegije na Filozofskom fakultetu u Rijeci (*Jezik, mišljenje i kultura*, *Podatkovna znanost u kulturalnim studijima*, *Umjetna inteligencija i komunikacija u kulturi*). Namijenjena je studentima komunikologije, lingvistike, kulturoloških i srodnih studija, kao i široj publici koja želi sustavno razumjeti nove obrise komunikacije u digitalnoj eri.
 
+Ovo je **obnavljajuća knjiga**: s obzirom na to da se područje umjetne inteligencije razvija izuzetno brzo, sadržaj se periodično dopunjuje i ažurira. Nove inačice verzioniraju se u ovom repozitoriju, tako da čitatelji uvijek imaju pristup najsvježijem izdanju.
+
 ---
 
 ## Preuzimanje
