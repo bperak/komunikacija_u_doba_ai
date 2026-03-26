@@ -14,37 +14,24 @@ ISBN (elektroničko izdanje): 978-953-361-147-1
 
 ## O knjizi
 
-Ova knjiga istražuje razvoj komunikacijskih tehnologija od usmene predaje do velikih jezičnih modela i autonomnih agenata umjetne inteligencije. Namijenjena je studentima i svima koji promišljaju nove trendove u komunikaciji sa strojevima sa sve razvijenijim jezičnim sposobnostima.
+Ova knjiga prati razvoj komunikacijskih tehnologija od usmene predaje i pisma do elektroničkih mreža, velikih jezičnih modela i autonomnih komunikacijskih agenata. Temelji se na relevantnoj literaturi i kritičkom pristupu promjenama u načinu na koji ljudi i institucije komuniciraju sa sustavima sve razvijenijih jezičnih sposobnosti.
 
-### Agentno obnavljajuća knjiga
-
-Ovo izdanje ima novi oblik — **agentno obnavljajuće knjige**. Prvo izdanje bit će dopunjavano korištenjem agentnih postupaka pretrage informacija, dopuna novih *state-of-the-art* tehnoloških rješenja i problematizacije njihovih implikacija za komunikacijske i kulturološke fenomene. Nove inačice periodično se objavljuju na ovom repozitoriju.
+Knjiga je nastala u nastavku promišljanja oblikovanih kroz kolegije na Filozofskom fakultetu u Rijeci (*Jezik, mišljenje i kultura*, *Podatkovna znanost u kulturalnim studijima*, *Umjetna inteligencija i komunikacija u kulturi*). Namijenjena je studentima komunikologije, lingvistike, kulturoloških i srodnih studija, kao i široj publici koja želi sustavno razumjeti nove obrise komunikacije u digitalnoj eri.
 
 ---
 
-## Preuzimanje knjige
+## Preuzimanje
 
-### Službeno izdanje (izdavač)
+Knjiga je javno dostupna u ovom GitHub repozitoriju:
 
-Elektroničko izdanje dostupno je na **izdavačkoj stranici Filozofskog fakulteta** u Rijeci — to je primarni kanal za citiranje i dijeljenje kad je stranica objavljena. *(Umetni ovdje točan URL kad bude na FFRI webu.)*
+- [Perak_Komunikacija_u_doba_AI.pdf](https://github.com/bperak/komunikacija_u_doba_ai/raw/main/manuscript/Perak_Komunikacija_u_doba_AI.pdf) — cjelovito izdanje za čitanje i ispis
+- [Perak_Komunikacija_u_doba_AI.html](https://github.com/bperak/komunikacija_u_doba_ai/raw/main/manuscript/Perak_Komunikacija_u_doba_AI.html) — ista sadržina u pregledniku
 
-### GitHub (izvor + arhiv izdanja)
-
-| Što | Opis |
-|-----|------|
-| **Zadnji build** | Release **[latest](https://github.com/bperak/komunikacija_u_doba_ai/releases/tag/latest)** — automatski se ažurira pri pushu PDF/HTML na `main`; praktičan za razvoj, ne zamjenjuje službeni broj izdanja. |
-| **Označena izdanja** | Pojedina izdanja (npr. `v1.0.0`, `v1.1.0`) — trajni zapisi za arhiv i stabilne poveznice. **Kad FFRI objavi novo izdanje**, napravi novi Release s novim tagom. Upute: [docs/IZDANJE_GITHUB.md](docs/IZDANJE_GITHUB.md). |
-
-| Format | Preuzmi (grana `main`) |
-|--------|-------------------------|
-| **PDF** | [⬇ Perak_Komunikacija_u_doba_AI.pdf](https://github.com/bperak/komunikacija_u_doba_ai/raw/main/manuscript/Perak_Komunikacija_u_doba_AI.pdf) |
-| **HTML** | [⬇ Perak_Komunikacija_u_doba_AI.html](https://github.com/bperak/komunikacija_u_doba_ai/raw/main/manuscript/Perak_Komunikacija_u_doba_AI.html) |
-
-[📦 Svi releasei](https://github.com/bperak/komunikacija_u_doba_ai/releases)
+Izvorna poglavlja u Markdownu: mapa [`manuscript/chapters/`](https://github.com/bperak/komunikacija_u_doba_ai/tree/main/manuscript/chapters). Cijeli projekt možete klonirati s [`github.com/bperak/komunikacija_u_doba_ai`](https://github.com/bperak/komunikacija_u_doba_ai).
 
 ---
 
-## Sadržaj knjige
+## Sadržaj
 
 1. **Uvod: Komunikacija i razvoj civilizacije**
 2. **Povijest i evolucija komunikacijskih tehnologija** — od usmene predaje, pisma i tiska do elektroničke komunikacije i interneta
@@ -55,66 +42,40 @@ Elektroničko izdanje dostupno je na **izdavačkoj stranici Filozofskog fakultet
 7. **Izgradnja komunikacijskog partnera** — RAG, agentura, alati
 8. **Digitalni suputnici** — višeagentski sustavi, etički izazovi, budućnost
 9. **Referencije**
-10. **Index**
+10. **Glosar**
 
 ---
 
-## Struktura repozitorija
+## Citiranje
 
-```
-├── manuscript/
-│   ├── chapters/          # Markdown poglavlja knjige
-│   ├── Perak_Komunikacija_u_doba_AI.pdf
-│   └── Perak_Komunikacija_u_doba_AI.html
-├── docs/
-│   └── diagrams/          # Mermaid izvori (.mmd) i SVG dijagrami
-├── scripts/
-│   ├── build_pdf.py      # Generiranje HTML/PDF knjige
-│   ├── export_cover_png.py
-│   └── ostale skripte (formatting, split, dijagrami, glosar)
-├── book_builder/         # Agentni alati za izgradnju knjige
-├── tests/                # Testovi
-├── dodatno/              # Arhiva: stari rukopisi, planiranje, opcionalne skripte
-├── requirements.txt
-└── package.json
-```
-
-## Izgradnja knjige iz izvora
-
-### Preduvjeti
-
-- **Python 3.10+**
-- **Pandoc** (za konverziju Markdown → HTML/PDF)
-- **Google Chrome / Microsoft Edge** (headless print za PDF)
-- **Node.js** (za regeneriranje Mermaid dijagrama, opcionalno)
-
-### Koraci
-
-```bash
-# 1. Kloniraj repozitorij
-git clone https://github.com/bperak/komunikacija_u_doba_ai.git
-cd komunikacija_u_doba_ai
-
-# 2. Instaliraj Python ovisnosti
-pip install -r requirements.txt
-
-# 3. (Opcionalno) Instaliraj Node.js ovisnosti za dijagrame
-npm install
-
-# 4. Generiraj HTML i PDF
-python scripts/build_pdf.py
-```
-
-Generirane datoteke nalaze se u `manuscript/` direktoriju.
-
-PDF izlaz je podešen bez browser header/footer artefakata (datum, URL, vrijeme), s
-running headerom i numeracijom koja kreće od poglavlja **Uvod**.
-
----
-
-## Citiranje (APA 7)
+### APA 7
 
 > Perak, Benedikt (2025). *Komunikacija u doba umjetne inteligencije: Razvoj velikih jezičnih modela i komunikacijskih agenata*. Rijeka: Filozofski fakultet u Rijeci.
+
+### BibTeX
+
+```bibtex
+@book{perak2025komunikacija,
+  author    = {Perak, Benedikt},
+  title     = {Komunikacija u doba umjetne inteligencije: Razvoj velikih jezičnih modela i komunikacijskih agenata},
+  year      = {2025},
+  publisher = {Filozofski fakultet u Rijeci},
+  address   = {Rijeka},
+  isbn      = {978-953-361-147-1},
+  url       = {https://github.com/bperak/komunikacija_u_doba_ai}
+}
+```
+
+---
+
+## O autoru
+
+**Izv. prof. dr. sc. Benedikt Perak** izvanredni je profesor na Odsjeku za kulturalne studije Filozofskog fakulteta Sveučilišta u Rijeci. Obnaša dužnost voditelja Laboratorija za istraživanje kulturne složenosti pri tom odsjeku. Suosnivač je tvrtke **[SyntAgent](https://syntagent.com)** d.o.o. (Rijeka), specijalizirane za razvoj rješenja temeljenih na umjetnoj inteligenciji, jezičnim tehnologijama i podatkovnoj znanosti. U znanstvenom radu bavi se digitalnom obradom prirodnoga jezika, kognitivnom i računalnom lingvistikom te računalnim pristupima složenosti kulturnih i komunikacijskih pojava; autor je i suautor brojnih radova iz područja jezičnih tehnologija i semantičke analize.
+
+- [CroRIS](https://www.croris.hr/osobe/profil/29998)
+- [Profil na Sveučilištu u Rijeci](https://portal.uniri.hr/portfelj/1078)
+- [Google Scholar](https://scholar.google.com/citations?hl=hr&user=8kW9x1MAAAAJ)
+- [ORCID](https://orcid.org/0000-0003-4177-5307)
 
 ---
 

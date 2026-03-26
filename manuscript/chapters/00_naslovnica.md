@@ -70,5 +70,11 @@ Sva prava pridržana. Niti jedan dio ovog izdanja ne može biti objavljen, preti
 Perak, Benedikt (2025). <em>Komunikacija u doba umjetne inteligencije: Razvoj velikih jezičnih modela i komunikacijskih agenata</em>. Rijeka: Filozofski fakultet u Rijeci.
 </div>
 
+<div class="impresum-section impresum-author-note">
+<div class="impresum-label">Bilješka o autoru</div>
+<p><strong>Izv. prof. dr. sc. Benedikt Perak</strong> izvanredni je profesor na Odsjeku za kulturalne studije Filozofskog fakulteta Sveučilišta u Rijeci. Obnaša dužnost voditelja Laboratorija za istraživanje kulturne složenosti pri tom odsjeku. Suosnivač je tvrtke <strong><a href="https://syntagent.com">SyntAgent</a></strong> d.o.o. (Rijeka), specijalizirane za razvoj rješenja temeljenih na umjetnoj inteligenciji, jezičnim tehnologijama i podatkovnoj znanosti. U znanstvenom radu bavi se digitalnom obradom prirodnoga jezika, kognitivnom i računalnom lingvistikom te računalnim pristupima složenosti kulturnih i komunikacijskih pojava; autor je i suautor brojnih radova iz područja jezičnih tehnologija i semantičke analize.</p>
+<p>Profil u sustavu CroRIS: <a href="https://www.croris.hr/osobe/profil/29998">www.croris.hr/osobe/profil/29998</a></p>
+</div>
+
 </div>
 </div>

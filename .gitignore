@@ -29,3 +29,6 @@ docs/diagrams copy*/
 
 # Interna promocija (planovi, kontakti — ne u git)
 promocija/
+
+# Lokalni razvoj (ne u javni repozitorij)
+book_builder/

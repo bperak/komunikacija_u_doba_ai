@@ -1,7 +1,7 @@
 {
   "name": "book-builder-diagrams",
   "version": "1.0.1",
-  "description": "Mermaid diagram rendering for Book Builder (beautiful-mermaid)",
+  "description": "Mermaid diagram rendering (beautiful-mermaid)",
   "private": true,
   "type": "module",
   "scripts": {

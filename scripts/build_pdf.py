@@ -618,6 +618,26 @@ em { font-style: italic; }
     color: #333;
 }
 
+.impresum-author-note {
+    margin-top: 1.25em;
+    padding-top: 1em;
+    border-top: 1px solid #e0e0e0;
+}
+
+.impresum-author-note p {
+    margin: 0 0 0.65em 0;
+    text-align: justify;
+}
+
+.impresum-author-note p:last-child {
+    margin-bottom: 0;
+}
+
+.impresum-author-note a {
+    color: #1a3a5c;
+    word-break: break-all;
+}
+
 /* ── Predgovor ── */
 .predgovor-page {
     page-break-before: auto;
