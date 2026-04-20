@@ -9,14 +9,19 @@ The fundamental shift from simple signaling systems, such as we find in the anim
 
 ![](../../docs/diagrams_en/diag_20.svg)
 *Figure 1.2: Evolution of human communication – from primates to conventionalized language.*
+
 A key moment in this development is the transition from predominantly indexical signs, firmly tied to immediate reality, to the use of symbols. While indexical signs point to something present and correlated (for example, smoke to fire), **symbols** derive their value from agreements within the community, thereby enabling the discussion of objects, beings and phenomena that are not spatially or temporally present, as well as abstract concepts.
+
 > **Index sign:** A sign whose meaning derives from a causal or correlational connection with an object (eg smoke refers to fire); refers to the immediately present and perceived, in contrast to the symbols that arise from convention and allow speaking about the absent and abstract.
 > **Symbol:** Linguistic or other sign whose meaning does not derive from physical similarity or causal connection with the object, but from social agreement (convention); allows speaking about the absent and abstract, in contrast to the indexical sign that refers to the immediately present.
+
 However, such a transition is only possible with profound changes in the social structure. The development of collaborative behavior, as Tomasello (2008) points out, created an environment in which information sharing became evolutionarily beneficial. In communities where individuals with the characteristics of independent action, **agents**, depended on each other for survival, the ability to communicate precisely and reliably brought a direct advantage.
+
 > **Agent:** An individual or system that acts in an environment with specific goals; in the context of communication – a participant who can send and receive messages and coordinate their actions with others.
 
 
 At the core of this collaborative paradigm lies the concept of **shared intentionality**, i.e. the ability of agents to shape common goals with others and coordinate their actions to achieve them. This cognitive ability enabled joint hunting or defense, but also the understanding that the act of communication is a joint effort of sender and receiver to establish a common reference point. It is inextricably linked with the development of the theory of mind, the ability to attribute mental states - beliefs, desires and intentions - to others, as well as to oneself. Without a theory of mind, the recipient of the message would not be able to understand the speaker's intention, and complex symbolic communication would be reduced to misunderstanding.
+
 > **Joint intentionality:** The ability to form common goals with others and coordinate actions to achieve them; the basis of collaborative communication.
 > **Theory of mind:** Cognitive ability to attribute mental states – beliefs, desires, intentions and knowledge – to others and to oneself; key to understanding the speaker's intention in communication and predicting other people's behavior. Without theory of mind, complex symbolic communication would not be possible because the recipient of the message would not be able to deduce what the speaker wants to achieve with it.
 
@@ -25,6 +30,7 @@ Nevertheless, the development of communication systems based on trust has inevit
 
 
 With the increase in the complexity of the messages that had to be conveyed - who did what, what, to whom, when and where - the need for their organization also appeared. It is from this need that **grammar** grows: a system of rules that enables the combination of a limited number of symbols (words) into an unlimited number of meaningful statements. The development of syntax enabled the precise coding of relationships between participants and actions, which made communication more expressive and unequivocal.
+
 > **Grammar:** A system of rules that allows combining a limited number of language units (words, morphemes) into an unlimited number of meaningful statements; it encompasses syntax, morphology, and related conventions that determine the structure and interpretation of language.
 
 
@@ -46,6 +52,7 @@ Oral tradition, the first and longest-lived communication technology, transforme
 *Figure 1.4: Functions of oral transmission.*
 
 The modern age is witnessing a technological breakthrough that, with its depth and reach, surpasses many previous ones. It is about the emergence of large language models (English *Large Language Model*, LLM), advanced artificial intelligence systems such as GPT (OpenAI, 2024b), Claude (Anthropic, 2024), Gemini or Llama models. Built on inconceivably huge corpora of digitized human language and knowledge, these systems are trained to recognize and reproduce the most subtle patterns of human communication. They reveal the fascinating duality elegantly summarized by academic Milena Žic Fuchs (Žic-Fuchs, 1991), distinguishing knowledge about the world (facts, concepts, relationships) and knowledge about language (grammar, stylistics, pragmatics). Today's great language models master the language code with exceptional skill, creating texts that are grammatically coherent, stylistically adapted, and often factually accurate and contextually appropriate. They mimic human language production with incredible persuasiveness, often reaching, and in some narrowly defined tasks even surpassing, human performance.
+
 > **LLM – Large Language Model:** An artificial intelligence system trained on huge text corpora that predicts the next token (word or part of a word) and generates or completes the text based on it; examples include GPT, Claude, Gemini, Llama.
 
 
@@ -53,6 +60,7 @@ The modern age is witnessing a technological breakthrough that, with its depth a
 *Figure 1.5: Development of active power through literacy.*
 
 But large language models cease to be mere text generators the moment they are transformed into **communication** agents by incorporating them into broader information systems and equipping them with goals, data access tools, and memory mechanisms. Thus, they become our new digital interlocutors, assistants and collaborators - and perhaps true communication partners. Their impact is already evident in the reshaping of the landscape of human interaction: they enable real-time language translation, run service automatons (*chatbots*) that provide personalized customer support, help scientists analyze complex data sets, assist programmers in writing code, stimulate creative processes, and open new vistas of global collaboration and education. They are increasingly assuming the role of universal translators and mediators of knowledge, capable of bridging linguistic, disciplinary and cultural barriers.
+
 > **Communication agent:** A system based on LLM (or similar language technology) equipped with goals, data access tools, and memory mechanisms, which dialogues with the user and performs tasks; it goes beyond the role of a mere text generator and becomes a participant in the interaction.
 
 
@@ -72,6 +80,7 @@ With technological understanding as a basis, we enter into a deeper, conceptual 
 
 
 Since it is difficult to talk about artificial intelligence without understanding its material basis, we will explore (**Chapter 5**) the inextricable link between the exponential growth of processing power and the progress of artificial intelligence, drawing comparisons with the evolution of the human brain. We will consider how this power enables today's models and what horizons it opens for future, even more powerful systems, including potential multi-agent systems and agent swarms and the long-term quest for artificial general intelligence (AGI).
+
 > **AGI:** General Artificial Intelligence (English *Artificial General Intelligence*) – a hypothetical system that would possess a human level of general intelligence and could solve a wide range of tasks without being limited to one domain; for now the goal is research, not existing technology.
 
 

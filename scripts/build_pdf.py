@@ -47,6 +47,11 @@ def configure_build_locale(locale: str) -> None:
         BOOK_BASENAME = "Perak_Komunikacija_u_doba_AI"
         COVER_README_BASENAME = "cover_naslovnica"
 
+def is_english_build() -> bool:
+    """True when building from manuscript/en/chapters (English edition)."""
+    return CHAPTERS_DIR.name == "chapters" and CHAPTERS_DIR.parent.name == "en"
+
+
 CHAPTER_FILES = [
     "00_naslovnica.md",
     "00b_predgovor.md",
@@ -1185,10 +1190,11 @@ def postprocess_html(html_text: str) -> str:
         flags=re.DOTALL,
     )
 
-    # 0c. Add "Sadržaj" heading before the TOC nav
+    # 0c. Add TOC heading before the Pandoc nav (language-specific)
+    toc_label = "Contents" if is_english_build() else "Sadržaj"
     html_text = html_text.replace(
         '<nav id="TOC"',
-        '<div class="toc-heading">Sadržaj</div>\n<nav id="TOC"',
+        f'<div class="toc-heading">{toc_label}</div>\n<nav id="TOC"',
         1,
     )
 
@@ -1219,16 +1225,26 @@ def postprocess_html(html_text: str) -> str:
         html_text
     )
 
-    # 2. Add .caption class to <p><em>Slika X.Y: ...</em></p>
+    # 2. Add .caption class to <p><em>Slika X.Y: ...</em></p> (Croatian) or Figure (English)
     html_text = re.sub(
         r'<p><em>(Slika \d+\.\d+[a-z]?:.*?)</em></p>',
         r'<p class="caption"><em>\1</em></p>',
         html_text
     )
+    html_text = re.sub(
+        r'<p><em>(Figure \d+\.\d+[a-z]?:.*?)</em></p>',
+        r'<p class="caption"><em>\1</em></p>',
+        html_text
+    )
 
-    # 3. Also handle *Slika 0.X* patterns (chapter 0 naslovnica)
+    # 3. Also handle *Slika 0.X* / *Figure 0.X* patterns (chapter 0 naslovnica)
     html_text = re.sub(
         r'<p><em>(\*?Slika \d+\.\d+[a-z]?:.*?)</em></p>',
+        r'<p class="caption"><em>\1</em></p>',
+        html_text
+    )
+    html_text = re.sub(
+        r'<p><em>(\*?Figure \d+\.\d+[a-z]?:.*?)</em></p>',
         r'<p class="caption"><em>\1</em></p>',
         html_text
     )
@@ -1287,6 +1303,13 @@ def build_html(merged_md: str) -> Path:
     if not pandoc:
         raise FileNotFoundError("Pandoc nije pronaden!")
 
+    if is_english_build():
+        meta_title = "Communication in the Age of Artificial Intelligence"
+        meta_lang = "en"
+    else:
+        meta_title = "Komunikacija u doba umjetne inteligencije"
+        meta_lang = "hr"
+
     cmd = [
         pandoc,
         str(md_path),
@@ -1296,8 +1319,8 @@ def build_html(merged_md: str) -> Path:
         "--standalone",
         "--toc",
         "--toc-depth=3",
-        "--metadata", "title=Komunikacija u doba umjetne inteligencije",
-        "--metadata", "lang=hr",
+        "--metadata", f"title={meta_title}",
+        "--metadata", f"lang={meta_lang}",
         "--include-in-header", str(header_path),
         "--wrap=none",
     ]
@@ -1351,12 +1374,18 @@ def build_html_manual(merged_md: str) -> Path:
     ]
     html_body = markdown.markdown(merged_md, extensions=extensions, output_format='html5')
 
+    doc_lang = "en" if is_english_build() else "hr"
+    doc_title = (
+        "Communication in the Age of Artificial Intelligence"
+        if is_english_build()
+        else "Komunikacija u doba umjetne inteligencije"
+    )
     full_html = f"""<!DOCTYPE html>
-<html lang="hr">
+<html lang="{doc_lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Komunikacija u doba umjetne inteligencije</title>
+<title>{doc_title}</title>
 {BOOK_CSS}
 </head>
 <body>
@@ -1477,9 +1506,12 @@ def add_page_numbers(pdf_path: Path, skip_first_pages: int = 1) -> bool:
         if unicode_font:
             font_kwargs = {"fontname": "F0", "fontfile": str(unicode_font)}
 
-        # Numbering starts from the first page that contains "1. Uvod".
+        # Numbering starts from the first page that contains chapter 1 heading (HR or EN).
         start_page = None
-        uvod_rx = re.compile(r"\b1\.?\s+Uvod\b", re.IGNORECASE)
+        if is_english_build():
+            uvod_rx = re.compile(r"\b1\.?\s+Introduction\b", re.IGNORECASE)
+        else:
+            uvod_rx = re.compile(r"\b1\.?\s+Uvod\b", re.IGNORECASE)
         for i, page in enumerate(doc):
             txt = page.get_text("text")
             lines = [ln.strip() for ln in txt.splitlines() if ln.strip()]
@@ -1496,11 +1528,28 @@ def add_page_numbers(pdf_path: Path, skip_first_pages: int = 1) -> bool:
 
         if start_page is None:
             start_page = max(1, skip_first_pages + 1)
-            print(f"  Upozorenje: '1. Uvod' nije pronađen, numeracija kreće od stranice {start_page}.")
+            marker = "1. Introduction" if is_english_build() else "1. Uvod"
+            print(f"  Upozorenje: '{marker}' nije pronađen, numeracija kreće od stranice {start_page}.")
 
-        book_title = "Komunikacija u doba umjetne inteligencije"
+        book_title = (
+            "Communication in the Age of Artificial Intelligence"
+            if is_english_build()
+            else "Komunikacija u doba umjetne inteligencije"
+        )
         heading_rx = re.compile(r"^\d+(?:\.\d+)*\.?\s+.+")
-        special_headings = {"Predgovor", "Referencije", "Glosar", "Kazalo pojmova", "Index", "Bilješka o izdanju"}
+        special_headings = {
+            "Predgovor",
+            "Referencije",
+            "Glosar",
+            "Kazalo pojmova",
+            "Index",
+            "Bilješka o izdanju",
+            "Foreword",
+            "References",
+            "Glossary",
+            "Closing note",
+            "Publication note",
+        }
         current_heading = ""
 
         def normalize_heading(text: str) -> str:
@@ -1613,6 +1662,8 @@ def add_page_numbers(pdf_path: Path, skip_first_pages: int = 1) -> bool:
             if (
                 "ZAVRŠNA BIL" in page_text
                 or "Ova knjiga završava, ali ostaje" in page_text
+                or "This book ends here" in page_text
+                or "but it stays open for" in page_text
                 or "github.com/bperak/komunikacija_u_doba_ai" in page_text
             ):
                 continue
@@ -1620,8 +1671,11 @@ def add_page_numbers(pdf_path: Path, skip_first_pages: int = 1) -> bool:
                 "Bilješka o izdanju" in page_text
                 or "BIL JEŠKA O IZDANJU" in page_text
                 or "Ova knjiga ostaje otvorena za" in page_text
+                or "Publication note" in page_text
             ):
-                detected_heading = "Bilješka o izdanju"
+                detected_heading = (
+                    "Publication note" if is_english_build() else "Bilješka o izdanju"
+                )
             else:
                 detected_heading = detect_heading(page)
             if detected_heading:
@@ -1715,7 +1769,8 @@ def add_page_numbers(pdf_path: Path, skip_first_pages: int = 1) -> bool:
         doc.save(str(tmp_pdf), deflate=True)
         doc.close()
         tmp_pdf.replace(pdf_path)
-        print(f"  Numeracija dodana od Uvoda: PDF {start_page} -> logička stranica 1.")
+        intro_word = "Introduction" if is_english_build() else "Uvoda"
+        print(f"  Numeracija dodana od {intro_word}: PDF {start_page} -> logička stranica 1.")
         return True
     except Exception as exc:
         print(f"  Upozorenje: numeracija stranica nije uspjela ({exc}).")
