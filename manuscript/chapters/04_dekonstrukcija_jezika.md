@@ -17,6 +17,7 @@ Taj proces preobrazbe moguće je prikazati slijedom:
 
 
 ![Tradicionalno poimanje značenja i AI dekonstrukcija](../../docs/diagrams/diag_203.svg)
+
 *Slika 4.1: Tradicionalno poimanje značenja, AI dekonstrukcija i (re)konstrukcija jezika te njihov utjecaj na oblikovanje društvene stvarnosti.*
 
 Stoga matematička dekonstrukcija jezika koju provodi umjetna inteligencija nije njegov kraj već razotkrivanje njegove temeljne moći. Ogoljavanjem simboličke razine AI nam zorno pokazuje da je jezik oduvijek bio prvenstveno oruđe za oblikovanje stvarnosti. U suvremeno doba to oruđe više nije isključivo u ljudskim rukama. Naše društvo, znanje i međusobni odnosi postaju tkivo koje zajednički pletu ljudski i strojni jezični agenti, brišući dotad jasne granice i otvarajući prostor za posve nove oblike društvene zbilje.
@@ -36,6 +37,7 @@ Taj se proces, od percepcije stvarnosti do svrhovitog djelovanja vođenog unutar
 
 
 ![Kognitivni proces agenta](../../docs/diagrams/ch04_kognitivni_proces.svg)
+
 *Slika 4.2: Prikaz kognitivnog procesa agenta koji obuhvaća percepciju, simboličku reprezentaciju, jezičnu strukturu, mentalnu mapu i djelovanje.*
 
 Prema tome jezik je formativna sila koja aktivno sudjeluje u opisu i konstrukciji stvarnosti za svakoga pojedinog agenta. Kroz međuigru simbola, njihovih međusobnih odnosa i mentalnih mapa koje iz te igre proizlaze, jezik omogućuje ne samo komunikaciju s drugima već i unutarnji dijalog koji je preduvjet svjesnog i smislenog postojanja u svijetu. Razumijevanje te strukturalne dimenzije jezika ključno je za razumijevanje temelja ljudske spoznaje.
@@ -53,6 +55,7 @@ Tako vektorski prostor LLM-a postaje izravni računalni analogon Saussureovu poj
 ---
 
 ![Konceptualna analogija: Saussureov sustav i vektorski prostor LLM-a](../../docs/diagrams/ch04_saussure_vektori.svg)
+
 *Slika 4.3: Konceptualna analogija između Saussureova sustava jezičnih vrijednosti i vektorskog prostora u velikim jezičnim modelima. Vrijednost elementa u oba sustava proizlazi iz njegove relacije s drugim elementima.*
 
 Takav pristup omogućuje nam da demistificiramo prividnu „inteligenciju“ tih sustava. Njihova sposobnost generiranja koherentnog, kontekstualno prikladnog i stilski uvjerljivog teksta ne potječe iz svijesti ili namjere, već iz iznimno uspješne replikacije guste relacijske mreže koja čini ljudski jezik. Agent, u ovome slučaju LLM, ne barata pojmovima, već formalnim odnosima među znakovima koje je naučio iz podataka. Njegova zapanjujuća kompetencija nije znak emergentne svijesti već dokaz da je struktura sama po sebi nositeljica onoga što percipiramo kao značenje (Bender et al., 2021).
@@ -75,6 +78,7 @@ Taj model, koji su u svojem djelu *The Meaning of Meaning* postavili Charles Kay
 
 
 ![Semantički trokut značenja](../../docs/diagrams/ch04_semanticki_trokut.svg)
+
 *Slika 4.4: Semantički trokut (Ogden i Richards, 1923): misao/pojam je izravno povezan sa simbolom i referentom, dok je veza između simbola i referenta posredna i arbitrarna.*
 
 Ključna spoznaja Ogdenova i Richardsova modela leži u prirodi veza između tih triju točaka. Dok je veza između simbola i misli, kao i između misli i referenta, stvarna i uzročno-posljedična unutar kognitivnog sustava, veza između samog simbola i referenta jest isprekidana, odnosno neizravna i arbitrarna. Riječ „pas“ sama po sebi nema nikakvu intrinzičnu vezu sa stvarnim psom; ta se veza uspostavlja isključivo kroz ljudsku svijest, odnosno kroz pojam koji posreduje između znaka i onoga što on označava.
@@ -115,6 +119,7 @@ Cjelokupni ciklus djelovanja agenta može se prikazati kao neprekidna petlja opa
 
 
 ![Ciklus djelovanja AI agenta u simuliranom okruženju](../../docs/diagrams/diag_220.svg)
+
 *Slika 4.5: Ciklički proces djelovanja AI agenta u simuliranom okruženju, gdje se opažanja kroz sjećanje i promišljanje pretvaraju u planove i konkretne akcije.*
 
 Takav pristup otvara goleme mogućnosti, ali postavlja i značajne izazove. S jedne strane, simulacije vođene jezikom postaju moćan alat za društvene znanosti – svojevrsni računalni laboratorij za testiranje socioloških, psiholoških i ekonomskih hipoteza u kontroliranom, ali realističnom okruženju. Moguće je istraživati širenje dezinformacija, dinamiku formiranja grupa ili učinke različitih politika na virtualno društvo.
@@ -139,6 +144,7 @@ Unutar te jezično satkane arhitekture djeluje **agent**, pojedinac koji se slu�
 
 
 ![Kružni proces izgradnje društvene strukture kroz jezik](../../docs/diagrams/ch04_jezik_drustvo.svg)
+
 *Slika 4.6: Kružni proces izgradnje društvene strukture kroz jezik: od jezičnih činova, preko zajedničkih značenja i normi, do institucionalizacije i povratnog preoblikovanja.*
 
 Zaključno, odnos jezika i društva je snažno dijalektičan. Metaforično rečeno, jezična djelatnost je istodobno i gradivo i graditelj, i nacrt i sama građevina. Komunikacijom se socijalne strukture neprestano grade, popravljaju i prilagođavaju novim okolnostima. On oblikuje društvo, no društvo sa svojim mijenama, sukobima i dogovorima povratno oblikuje i mijenja sam jezik. Razumijevanje te neraskidive veze ključno je za svako dublje promišljanje o naravi ljudske zajednice i mehanizmima njezina opstanka i razvoja.
@@ -164,6 +170,7 @@ Drugo, LLM-ovi sudjeluju u stvaranju novih **komunikacijskih praksi** i očekiva
  
 
 ![Ciklus oblikovanja društvenog konteksta](../../docs/diagrams/ch04_llm_drustveni_kontekst.svg)
+
 *Slika 4.7: Shematski prikaz ciklusa u kojem interakcija korisnika s LLM-om oblikuje društveni kontekst, koji zatim povratno utječe na buduće podatke za obuku modela.*
 
 Ključno je međutim raspoznati narav ovoga novog komunikacijskog aktera. LLM je **algoritamski agent**, čije djelovanje nije vođeno intencijom, sviješću ili autentičnim emocijama već statističkim obrascima prepoznatima u podacima. Njegova sposobnost sudjelovanja u naizgled smislenom razgovoru proizlazi iz sofisticirane simulacije, a ne iz istinskog razumijevanja. Opasnost leži upravo u zamućivanju te granice, gdje privid društvenosti može biti pogrešno protumačen kao stvarna socijalna i emocionalna prisutnost.
@@ -179,6 +186,7 @@ Pojavom i sve širom primjenom umjetnointeligentnih agenata od jednostavnih razg
 Jedan od ključnih procesa odvija se kroz suptilnu, ali postojanu prilagodbu. Stalna interakcija s AI agentima, koji su često uvježbani na golemim, ali i pročišćenim te standardiziranim jezičnim korpusima, može postupno i neprimjetno utjecati na naš vlastiti jezični izraz. U težnji za učinkovitijom komunikacijom s algoritmom korisnik može nesvjesno početi usvajati jednostavnije sintaktičke strukture, neutralniji rječnik i stil koji pogoduje strojnoj obradi. Takav proces, premda naizgled bezazlen, može voditi eroziji jezične raznolikosti te potiskivanju individualnih, regionalnih ili supkulturnih jezičnih osebujnosti. Naše „ja“, koje se zrcali u jeziku moglo bi tako postati uniformiranije, prilagođeno algoritamski posredovanoj normi.
 
 ![Kružni utjecaj AI agenta na jezik i identitet](../../docs/diagrams/ch04_ai_jezik_identitet.svg)
+
 *Slika 4.8: Shematski prikaz kružnog utjecaja interakcije s AI agentom na jezik i identitet: ljudski identitet izražava se jezikom, koji u interakciji s AI agentom biva izložen algoritamski oblikovanom jeziku, što potiče jezičnu prilagodbu koja povratno preoblikuje početni identitet.*
 
 Nove jezične prilagodbe zadiru u samu srž našega poimanja sebe. Jezik kojim opisujemo svoja iskustva i gradimo osobne narative ključan je za naš osjećaj koherentnosti i autentičnosti. Već je Sherry Turkle (2011) upozoravala da tehnologija ne mijenja samo ono što činimo, već i ono što jesmo. U kontekstu AI agenata to znači da oni, kao novi i utjecajni sugovornici, postaju svojevrsni „kalupi“ koji mogu suptilno oblikovati naše stavove, vrijednosti pa čak i naš narativ o samima sebi. Ako algoritam favorizira pozitivne i neutralne sentimente, hoćemo li postupno naučiti potiskivati jezični izraz negativnih emocija? Ako nam neprestano nudi sadržaje koji potvrđuju naša postojeća uvjerenja, hoće li naš identitet postati zatvoreniji i manje otvoren za promjenu?
@@ -203,6 +211,7 @@ Ipak, postoji bitna razlika. Dok su ljudski spoznajni okviri plod složenoga pro
 
 
 ![Proces algoritamske (re)konstrukcije stvarnosti](../../docs/diagrams/ch04_algoritamska_rekonstrukcija.svg)
+
 *Slika 4.9: Proces algoritamske (re)konstrukcije stvarnosti: od sirove stvarnosti, kroz algoritamsku leću i okvire značenja, do (re)konstruirane slike svijeta za korisnika.*
 
 Proces posredovanja ima dalekosežne posljedice. Kada se agenti koriste za pretraživanje informacija, stvaranje sažetaka ili vođenje dijaloga, oni odgovorima aktivno usmjeravaju korisnikovu pozornost, nudeći mu unaprijed uokvirene perspektive. Stvarnost koju doživljavamo kroz interakciju s takvim sustavima jest, stoga, nužno posredovana i prerađena. Opasnost se ne krije samo u mogućnosti širenja dezinformacija, već u suptilnijem i dugoročnijem učinku normalizacije jedne specifične, algoritamski generirane vizure svijeta, koja može potisnuti alternativna gledišta i osiromašiti slojevitost ljudskoga razumijevanja.
@@ -223,6 +232,7 @@ Jezik dakle djeluje kao most. No on ne premošćuje samo vremenske i prostorne u
 
 
 ![Jezik kao simbolički most](../../docs/diagrams/ch04_jezik_most.svg)
+
 *Slika 4.10: Proces kojim se opažanje konkretnog svijeta, posredstvom jezika kao simboličkog mosta, transformira u zajedničku intersubjektivnu stvarnost kroz izražavanje, razumijevanje i kolektivno prihvaćanje.*
 
 Na toj se temeljnoj razmjeni nevidljivih svjetova izgrađuje ono što se naziva **intersubjektivnom** stvarnošću.
@@ -243,6 +253,7 @@ U suvremenom dobu, taj dugi povijesni luk kolektivnoga stvaranja, koji se prote�
 
 
 ![Evolucijski put kolektivnog stvaranja](../../docs/diagrams/ch04_kolektivno_stvaranje.svg)
+
 *Slika 4.11: Evolucijski put kolektivnog stvaranja od implicitnih društvenih ugovora do suradnje s umjetnom inteligencijom.*
 
 Stoga se pred nas postavlja izazov oblikovanja novoga oblika „društvenog ugovora“ – ugovora koji ne bi bio sklopljen između ljudi, već između ljudi i umjetnih agenata. Taj novi ugovor zahtijeva razvoj komunikacijskih mostova koji nadilaze jednostavne naredbe i programske jezike. Da bi suradnja bila istinski plodonosna, potrebno je uspostaviti neku vrstu zajedničkog razumijevanja i predvidljivosti. Koncept zajedničke intencionalnosti, koji je Michael Bratman (1987) razvio za ljudske timove, mora se proširiti i na mješovite, ljudsko-AI timove. To podrazumijeva stvaranje sustava u kojima AI agent ne samo da izvršava zadatke već može i razumjeti širi kontekst, ciljeve tima te prilagoditi svoje djelovanje u skladu s dinamičnim potrebama suradničkog procesa.
@@ -267,6 +278,7 @@ Ta evolucija interakcije s tehnologijom mijenja paradigmu odnosa čovjeka i stro
 
 
 ![Evolucija interakcije čovjek-stroj](../../docs/diagrams/ch04_evolucija_interakcije.svg)
+
 *Slika 4.12: Evolucija interakcije napreduje od jednosmjerne instrukcije alatu, preko dvosmjernog dijaloga, do kolaborativnog stvaranja novih uvida s agentom.*
 
 No ta nova paradigma interakcije, gdje agent postaje istinskim sugovornikom, nije nastala *ex nihilo*. Ona je izravna posljedica eksponencijalnog rasta temeljne tehnološke moći i razvoja sve složenijih algoritamskih arhitektura. Sposobnost vođenja suvislog razgovora, pamćenja konteksta i generiranja ljudima sličnog teksta zahtijeva golemu računalnu snagu za treniranje i izvođenje jezičnih modela. Dosezanje AI horizonta, točke u kojoj će takve interakcije postati sveprisutne i gotovo nerazlučive od ljudskih, postavlja temeljna pitanja o resursima koji to omogućuju. Upravo taj pogon, nevidljivi motor koji stoji iza fasade elokventnoga digitalnog sugovornika, bit će predmetom razmatranja u sljedećem poglavlju.

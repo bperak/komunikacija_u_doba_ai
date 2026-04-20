@@ -3,6 +3,7 @@
 Krebs, J.R., & Dawkins, R. (1984). Animal signals: Mind-reading and manipulation. In J. R. Krebs & N. B. Davies (Eds.), *Behavioural ecology: An evolutionary approach* (2nd ed., pp. 380–402). Blackwell Scientific Publications.
 Tomasello, M. (2008). *Origins of human communication*. The MIT Press.
 Žic-Fuchs, M. (1991). *Language knowledge and world knowledge: a semantic analysis of verbs of motion in English*. Faculty of Philosophy, Department of General Linguistics and Oriental Studies.
+
 ## 2 chapter
 Adamopoulou, E., & Moussiades, L. (2020). An overview of chatbot technology. In I. Maglogiannis, L. Iliadis, & E. Pimenidis (Eds.), *Artificial Intelligence Applications and Innovations. AIAI 2020. IFIP Advances in Information and Communication Technology, vol 584* (pp. 373–383). Springer.
 Alter, A. (2017). *Irresistible: The rise of addictive technology and the business of keeping us hooked*. Penguin Press.
@@ -75,6 +76,7 @@ Wellman, B. (2001). Physical place and cyberplace: The rise of personalized netw
 Wiener, N. (1948). *Cybernetics: Or control and communication in the animal and the machine*. The MIT Press.
 Winograd, T. (1972). *Understanding natural language*. Academic Press.
 Zuboff, S. (2019). *The age of surveillance capitalism: The fight for a human future at the new frontier of power*. PublicAffairs.
+
 ## Chapter 3
 Bai, Y., Jones, A., Ndousse, K., Askell, A., Chen, A., DasSarma, N., Drain, D., Fort, S., Ganguli, D., Henighan, T., Joseph, N., Kadavath, S., Kernion, J., Conerly, T., El-Showk, S., Hatfield-Dodds, Z., Hemphill, J., Hume, T., Johnston, S., ... Kaplan, J. (2022). *Constitutional AI: Harmlessness from AI Feedback*. ArXiv.
 Bergstra, J., & Bengio, Y. (2012). Random search for hyper-parameter optimization. *Journal of Machine Learning Research, 13*, 281-305.
@@ -146,6 +148,7 @@ Searle, J.R. (1980). Minds, brains, and programs. *Behavioral and Brain Science
 Turkle, S. (2011). *Alone together: Why we expect more from technology and less from each other*. Basic Books.
 Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). Attention is all you need. *Advances in Neural Information Processing Systems, 30*.
 Vygotsky, L. S. (1978). *Mind in society: The development of higher psychological processes*. Harvard University Press.
+
 ## Chapter 5
 Anthropic. (2025). *Agentic misalignment in advanced language models*. Anthropic. https://www.anthropic.com/research/agentic-misalignment
 Bengio, Y., Louradour, J., Collobert, R., & Weston, J. (2009). Curriculum learning. In *Proceedings of the 26th annual international conference on machine learning* (pp. 41–48).
@@ -184,6 +187,7 @@ Sundararajan, A. (2016). *The sharing economy: The end of employment and the ri
 Pan, X., Dai, J., Fan, Y., & Yang, M. (2024). *Frontier AI systems have surpassed the self-replicating red line*. arXiv preprint arXiv:2412.12140.
 Wang, G., Xie, Y., Jiang, Y., Mandlekar, A., Xiao, C., Zhu, Y., ... & Anandkumar, A. (2023). *Voyager: An open-ended embodied agent with large language models*. ArXiv.
 Wei, J., Wang, X., Schuurmans, D., Bosma, M., Chi, E., Le, Q., & Zhou, D. (2022). *Chain-of-thought prompting elicits reasoning in large language models*. ArXiv.
+
 ## Chapter 6
 Anthropic. (2024). *The Claude 3 Model Family: Opus, Sonnet, Haiku*. Anthropic.
 
@@ -205,6 +209,7 @@ Sutton, R. S., & Barto, A. G. (2018). *Reinforcement learning: An introduction*
 Wei, J., Wang, X., Schuurmans, D., Bosma, M., Chi, E., Le, Q., & Zhou, D. (2022). Chain-of-thought prompting elicits reasoning in large language models. *Advances in Neural Information Processing Systems, 35*, 24824-24837.
 Xu, C., Li, C., Zhang, D., & Li, Y. (2023). *Retrieval-augmented generation for large language models: A survey*. ArXiv.
 Yao, S., Zhao, J., Yu, D., Du, N., Tsvetkov, Y., & Fung, P. (2023). *ReAct: Synergizing reasoning and acting in language models*. ArXiv.
+
 ## 7 chapter
 Brusilovsky, P., & Peylo, C. (2003). Adaptive and intelligent web-based educational systems. *International Journal of Artificial Intelligence in Education, 13*(2), 159-172.
 Chen, X., Xie, H., & Wang, F.L. (2023). *A survey on language models for healthcare*. ArXiv.
@@ -221,6 +226,7 @@ Russell, S. J., & Norvig, P. (2021). *Artificial intelligence: A modern approac
 Salas, E., Tannenbaum, S. I., Kraiger, K., & Smith-Jentsch, K. A. (2012). The science of training and development in organizations: What matters in practice. *Psychological Science in the Public Interest, 13*(2), 74-101.
 Smaldino, P. E., & McElreath, R. (2016). The natural selection of bad science. *Royal Society Open Science, 3*(9), 160384.
 Varian, H.R. (2018). Artificial intelligence, economics, and industrial organization. In A. Agrawal, J. Gans, & A. Goldfarb (Eds.), *The economics of artificial intelligence: An agenda* (pp. 399-428). University of Chicago Press.
+
 ## Chapter 8
 Bonabeau, E., Dorigo, M., & Theraulaz, G. (1999). *Swarm intelligence: From natural to artificial systems*. Oxford University Press.
 Bostrom, N. (2014). *Superintelligence: Paths, dangers, strategies*. Oxford University Press.

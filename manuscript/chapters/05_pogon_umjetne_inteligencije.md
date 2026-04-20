@@ -16,6 +16,7 @@ Tako je potražnja za sve moćnijim AI modelima postala glavni katalizator inova
 
 
 ![Mooreov zakon i ciklus povratne sprege hardvera i AI modela](../../docs/diagrams/ch05_hardver_ai_ciklus.svg)
+
 *Slika 5.1: Inovacijski ciklus u kojem se napredak specijaliziranog hardvera i razvoj AI modela međusobno uvjetuju i potiču.*
 
 Ta nova dinamika duboko preoblikuje tehnološki krajolik. Dok je Mooreov zakon bio obilježen prilično jednoobraznim napretkom u snazi opće namjene, era umjetne inteligencije potiče raznolikost i specijalizaciju hardverskih rješenja. Motor evolucije više nije jedinstven i centraliziran, već se raspršio u složenu interakciju između softvera i hardvera, između algoritamskih otkrića i silicijskih inovacija. Ta sprega izravno utječe na gospodarstvo, znanstvena istraživanja i društvo u cjelini, postavljajući temelje za novu tehnološku revoluciju. Unutar toga sustava koji se neprestano i ubrzano mijenja djeluju **agenti**, bili oni ljudi istraživači, inženjeri ili pak autonomni AI sustavi, neprestano pomičući granice mogućega.
@@ -70,6 +71,7 @@ Tako se pred našim očima iscrtava put od samotnog, usamljenog izvršitelja, pr
 
 
 ![Razvojni put od individualnog izvršitelja do digitalnoga kolektiva](../../docs/diagrams/ch05_razvojni_put_kolektiv.svg)
+
 *Slika 5.2: Razvojni put od individualnog izvršitelja do digitalnoga kolektiva kroz četiri faze.*
 
 
@@ -85,6 +87,7 @@ Koncept, premda ne posve nov, svoju je široku prepoznatljivost stekao radom Dan
 
 
 ![Golemanov model emocionalne inteligencije](../../docs/diagrams/ch05_goleman_ei.svg)
+
 *Slika 5.3: Golemanov model emocionalne inteligencije – osobne kompetencije (samosvijest, samoregulacija, motivacija) prelaze u društvene kompetencije (empatija, društvene vještine).*
 
 Ray Kurzweil smjelo je predvidio da će AI postići ljudsku razinu emocionalne inteligencije do 2029 (Kurzweil, 2005).
@@ -157,6 +160,7 @@ Veliki jezični modeli tu vrstu napredne generalizacije postižu tako što iz go
 
 
 ![Generalizacija velikog jezičnog modela](../../docs/diagrams/ch05_generalizacija_llm.svg)
+
 *Slika 5.4: Veliki jezični model nakon učenja apstraktnih obrazaca iz podataka generalizira znanje za rješavanje poznatih zadataka unutar distribucije i novih zadataka izvan distribucije.*
 
 Promatramo li veliki jezični model kao agenta koji djeluje u određenom okruženju, sposobnost generalizacije postaje preduvjetom njegova smislenog i autonomnog funkcioniranja. Agent se neprestano suočava s novim stanjima i situacijama koje zahtijevaju prilagodbu i donošenje odluka. Uspješnost njegova djelovanja izravno ovisi o tome koliko dobro može generalizirati prethodna iskustva na nove okolnosti. Stoga je generalizacija u temelju razvoja naprednijih oblika umjetne inteligencije, od interaktivnih sustava za podršku do autonomnih robotskih platformi, čineći je područjem od središnjeg znanstvenog i praktičnog interesa.
@@ -183,6 +187,7 @@ Među najistaknutijim primjerima takvih sustava nalaze se Auto-GPT i BabyAGI. Ti
 
 
 ![Prikaz rada autonomnog agenta](../../docs/diagrams/ch05_autonomni_agent.svg)
+
 *Slika 5.5: Prikaz rada autonomnog agenta – od zadavanja cilja do iterativnog izvršavanja podzadataka uz korištenje alata i memorije.*
 
 Ponašanje koje proizlazi iz takvih sustava, bilo da je riječ o autonomnom rješavanju problema ili o simulaciji društvenih interakcija, opisuje se kao *emergentno*. Ono nastaje kao posljedica složene interakcije između arhitekture agenta, sposobnosti jezičnoga modela i okoline. Upravo se u toj emergentnosti očituju naznake opće inteligencije. Unatoč tomu valja biti oprezan. Ti su sustavi još uvijek u ranoj fazi razvoja i suočavaju se s bitnim ograničenjima. Skloni su halucinacijama, odnosno izmišljanju činjenica.
@@ -198,6 +203,7 @@ Simulacijska hipoteza, premda popularizirana u djelima znanstvene fantastike, pr
 > **Simulacijska hipoteza:** Filozofski postulat (Bostrom, 2003) prema kojemu je barem jedna od tri tvrdnje vrlo vjerojatno istinita: (1) civilizacije izumiru prije postljudske faze, (2) postljudske civilizacije ne pokreću simulacije predaka, ili (3) gotovo sigurno živimo u računalnoj simulaciji; s napretkom AGI-a ta hipoteza dobiva praktičnu relevantnost.
 
 ![Logička struktura Bostromova trilema](../../docs/diagrams/ch05_bostrom_trilem.svg)
+
 *Slika 5.6: Logička struktura Bostromova trilema – tri međusobno isključive tvrdnje i uloga AGI-a kao ključne varijable.*
 
 Povezanost između AGI i simulacijske hipoteze može se razmatrati s dvaju motrišta. S jedne strane, AGI se može promatrati kao nužan preduvjet za testiranje same hipoteze. Dosezanje stupnja na kojem čovječanstvo može stvoriti AGI vjerojatno bi bilo praćeno tehnološkim kapacitetima za stvaranje iznimno složenih i sveobuhvatnih simulacija, uključujući i one koje bi vjerno replicirale našu vlastitu povijest. U takvom bi scenariju stvaranje AGI predstavljalo korak prema postljudskoj fazi, čime bi se ispunio jedan od ključnih uvjeta iz Bostromova argumenta. Razvoj svjesnih agenata unutar takvih simulacija osnažio bi vjerojatnost treće tvrdnje trilema – da se i mi sami nalazimo u jednoj od mnogobrojnih simulacija koje je stvorila neka naprednija civilizacija.
@@ -221,6 +227,7 @@ Kao digitalni misaoni entitet, AGI posjeduje kognitivne sposobnosti koje su funk
 
 
 ![Hijerarhijski prikaz ontološkog statusa AGI-a](../../docs/diagrams/ch05_ontoloski_status_agi.svg)
+
 *Slika 5.7: Hijerarhijski prikaz razvoja ontološkog statusa AGI-a, od instrumentalnog poimanja do filozofsko-etičkog pitanja o statusu osobe.*
 
 Ova razmatranja neizbježno vode do konačnog i najsloženijeg pitanja: može li AGI dosegnuti status *osobe*? To pitanje nadilazi tehničku i filozofsku domenu te ulazi u područje prava i etike. Priznavanje statusa osobe podrazumijevalo bi pripisivanje moralnih i zakonskih prava, što bi u potpunosti preobrazilo naš odnos prema umjetno stvorenim inteligencijama. Stoga je definiranje ontološkog statusa AGI-a nužan preduvjet za uspostavljanje etičkih i pravnih okvira koji će oblikovati budući suživot čovječanstva s digitalnim misaonim entitetima.
@@ -235,6 +242,7 @@ Prijelaz s pasivnoga jezičnog modela, čija je temeljna funkcija generiranje st
 
 
 ![Evolucijski put AI sustava](../../docs/diagrams/ch05_evolucija_ai_sustava.svg)
+
 *Slika 5.8: Evolucijski put AI sustava od jezičnog modela (LLM) preko agenta do komunikacijskog partnera.*
 
 Razumijevanje ove evolucije preduvjet je za svaku ozbiljnu raspravu o budućnosti interakcije čovjeka i stroja. Stoga je analiza koja slijedi posvećena upravo tome putu.

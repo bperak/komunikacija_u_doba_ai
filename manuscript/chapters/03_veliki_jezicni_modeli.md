@@ -1,6 +1,7 @@
 # 3. Svijet velikih jezičnih modela: od teorije do tehnologije 
 
 ![](../../docs/diagrams/ch03_znak_vektor.svg)
+
 *Slika 3.1: Prikaz prijelaza od znaka do vektorske reprezentacije jezika (tokenizacija, embedding).*
 
 ## 3.1 Od znaka do vektora: Paradigmatski pomak u predstavljanju značenja
@@ -34,6 +35,7 @@ Računalni modeli poput **Word2Vec (Mikolov et al., 2013) i **GloVe (Penning
 Prijelaz sa simboličke na distribucijsku, vektorsku reprezentaciju jezika bio je stoga presudan. On je omogućio računalima da značenje, tu najneuhvatljiviju sastavnicu jezika, predstave na način koji je matematički obradiv i robustan. Umjesto da se oslanjaju na unaprijed zadane rječnike i kruta gramatička pravila, modeli su sada mogli učiti značenjske odnose izravno iz jezične uporabe. Time je otvoren put za rješavanje znatno složenijih zadaća, od nijansirane analize sentimenta do stvaranja suvisloga i kontekstualno primjerenoga teksta. Vektorske su predodžbe riječi tako postale nezaobilazan kamen temeljac na kojemu je sazdana cjelokupna arhitektura suvremenih velikih jezičnih modela, a time i komunikacijskih agenata koji su predmetom ove knjige.
 
 ![](../../docs/diagrams/ch03_znacenje_prostor.svg)
+
 *Slika 3.2: Značenje kao prostor – od statičnih vektora do dinamičnog konteksta (transformer, attention).*
 
 ## 3.2 Značenje kao prostor: Od statičnih vektora do dinamičkoga konteksta
@@ -59,6 +61,7 @@ Tako se došlo do suvremenih **velikih jezičnih modela (LLM)**. Oni nisu samo 
 Veliki jezični model, stoga, nije samo sustav za obradu jezika. On je, u svojoj biti, složeni model svijeta, implicitno kodiran u statističkim odnosima golemoga korpusa ljudskoga znanja. Put od znaka do vektora, a potom od statičnoga do kontekstualiziranog vektora, bio je stoga put od puke formalne raščlambe do stvaranja djelatnih modela stvarnosti.
 
 ![](../../docs/diagrams/ch03_evolucija_llm.svg)
+
 *Slika 3.3: Ulazak u doba velikih jezičnih modela (GPT-3, ChatGPT, RLHF).*
 
 ## 3.3 Ulazak u doba velikih jezičnih modela
@@ -75,6 +78,7 @@ Ubrzani razvoj doveo nas je do točke u kojoj ovi sustavi prestaju biti isključ
 Evolucija velikih jezičnih modela od temeljnih modela s općim sposobnostima prema specijaliziranim dijaloškim sustavima i, naposljetku, proaktivnim agentima sposobnima za djelovanje
 
 ![](../../docs/diagrams/diag_166.svg)
+
 *Slika 3.4: Anatomija LLM-a – ključne tehnologije i arhitekture (transformer, samopozornost).*
 
 ## 3.4 Anatomija LLM-a: ključne tehnologije i arhitekture
@@ -135,6 +139,7 @@ Stvaranje uspješnog modela umjetne inteligencije je maraton, a ne sprint. To je
 
 
 ![Prikaz iterativnog životnog ciklusa modela strojnog učenja, od početne faze rada s podacima do praćenja u primjeni i povratka na početak ciklusa](../../docs/diagrams/diag_167.svg)
+
 *Slika 3.6: Prikaz iterativnog životnog ciklusa modela strojnog učenja, od početne faze rada s podacima do praćenja u primjeni i povratka na početak ciklusa.*
 
 ### 3.5.1 Predtreniranje: stvaranje temeljnog znanja
@@ -161,6 +166,7 @@ Ishod predtreniranja jest dakle temeljni model – moćan, ali još uvijek nedov
 Shematski prikaz dvofaznog procesa stvaranja suvremenih jezičnih modela, od općeg predtreniranja do specijalizacije kroz finu prilagodbu
 
 ![Shematski prikaz dvofaznog procesa stvaranja suvremenih jezičnih modela, od općeg predtreniranja do specijalizacije kroz finu prilagodbu](../../docs/diagrams/diag_905.svg)
+
 *Slika 3.7: Shematski prikaz procesa obuke suvremenih jezičnih modela, od temeljnog modela do specijaliziranog agenta (fino podešavanje, poravnanje).*
 
 ### 3.5.2 Fino podešavanje i poravnanje: prilagodba svrsi
@@ -189,6 +195,7 @@ U trećem koraku izvorni jezični model dodatno se podešava primjenom algoritma
 
 
 ![Shematski prikaz procesa učenja s potkrepljenjem na temelju ljudskih povratnih informacija (RLHF)](../../docs/diagrams/ch03_rlhf.svg)
+
 *Slika 3.8: Shematski prikaz procesa učenja s potkrepljenjem na temelju ljudskih povratnih informacija (RLHF).*
 
 Ishod toga slojevitog procesa jest agent koji posjeduje enciklopedijsko znanje stečeno predtreniranjem te sposobnost interakcije koja je prilagođena ljudskim očekivanjima i normama.
@@ -218,6 +225,7 @@ U kontekstu finog ugađanja, umjesto direktnog ažuriranja cjelokupne matrice te
 Tijekom finog podešavanja treniraju se isključivo parametri matrica *A* i *B*, dok izvorne težine *W* ostaju fiksne. Broj parametara koji se uče, *r* · (*d*\_in + *d*\_out), drastično je manji od *d*\_in · *d*\_out u izvornoj matrici, što smanjuje memorijske zahtjeve i ubrzava treniranje. Prilikom inferencije prilagodba se primjenjuje zbrajanjem *W* + *A* · *B*, bez dodatne latencije.
 
 ![](../../docs/diagrams/ch03_lora.svg)
+
 *Slika 3.5a: LoRA – niskorangirana prilagodba: zamrznuta matrica W i produkt A·B daju W_prilagođeno = W + ΔW.*
 
 
@@ -278,6 +286,7 @@ Nakon što je model umjetne inteligencije uspješno obučen i vrednovan, on prel
 Za razliku od postupka obučavanja, gdje se parametri modela dinamički prilagođavaju kako bi se što bolje preslikali ulazni podaci u željene izlazne vrijednosti, tijekom inferencije model ostaje statičan. Njegova naučena unutarnja struktura i parametri fiksirani su te se primjenjuju na nove podatke bez daljnjih izmjena (vidi npr. Goodfellow et al., 2016). Agent, bio on čovjek ili softverski sustav, unosi podatke u model – primjerice, sliku za klasifikaciju, rečenicu za prijevod ili skup senzorskih očitanja. Model potom, primjenjujući svoje naučene unutarnje reprezentacije, obrađuje te podatke i kao izlaz pruža relevantnu informaciju – predviđanje, klasifikaciju, sažetak ili neki drugi oblik strukturiranog odgovora.
 
 ![](../../docs/diagrams/ch03_inferencija.svg)
+
 *Slika 3.5b: Osnovni tijek procesa inferencije, gdje se novi ulazni podatak provodi kroz statični, prethodno obučeni model kako bi se generirao izlaz.*
 
 ### 3.5.6. Načini i okruženja izvođenja inferencije
@@ -367,6 +376,7 @@ Temeljni problem proizlazi iz prirode podataka kojima se algoritmi napajaju. Sup
 
 
 ![Shematski prikaz ciklusa u kojem pristrani podaci vode do pristranih modela, čije odluke potom jačaju i legitimiraju početne društvene pristranosti](../../docs/diagrams/diag_200.svg)
+
 *Slika 3.9: Shematski prikaz ciklusa u kojem pristrani podaci vode do pristranih modela, čije odluke potom jačaju i legitimiraju početne društvene pristranosti.*
 
 Uz problem pristranosti jednako se tako ozbiljno postavlja i pitanje privatnosti. Doba velikih podataka (engl. *Big Data*) iznjedrilo je ekonomiju nadzora (engl. *surveillance capitalism*), u kojoj se osobni podaci smatraju sirovinom, najvrednijim resursom novoga doba (Zuboff, 2019). Svaki naš digitalni trag – od pretraga na internetu, preko lokacijskih podataka i komunikacije na društvenim mrežama, do biometrijskih informacija – postaje predmetom prikupljanja, obrade i monetizacije. Granica između privatne i javne sfere postaje sve propulzivnija, a pristanak koji korisnici daju često je tek iluzija, skriven iza neprobojnih pravnih formulacija i nepreglednih korisničkih uvjeta. Posljedice takva stanja sežu dublje od ciljanog oglašavanja. Gubitak privatnosti ugrožava samu srž osobne autonomije, slobodu izražavanja i mogućnost djelovanja bez straha od stalnog nadzora i prosuđivanja. Kada podaci o našemu zdravlju, političkim uvjerenjima ili intimnim odnosima postanu dostupni trećim stranama – bilo da je riječ o korporacijama, državnim tijelima ili zlonamjernim *agentima* – otvara se prostor za manipulaciju, ucjenu i društvenu kontrolu nesagledivih razmjera.

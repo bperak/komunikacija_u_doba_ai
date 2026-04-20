@@ -174,7 +174,8 @@ img {
 }
 
 .figure-block {
-    text-align: center;
+    /* Do not center the whole block: merged stray prose would inherit centering. */
+    text-align: left;
     margin: 1.2em 0 1.2em 0;
     page-break-inside: avoid;
     break-inside: avoid-page;
@@ -912,11 +913,76 @@ def fix_caption_newlines(md_text: str) -> str:
     for i, line in enumerate(lines):
         result.append(line)
         # If current line is an image and next line is a caption, insert blank line
-        if (line.strip().startswith("![")
-                and i + 1 < len(lines)
-                and lines[i + 1].strip().startswith("*Slika")):
-            result.append("")
+        if line.strip().startswith("![") and i + 1 < len(lines):
+            nxt = lines[i + 1].strip()
+            if nxt.startswith("*Slika") or nxt.startswith("*Figure"):
+                result.append("")
     return "\n".join(result)
+
+
+def ensure_blank_line_before_atx_headings(md_text: str) -> str:
+    """Insert a blank line before ATX headings when Pandoc would otherwise merge them.
+
+    Pandoc's markdown reader treats ``### Title`` as a heading only if it is
+    separated from the previous block (paragraph, blockquote line, caption, etc.)
+    by a blank line. Otherwise the ``###`` becomes literal text inside a ``<p>``,
+    which also breaks caption post-processing and inherits ``.figure-block`` centering.
+    """
+    lines = md_text.splitlines()
+    out: list[str] = []
+    in_fence = False
+    heading_start = re.compile(r"^ {0,3}#{1,6}\s")
+
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_fence = not in_fence
+            out.append(line)
+            continue
+        if in_fence:
+            out.append(line)
+            continue
+
+        is_heading = bool(heading_start.match(line))
+        if is_heading and out and out[-1].strip() != "":
+            if not heading_start.match(out[-1]):
+                out.append("")
+        out.append(line)
+
+    return "\n".join(out)
+
+
+def ensure_blank_line_after_figure_slika_captions(md_text: str) -> str:
+    """Insert a blank line after *Figure N.M:* / *Slika N.M:* when the next non-empty line is glued.
+
+    Without a blank line, Pandoc merges the caption with the following paragraph, blockquote,
+    or list into a single ``<p>`` (or mis-parses ``>`` as text).
+    """
+    lines = md_text.splitlines()
+    out: list[str] = []
+    in_fence = False
+    caption = re.compile(r"^\*(Figure|Slika) \d+\.\d+[a-z]?[^*]*\*$", re.IGNORECASE)
+
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_fence = not in_fence
+            out.append(line)
+            continue
+        if in_fence:
+            out.append(line)
+            continue
+
+        out.append(line)
+        if not caption.match(stripped):
+            continue
+        j = i + 1
+        while j < len(lines) and not lines[j].strip():
+            j += 1
+        if j < len(lines) and j == i + 1:
+            out.append("")
+
+    return "\n".join(out)
 
 
 def remove_duplicate_caption_paragraphs(md_text: str) -> str:
@@ -1942,11 +2008,15 @@ def main():
     merged = fix_truncated_captions(merged)
     merged = fix_caption_newlines(merged)
     merged = remove_duplicate_caption_paragraphs(merged)
+    merged = ensure_blank_line_after_figure_slika_captions(merged)
+    merged = ensure_blank_line_before_atx_headings(merged)
     merged_for_html = fix_image_paths_for_manuscript(merged)
     print("  Putanje slika popravljene.")
     print("  Alt-tekst slika obrisan (sprječava duple opise).")
     print("  Skraćeni opisi (s '...') popravljeni.")
-    print("  Opisi slika odvojeni u zasebne retke.\n")
+    print("  Opisi slika odvojeni u zasebne retke.")
+    print("  Nakon *Figure* / *Slika* opisa umetnut prazan redak prije sljedećeg bloka.")
+    print("  ATX naslovi (#) odvojeni praznim retkom od prethodnog bloka.\n")
 
     # Step 3: Build HTML (with images)
     print("[3/3] Generiranje izlaznih datoteka...\n")

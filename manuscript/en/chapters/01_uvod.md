@@ -3,11 +3,13 @@
 
 From the ancient, barely distinguishable voices with which the first hominids communicated, all the way to the complex linguistic tissues that permeate today's digital spaces, communication appears as a fundamental force on which the very survival and development of human communities depends. It is the connective tissue that unites individuals in society, a pledge of the survival of culture and the driver of every innovation. Without the possibility of transferring thoughts, experience and knowledge from generation to generation, human survival would remain bound within the limits of instinct, and the concept of culture would be unimaginable.
 ![](../../docs/diagrams_en/diag_01.svg)
+
 *Figure 1.1: Communication and development of civilization.*
 
 The fundamental shift from simple signaling systems, such as we find in the animal world, to the complexity of human language is the result of a long-term evolutionary process. This heritage, made up of a series of cognitive and social adaptations, created the preconditions for the further development of communication and laid the foundations for the entire human culture. It is not manifested in a single ability, but in a complex interweaving of several factors that encouraged and shaped each other.
 
 ![](../../docs/diagrams_en/diag_20.svg)
+
 *Figure 1.2: Evolution of human communication – from primates to conventionalized language.*
 
 A key moment in this development is the transition from predominantly indexical signs, firmly tied to immediate reality, to the use of symbols. While indexical signs point to something present and correlated (for example, smoke to fire), **symbols** derive their value from agreements within the community, thereby enabling the discussion of objects, beings and phenomena that are not spatially or temporally present, as well as abstract concepts.
@@ -38,6 +40,7 @@ Ultimately, the legacy for the further development of communication is a complex
 
 
 ![](../../docs/diagrams_en/ch01_obmana.svg)
+
 *Figure 1.3: The interconnectedness of social, cognitive, and communication processes—collaborative communication and theory of mind drive development, while the evolutionary race between deception and its detection creates pressure for cognitive complexity and a grammatically structured symbolic system.*
 
 
@@ -49,6 +52,7 @@ Oral tradition, the first and longest-lived communication technology, transforme
 
 
 ![](../../docs/diagrams_en/ch01_funkcije_usmene_predaje.svg)
+
 *Figure 1.4: Functions of oral transmission.*
 
 The modern age is witnessing a technological breakthrough that, with its depth and reach, surpasses many previous ones. It is about the emergence of large language models (English *Large Language Model*, LLM), advanced artificial intelligence systems such as GPT (OpenAI, 2024b), Claude (Anthropic, 2024), Gemini or Llama models. Built on inconceivably huge corpora of digitized human language and knowledge, these systems are trained to recognize and reproduce the most subtle patterns of human communication. They reveal the fascinating duality elegantly summarized by academic Milena Žic Fuchs (Žic-Fuchs, 1991), distinguishing knowledge about the world (facts, concepts, relationships) and knowledge about language (grammar, stylistics, pragmatics). Today's great language models master the language code with exceptional skill, creating texts that are grammatically coherent, stylistically adapted, and often factually accurate and contextually appropriate. They mimic human language production with incredible persuasiveness, often reaching, and in some narrowly defined tasks even surpassing, human performance.
@@ -57,6 +61,7 @@ The modern age is witnessing a technological breakthrough that, with its depth a
 
 
 ![](../../docs/diagrams_en/diag_06.svg)
+
 *Figure 1.5: Development of active power through literacy.*
 
 But large language models cease to be mere text generators the moment they are transformed into **communication** agents by incorporating them into broader information systems and equipping them with goals, data access tools, and memory mechanisms. Thus, they become our new digital interlocutors, assistants and collaborators - and perhaps true communication partners. Their impact is already evident in the reshaping of the landscape of human interaction: they enable real-time language translation, run service automatons (*chatbots*) that provide personalized customer support, help scientists analyze complex data sets, assist programmers in writing code, stimulate creative processes, and open new vistas of global collaboration and education. They are increasingly assuming the role of universal translators and mediators of knowledge, capable of bridging linguistic, disciplinary and cultural barriers.
@@ -65,6 +70,7 @@ But large language models cease to be mere text generators the moment they are t
 
 
 ![](../../docs/diagrams_en/diag_89.svg)
+
 *Figure 1.6: Historical development of communication to AI-mediated communication.*
 
 The central guiding thought of this book is the assertion that large language models, and the communication agents they trigger, do not represent just a new technological tool, a gadget (English *gadget*), but a fundamental transformation of the very nature of communication. Their potential penetrates deeply into the structure of social relations, human cognition and the very essence of what it means to be a human being who communicates in the digital age. Precisely because they carry with them unimagined possibilities, it is of crucial importance to critically penetrate into their inherent capabilities and limitations. It is equally important to shape their development and application ethically, in order to serve the improvement of human dignity and the general betterment. The book is intended as a systematic review of communication technologies, a journey that begins in the deep past and ends with a reasoned look into the possible future of human-machine interaction.

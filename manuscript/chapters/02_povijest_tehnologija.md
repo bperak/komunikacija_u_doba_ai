@@ -22,6 +22,7 @@ Civilizaciju stoga možemo razumjeti kao složenu i nepreglednu interakcijsku mr
 
 
 ![](../../docs/diagrams/diag_901.svg)
+
 *Slika 2.1: Shematski prikaz odnosa između agenata, komunikacije i artefakata kao temelja kumulativne kulture.*
 
 
@@ -67,6 +68,7 @@ Nadalje, složenost usmene tradicije očituje se u njezinoj *multimodalnosti*. O
 Konačno, temeljna značajka usmene tradicije jest kreativna napetost između postojanosti i promjenjivosti. Da bi opstala, tradicija mora posjedovati dovoljnu mjeru stabilnosti koja joj osigurava prepoznatljivost i kontinuitet kroz generacije. Istodobno, da bi ostala živa i relevantna, ona se mora neprestano prilagođavati i mijenjati sa svakom novom izvedbom. Taj prividni paradoks razrješava se u shvaćanju da tradicionalnost ne leži u nepromjenjivosti riječi, već u dubljim strukturama i značenjskim potencijalima koje one prizivaju. Svaka formula ili tema nosi sa sobom bogatstvo asocijacija i referencija na cjelokupnu tradiciju, stvarajući ono što John Miles Foley (1991) naziva *tradicionalnom referencijalnošću*. Riječi u usmenoj izvedbi imaju daleko veći semantički naboj jer odjekuju neizrečenim, ali prisutnim kontekstom cjelokupnoga tradicijskog znanja. Zbog svega navedenog usmenu tradiciju valja promatrati kao zamršen ekosustav u kojem se kognitivni procesi pamćenja i stvaranja, društvena dinamika izvedbe te estetske vrijednosti jezika, glazbe i pokreta stapaju u jedinstveno i neponovljivo ljudsko iskustvo.
 
 ![](../../docs/diagrams/diag_02.svg)
+
 *Slika 2.2: Dinamički sustav usmene tradicije – tradicija, izvođač, izvedba i publika u ciklusu prijenosa i obnavljanja znanja.*
 
 ### 2.2.2. Kolektivna imaginacija i identitet
@@ -84,6 +86,7 @@ Istodobno, polje kolektivne imaginacije dinamično je i bremenito sukobima. Razl
 U tome složenom odnosu snaga pojedinačni agent aktivno sudjeluje u procesu stvaranja značenja – on interpretira, prihvaća, prilagođava, ali i pruža otpor ili preoblikuje kolektivne predodžbe. Na tom sjecištu individualnog djelovanja i kolektivnih struktura događa se stvarni život identiteta. Djelovanjem agenta dominantna imaginacija može biti dodatno ojačana i potvrđena, ali jednako tako može biti i osporena, potkopana te naposljetku i promijenjena, otvarajući time prostor za stvaranje novih oblika kolektivnog postojanja.
 
 ![](../../docs/diagrams/diag_04.svg)
+
 *Slika 2.3: Proces formiranja kolektivnog identiteta: od kolektivne imaginacije i zajedničkih vjerovanja do društvenog poretka i kolektivnog identiteta (povratna sprega).*
 
 ### 2.2.3	Društvene funkcije usmene tradicije
@@ -141,6 +144,7 @@ Nadalje, put do uobličenog sustava pisma može se promatrati i kroz prizmu nač
 
 
 ![](../../docs/diagrams/diag_07.svg)
+
 *Slika 2.5: Razvojni putevi pisma (od piktograma do alfabeta).*
 
 **Inženjerski ili promišljeni put predstavlja suprotnost.** Ovdje je pismo rezultat svjesnog i namjernog čina stvaranja koji je poduzeo pojedinac ili manja skupina. Takav agent djeluje s jasnim ciljem – stvoriti pismo za određeni jezik, često iz kulturnih, političkih ili vjerskih pobuda. Najočitiji primjer takvog pothvata jest korejsko pismo hangul, koje je u 15. stoljeću osmislio kralj Sejong Veliki sa svojim učenjacima kako bi povećao pismenost i osnažio korejski kulturni identitet. Hangul nije nastao prilagodbom postojećeg pisma, već je dizajniran na temelju fonološke analize korejskog jezika, što ga čini jednim od znanstveno najutemeljenijih pisama na svijetu. Slični, iako manje poznati primjeri, jesu pismo za jezik Cherokee koje je u 19. stoljeću stvorio Sequoyah ili brojna pisma koja su osmislili kršćanski misionari za dotad nepisane jezike (Cromer, 1997).
@@ -149,6 +153,7 @@ Ove dvije dihotomije – *de novo* nasuprot prilagodbi te emergentno nasuprot in
 
 
 ![](../../docs/diagrams/diag_06.svg)
+
 *Slika 2.6: Razvoj djelatne moći kroz pismenost: od osnovne pismenosti (čitanje i pisanje) preko razumijevanja teksta i prepoznavanja pravila sustava do pismenosti u složenim sustavima (pravni, digitalni) i učinkovitog djelovanja agenta.*
 
 Razumijevanje ovih različitih staza ključno je jer pokazuje da ne postoji jedinstvena „evolucija“ pisma koja bi nužno vodila od slikovnog prema alfabetskom. Svaki je sustav pisma odraz povijesti, kulture i jezične strukture zajednice koja se njime služi. Život pisma neodvojivo je povezan sa životom te zajednice, a putovi kojima se ono razvija i širi jednako su raznoliki kao i sama ljudska društva.
@@ -171,6 +176,7 @@ Uloga agenta promjene u takvom je kontekstu iznimno otežana. Ako agent ne pripa
 > **Kulturna distanca:** Stupanj razlike u vrijednostima, normama, jeziku, obrazovanju i životnim iskustvima između dviju društvenih skupina; što je kulturna distanca između nositelja inovacije i potencijalnih primatelja veća, to je prijenos ideja i praksi otežaniji, jer poruka gubi vjerodostojnost ili biva reinterpretirana kroz prizmu primateljeva vlastitog simboličkog okvira (Rogers, 2003; Hofstede, 2001).
 
 ![](../../docs/diagrams/diag_08.svg)
+
 *Slika 2.7: Model usporavanja difuzije posredstvom društvene elite: elita djeluje kao filtar koji inovaciju prihvaća i ubrzava njezino širenje ako je usklađena s njezinim interesima (korist, status, moć), ili je odbacuje i usporava njezino širenje ako predstavlja prijetnju postojećem poretku.*
 
 
@@ -188,6 +194,7 @@ U području znanosti tisak je omogućio ono što se danas smatra temeljem znanst
 > **Diseminacija znanja:** Sustavno širenje spoznaja, ideja i informacija od izvora prema širem krugu primatelja putem komunikacijskih kanala (rukopis, tisak, digitalna mreža); ključna je pretpostavka kumulativne kulture jer omogućuje da otkrića postanu dostupna provjeri, kritici i nadogradnji od strane drugih agenata, čime se znanje pretvara iz pojedinačnog postignuća u zajedničko dobro koje ubrzava daljnji napredak (Eisenstein, 1979; Rogers, 2003).
 
 ![](../../docs/diagrams/diag_09.svg)
+
 *Slika 2.8: Utjecaj tiskarskog stroja na širenje znanja i društvene promjene: od Gutenbergova izuma (o. 1440.) i masovne proizvodnje pisanih materijala do povećane dostupnosti knjiga, širenja pismenosti i ideja (humanizam, renesansa, reformacija), standardizacije jezika te nastanka javne sfere i javnog mnijenja.*
 
 Nadalje, tisak je imao presudnu ulogu u oblikovanju modernih nacija i standardizaciji narodnih jezika. Tiskari su, u potrazi za širim tržištem, birali i promicali određene dijalekte, koji su se zahvaljujući masovnoj distribuciji tiskanih djela postupno nametnuli kao jezični standard. Time je stvorena osnova za jezično i kulturno jedinstvo na širim prostorima, što je bio jedan od kamena temeljaca u procesu stvaranja nacionalnih identiteta.
@@ -195,6 +202,7 @@ Nadalje, tisak je imao presudnu ulogu u oblikovanju modernih nacija i standardiz
 Promatran u tom svjetlu, tiskarski stroj jest djelatni *agent* promjene koji je, prema uvidima Marshalla McLuhana (1962), preoblikovao ljudski senzorij i kognitivne procese. Naglašavanjem vizualnoga nad auditivnim tisak je potaknuo razvoj linearnog, sekvencijalnog i analitičkog načina mišljenja, koje je postalo obilježjem zapadne civilizacije u razdoblju poznatom kao „Gutenbergova galaksija“. Utjecaj tiskarskoga stroja stoga se ne iscrpljuje u tehničkoj inovaciji; on je preoblikovao načine na koje ljudi misle, komuniciraju i organiziraju svoja društva, postavivši temelje za nastanak modernoga svijeta.
 
 ![](../../docs/diagrams/ch02_mcluhan.svg)
+
 *Slika 2.9: Tiskarski stroj kao agent kognitivne promjene – McLuhanova „Gutenbergova galaksija“: od naglašavanja vizualnog nad auditivnim preko linearnog, sekvencijalnog mišljenja do analitičkog načina obrade informacija.*
 
 
@@ -209,6 +217,7 @@ Taj se cjelokupni proces s pravom naziva **demokratizacijom** znanja. Taj pojam 
 > **Demokratizacija znanja:** Postupno uklanjanje društvenih, ekonomskih i institucionalnih prepreka pristupu informacijama i spoznajama, čime sve širi krug agenata stječe mogućnost ne samo primanja već i stvaranja, provjere i širenja znanja; povijesno pokrenuta izumom tiska, a u suvremenosti ubrzana digitalnom tehnologijom i otvorenim pristupom, demokratizacija znanja pretvara ga iz privilegija malobrojnih u zajedničko dobro podložno javnoj raspravi i kritici (Eisenstein, 1979; Castells, 2010).
 
 ![](../../docs/diagrams/diag_903.svg)
+
 *Slika 2.10: Put znanja od ograničenog pristupa u rukopisnoj kulturi do šire dostupnosti putem tiskarske revolucije, kulminirajući u demokratizaciji znanja.*
 
 Valja, dakako, napomenuti da taj prijelaz nije bio ni trenutan ni bez otpora; bila su potrebna stoljeća da se učinci tiskarske revolucije u potpunosti očituju i prožmu sve pore društva. U današnjem se vremenu, s pojavom digitalne tehnologije i interneta, odvija preobrazba usporedivih, ako ne i većih razmjera. Internet se može promatrati kao suvremeni pandan tiskarskom stroju, koji proces demokratizacije znanja ubrzava i proširuje na globalnu razinu, donoseći sa sobom nove mogućnosti, ali i nove izazove.
@@ -229,11 +238,13 @@ Protestantska doktrina o „svećenstvu svih vjernika”, koja svakom pojedincu 
 Shematski prikaz ključnih posljedica reformacije koje su pridonijele stvaranju poticajnog okruženja za znanstvenu revoluciju. Reformacijski poticaji, pojačani tehnologijom tiska, doveli su do fragmentacije autoriteta i naglašavanja individualne spoznaje, što je stvorilo plodno tlo za nove znanstvene metode i otkrića
 
 ![](../../docs/diagrams/diag_10.svg)
+
 *Slika 2.11: Shematski prikaz ključnih posljedica reformacije koje su pridonijele stvaranju poticajnog okruženja za znanstvenu revoluciju: reformacijski poticaji, pojačani tehnologijom tiska, vode do fragmentacije autoriteta i naglašavanja individualne spoznaje, što stvara plodno tlo za nove znanstvene metode i otkrića.*
 
 Valja ipak naglasiti kako odnos reformacije i znanosti nije bio jednoznačno poticajan. Sami reformatori, uključujući Luthera i Calvina, iskazivali su znatan skepticizam, pa i otvoreno protivljenje nekim novim znanstvenim idejama, poput Kopernikove heliocentrične teorije. Njihov je primarni cilj bila obnova vjere, a ne promicanje znanosti. Nadalje, znanstvena revolucija nije bila isključivo protestantski fenomen; znanstvenici poput Kopernika, Galilea i Descartesa djelovali su unutar katoličkoga svijeta. Stoga se utjecaj reformacije na znanost ne očituje toliko u izravnoj doktrinarnoj podršci koliko u njezinim neizravnim i često neintencionalnim posljedicama: fragmentaciji intelektualnog autoriteta, promicanju pismenosti i kulture čitanja te uspostavi novoga vrijednosnog sustava u kojem je individualni agent, bilo kao vjernik ili kao znanstvenik, postao središtem spoznajnog procesa.
 
 ![](../../docs/diagrams/ch02_reformacija_znanost.svg)
+
 *Slika 2.12: Složeni odnos reformacije i znanosti – poticajni i ograničavajući učinci reformacije te katolički doprinos znanstvenoj revoluciji.*
 
 ## 2.5	Telegraf i telefon: Početak elektroničke komunikacije
@@ -241,6 +252,7 @@ Valja ipak naglasiti kako odnos reformacije i znanosti nije bio jednoznačno pot
 Devetnaesto stoljeće donosi temeljni preokret u povijesti ljudske komunikacije uvodeći tehnologije koje su prvi put omogućile prijenos poruka brzinom većom od bilo kojega fizičkog vozila. Time je započelo doba elektroničke komunikacije, čiji se temelji i danas osjećaju u svim suvremenim mrežama.
 
 ![](../../docs/diagrams/ch02_19st_elektronika.svg)
+
 *Slika 2.13: Shematski prikaz prijelaza u doba elektroničke komunikacije: od prijenosa poruka bržeg od fizičkog prijevoza do telegrafa, telefona i promjene društvene organizacije.*
 
 ### 2.5.1 Telegraf: nove brzine i novi horizonti
@@ -256,6 +268,7 @@ Promatrati telegraf isključivo kao tehnološki artefakt značilo bi zanemariti 
 Polaganje prvoga transatlantskog telegrafskog kabela 1866. godine bio je pothvat usporediv s kasnijim svemirskim istraživanjima – trijumf ljudske upornosti i inženjerske vještine. Tim je činom simbolički, ali i realno, stvoren jedinstven informacijski prostor koji je obuhvaćao Stari i Novi svijet. Telegraf je tako postavio temelje za sve buduće oblike elektroničke komunikacije, od telefona i radija do interneta. On je bio prva tehnologija koja je odvojila komunikaciju od transporta, dokazavši da se poruka može kretati neovisno o fizičkom prijenosu predmeta ili ljudi (Carey, 1989). U tom smislu telegrafska mreža devetnaestoga stoljeća nije bila tek prethodnica, već arhetip današnjega globalnog informacijskog društva, a njezini odjeci i danas oblikuju način na koji živimo, radimo i razumijemo svijet oko sebe.
 
 ![](../../docs/diagrams/ch02_telegraf_kabel.svg)
+
 *Slika 2.14: Shematski prikaz značenja polaganja transatlantskog telegrafskog kabela 1866.: tehnološki pothvat koji je povezao Stari i Novi svijet te otvorio jedinstven informacijski prostor.*
 
 ### 2.5.2	Telefon: intimna revolucija na žici
@@ -273,6 +286,7 @@ U svojoj biti telefon je demokratizirao sinkronu komunikaciju na daljinu, prenos
 Shematski prikaz utjecaja telefona
 
 ![](../../docs/diagrams/ch02_telefon.svg)
+
 *Slika 2.15: Shematski prikaz utjecaja telefona na privatnu i javnu komunikaciju, ukidanje nužnosti fizičke prisutnosti za intimnu komunikaciju te novu dijalektiku bliskosti i ugrožene privatnosti.*
 
 ## 2.6 Radio i televizija kao katalizatori masovnog iskustva
@@ -289,6 +303,7 @@ Stoga je uloga radija i televizije daleko nadilazila pasivno prenošenje sadrža
 
 
 ![](../../docs/diagrams/ch02_radio_tv.svg)
+
 *Slika 2.16: Faze u oblikovanju masovnog iskustva putem radija i televizije, od tehnološke inovacije do društvenog učinka – sinkronizirano i kolektivno sudjelovanje u medijski posredovanom događaju.*
 
 ### 2.6.1 Uspon radija i „glas” zajedničke stvarnosti
@@ -303,12 +318,14 @@ Državnici i politički vođe ubrzo su prepoznali moć toga novog medija za obli
 
 
 ![](../../docs/diagrams/ch02_radio_glas.svg)
+
 *Slika 2.17: Shematski prikaz političke uporabe radija: od glasa kao medija do utjecaja na javno mnijenje, mobilizaciju i autoritet.*
 
 Njegov je utjecaj prožimao cjelokupni kulturni život, oblikujući glazbeni ukus, popularizirajući dramske oblike kroz radiodrame i stvarajući prve zvijezde etera. Radio je tako uspostavio zvučnu tapiseriju zajedničke kulture, referentni okvir koji su dijelili pripadnici različitih društvenih slojeva. Upravo je ta sposobnost radija da istodobno emitira jedinstveni „glas” – bilo da je riječ o glasu spikera, političara, glumca ili pjevača – i da ga učini dijelom privatnog iskustva milijuna, stvorila ono što možemo nazvati „ glasom zajedničke stvarnosti”. On je bio zvučni odraz i, istodobno, konstitutivni element svijesti o pripadnosti široj društvenoj cjelini.
 
 
 ![](../../docs/diagrams/ch02_radio_utjecaj.svg)
+
 *Slika 2.18: Prikaz razvoja i utjecaja radijskog medija, od masovnog slušanja i intimnog glasa do stvaranja zajedničke stvarnosti i političke kohezije.*
 
 ### 2.6.2. Televizija i vizualni aspekt zajedničke stvarnosti
@@ -325,6 +342,7 @@ Televizija, dakle, djeluje kao središnji posrednik u tkanju vizualnoga i obredn
 
 
 ![](../../docs/diagrams/ch02_televizija_zajednica.svg)
+
 *Slika 2.19: Shematski prikaz uloge televizije u konstituiranju zajedničke imaginacije, povezujući njezine temeljne mehanizme (vizualnost i istodobnost) s društvenim ishodima (jačanje zamišljene zajednice i kohezije).*
 
 ### 2.6.3 Preteča informacijskoga društva
@@ -338,6 +356,7 @@ Gotovo istodobno, Norbert Wiener (1948) u svojemu djelu *Cybernetics: Or Control
 Premda su djelovali u razdoblju prije pune digitalne revolucije, Bushova vizija umreženoga znanja i Wienerova teorija o informacijskim sustavima koji se samostalno upravljaju čine dva temeljna stupa na kojima je poslije sazdana arhitektura informacijskoga društva. Bush je predvidio *kako* ćemo pristupati informacijama, dok je Wiener objasnio *kako* sustavi, uključujući i one tehnološke, tim informacijama mogu upravljati. Njihov rad svjedoči o tome da je informacijsko društvo ponajprije plod intelektualne evolucije, a tek potom tehnološke revolucije.
 
 ![](../../docs/diagrams/ch02_intelektualni_temelji.svg)
+
 *Slika 2.20: Intelektualni temelji informacijskoga društva – Bushov memex i Wienerova kibernetika kao temelj za umreženo znanje i samoregulacijske sustave.*
 
 ## 2.7	Internet i digitalna revolucija
@@ -348,6 +367,7 @@ Njegov začetak, ARPANET, bio je osmišljen kao istraživačka mreža s ciljem p
 
 
 ![](../../docs/diagrams/ch02_arpanet.svg)
+
 *Slika 2.21: Shematski prikaz razvoja ARPANET-a: od istraživačke mreže ARPA-e i povezivanja sveučilišta do prve mrežne poruke 1969. i temelja digitalne komunikacije.*
 
 Prijelomni trenutak u njegovu razvoju zbio se 1989. godine, kada je Tim Berners-Lee, znanstvenik zaposlen u CERN-u, osmislio *World Wide Web* (Berners-Lee, 1990) i time ga preoblikovao u platformu pristupačnu svakom korisniku. Pomoću hipertekstualnih poveznica i jednostavnih internetskih preglednika ljudi su prvi put dobili priliku kretati se udaljenim digitalnim prostorima, istodobno dijeleći dokumente, slike, pa čak i rane oblike multimedijskih sadržaja.
@@ -378,6 +398,7 @@ Valja međutim naglasiti kako je implementacija višekanalne strategije znatno o
 Stoga se kao krajnji cilj zapravo postavlja stvarna i smislena integracija na više kanala. Taj viši stupanj razvoja, poznat kao **omnikanalni** pristup, podrazumijeva stvaranje jedinstvenog i besprijekornog korisničkog iskustva u kojem su granice između pojedinih kanala gotovo neprimjetne. U potpuno integriranom sustavu agent koji komunicira s klijentom ima cjelovit uvid u sve prethodne interakcije, bez obzira na to jesu li se one odvijale putem razgovora uživo, elektroničke pošte ili telefonskog poziva. Klijent može započeti upit na jednoj platformi, nastaviti ga na drugoj i zaključiti na trećoj, a da pritom ne mora ponavljati informacije, čime se cjelokupni proces čini protočnim i usmjerenim na korisnika.
 
 ![](../../docs/diagrams/ch02_omnikanalni.svg)
+
 *Slika 2.22: Shematski prikaz prijelaza od višekanalne komunikacije prema omnikanalnom pristupu, s integracijom kanala, cjelovitim uvidom i neprimjetnim prijelazima za korisnika.*
 
 ### 2.7.2 Suradnja i kolaborativni alati
@@ -391,6 +412,7 @@ Pojam suradnje u kontekstu multiagentskih sustava označava temeljni princip dje
 No, suradnički proces nije lišen izazova, među kojima se ističe mogućnost pojave sukobljenih interesa ili planova među agentima. Stoga je za uspješnu suradnju neophodno postojanje unaprijed definiranih ili dinamički uspostavljenih mehanizama za pregovaranje i rješavanje sukoba. Ti mehanizmi osiguravaju da se parcijalni interesi podrede općem cilju te da se održi koherentnost zajedničkoga djelovanja.
 
 ![](../../docs/diagrams/ch02_suradnja.svg)
+
 *Slika 2.23: Temeljni elementi koji čine proces suradnje u multiagentskim sustavima: zajednički cilj, razmjena informacija, mehanizmi pregovaranja i rješavanja sukoba te kolaborativni alati.*
 
 U praktičnoj primjeni, osobito u složenim okruženjima gdje djeluju i ljudi i umjetni agenti, ta se načela ostvaruju uporabom **kolaborativnih** alata. Riječ je o softverskim rješenjima i platformama osmišljenima kako bi se olakšala i strukturirala interakcija među sudionicima. Njihova se funkcija očituje na više razina: od alata za istodobno uređivanje i dijeljenje dokumenata, preko sustava za delegiranje i praćenje zadataka, pa sve do komunikacijskih platformi koje omogućuju asinkronu i sinkronu komunikaciju. Uloga tih alata jest da potiču i održavaju povjerenje, koje je presudno za svaku dugoročnu i plodonosnu suradnju.
@@ -414,6 +436,7 @@ Ipak, bilo bi pogrešno proces kulturne homogenizacije smatrati jednosmjernim i 
 
 
 ![](../../docs/diagrams/ch02_masovna_kultura.svg)
+
 *Slika 2.24: Prikaz odnosa masovne komunikacije, homogenizacije i glokalizacije kulture – medijski i idejni krajolici te hibridizacija globalnog i lokalnog.*
 
 
@@ -422,6 +445,7 @@ Odnos masovne komunikacije i kulture ostaje inherentno dijalektičan. Dok masovn
 
 
 ![](../../docs/diagrams/ch02_glokalizacija.svg)
+
 *Slika 2.25: Prikaz odnosa masovne komunikacije, homogenizacije i glokalizacije kulture – dijalektika globalne integracije i lokalne posebnosti.*
 
 
@@ -433,9 +457,11 @@ Ključna odrednica ove preobrazbe jest promjena uloge samih građana. Iz položa
 
 
 ![](../../docs/diagrams/ch02_gradjani_politika.svg)
+
 *Slika 2.26: Shematski prikaz preobrazbe građana iz pasivnih primatelja u aktivne političke agente kroz komentiranje, dijeljenje sadržaja, kolektivne akcije i djelovanje u mrežama.*
 
 ![](../../docs/diagrams/diag_147.svg)
+
 *Slika 2.27: Transformacija komunikacijskog modela u političkoj sferi – od jednosmjernog kanala prema višesmjernoj, interaktivnoj mrežnoj strukturi i elektroničkom javnom mnijenju.*
 
 Nadalje, elektroničko javno mnijenje posjeduje svojstva koja ga bitno razlikuju od onoga mjerenog tradicionalnim anketnim istraživanjima. Njegova je glavna odlika brzina nastajanja i promjenjivost; ono reagira na događaje u stvarnome vremenu i može se stubokom promijeniti u roku od nekoliko sati pod utjecajem nove informacije ili viralnog sadržaja. Ono je ujedno i transparentnije u svome nastanku jer se temelji na javno dostupnim podacima – objavama, komentarima, sviđanjima i dijeljenjima. Međutim, upravo ta svojstva čine ga podložnim manipulaciji. Organizirane skupine, bilo da je riječ o političkim strankama, interesnim lobijima ili stranim akterima, mogu uporabom automatiziranih računa (*botova*) ili koordiniranim kampanjama stvarati lažni dojam masovne podrške ili otpora nekoj ideji, zakonu ili kandidatu.
@@ -443,6 +469,7 @@ Nadalje, elektroničko javno mnijenje posjeduje svojstva koja ga bitno razlikuju
 Struktura internetske javne sfere donosi i druge izazove. Za razliku od Habermasove idealne slike jedinstvene javne sfere u kojoj se racionalnom raspravom dolazi do konsenzusa, digitalni je prostor izrazito fragmentiran. Korisnici su skloni okupljati se u istomišljeničke zajednice, stvarajući takozvane *komore jeke* (engl. *echo chambers*) ili *filtrirajuće mjehuriće* (engl. *filter bubbles*), gdje su izloženi isključivo onim informacijama i stavovima koji potvrđuju njihova postojeća uvjerenja (Sunstein, 2017). Takva informacijska izolacija otežava međusobno razumijevanje različitih društvenih skupina i snažno pridonosi političkoj polarizaciji. Brzina i doseg digitalne komunikacije, premda noseći golem potencijal za demokratizaciju, istodobno otvaraju prostor za dosad nezabilježeno širenje dezinformacija i lažnih vijesti, čija provjera za prosječnoga korisnika predstavlja znatan kognitivni napor. Politička sfera posljedično se suočava s dvostrukim izazovom: s jedne strane, mora se prilagoditi novim oblicima građanskoga sudjelovanja i iskoristiti njihov demokratski potencijal, dok s druge strane, mora razviti mehanizme za obranu od manipulacija i očuvanje kvalitete javne rasprave u digitalnom okružju.
 
 ![](../../docs/diagrams/ch02_javna_sfera.svg)
+
 *Slika 2.28: Shematski prikaz fragmentacije internetske javne sfere: od komora jeke i filtarskih mjehurića do polarizacije i otežanog međusobnog razumijevanja.*
 
 ### 2.7.5 Globalno širenje i kulturni utjecaj
@@ -458,6 +485,7 @@ Takvo prožimanje ishodište je hibridnih kulturnih oblika koji u sebi sjedinjuj
 Opisani procesi ujedno osporavaju i pojednostavnjene poglede poput tehnološkog determinizma – stajališta prema kojemu tehnologija jednoznačno oblikuje društvo i kulturu. Naprotiv, vidljivo je da korisnici i zajednice aktivno prisvajaju tehnologiju, prilagođavaju je svojim potrebama i rabe je na nepredviđene načine, čime i sami postaju agensi kulturnih i društvenih promjena (Baym, 2015). Složenost tih odnosa može se prikazati sljedećim dijagramom:
 
 ![](../../docs/diagrams/ch02_diseminacija.svg)
+
 *Slika 2.29: Proces kulturne diseminacije i hibridizacije, od izvornoga kulturnog proizvoda preko agenata širenja i procesa prilagodbe do lokalizirane inačice i hibridnoga kulturnog oblika.*
 
 Konačno, globalna rasprostranjenost kulturnih sadržaja otvara i složena etička pitanja. Pojmovi poput kulturnog prisvajanja (engl. *cultural appropriation*), dekontekstualizacije i komodifikacije tradicijskih praksi postaju središnjim temama u raspravama o posljedicama digitalnoga kulturnog prožimanja, tražeći neprestano preispitivanje odnosa moći u globaliziranom svijetu.
@@ -474,6 +502,7 @@ Razvoj je tekao i u smjeru funkcionalne specijalizacije, što je najočitije u u
 Naposljetku, važno je istaknuti da su implikacije ekspanzija društvenih mreža društvene, kulturne i političke. Te su platforme preuzele ulogu središnjih arena za javni diskurs, političko organiziranje i društveni aktivizam te istodobno postale i plodno tlo za sustavno širenje dezinformacija i manipulativnih sadržaja (Zuboff, 2019). Stoga njihov utjecaj na suvremeno društvo valja razumjeti u svoj njegovoj složenosti i proturječnosti, kao pojavu koja preoblikuje načine na koje komuniciramo, radimo, stvaramo zajednice i poimamo sami sebe.
 
 ![](../../docs/diagrams/ch02_drustvene_mreze.svg)
+
 *Slika 2.30: Shematski prikaz razvoja društvenih mreža od SixDegreesa i Facebooka prema vizualnim platformama, kratkom videu, algoritamskoj distribuciji te učincima na javni diskurs i dezinformacije.*
 
 ### 2.7.7 Digitalna plemena i trgovi znanja: anatomija uspješnih online zajednica
@@ -504,6 +533,7 @@ Uloga *agenata*, kako ljudskih tako i softverskih, u održavanju zdravlja zajedn
 Konačno, uspješnost zajednice očituje se u vrijednosti koju stvara za svoje članove i, ponekad, za širu javnost. Ta vrijednost može poprimiti različite oblike: od rješavanja konkretnih problema i *dijeljenja stručnog znanja* do pružanja *emocionalne podrške* i osjećaja pripadnosti. U svojim najrazvijenijim oblicima *online* zajednice postaju poprištem izranjanja *kolektivne inteligencije*, gdje sinergija pojedinačnih doprinosa dovodi do spoznaja i rješenja koji nadilaze mogućnosti bilo kojeg pojedinca (Lévy, 1997). Promatrane na taj način, *online* zajednice prestaju biti tek tehnološki fenomen i postaju ključni čimbenici društva znanja, sposobni za rješavanje složenih izazova kroz suradnju i povjerenje izgrađeno u digitalnom svijetu.
 
 ![](../../docs/diagrams/ch02_online_zajednica.svg)
+
 *Slika 2.31: Shematski prikaz nastanka kolektivne vrijednosti online zajednice: od zajedničkog cilja i interakcije do povjerenja, društvenog kapitala i zajedničke koristi.*
 
 ### 2.7.8 Porozne membrane: kad digitalno postane stvarno (i obratno)
@@ -523,6 +553,7 @@ Dakle, dok je internet nedvojbeno srušio barijere i omogućio nove oblike zajed
 Razdjelnica između digitalnog i stvarnog svijeta, nekoć poimana kao čvrsta i nepremostiva granica, danas se sve više očituje kao porozna membrana. Kroz nju se odvija neprestano i dvosmjerno prožimanje koje mijenja ontološki status obaju svjetova. Ne radi se više o interakciji dvaju odvojenih entiteta, već o stvaranju hibridnoga prostora u kojem se digitalni bitovi materijaliziraju, a fizička stvarnost prevodi u informacijski kôd. Taj proces uzajamnog prelijevanja preispituje temeljne postavke o prirodi stvarnosti, prisutnosti i djelovanju.
 
 ![](../../docs/diagrams/ch02_digital_stvarni.svg)
+
 *Slika 2.32: Shematski prikaz prijelaza od čvrste granice između digitalnog i stvarnog svijeta prema poroznoj membrani, dvosmjernom prožimanju i hibridnom prostoru.*
 
 ### 2.7.9 Digitalna revolucija i mreža globalne komunikacije
@@ -553,6 +584,7 @@ S jedne strane, digitalna revolucija nosi u sebi golem demokratizacijski potenci
 Digitalna dvojnost suprotstavlja pozitivne ishode obećanja demokratizacije negativnim posljedicama novih nejednakosti
 
 ![](../../docs/diagrams/diag_133.svg)
+
 *Slika 2.33: Digitalna dvojnost – obećanje demokratizacije (povećan pristup informacijama, nove platforme za sudjelovanje, globalna povezanost) i sjena novih nejednakosti (digitalni jaz, algoritamska pristranost i diskriminacija, koncentracija moći i nadzor).*
 
 S druge strane ove svijetle slike međutim nadvija se tamna sjena. Obećanje o potpunoj demokratizaciji ostaje uvelike neispunjeno, dok se istodobno uspostavljaju novi, suptilniji mehanizmi nadzora i nejednakosti. Prvi i najočitiji jest *digitalni jaz*, koji se više ne odnosi samo na puki pristup internetu, već i na razlike u digitalnoj pismenosti, vještinama i sposobnosti kritičkog vrednovanja informacija. Oni bez potrebnih vještina ili sredstava ostaju isključeni iz digitalnoga društva, čime se njihova postojeća marginalizacija dodatno produbljuje.
@@ -564,6 +596,7 @@ Možda najdublju prijetnju predstavlja uspon onoga što Shoshana Zuboff (2019) i
 Digitalna dvojnost je stoga stvarna napetost koja oblikuje naše društvene, političke i ekonomske zbilje, razotkrivajući digitalnu sferu ne kao utopijsko ili distopijsko odredište već kao bojno polje. Ishod te borbe ovisi o djelovanju različitih agenata: o regulatornim odlukama država, o naporima civilnog društva u zaštiti digitalnih prava, o etičkoj odgovornosti tehnoloških stvaratelja te, naposljetku, o podizanju svijesti i kritičkom angažmanu samih korisnika. Priznati tu dvojnost znači odbaciti tehnološki determinizam i prihvatiti odgovornost za aktivno oblikovanje digitalne budućnosti – budućnosti u kojoj će obećanje o demokratizaciji nadvladati sjenu novih nejednakosti.
 
 ![](../../docs/diagrams/diag_904.svg)
+
 *Slika 2.34: Shematski prikaz digitalne dvojnosti: napetost između demokratizacijskog potencijala digitalne tehnologije i novih oblika nejednakosti koji zajedno oblikuju društvo.*
 
 ### 2.7.11 Sjene u digitalnom Edenu: privatnost, manipulacija i cijena povezanosti
@@ -573,6 +606,7 @@ Privid digitalnog Edena, svijeta neograničenih mogućnosti i sveopće povezanos
 Prikupljeni podatkovni tragovi dakako služe optimizaciji usluga ili plasiranju prilagođenih oglasa, ali se njihova svrha neizbježno proteže duboko u sferu bihevioralne modifikacije i ciljane manipulacije. Algoritamski sustavi, djelujući kao nevidljivi agenti, na temelju detaljnih psihografskih profila konstruiraju personalizirane stvarnosti, svjetove skrojene da izazovu određene emocionalne odgovore i potaknu željene akcije. Razmjeri i posljedice takvog djelovanja postali su razvidni u slučaju tvrtke *Cambridge Analytica*, koja je zlouporabom podataka prikupljenih s društvene mreže *Facebook* nastojala utjecati na ishod demokratskih izbora (Cadwalladr & Graham-Harrison, 2018). Taj je događaj razotkrio sistemsku ranjivost suvremenih društava, pokazavši kako se podatkovna infrastruktura može prenamijeniti u oružje za psihološko i političko oblikovanje javnosti.
 
 ![](../../docs/diagrams/ch02_nadzor_ciklus.svg)
+
 *Slika 2.35: Sustavno prikupljanje i analiza korisničkih podataka vodi algoritamskom profiliranju koje rezultira personaliziranom isporukom sadržaja i bihevioralnom manipulacijom (ciklus nadzornog kapitalizma).*
 
 Djelovanje tih algoritama, čija je temeljna zadaća maksimizacija korisničkog angažmana, dovodi do daljnjih strukturnih poremećaja u protoku informacija. Stvaranjem takozvanih „filtarskih mjehurića“ (engl. *filter bubbles*) i „komora jeke“ (engl. *echo chambers*), koji korisnike zatvaraju unutar informacijskih ekosustava potvrđujući njihova postojeća uvjerenja i svjetonazore (Pariser, 2011). Sustavnim potiskivanjem suprotnih ili divergentnih stajališta algoritamska kuracija sadržaja erodira prostor za kritičko promišljanje i javnu raspravu, ključne preduvjete zdravoga demokratskog društva. Posljedica je društvena fragmentacija i porast polarizacije, gdje zajednička ontološka osnova za dijalog postupno nestaje.
@@ -580,6 +614,7 @@ Djelovanje tih algoritama, čija je temeljna zadaća maksimizacija korisničkog 
 Cijena sveopće povezanosti se, osim na društvenoj i političkoj, plaća i na duboko osobnoj, psihološkoj razini. Neprestana izloženost idealiziranim prikazima tuđih života na društvenim mrežama stvara plodno tlo za socijalnu usporedbu, što nerijetko rezultira osjećajima neadekvatnosti, tjeskobe i depresivnih stanja. Imperativ stalne dostupnosti i sudjelovanja u digitalnoj sferi zamagljuje granice između rada i odmora, javnog i privatnog, stvarajući pritisak koji negativno utječe na mentalno zdravlje i opću dobrobit. Uloga digitalnog agenta – bilo da je riječ o platformi, algoritmu ili sučelju – u tom je ekosustavu od presudne važnosti. Njegovi ciljevi, usmjereni u prvome redu na ekonomske metrike poput zadržavanja pozornosti i povećanja angažmana, često su u izravnom sukobu s dugoročnim interesima i dobrobiti korisnika. Stoga suočavanje sa sjenama digitalnog Edena zahtijeva razvoj napredne digitalne pismenosti, jačanje svijesti o mehanizmima koji oblikuju naše mrežno iskustvo te uspostavu čvrstih regulatornih okvira koji će štititi autonomiju, privatnost i dostojanstvo pojedinca u novom digitalnom dobu.
 
 ![](../../docs/diagrams/ch02_cijena_povezanosti.svg)
+
 *Slika 2.36: Shematski prikaz psihološke cijene sveopće povezanosti: socijalna usporedba, tjeskoba, zamagljene granice rada i odmora te pritisak stalne dostupnosti.*
 
 ## 2.8	Začeci autonomne komunikacije: prvi digitalni sugovornici
@@ -589,6 +624,7 @@ Promišljanje o stvaranju umjetnih bića sposobnih za razgovor seže duboko u lj
 Prvi značajan korak na tom putu učinio je Joseph Weizenbaum, stvorivši 1966. godine program ELIZA. Djelujući na načelu prepoznavanja ključnih riječi i primjene jednostavnih transformacijskih pravila, ELIZA je simulirala razgovor. Njezin najpoznatiji scenarij, nazvan *DOCTOR*, oponašao je rogerijanskog psihoterapeuta, tehnikom parafraziranja i postavljanja otvorenih pitanja preuzetih iz korisnikova unosa. Primjerice, na izjavu „Brine me moja obitelj“ program bi mogao odgovoriti „Recite mi više o svojoj obitelji“. Iako tehnički jednostavna, ELIZA je izazvala neočekivano snažnu reakciju. Korisnici su programu pripisivali razumijevanje, empatiju i svijest, unatoč Weizenbaumovim opetovanim tvrdnjama da stroj ne razumije ništa. Ta pojava, koju je on nazvao „efekt ELIZA-e“, otkrila je duboku ljudsku sklonost antropomorfizaciji i uspostavljanju emocionalne veze čak i s najjednostavnijim sugovornikom, što je samog autora duboko zabrinulo i potaknulo ga na kritičko preispitivanje etičkih granica umjetne inteligencije (Weizenbaum, 1976).
 
 ![](../../docs/diagrams/diag_135.svg)
+
 *Slika 2.37: Evolucijski koraci prvih sustava za jezičnu interakciju: od ELIZE (1966) preko PARRY-ja (1972) i SHRDLU-a (1972) do daljnjeg razvoja dijaloških agenata i obrade prirodnog jezika.*
 
 Nedugo nakon ELIZA-e, psihijatar Kenneth Colby sa Sveučilišta Stanford razvio je 1972. godine program PARRY. Za razliku od Weizenbaumova pasivnog sugovornika, PARRY je bio osmišljen kao složenija simulacija, utjelovljujući osobnost pacijenta s paranoidnom shizofrenijom. Colbyjev agent je odgovarao na podražaje, ali i posjedovao unutarnji model vlastitih uvjerenja i afektivnih stanja, poput straha, ljutnje i nepovjerenja, koja su utjecala na njegove odgovore. PARRY je pratio razinu tih afekata i mogao je proaktivno mijenjati temu ili postati defanzivan ako bi smatrao da ga sugovornik provocira. U nizu testova psihijatri često nisu mogli razlikovati transkripte razgovora s PARRY-em od onih s ljudskim pacijentima. Povijesnim je kuriozitetom ostao zabilježen i razgovor vođen 1972. godine između ELIZA-e i PARRY-a preko mreže ARPANET, koji je zorno prikazao ograničenja obaju sustava – susret pasivnog zrcala i opsesivnog modela rezultirao je uglavnom nekoherentnom i repetitivnom razmjenom.

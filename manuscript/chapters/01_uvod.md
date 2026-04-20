@@ -5,6 +5,7 @@
 Od pradavnih, jedva razlučivih glasova kojima su se sporazumijevali prvi hominidi, pa sve do složenih jezičnih tkiva što prožimaju današnje digitalne prostore, sporazumijevanje se javlja kao temeljna sila o kojoj ovisi sâm opstanak i razvoj ljudskih zajednica. Ono je vezivno tkivo koje pojedince spaja u društvo, zalog opstojnosti kulture i pokretač svake inovacije. Bez mogućnosti prijenosa misli, iskustva i znanja s naraštaja na naraštaj ljudski bi opstanak ostao okovan u granicama nagonskoga, a pojam kulture bio bi nezamisliv.
 
 ![](../../docs/diagrams/diag_01.svg)
+
 *Slika 1.1: Komunikacija i razvoj civilizacije.*
 
 
@@ -12,6 +13,7 @@ Temeljni pomak od jednostavnih signalnih sustava, kakve nalazimo u životinjskom
 
 
 ![](../../docs/diagrams/diag_20.svg)
+
 *Slika 1.2: Evolucija ljudske komunikacije – od primata do konvencionaliziranog jezika.*
 
 Ključan trenutak u tome razvoju jest prijelaz s pretežito indeksnih znakova, čvrsto vezanih za neposrednu zbilju, na uporabu simbola. Dok indeksni znakovi upućuju na nešto prisutno i korelacijski povezano (primjerice, dim na vatru), **simboli** svoju vrijednost crpe iz dogovora unutar zajednice, omogućujući time raspravu o predmetima, bićima i pojavama koji nisu prostorno ni vremenski prisutni, kao i o apstraktnim pojmovima.
@@ -49,6 +51,7 @@ U konačnici, nasljeđe za daljnji razvoj komunikacije jest složen sklop koji o
 
 
 ![](../../docs/diagrams/ch01_obmana.svg)
+
 *Slika 1.3: Međusobna povezanost društvenih, kognitivnih i komunikacijskih procesa – suradnička komunikacija i teorija uma pokreću razvoj, dok evolucijska utrka između obmane i njezina otkrivanja stvara pritisak za kognitivnu složenost i gramatički ustrojen simbolički sustav.*
 
 
@@ -62,6 +65,7 @@ Već usmena predaja, ta prva i najdugovječnija komunikacijska tehnologija, preo
 
 
 ![](../../docs/diagrams/ch01_funkcije_usmene_predaje.svg)
+
 *Slika 1.4: Funkcije usmene predaje.*
 
 
@@ -72,6 +76,7 @@ Suvremeno doba svjedoči tehnološkom prijelomu koji svojom dubinom i dosegom na
 
 
 ![](../../docs/diagrams/diag_06.svg)
+
 *Slika 1.5: Razvoj djelatne moći kroz pismenost.*
 
 
@@ -82,6 +87,7 @@ No veliki jezični modeli prestaju biti puki generatori teksta onoga trenutka ka
 
 
 ![](../../docs/diagrams/diag_89.svg)
+
 *Slika 1.6: Povijesni razvoj komunikacije do AI posredovane komunikacije.*
 
 

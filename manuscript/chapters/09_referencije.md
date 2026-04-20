@@ -491,4 +491,3 @@ Weiser, M. (1991). The computer for the 21st century. *Scientific American, 265
 Wooldridge, M., & Jennings, N. R. (1995). Intelligent agents: Theory and practice. *The Knowledge Engineering Review, 10*(2), 115–152.
 
 Yudkowsky, E. (2008). Artificial intelligence as a positive and negative factor in global risk. U N. Bostrom & M. M. Ćirković (Ur.), *Global catastrophic risks* (str. 308-345). Oxford University Press.
-

@@ -7,9 +7,11 @@ The action of the agent is guided by rationality, that is, by striving to achiev
 The transition from model to agent marks a profound paradigm shift. The focus shifts from the creation of representations of the world to the development of entities that can exist and act independently in that world. Autonomy, which in the model-based approach was completely outside the system, becomes its central feature in the agent. It is possible to show this evolutionary path clearly.
 
 ![](../../docs/diagrams_en/ch06_model_vs_agent.svg)
+
 *Figure 6.1: Contrast of the model as a passive predictor and the agent as an active participant in the feedback loop with the environment.*
 
 In the modern age, we are witnessing how this evolution is taking place at an accelerated rate. Large language models (LLM), which in their beginning were primarily complex statistical models of language, today are increasingly incorporated into architectures that enable them to act as agents. By connecting to external tools, data sources and action capabilities, they cease to be purely text generators and become the core of reasoning within more complex agents capable of planning and executing tasks. This confirms that the development path of artificial intelligence is directed from the creation of sophisticated analytical tools towards the formation of autonomous, rational and purposeful stakeholders in the digital and physical world.
+
 ## 6.2 Programmable language: the role of the application programming interface (API) as a bridge
 Application programming interface, better known by the acronym API (from English *Application Programming Interface*), represents a key set of rules, protocols and tools that acts as an intermediary bridge between different software applications, components or systems, enabling them to communicate with each other and exchange data in a structured and predictable way. Its basic purpose is to enable one software component to use the functionality of another, without the need to know the complexity of its internal implementation. This API establishes a clear interaction contract, defining the types of requests that can be made, the way in which these requests are formed, which data formats it uses, and what kind of response can be expected.
 
@@ -19,6 +21,7 @@ The operation of the API can be clearly demonstrated by comparing it with orderi
 
 
 ![](../../docs/diagrams_en/ch06_api_request_flow.svg)
+
 *Figure 6.2: A communication flow in which a client sends a request to an API, the API forwards it to the server, and returns a response to the client.*
 
 In this intermediary role, the API simultaneously performs the function of a protective layer of abstraction. It hides the complexity of the backend system and exposes only those functionalities that are necessary for interaction. Such an approach brings far-reaching advantages in software development. It allows for modularity, where different parts of the system can be developed, updated or even replaced independently of each other, as long as they adhere to the contract defined by the API. This encourages reusability of code and components and speeds up the overall development process. For example, a development team creating a mobile weather application does not need to build its own meteorological infrastructure; instead, he can make an API call to an external service that provides that data.
@@ -26,6 +29,7 @@ It is this standardized nature of the interaction that turns the API into a kind
 For an agent, the API establishes an overall action space – a set of discrete operations it can perform to achieve given goals. For example, a travel planning agent learns to use publicly available APIs to search for flights, check availability, and make reservations. In this way, APIs function as abstract building blocks that enable agents to act purposefully and autonomously, turning the digital ecosystem into a programmable environment governed by defined protocols (O'Keefe, 2024).
 The current practice of deploying agents based on large language models (LLM) encompasses the use of APIs in several key domains. APIs of services such as Google Search, Wikipedia and ArXiv are used to retrieve knowledge and information from external sources, which allow agents to access recent and verified data (Patil et al., 2023). In the domain of office productivity and collaboration, tools such as Microsoft Graph API and Google Workspace API enable the automation of administrative tasks. For specific software development tasks, the GitHub API provides functionality for managing repositories and project tasks. Of particular importance are API aggregation platforms, such as Zapier, which offer a unified interface for interacting with thousands of different applications. Such platforms drastically expand the capabilities of agents, enabling them to perform complex, multi-phase work processes without having to implement each individual integration (LlamaIndex, n.d.; Zapier, n.d.).
 In contrast to the static, predefined integration of tools, the latest scientific and technological developments are directed towards a paradigm in which agents autonomously learn to use new APIs. Key elements of this approach are API learning techniques, as demonstrated in work on tool-augmented language models (TALM), where the model learns to use an API based on a small number of call-and-response examples (Parisi et al., 2022). Consequently, this reduces the need to manually program interactions. Another fundamental element is the standardization of tool descriptions through machine-readable manifest files (eg openapi.yaml), which contain a formal description of API functionality. This enables agents to perform dynamic discovery and independently integrate the tool into their own workflow. This approach repositions AI agents as primary API users, encouraging the development of interfaces that are inherently agent-friendly, thus transforming the entire network into a universal and dynamically usable set of tools (Patil et al., 2023).
+
 ## 6.2.1 API call structure
 Any communication between software systems mediated by an application programming interface (API) takes place through precisely formed requests, known as API calls. These calls are a structured message composed of several key elements, each of which has a clearly defined purpose. Understanding this structure is a fundamental prerequisite for successfully interacting with any API, including those used by agent-based systems.
 The central element of every call is the destination address (URL), also known as *endpoint*. It represents a unique identifier of a resource that one wants to access or perform a specific action on. A URL usually consists of the server's base address (eg `https://api.primjer.com/v1/`) and a specific path that precisely identifies the resource (eg `/users/123`).
@@ -39,9 +43,12 @@ Finally, many calls, especially those using the POST and PUT methods, also conta
 All these parts together form a complete and unambiguous request that the API server can process, thus enabling the agent to perform complex tasks in interaction with external digital systems.
 
 ![](../../docs/diagrams_en/ch06_api_call_structure.svg)
+
 *Figure 6.3: Structure of an API call from an agent to a server: HTTP method, URL, headers and request body.*
+
 ## 6.3 Anatomy of a modern communication partner
 A modern communication partner, in its essence, represents a complex agent whose functionality is not exhausted in a simple exchange of information. Its structure and capabilities can be broken down into several key, interconnected components that together form a complete and effective communication entity. Understanding these components is necessary for understanding its role in the modern digital environment.
+
 #### Deep personalization and contextual memory
 One of the fundamental features of this agent is its ability to deeply personalize.
 
@@ -49,6 +56,7 @@ One of the fundamental features of this agent is its ability to deeply personali
 
 It is not only manifested in the recognition of the user, but in the dynamic adaptation of communication to his specific needs, previous interactions and expressed preferences. Each conversation is shaped as a unique dialogue, which achieves a high level of user engagement and builds a sense of individual approach.
 The ability to personalize is directly linked to the requirement for persistent contextual understanding. A modern agent must possess a kind of "memory" that goes beyond the mere retention of the last exchanged message. Its task is to integrate the entire history of interactions with the user into a single and coherent picture. This gives the communication a diachronic dimension, enabling the agent to interpret new queries in the light of previous knowledge and thus avoid repetitions and misunderstandings.
+
 #### Affective alignment and proactive action
 Communication also contains a pronounced affective component. Therefore, the anatomy of a modern agent is completed with the ability to recognize and adequately respond to the emotional state of the user.
 
@@ -56,6 +64,7 @@ Communication also contains a pronounced affective component. Therefore, the ana
 
 By analyzing language choices, tone or even typing speed, the agent can discern feelings such as frustration, satisfaction or confusion. In accordance with the recognized state, he adjusts his own tone and style of expression, striving to achieve the emotional harmony that is essential for building trust.
 Furthermore, the passive, reactive role of waiting for the user's inquiry is replaced by a modern communication partner with a proactive approach. Based on the context and analysis of user behavior, the agent is able to anticipate future needs, offer relevant information, ask suggestive questions or suggest next steps. Such anticipatory action transforms the agent from a mere executor into a true partner in solving problems and achieving goals (Jones & Lee, 2022).
+
 #### Multi-channel consistency and operational integration
 All the listed capabilities must be applied consistently regardless of the communication channel. This principle of omnichannel consistency implies that the agent provides the same high-quality and coherent experience, whether the interaction takes place via a website, mobile application, social networks or another interface. The user must have the feeling that he is continuing the same conversation with the same interlocutor, regardless of the platform he is using at the time.
 Ultimately, the backbone of the modern agent's anatomy is its deep technical integration with back-end systems.
@@ -66,7 +75,9 @@ Without the ability to connect to customer relationship management (CRM) systems
  
 
 ![](../../docs/diagrams_en/diag_294.svg)
+
 *Figure 6.4: Schematic representation of the key components of a modern communication agent.*
+
 ### 6.3.1 The brain of the operation: the core of LLM and the art of management
 At the very center of every autonomous agent, as its neural and cognitive headquarters, is a large language model (LLM). It represents its fundamental core – the engine that drives reasoning, planning and decision-making processes. The function of LLM within the agent architecture goes beyond mere language processing; it acts as a central unit for processing complex problems, turning abstract goals into concrete, actionable steps. It is precisely in this ability that the transition from traditional programs, which follow strictly defined instructions, to systems that possess the germ of autonomy lies.
 The fundamental task that is set before the LLM is decomposition. When an agent is faced with a complex task, such as organizing travel or analyzing market data, the LLM assumes the role of strategist. It decomposes the ultimate goal into a series of logical, smaller sub-tasks, thus creating a causal chain of actions. For example, the request to "research the latest trends in artificial intelligence" will break down the model into steps: first, defining key terms; second, searching relevant scientific databases and repositories; third, summarizing and synthesizing the collected information; and fourth, shaping the final report. Such hierarchical planning, which mimics human cognitive processes, allows the agent a systematic and methodical approach to problem solving (Yao et al., 2023).
@@ -137,6 +148,7 @@ The art of formulating queries requires the user or developer to have a deep und
 #### From tool to cognitive partner
 Through this synergy of inherent model capabilities and human management skills, LLM within the agent ceases to be a passive tool and transforms into an active cognitive partner. While traditional software tools perform precisely defined functions, the LLM-driven agent participates in the very process of defining the solution. He does not wait for a complete specification of each step, but independently proposes, analyzes and selects courses of action based on the general goal.
 The effectiveness of the autonomous agent, therefore, rests on two pillars: on the one hand, on the strength and sophistication of the language model that forms its core, and on the other hand, on the skill with which a person directs that strength. Understanding this dual nature – a powerful machine and the need for its fine tuning – is the key to unlocking the full potential of autonomous systems and their successful application in solving the challenges of the modern world. Mastering this "brain of the operation" is therefore a strategic imperative.
+
 ### 6.3.2 Structure of memory in conversational systems
 The ability to remember is a fundamental determinant of the effectiveness and naturalness of conversational systems. Memory in this context goes beyond data storage; it is a complex mechanism that allows the agent to follow the flow of the conversation, understand the context and provide coherent and relevant answers. Without effective memory, each interaction with the user would be reduced to a series of unrelated questions and answers, thus losing the very core of the conversation. Therefore, the structure of memory in modern conversational agents is usually divided into several levels.
 
@@ -213,6 +225,7 @@ The RAG system operation process itself can be broken down into several key step
  
 
 ![](../../docs/diagrams_en/ch06_rag_sustav.svg)
+
 *Figure 6.5: Schematic representation of the operation of the RAG system.*
 
 The application of RAG architecture brings multiple advantages. The most important thing is the significant reduction in the occurrence of hallucinations, because the model directly relies on concrete, retrieved data when generating answers. Furthermore, RAG allows models to access updated or domain-specific, adapted information without the need for costly and time-consuming retraining of the entire model. This opens up the possibility of transparency and verifiability; along with the generated answer, the user can be offered the sources from which the information was taken, which allows him to check their accuracy himself. This approach is also more economical because updating the external knowledge base is much simpler and cheaper than retraining the entire language model (Lewis et al., 2020).
@@ -229,6 +242,7 @@ On this track, Maurice Merleau-Ponty (1962) further develops the thought of the 
 
 Through this process of fusion of body and tool, man is transformed into a significantly more powerful *agent*. His relationship with the world is no longer determined solely by the biological limits of his body. The ax extends the strength and reach of the hand, the spear enables hunting at a distance, and the letter transcends the transience of speech and memory. Each new tool opens up new ways of being in the world and acting on it. This fundamental ability to use tools is therefore found at the very origin of human history as a history of creation, transformation and overcoming the given, confirming man as a being who is constantly rebuilding his world.
 ![](../../docs/diagrams_en/ch06_tool_extension.svg)
+
 *Figure 6.6: Expanding action by adopting tools: by integrating tools, the agent expands the action space and increases effectiveness.*
 
 For language models, it is the use of tools that breaks these constraints, allowing the language model to reach outside itself and engage with living, changing systems. The foundation of this ability rests on a circular process of thinking and acting, most clearly exemplified in frameworks such as ReAct (English *Reasoning and Acting*). In this cycle, the language model forms a sequence of internal reflections (*thoughts*) and external interventions (*actions*) that gradually lead it to a solution (Yao et al., 2023). This process takes place in a loop that can be repeated if necessary:
@@ -250,6 +264,7 @@ For language models, it is the use of tools that breaks these constraints, allow
 > **5. FINAL ANSWER:** "Tomorrow in London it will be cloudy with a temperature of 15°C."
 
 ![](../../docs/diagrams_en/ch06_tool_feedback.svg)
+
 *Figure 6.7: Feedback from the external system in the agent cycle (Tool Use - observe).*
 
 This circle allows the agent to solve various tasks, from everyday queries to highly specialized domains. In the role of a personal assistant, the agent can manage the calendar, send e-mail or monitor smart devices in the home. As a travel planner, he can search for flights via airline APIs, compare prices, check hotel availability and finally make a reservation. In the field of expert analysis, it is capable of executing Python scripts for complex data processing, sending SQL queries to large databases or summarizing the content of web pages accessed in real time.
@@ -261,6 +276,7 @@ The first basic ability is perception. It represents a window into the world, a 
 The objection is followed by cognition, which includes the mental processes of reasoning, planning, decision-making and memory. Within this framework, received information is processed, linked to existing knowledge and used to shape intentions and action strategies. The ability to create and evaluate different possible actions is essential for intelligent behavior (Russell & Norvig, 2020). Cognition thus transforms perceptual data into purposeful plans, forming a bridge between what is and what should be done. It is the central mechanism that allows the perpetrator to go beyond immediate reactions to stimuli and to act thoughtfully, with an eye on the future.
 Plans shaped by cognition are realized through action, i.e. through the perpetrator's ability to influence the environment and change it. Action can take different forms, from simple motor actions to complex communicative acts. It closes the circle of interaction with the world: every action causes changes in the environment, and these changes become a new object of complaint. This creates an unbroken feedback loop, where action not only achieves goals, but also creates new information that enriches and changes the internal model of the world (Powers, 1973).
 ![](../../docs/diagrams_en/ch06_agent_cycle.svg)
+
 *Figure 6.8: Agent-environment interaction loop: a comment leads to cognition and action, and action creates new information for the next comment.*
 
 After all, the entire system is imbued with the ability to learn, which enables continuous adaptation and improvement. Learning is the process by which the perpetrator changes his knowledge, skills and strategies based on experience, that is, based on the outcome of his own actions. Without learning, the perpetrator would be condemned to repeat the same mistakes, unable to adapt to new and unforeseen circumstances. The ability to learn allows him to become more resilient, more efficient and, over time, increasingly skilled in achieving his goals (Sutton & Barto, 2018).
@@ -344,13 +360,16 @@ Would you like me to make a flight and accommodation reservation for you?"
 
 The presented sequence of actions reveals a problem-solving system that demonstrates the ability to align its resources and skills to achieve a given goal in a manner that is simultaneously efficient, adaptive, and reliable.
 ![](../../docs/diagrams_en/diag_725.svg)
+
 *Figure 6.9: Sequence of actions of an agent when planning a personalized trip.*
+
 ### 6.3.6 Conclusion: the birth of a communication partner
 The discussion so far has followed a complex path that leads from a set of program commands and data structures to the emergence of an entity that we can rightly call a communication partner. This transition, described as *birth*, metaphorically describes an actual qualitative leap in the nature of human-agent interaction. The agent assumes the role of an active participant in the act of communication. Its birth is the result of gradual maturation through a series of interactions, learning and adaptations.
 The fundamental components of this process are the agent's ability to interpret the context, recognize the user's intentions and adjust its responses. At the moment when the user begins to recognize functionality in the agent, but also a kind of stability, predictability and, ultimately, reliability, the foundations for a partnership are laid. This relationship is based on the functional equivalence of communication roles. An agent becomes a partner not because he *is* human, but because he *acts* as a credible interlocutor within the given communication framework. This opens up space for more complex forms of cooperation, where trust and mutual understanding are built through continuous dialogue. It is this transformation from a tool to an interlocutor that is the key achievement that we tried to shed light on, and its path can be summarized in the following presentation.
 ---
 
 ![](../../docs/diagrams_en/ch06_partner_development_phases.svg)
+
 *Figure 6.10: Stages of development of a communication partner from the linguistic core to an autonomous, integrated interlocutor.*
 
 This concludes the theoretical consideration of the conditions under which a communication partner is created. With the theoretical framework clearly established, we turn to its application and implementation in real systems.

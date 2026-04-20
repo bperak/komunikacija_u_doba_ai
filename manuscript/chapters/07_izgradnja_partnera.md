@@ -99,6 +99,7 @@ Sličan preobražajni potencijal očituje se i u domeni poslovnih procesa. Autom
 
 
 ![Shematski prikaz proširenja primjenjivosti LLM agenata na ključne industrijske domene.](../../docs/diagrams/ch07_llm_primjene.svg)
+
 *Slika 7.1: Shematski prikaz proširenja primjenjivosti LLM agenata na ključne industrijske domene: zdravstvo, poslovanje i kreativne industrije.*
 
 ### Suradnja u kreativnim industrijama
@@ -125,6 +126,7 @@ U središtu ovog procesa nalazi se pojam agenta – autonomnog softverskog entit
 
 
 ![Shematski prikaz zatvorenog ciklusa u sustavima za personalizaciju sadržaja.](../../docs/diagrams/ch07_personalizacija_ciklus.svg)
+
 *Slika 7.2: Shematski prikaz zatvorenog ciklusa u sustavima za personalizaciju sadržaja: od korisničkih signala i profiliranja do preporuke, reakcije i novog učenja sustava.*
 
 ### Transverzalnost primjene
