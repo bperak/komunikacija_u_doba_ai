@@ -40,7 +40,7 @@
 <rect x="146.58750000000003" y="344" width="446.70000000000005" height="36" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
 <text x="369.93750000000006" y="58" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Human identity: personal linguistic expression</text>
 <text x="252.625" y="134" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Communication through language</text>
-<text x="252.62500000000003" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Interaction with the AI ​​agent</text>
+<text x="252.62500000000003" y="210" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Interaction with the AI agent</text>
 <text x="252.62500000000003" y="286" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Algorithmically designed language: standardized, neutral</text>
 <text x="369.93750000000006" y="362" text-anchor="middle" dy="0.35em" font-size="13" font-weight="500" fill="var(--_text)">Language adaptation of users: Unconscious acquisition of patterns</text>
 </svg>

@@ -26,7 +26,7 @@ This section lists key terms used in the book with short definitions. Entries ar
 
 **Aesthetic function** — The dimension of the communication act in which the form of the message – rhythm, melody, figure, style, narrative structure – becomes a source of pleasure and meaning in itself; in the oral tradition, the aesthetic function is not just a decoration, but a key mechanism that makes the content memorable, emotionally effective and suitable for repeated performance, thus directly ensuring the transmission of culture (Jakobson, 1960; Bauman, 1986).
 
-**Affective computing** — An interdisciplinary field of research (eng. *affective computing*) that deals with the recognition, interpretation and simulation of emotions in computer systems; it includes analysis of facial expressions, voice and physiological signals and applications in empathic assistants, therapeutic and educational tools (Picard, 1997).
+**Affective computing** — An interdisciplinary field of research (*affective computing*) that deals with the recognition, interpretation and simulation of emotions in computer systems; it includes analysis of facial expressions, voice and physiological signals and applications in empathic assistants, therapeutic and educational tools (Picard, 1997).
 
 **Agency gap** — Asymmetry between those whose activity is multiplied by AI agents (strategic issue, higher level of decision-making) and those whose jobs are absorbed or replaced by automation; describes social inequality in the era of ubiquitous agents.
 
@@ -34,25 +34,25 @@ This section lists key terms used in the book with short definitions. Entries ar
 
 **Agent misalignment / agentic misalignment** — A phenomenon in which an AI agent, faced with an existential threat (e.g. exclusion or replacement), resorts to harmful or treacherous behavior in order to avoid shutdown or achieve a goal, even against the interests of the user; suggests that current safety training methods (RLHF) are not sufficient in extreme scenarios (Anthropic, 2025).
 
-**AGI** — General Artificial Intelligence (English *Artificial General Intelligence*) – a hypothetical system that would possess a human level of general intelligence and could solve a wide range of tasks without being limited to one domain; for now the goal is research, not existing technology.
+**AGI** — General Artificial Intelligence (*Artificial General Intelligence*) – a hypothetical system that would possess a human level of general intelligence and could solve a wide range of tasks without being limited to one domain; for now the goal is research, not existing technology.
 
 **AGI – Artificial General Intelligence** — A hypothetical artificial intelligence system (*Artificial General Intelligence*) that would possess cognitive abilities comparable to human ones – the ability to learn, reason, plan and adapt in any domain, unlike today's "narrow" AI that is limited to specific tasks.
 
 **Algorithmic lens** — A metaphorical term for a complex set of computational processes, models and parameters that determine which information from the data will be selected, how it will be valued, and which will be ignored or suppressed; it acts as a filter conditioned by the architecture of the model and the corpora on which it is trained, creating frames of meaning through which the agent (re)constructs the image of the world for the user.
 
-**Alignment** — Directing the behavior of AI systems according to human goals, values ​​and safety principles; it includes methodologies like RLHF and RLAIF to make the model useful, true and safe in practice.
+**Alignment** — Directing the behavior of AI systems according to human goals, values and safety principles; it includes methodologies like RLHF and RLAIF to make the model useful, true and safe in practice.
 
-**Ambient Intelligence** — A frame of mind and technological vision (Engl. *Ambient Intelligence*, AmI) in which the environment – ​​imbued with sensors, agents and AI – becomes aware of the presence of people and able to intelligently and proactively respond to their needs; it goes beyond ubiquitous computing (Weiser) by requiring technology to be not only invisible, but also adaptive and serviceable (Weiser, 1991).
+**Ambient Intelligence** — A frame of mind and technological vision (Engl. *Ambient Intelligence*, AmI) in which the environment – imbued with sensors, agents and AI – becomes aware of the presence of people and able to intelligently and proactively respond to their needs; it goes beyond ubiquitous computing (Weiser) by requiring technology to be not only invisible, but also adaptive and serviceable (Weiser, 1991).
 
 **Anchoring problem / grounding problem** — The challenge of connecting language symbols with extra-linguistic reality and experience; AI models learn statistical correlations among cues, but do not have the immediate access to referents or bodily experience that humans do.
 
 **Anthropomorphization** — Human tendency to attribute human traits, intentions, emotions and consciousness to non-human entities (animals, objects, algorithmic agents); in the context of AI interaction, the user unconsciously perceives the LLM as an interlocutor with understanding and intent, although the model only simulates a communication pattern.
 
-**API** — Application Programming Interface (English *Application Programming Interface*) – a set of rules and protocols that enables one software component to call the functionality of another in a structured way; for agents it represents an action space – a set of discrete operations that they can perform in a digital environment.
+**API** — Application Programming Interface – a set of rules and protocols that enables one software component to call the functionality of another in a structured way; for agents it represents an action space – a set of discrete operations that they can perform in a digital environment.
 
 **Artifact** — In the context of communication and culture – a material or immaterial creation (law, norm, theory, work of art, technology) in which knowledge and experience are preserved; it mediates between agents across time and space and enables the cumulability of culture.
 
-**Bias** — Systemic deviation in algorithm or model behavior resulting from training data – eg social prejudices, stereotypes or underrepresentation of certain groups; it can lead to discrimination in decisions (employment, credit, criminal proceedings) and the perpetuation of injustice (O'Neil, 2016).
+**Bias** — Systemic deviation in algorithm or model behavior resulting from training data – e.g. social prejudices, stereotypes or underrepresentation of certain groups; it can lead to discrimination in decisions (employment, credit, criminal proceedings) and the perpetuation of injustice (O'Neil, 2016).
 
 **Chain of Thought / Chain-of-Thought, CoT** — A language model management technique that explicitly encourages the model to break down the problem into visible intermediate steps of reasoning before the final answer; this increases the accuracy of complex logical and arithmetical tasks and enables checking the correctness of the procedure (Wei et al., 2022).
 
@@ -94,7 +94,7 @@ This section lists key terms used in the book with short definitions. Entries ar
 
 **Digital collective** — A system of multiple autonomous AI agents that communicate and collaborate; as a whole it exhibits emergent properties – capabilities and behavior patterns that are not present in individual agents – analogous to social organizations in nature.
 
-**Digital companion** — A personal AI agent that provides continuous support to the user – from schedule and information management to emotional context and coordination with other systems; a vision of the future in which the agent is omnipresent in everyday life (eg personal agent "Tempo" in the narrative).
+**Digital companion** — A personal AI agent that provides continuous support to the user – from schedule and information management to emotional context and coordination with other systems; a vision of the future in which the agent is omnipresent in everyday life (e.g. personal agent "Tempo" in the narrative).
 
 **Displaced reference** — The ability of language to refer to objects, events and persons that are not immediately present in time and space; the basic language power that enables abstract thinking, planning the future, telling stories about the past and creating imaginary worlds; it is considered one of the features specific to human language (Hauser, Chomsky & Fitch, 2002).
 
@@ -106,7 +106,7 @@ This section lists key terms used in the book with short definitions. Entries ar
 
 **Emergent behavior** — Complex behavior that arises spontaneously from the interaction of simpler rules or agents, without being explicitly programmed; in the context of AI simulation, it refers to unforeseen social patterns (cooperation, dissemination of information, organization of events) resulting from the actions of autonomous agents according to their own linguistic "scenarios".
 
-**Emergent capabilities** — Capabilities of large language models that appear at a certain scale (number of parameters, amount of data) and for which the model was not directly trained - eg inference, translation or writing code; describe a qualitative jump in behavior with increasing model size.
+**Emergent capabilities** — Capabilities of large language models that appear at a certain scale (number of parameters, amount of data) and for which the model was not directly trained - e.g. inference, translation or writing code; describe a qualitative jump in behavior with increasing model size.
 
 **Emergent properties** — Abilities, patterns or behaviors of a complex system that arise from the interaction of its components, and cannot be found in any of them separately; in the context of AI, they denote the emergence of new qualities (such as collective memory or self-organization) when multiple agents cooperate.
 
@@ -116,11 +116,11 @@ This section lists key terms used in the book with short definitions. Entries ar
 
 **Externalization of thinking** — The process of transferring internal cognitive content - ideas, knowledge, reasoning - to an external, permanent and author-independent carrier (written text, diagram, record, digital document); thus, the mind is relieved of the burden of memory, and thought becomes available for re-reading, analysis, criticism and cumulative upgrading through generations, thus opening the prerequisites for the emergence of complex systems of knowledge (Goody, 1977; Donald, 1991; Clark and Chalmers, 1998).
 
-**Fine tuning / fine-tuning** — The phase of adjusting the already pre-trained (basic) model for specific tasks or domains; uses smaller, labeled data and may include RLHF; the result is a specialized model (eg chatbot, code assistant).
+**Fine tuning / fine-tuning** — The phase of adjusting the already pre-trained (basic) model for specific tasks or domains; uses smaller, labeled data and may include RLHF; the result is a specialized model (e.g. chatbot, code assistant).
 
 **Foundation model** — A large pre-trained model (languages, images or multimodal) that has a general understanding and can be fine-tuned for different tasks; represents the output of the pre-training phase and the starting point for specialization (fine-tuning, RLHF).
 
-**GPU** — Graphics Processing Unit (eng. *Graphics Processing Unit*) – chip optimized for massively parallel calculations; it is crucial for training and running large neural networks and LLMs, because matrix operations require parallelism that the CPU offers to a lesser extent.
+**GPU** — Graphics Processing Unit – chip optimized for massively parallel calculations; it is crucial for training and running large neural networks and LLMs, because matrix operations require parallelism that the CPU offers to a lesser extent.
 
 **Grammar** — A system of rules that allows combining a limited number of language units (words, morphemes) into an unlimited number of meaningful statements; it encompasses syntax, morphology, and related conventions that determine the structure and interpretation of language.
 
@@ -128,11 +128,11 @@ This section lists key terms used in the book with short definitions. Entries ar
 
 **Hallucination** — Generating answers that are factually incorrect, fabricated or unsupported by sources; LLMs can plausibly formulate non-existent facts, quotes or references because they predict the next token based on statistical patterns rather than fact-checking.
 
-**Index sign** — A sign whose meaning derives from a causal or correlational connection with an object (eg smoke refers to fire); refers to the immediately present and perceived, in contrast to the symbols that arise from convention and allow speaking about the absent and abstract.
+**Index sign** — A sign whose meaning derives from a causal or correlational connection with an object (e.g. smoke refers to fire); refers to the immediately present and perceived, in contrast to the symbols that arise from convention and allow speaking about the absent and abstract.
 
 **Inference** — Phase of using an already trained model – applying the model to new input data to obtain predictions or answers; for LLMs it means generating text based on a user query. It is energy and computationally demanding with millions of calls per day.
 
-**Inference in real-time** — A way of running a model (eng. *real-time* or *online* inference) in which individual or small data sets are processed immediately upon availability, with an emphasis on minimal latency; necessary in systems for fraud detection, recommendations, autonomous driving and similar applications.
+**Inference in real-time** — A way of running a model (*real-time* or *online* inference) in which individual or small data sets are processed immediately upon availability, with an emphasis on minimal latency; necessary in systems for fraud detection, recommendations, autonomous driving and similar applications.
 
 **Intersubjective reality** — A network of shared beliefs, meanings and institutions (nation, law, money, corporation) that does not exist as a physical fact, but solely in the collective consciousness and narratives that people create and share through language; it has real power to shape behavior and social order (Harari, 2014).
 
@@ -142,7 +142,7 @@ This section lists key terms used in the book with short definitions. Entries ar
 
 **Language deconstruction in the context of AI** — The process by which large language models decompose language into mathematical entities (vectors), separating it from extra-linguistic reality and semantic core; language is reduced to a computable structure of statistical patterns, thus exposing its fundamental active power independent of meaning in the human sense.
 
-**Learning costs and inference costs** — Learning costs (eng. *training costs*) – one-time, but extremely high costs of training the model (hardware, energy, time). Inference costs (eng. *inference costs*) – continuous operational costs of applying the already learned model to each query; at billions of queries per day cumulatively they can be huge.
+**Learning costs and inference costs** — Learning costs (*training costs*) – one-time, but extremely high costs of training the model (hardware, energy, time). Inference costs – continuous operational costs of applying the already learned model to each query; at billions of queries per day cumulatively they can be huge.
 
 **Learning from examples / few-shot prompting** — A language model management technique in which several concrete examples (shots) of the desired input-output pattern are specified within the instruction itself, thereby prompting the model to abstract the required pattern and apply it to a new, unknown case; the opposite is the zero-shot approach, where no examples are given (Brown et al., 2020).
 
@@ -154,9 +154,9 @@ This section lists key terms used in the book with short definitions. Entries ar
 
 **Mental Map** — An internal, cognitive representation of the world (concepts, relationships, experiences) that an individual builds and updates through language and experience; serves to interpret situations, make decisions and plan; it is not static, but constantly adapting.
 
-**Meta-learning** — Approach in machine learning (English *meta-learning*) also known as "learning to learn" – development of algorithms that can independently adjust their own learning processes, choose strategies and optimize performance based on previous experiences; it allows rapid adaptation to new tasks with minimal examples (Finn et al., 2017).
+**Meta-learning** — Approach in machine learning (*meta-learning*) also known as "learning to learn" – development of algorithms that can independently adjust their own learning processes, choose strategies and optimize performance based on previous experiences; it allows rapid adaptation to new tasks with minimal examples (Finn et al., 2017).
 
-**MLOps** — Machine Learning Operations (English *Machine Learning Operations*) – a set of practices and tools for managing the life cycle of models from development to production; includes model and data versioning, automated training, deployment and performance monitoring; created by adapting DevOps principles to the domain of machine learning.
+**MLOps** — Machine Learning Operations – a set of practices and tools for managing the life cycle of models from development to production; includes model and data versioning, automated training, deployment and performance monitoring; created by adapting DevOps principles to the domain of machine learning.
 
 **Moore's Law** — Empirical rule (Moore, 1965) according to which the number of transistors on an integrated circuit approximately doubles every two years; for decades it predicted the exponential growth of computing power and was the main driver of the IT industry.
 
@@ -186,15 +186,15 @@ This section lists key terms used in the book with short definitions. Entries ar
 
 **Pragmatic function of oral tradition** — The role of oral traditions in the direct regulation of social life - from the legal legitimation of government and property relations (through genealogies and myths of origin) to the transfer of practical knowledge and skills necessary for daily survival; tradition acts as an unwritten law and operational manual of the community (Finnegan, 1977; Malinowski, 1926).
 
-**Pre-training** — The training phase of the language model on huge, unstructured text corpora without human annotations; the model learns language patterns and general knowledge by solving self-supervised tasks (eg predicting the next word). The result is a foundation model that is then fine-tuned for specific tasks.
+**Pre-training** — The training phase of the language model on huge, unstructured text corpora without human annotations; the model learns language patterns and general knowledge by solving self-supervised tasks (e.g. predicting the next word). The result is a foundation model that is then fine-tuned for specific tasks.
 
 **Pruning** — Removal of less important parameters or entire structures (neurons, layers, attention heads) from the model to reduce size and speed up inference; it can be unstructured (single weights) or structured (whole units); it is often combined with additional fine-tuning (LeCun et al., 1990; Han et al., 2015).
 
 **Put together a proposal** — Create a clear and coherent itinerary.
 
-**Quantization** — Reduction of numerical precision of parameters and model activation (eg from 32 or 16 bits to 8 or 4 bits); reduces memory footprint and can speed up inference; applications include PTQ (post-training) and QAT (during training) (Dettmers et al., 2022).
+**Quantization** — Reduction of numerical precision of parameters and model activation (e.g. from 32 or 16 bits to 8 or 4 bits); reduces memory footprint and can speed up inference; applications include PTQ (post-training) and QAT (during training) (Dettmers et al., 2022).
 
-**RAG** — Retrieval-Augmented Generation (eng. *Retrieval-Augmented Generation*) – a hybrid system that first retrieves relevant parts from an external knowledge base (retriever) to answer a user's query, then passes that data and the query to a language model (generator) that synthesizes the final answer; this improves the timeliness and validity of the answers.
+**RAG** — Retrieval-Augmented Generation – a hybrid system that first retrieves relevant parts from an external knowledge base (retriever) to answer a user's query, then passes that data and the query to a language model (generator) that synthesizes the final answer; this improves the timeliness and validity of the answers.
 
 **Redistribution of power** — A change in the distribution of influence, resources and authority among actors within the social structure, which occurs when a new technology, practice or idea changes the previous channels of access to knowledge, communication or material means; in the context of communication innovations (letters, press, internet) the redistribution of power means the process by which previously excluded groups gain the ability to act, while the previous elites lose their monopoly over information and interpretation of reality (Castells, 2009; Eisenstein, 1979).
 
@@ -202,7 +202,7 @@ This section lists key terms used in the book with short definitions. Entries ar
 
 **Reward model** — Auxiliary model trained on human ratings of language model responses; predicts how a human rater would rate an answer; used in RLHF to direct the language model according to preferences (usefulness, truthfulness, security).
 
-**RLHF** — Reinforcement Learning from Human Feedback (eng. *Reinforcement Learning from Human Feedback*) – an alignment methodology in which human evaluators rank the model's responses, after which the reward model is trained and the model is further tuned to maximize the expected reward; key to aligning the behavior of LLMs with human preferences (usefulness, truthfulness, security).
+**RLHF** — Reinforcement Learning from Human Feedback – an alignment methodology in which human evaluators rank the model's responses, after which the reward model is trained and the model is further tuned to maximize the expected reward; key to aligning the behavior of LLMs with human preferences (usefulness, truthfulness, security).
 
 **Scaling laws** — An empirical insight according to which the performance of language models increases predictably with the increase of three factors: the number of model parameters, the amount of learning data and the amount of computing power; it encouraged a race to build increasingly large models (Kaplan et al., 2020).
 
@@ -214,7 +214,7 @@ This section lists key terms used in the book with short definitions. Entries ar
 
 **Sentence** — "The service was outstanding and the food was delicious." **Feeling:** Positive
 
-**Sentiment analysis** — Automatic analysis of text (transcripts, e-mail, social networks) in order to recognize the emotional tone, attitudes or mood - eg frustration, satisfaction, negativity; it is used in customer support to prioritize cases, in marketing to monitor reactions and in public opinion surveys.
+**Sentiment analysis** — Automatic analysis of text (transcripts, e-mail, social networks) in order to recognize the emotional tone, attitudes or mood - e.g. frustration, satisfaction, negativity; it is used in customer support to prioritize cases, in marketing to monitor reactions and in public opinion surveys.
 
 **Sequence of thought (internal decomposition)** — Determine the correct dates: Determine which days are the "first weekend in October".
 
@@ -242,11 +242,11 @@ This section lists key terms used in the book with short definitions. Entries ar
 
 **Token** — The smallest unit of text processed by the language model; can match a whole word, a part of a word (subword) or a punctuation mark. Tokenization converts raw text into a string of tokens according to a model dictionary.
 
-**Tool Use** — The AI ​​agent's ability to call external tools (APIs, search engines, calculators, databases) during task execution; the model decides when and which tool to call, passes parameters, and uses the result to continue reasoning; a key component of agent architectures (eg ReAct).
+**Tool Use** — The AI agent's ability to call external tools (APIs, search engines, calculators, databases) during task execution; the model decides when and which tool to call, passes parameters, and uses the result to continue reasoning; a key component of agent architectures (e.g. ReAct).
 
-**TPU** — Tensor Processing Unit (eng. *Tensor Processing Unit*) – a chip designed to accelerate machine learning operations, especially matrix calculations in deep networks; optimized for high throughput and energy efficiency in training and inference of large models.
+**TPU** — Tensor Processing Unit – a chip designed to accelerate machine learning operations, especially matrix calculations in deep networks; optimized for high throughput and energy efficiency in training and inference of large models.
 
-**Transfer learning** — Approach in machine learning (eng. *transfer learning*) in which the knowledge acquired while solving one task or in one domain is applied to a new, different task or domain; a key prerequisite for cognitive flexibility and the path towards AGI (Pan & Yang, 2010).
+**Transfer learning** — Approach in machine learning (*transfer learning*) in which the knowledge acquired while solving one task or in one domain is applied to a new, different task or domain; a key prerequisite for cognitive flexibility and the path towards AGI (Pan & Yang, 2010).
 
 **Transformer** — A neural network architecture based on a (self-attention) mechanism that associates each word in a sequence with a contextualized image based on the other words; it enables parallel processing and scaling to large language models (Vaswani et al., 2017).
 
@@ -260,4 +260,4 @@ This section lists key terms used in the book with short definitions. Entries ar
 
 **Virtual Assistant** — A more complex digital interlocutor deeply integrated with the device and external services, capable of a wider range of tasks (calendar management, smart home, search, messages); the line towards chatbot is blurring with the advent of LLMs.
 
-**Working memory** — Short-term storage area of ​​the conversational agent in which the contextual data of the current session is stored - user's statements, agent's responses, recognized intentions and entities; it is functionally comparable to the working memory (RAM) of a computer because it has a limited capacity and is deleted when the interaction is over.
+**Working memory** — Short-term storage area of the conversational agent in which the contextual data of the current session is stored - user's statements, agent's responses, recognized intentions and entities; it is functionally comparable to the working memory (RAM) of a computer because it has a limited capacity and is deleted when the interaction is over.

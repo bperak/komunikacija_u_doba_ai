@@ -1,10 +1,10 @@
 # References
-## 1 chapter
+## Chapter 1
 Krebs, J.R., & Dawkins, R. (1984). Animal signals: Mind-reading and manipulation. In J. R. Krebs & N. B. Davies (Eds.), *Behavioural ecology: An evolutionary approach* (2nd ed., pp. 380–402). Blackwell Scientific Publications.
 Tomasello, M. (2008). *Origins of human communication*. The MIT Press.
 Žic-Fuchs, M. (1991). *Language knowledge and world knowledge: a semantic analysis of verbs of motion in English*. Faculty of Philosophy, Department of General Linguistics and Oriental Studies.
 
-## 2 chapter
+## Chapter 2
 Adamopoulou, E., & Moussiades, L. (2020). An overview of chatbot technology. In I. Maglogiannis, L. Iliadis, & E. Pimenidis (Eds.), *Artificial Intelligence Applications and Innovations. AIAI 2020. IFIP Advances in Information and Communication Technology, vol 584* (pp. 373–383). Springer.
 Alter, A. (2017). *Irresistible: The rise of addictive technology and the business of keeping us hooked*. Penguin Press.
 Anderson, B. (1983). *Imagined communities: Reflections on the origin and spread of nationalism*. Verso.
@@ -52,7 +52,7 @@ Norris, P. (2001). *Digital divide: Civic engagement, information poverty, and 
 O'Neil, C. (2016). *Weapons of math destruction: How big data increases inequality and threatens democracy*. Crown.
 Ong, W. J. (1982). *Orality and literacy: The technologizing of the word*. Methuen.
 Pariser, E. (2011). *The filter bubble: What the Internet is hiding from you*. Penguin UK.
-Putnam, R.D. (2000). *Bowling alone: ​​The collapse and revival of American community*. Simon & Schuster.
+Putnam, R.D. (2000). *Bowling alone: The collapse and revival of American community*. Simon & Schuster.
 Quan-Haase, A., & Wellman, B. (2002). How does the Internet affect social capital? In M. Huysman & V. Wulf (Eds.), *IT and social capital* (pp. 113-135).
 Rainie, L., & Wellman, B. (2012). *Networked: The new social operating system*. The MIT Press.
 Rheingold, H. (2000). *The virtual community: Homesteading on the electronic frontier* (Rev. ed.). The MIT Press.
@@ -210,7 +210,7 @@ Wei, J., Wang, X., Schuurmans, D., Bosma, M., Chi, E., Le, Q., & Zhou, D. (2022)
 Xu, C., Li, C., Zhang, D., & Li, Y. (2023). *Retrieval-augmented generation for large language models: A survey*. ArXiv.
 Yao, S., Zhao, J., Yu, D., Du, N., Tsvetkov, Y., & Fung, P. (2023). *ReAct: Synergizing reasoning and acting in language models*. ArXiv.
 
-## 7 chapter
+## Chapter 7
 Brusilovsky, P., & Peylo, C. (2003). Adaptive and intelligent web-based educational systems. *International Journal of Artificial Intelligence in Education, 13*(2), 159-172.
 Chen, X., Xie, H., & Wang, F.L. (2023). *A survey on language models for healthcare*. ArXiv.
 Davenport, T. H., & Ronanki, R. (2018). Artificial intelligence for the real world. *Harvard Business Review, 96*(1), 108-116.
