@@ -241,7 +241,7 @@ Valja ipak naglasiti kako odnos reformacije i znanosti nije bio jednoznačno pot
 Devetnaesto stoljeće donosi temeljni preokret u povijesti ljudske komunikacije uvodeći tehnologije koje su prvi put omogućile prijenos poruka brzinom većom od bilo kojega fizičkog vozila. Time je započelo doba elektroničke komunikacije, čiji se temelji i danas osjećaju u svim suvremenim mrežama.
 
 ![](../../docs/diagrams/ch02_19st_elektronika.svg)
-*Slika 2.13: Devetnaesto stoljeće donosi temeljni preokret u povijesti ljudske komunikacije uvodeći tehnologije koje su prvi put omogućile prijenos poruka brzinom većom od bilo kojega fizičkog vozila – početak doba elektroničke komunikacije.*
+*Slika 2.13: Shematski prikaz prijelaza u doba elektroničke komunikacije: od prijenosa poruka bržeg od fizičkog prijevoza do telegrafa, telefona i promjene društvene organizacije.*
 
 ### 2.5.1 Telegraf: nove brzine i novi horizonti
 
@@ -256,7 +256,7 @@ Promatrati telegraf isključivo kao tehnološki artefakt značilo bi zanemariti 
 Polaganje prvoga transatlantskog telegrafskog kabela 1866. godine bio je pothvat usporediv s kasnijim svemirskim istraživanjima – trijumf ljudske upornosti i inženjerske vještine. Tim je činom simbolički, ali i realno, stvoren jedinstven informacijski prostor koji je obuhvaćao Stari i Novi svijet. Telegraf je tako postavio temelje za sve buduće oblike elektroničke komunikacije, od telefona i radija do interneta. On je bio prva tehnologija koja je odvojila komunikaciju od transporta, dokazavši da se poruka može kretati neovisno o fizičkom prijenosu predmeta ili ljudi (Carey, 1989). U tom smislu telegrafska mreža devetnaestoga stoljeća nije bila tek prethodnica, već arhetip današnjega globalnog informacijskog društva, a njezini odjeci i danas oblikuju način na koji živimo, radimo i razumijemo svijet oko sebe.
 
 ![](../../docs/diagrams/ch02_telegraf_kabel.svg)
-*Slika 2.14: Polaganje prvoga transatlantskog telegrafskog kabela 1866. godine bio je pothvat usporediv s kasnijim svemirskim istraživanjima – trijumf ljudske upornosti i inženjerske vještine koji je stvorio jedinstven informacijski prostor obuhvaćajući Stari i Novi svijet.*
+*Slika 2.14: Shematski prikaz značenja polaganja transatlantskog telegrafskog kabela 1866.: tehnološki pothvat koji je povezao Stari i Novi svijet te otvorio jedinstven informacijski prostor.*
 
 ### 2.5.2	Telefon: intimna revolucija na žici
 
@@ -303,7 +303,7 @@ Državnici i politički vođe ubrzo su prepoznali moć toga novog medija za obli
 
 
 ![](../../docs/diagrams/ch02_radio_glas.svg)
-*Slika 2.17: Državnici i politički vođe ubrzo su prepoznali moć toga novog medija za oblikovanje javnog mnijenja i mobilizaciju masa; glas je postao temeljno političko oruđe (npr. Rooseveltovi „Razgovori uz kamin“).*
+*Slika 2.17: Shematski prikaz političke uporabe radija: od glasa kao medija do utjecaja na javno mnijenje, mobilizaciju i autoritet.*
 
 Njegov je utjecaj prožimao cjelokupni kulturni život, oblikujući glazbeni ukus, popularizirajući dramske oblike kroz radiodrame i stvarajući prve zvijezde etera. Radio je tako uspostavio zvučnu tapiseriju zajedničke kulture, referentni okvir koji su dijelili pripadnici različitih društvenih slojeva. Upravo je ta sposobnost radija da istodobno emitira jedinstveni „glas” – bilo da je riječ o glasu spikera, političara, glumca ili pjevača – i da ga učini dijelom privatnog iskustva milijuna, stvorila ono što možemo nazvati „ glasom zajedničke stvarnosti”. On je bio zvučni odraz i, istodobno, konstitutivni element svijesti o pripadnosti široj društvenoj cjelini.
 
@@ -348,7 +348,7 @@ Njegov začetak, ARPANET, bio je osmišljen kao istraživačka mreža s ciljem p
 
 
 ![](../../docs/diagrams/ch02_arpanet.svg)
-*Slika 2.21: Njegov začetak, ARPANET, bio je osmišljen kao istraživačka mreža s ciljem povezivanja znanstvenika i sveučilišta diljem Sjedinjenih Država; 1969. odaslana je prva mrežna poruka, simboličan početak nove ere.*
+*Slika 2.21: Shematski prikaz razvoja ARPANET-a: od istraživačke mreže ARPA-e i povezivanja sveučilišta do prve mrežne poruke 1969. i temelja digitalne komunikacije.*
 
 Prijelomni trenutak u njegovu razvoju zbio se 1989. godine, kada je Tim Berners-Lee, znanstvenik zaposlen u CERN-u, osmislio *World Wide Web* (Berners-Lee, 1990) i time ga preoblikovao u platformu pristupačnu svakom korisniku. Pomoću hipertekstualnih poveznica i jednostavnih internetskih preglednika ljudi su prvi put dobili priliku kretati se udaljenim digitalnim prostorima, istodobno dijeleći dokumente, slike, pa čak i rane oblike multimedijskih sadržaja.
 
@@ -378,7 +378,7 @@ Valja međutim naglasiti kako je implementacija višekanalne strategije znatno o
 Stoga se kao krajnji cilj zapravo postavlja stvarna i smislena integracija na više kanala. Taj viši stupanj razvoja, poznat kao **omnikanalni** pristup, podrazumijeva stvaranje jedinstvenog i besprijekornog korisničkog iskustva u kojem su granice između pojedinih kanala gotovo neprimjetne. U potpuno integriranom sustavu agent koji komunicira s klijentom ima cjelovit uvid u sve prethodne interakcije, bez obzira na to jesu li se one odvijale putem razgovora uživo, elektroničke pošte ili telefonskog poziva. Klijent može započeti upit na jednoj platformi, nastaviti ga na drugoj i zaključiti na trećoj, a da pritom ne mora ponavljati informacije, čime se cjelokupni proces čini protočnim i usmjerenim na korisnika.
 
 ![](../../docs/diagrams/ch02_omnikanalni.svg)
-*Slika 2.22: Stoga se kao krajnji cilj zapravo postavlja stvarna i smislena integracija na više kanala (omnikanalni pristup) – jedinstveno korisničko iskustvo u kojem su granice između kanala gotovo neprimjetne.*
+*Slika 2.22: Shematski prikaz prijelaza od višekanalne komunikacije prema omnikanalnom pristupu, s integracijom kanala, cjelovitim uvidom i neprimjetnim prijelazima za korisnika.*
 
 ### 2.7.2 Suradnja i kolaborativni alati
 
@@ -433,7 +433,7 @@ Ključna odrednica ove preobrazbe jest promjena uloge samih građana. Iz položa
 
 
 ![](../../docs/diagrams/ch02_gradjani_politika.svg)
-*Slika 2.26: Ključna odrednica ove preobrazbe jest promjena uloge samih građana: iz položaja pasivnih primatelja oni postaju aktivni agenti u političkom procesu (komentiranje, dijeljenje sadržaja, organiziranje kolektivnih akcija).*
+*Slika 2.26: Shematski prikaz preobrazbe građana iz pasivnih primatelja u aktivne političke agente kroz komentiranje, dijeljenje sadržaja, kolektivne akcije i djelovanje u mrežama.*
 
 ![](../../docs/diagrams/diag_147.svg)
 *Slika 2.27: Transformacija komunikacijskog modela u političkoj sferi – od jednosmjernog kanala prema višesmjernoj, interaktivnoj mrežnoj strukturi i elektroničkom javnom mnijenju.*
@@ -443,7 +443,7 @@ Nadalje, elektroničko javno mnijenje posjeduje svojstva koja ga bitno razlikuju
 Struktura internetske javne sfere donosi i druge izazove. Za razliku od Habermasove idealne slike jedinstvene javne sfere u kojoj se racionalnom raspravom dolazi do konsenzusa, digitalni je prostor izrazito fragmentiran. Korisnici su skloni okupljati se u istomišljeničke zajednice, stvarajući takozvane *komore jeke* (engl. *echo chambers*) ili *filtrirajuće mjehuriće* (engl. *filter bubbles*), gdje su izloženi isključivo onim informacijama i stavovima koji potvrđuju njihova postojeća uvjerenja (Sunstein, 2017). Takva informacijska izolacija otežava međusobno razumijevanje različitih društvenih skupina i snažno pridonosi političkoj polarizaciji. Brzina i doseg digitalne komunikacije, premda noseći golem potencijal za demokratizaciju, istodobno otvaraju prostor za dosad nezabilježeno širenje dezinformacija i lažnih vijesti, čija provjera za prosječnoga korisnika predstavlja znatan kognitivni napor. Politička sfera posljedično se suočava s dvostrukim izazovom: s jedne strane, mora se prilagoditi novim oblicima građanskoga sudjelovanja i iskoristiti njihov demokratski potencijal, dok s druge strane, mora razviti mehanizme za obranu od manipulacija i očuvanje kvalitete javne rasprave u digitalnom okružju.
 
 ![](../../docs/diagrams/ch02_javna_sfera.svg)
-*Slika 2.28: Struktura internetske javne sfere donosi i druge izazove: za razliku od Habermasove idealne jedinstvene javne sfere, digitalni je prostor fragmentiran (komore jeke, filtarski mjehurići), što otežava međusobno razumijevanje i pridonosi polarizaciji.*
+*Slika 2.28: Shematski prikaz fragmentacije internetske javne sfere: od komora jeke i filtarskih mjehurića do polarizacije i otežanog međusobnog razumijevanja.*
 
 ### 2.7.5 Globalno širenje i kulturni utjecaj
 
@@ -474,7 +474,7 @@ Razvoj je tekao i u smjeru funkcionalne specijalizacije, što je najočitije u u
 Naposljetku, važno je istaknuti da su implikacije ekspanzija društvenih mreža društvene, kulturne i političke. Te su platforme preuzele ulogu središnjih arena za javni diskurs, političko organiziranje i društveni aktivizam te istodobno postale i plodno tlo za sustavno širenje dezinformacija i manipulativnih sadržaja (Zuboff, 2019). Stoga njihov utjecaj na suvremeno društvo valja razumjeti u svoj njegovoj složenosti i proturječnosti, kao pojavu koja preoblikuje načine na koje komuniciramo, radimo, stvaramo zajednice i poimamo sami sebe.
 
 ![](../../docs/diagrams/ch02_drustvene_mreze.svg)
-*Slika 2.30: Naposljetku, važno je istaknuti da su implikacije ekspanzija društvenih mreža društvene, kulturne i političke – platforme su postale središnje arene za javni diskurs i aktivizam, ali i plodno tlo za dezinformacije i manipulativne sadržaje.*
+*Slika 2.30: Shematski prikaz razvoja društvenih mreža od SixDegreesa i Facebooka prema vizualnim platformama, kratkom videu, algoritamskoj distribuciji te učincima na javni diskurs i dezinformacije.*
 
 ### 2.7.7 Digitalna plemena i trgovi znanja: anatomija uspješnih online zajednica
 
@@ -504,7 +504,7 @@ Uloga *agenata*, kako ljudskih tako i softverskih, u održavanju zdravlja zajedn
 Konačno, uspješnost zajednice očituje se u vrijednosti koju stvara za svoje članove i, ponekad, za širu javnost. Ta vrijednost može poprimiti različite oblike: od rješavanja konkretnih problema i *dijeljenja stručnog znanja* do pružanja *emocionalne podrške* i osjećaja pripadnosti. U svojim najrazvijenijim oblicima *online* zajednice postaju poprištem izranjanja *kolektivne inteligencije*, gdje sinergija pojedinačnih doprinosa dovodi do spoznaja i rješenja koji nadilaze mogućnosti bilo kojeg pojedinca (Lévy, 1997). Promatrane na taj način, *online* zajednice prestaju biti tek tehnološki fenomen i postaju ključni čimbenici društva znanja, sposobni za rješavanje složenih izazova kroz suradnju i povjerenje izgrađeno u digitalnom svijetu.
 
 ![](../../docs/diagrams/ch02_online_zajednica.svg)
-*Slika 2.31: Konačno, uspješnost zajednice očituje se u vrijednosti koju stvara za svoje članove – zajednički cilj, kroz interakciju, norme i izgradnju povjerenja, stvara društveni kapital koji dovodi do kolektivne vrijednosti online zajednice.*
+*Slika 2.31: Shematski prikaz nastanka kolektivne vrijednosti online zajednice: od zajedničkog cilja i interakcije do povjerenja, društvenog kapitala i zajedničke koristi.*
 
 ### 2.7.8 Porozne membrane: kad digitalno postane stvarno (i obratno)
 
@@ -523,7 +523,7 @@ Dakle, dok je internet nedvojbeno srušio barijere i omogućio nove oblike zajed
 Razdjelnica između digitalnog i stvarnog svijeta, nekoć poimana kao čvrsta i nepremostiva granica, danas se sve više očituje kao porozna membrana. Kroz nju se odvija neprestano i dvosmjerno prožimanje koje mijenja ontološki status obaju svjetova. Ne radi se više o interakciji dvaju odvojenih entiteta, već o stvaranju hibridnoga prostora u kojem se digitalni bitovi materijaliziraju, a fizička stvarnost prevodi u informacijski kôd. Taj proces uzajamnog prelijevanja preispituje temeljne postavke o prirodi stvarnosti, prisutnosti i djelovanju.
 
 ![](../../docs/diagrams/ch02_digital_stvarni.svg)
-*Slika 2.32: Razdjelnica između digitalnog i stvarnog svijeta, nekoć poimana kao čvrsta granica, danas se očituje kao porozna membrana kroz koju se odvija dvosmjerno prožimanje i stvaranje hibridnoga prostora.*
+*Slika 2.32: Shematski prikaz prijelaza od čvrste granice između digitalnog i stvarnog svijeta prema poroznoj membrani, dvosmjernom prožimanju i hibridnom prostoru.*
 
 ### 2.7.9 Digitalna revolucija i mreža globalne komunikacije
 
@@ -564,7 +564,7 @@ Možda najdublju prijetnju predstavlja uspon onoga što Shoshana Zuboff (2019) i
 Digitalna dvojnost je stoga stvarna napetost koja oblikuje naše društvene, političke i ekonomske zbilje, razotkrivajući digitalnu sferu ne kao utopijsko ili distopijsko odredište već kao bojno polje. Ishod te borbe ovisi o djelovanju različitih agenata: o regulatornim odlukama država, o naporima civilnog društva u zaštiti digitalnih prava, o etičkoj odgovornosti tehnoloških stvaratelja te, naposljetku, o podizanju svijesti i kritičkom angažmanu samih korisnika. Priznati tu dvojnost znači odbaciti tehnološki determinizam i prihvatiti odgovornost za aktivno oblikovanje digitalne budućnosti – budućnosti u kojoj će obećanje o demokratizaciji nadvladati sjenu novih nejednakosti.
 
 ![](../../docs/diagrams/diag_904.svg)
-*Slika 2.34: Digitalna dvojnost je stoga stvarna napetost koja oblikuje naše društvene, političke i ekonomske zbilje – digitalna sfera nije utopija ni distopija već bojno polje čiji ishod ovisi o djelovanju agenata (regulatori, civilno društvo, korisnici).*
+*Slika 2.34: Shematski prikaz digitalne dvojnosti: napetost između demokratizacijskog potencijala digitalne tehnologije i novih oblika nejednakosti koji zajedno oblikuju društvo.*
 
 ### 2.7.11 Sjene u digitalnom Edenu: privatnost, manipulacija i cijena povezanosti
 
@@ -580,7 +580,7 @@ Djelovanje tih algoritama, čija je temeljna zadaća maksimizacija korisničkog 
 Cijena sveopće povezanosti se, osim na društvenoj i političkoj, plaća i na duboko osobnoj, psihološkoj razini. Neprestana izloženost idealiziranim prikazima tuđih života na društvenim mrežama stvara plodno tlo za socijalnu usporedbu, što nerijetko rezultira osjećajima neadekvatnosti, tjeskobe i depresivnih stanja. Imperativ stalne dostupnosti i sudjelovanja u digitalnoj sferi zamagljuje granice između rada i odmora, javnog i privatnog, stvarajući pritisak koji negativno utječe na mentalno zdravlje i opću dobrobit. Uloga digitalnog agenta – bilo da je riječ o platformi, algoritmu ili sučelju – u tom je ekosustavu od presudne važnosti. Njegovi ciljevi, usmjereni u prvome redu na ekonomske metrike poput zadržavanja pozornosti i povećanja angažmana, često su u izravnom sukobu s dugoročnim interesima i dobrobiti korisnika. Stoga suočavanje sa sjenama digitalnog Edena zahtijeva razvoj napredne digitalne pismenosti, jačanje svijesti o mehanizmima koji oblikuju naše mrežno iskustvo te uspostavu čvrstih regulatornih okvira koji će štititi autonomiju, privatnost i dostojanstvo pojedinca u novom digitalnom dobu.
 
 ![](../../docs/diagrams/ch02_cijena_povezanosti.svg)
-*Slika 2.36: Cijena sveopće povezanosti se, osim na društvenoj i političkoj, plaća i na duboko osobnoj, psihološkoj razini – socijalna usporedba, tjeskoba, zamagljivanje granica između rada i odmora te pritisak stalne dostupnosti.*
+*Slika 2.36: Shematski prikaz psihološke cijene sveopće povezanosti: socijalna usporedba, tjeskoba, zamagljene granice rada i odmora te pritisak stalne dostupnosti.*
 
 ## 2.8	Začeci autonomne komunikacije: prvi digitalni sugovornici
 

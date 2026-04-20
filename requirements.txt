@@ -4,3 +4,4 @@ Pillow
 pytest
 importlib-metadata
 python-dotenv
+deep-translator

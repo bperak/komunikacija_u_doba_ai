@@ -1,0 +1,90 @@
+# 1 Introduction: Communication and the development of civilization
+
+
+From the ancient, barely distinguishable voices with which the first hominids communicated, all the way to the complex linguistic tissues that permeate today's digital spaces, communication appears as a fundamental force on which the very survival and development of human communities depends. It is the connective tissue that unites individuals in society, a pledge of the survival of culture and the driver of every innovation. Without the possibility of transferring thoughts, experience and knowledge from generation to generation, human survival would remain bound within the limits of instinct, and the concept of culture would be unimaginable.
+![](../../docs/diagrams_en/diag_01.svg)
+*Figure 1.1: Communication and development of civilization.*
+
+The fundamental shift from simple signaling systems, such as we find in the animal world, to the complexity of human language is the result of a long-term evolutionary process. This heritage, made up of a series of cognitive and social adaptations, created the preconditions for the further development of communication and laid the foundations for the entire human culture. It is not manifested in a single ability, but in a complex interweaving of several factors that encouraged and shaped each other.
+
+![](../../docs/diagrams_en/diag_20.svg)
+*Figure 1.2: Evolution of human communication – from primates to conventionalized language.*
+A key moment in this development is the transition from predominantly indexical signs, firmly tied to immediate reality, to the use of symbols. While indexical signs point to something present and correlated (for example, smoke to fire), **symbols** derive their value from agreements within the community, thereby enabling the discussion of objects, beings and phenomena that are not spatially or temporally present, as well as abstract concepts.
+> **Index sign:** A sign whose meaning derives from a causal or correlational connection with an object (eg smoke refers to fire); refers to the immediately present and perceived, in contrast to the symbols that arise from convention and allow speaking about the absent and abstract.
+> **Symbol:** Linguistic or other sign whose meaning does not derive from physical similarity or causal connection with the object, but from social agreement (convention); allows speaking about the absent and abstract, in contrast to the indexical sign that refers to the immediately present.
+However, such a transition is only possible with profound changes in the social structure. The development of collaborative behavior, as Tomasello (2008) points out, created an environment in which information sharing became evolutionarily beneficial. In communities where individuals with the characteristics of independent action, **agents**, depended on each other for survival, the ability to communicate precisely and reliably brought a direct advantage.
+> **Agent:** An individual or system that acts in an environment with specific goals; in the context of communication – a participant who can send and receive messages and coordinate their actions with others.
+
+
+At the core of this collaborative paradigm lies the concept of **shared intentionality**, i.e. the ability of agents to shape common goals with others and coordinate their actions to achieve them. This cognitive ability enabled joint hunting or defense, but also the understanding that the act of communication is a joint effort of sender and receiver to establish a common reference point. It is inextricably linked with the development of the theory of mind, the ability to attribute mental states - beliefs, desires and intentions - to others, as well as to oneself. Without a theory of mind, the recipient of the message would not be able to understand the speaker's intention, and complex symbolic communication would be reduced to misunderstanding.
+> **Joint intentionality:** The ability to form common goals with others and coordinate actions to achieve them; the basis of collaborative communication.
+> **Theory of mind:** Cognitive ability to attribute mental states – beliefs, desires, intentions and knowledge – to others and to oneself; key to understanding the speaker's intention in communication and predicting other people's behavior. Without theory of mind, complex symbolic communication would not be possible because the recipient of the message would not be able to deduce what the speaker wants to achieve with it.
+
+
+Nevertheless, the development of communication systems based on trust has inevitably opened up space for manipulation and deception. As soon as communication became a means of influencing the behavior of others, the possibility of its abuse for one's own benefit also appeared. This prompted a sort of *evolutionary arms race* (Krebs & Dawkins, 1984) between the ability to deceive and the ability to detect deception. On the one hand, agents developed increasingly sophisticated deception strategies, while, on the other hand, they perfected cognitive mechanisms for recognizing inconsistencies, assessing the reliability of sources, and monitoring the reputation of individuals within the community. This constant tension between cooperation and conflict further encouraged the development of cognitive complexity.
+
+
+With the increase in the complexity of the messages that had to be conveyed - who did what, what, to whom, when and where - the need for their organization also appeared. It is from this need that **grammar** grows: a system of rules that enables the combination of a limited number of symbols (words) into an unlimited number of meaningful statements. The development of syntax enabled the precise coding of relationships between participants and actions, which made communication more expressive and unequivocal.
+> **Grammar:** A system of rules that allows combining a limited number of language units (words, morphemes) into an unlimited number of meaningful statements; it encompasses syntax, morphology, and related conventions that determine the structure and interpretation of language.
+
+
+Ultimately, the legacy for the further development of communication is a complex set that includes a social structure based on cooperation and trust, cognitive abilities such as shared intentionality and theory of mind, and a dynamic balance between deception and its detection, which all together created evolutionary pressure for the development of a grammatically organized symbolic system. It is a dynamic foundation on which increasingly complex forms of human interaction, knowledge and culture are built even today.
+
+
+![](../../docs/diagrams_en/ch01_obmana.svg)
+*Figure 1.3: The interconnectedness of social, cognitive, and communication processes—collaborative communication and theory of mind drive development, while the evolutionary race between deception and its detection creates pressure for cognitive complexity and a grammatically structured symbolic system.*
+
+
+
+Oral tradition, the first and longest-lived communication technology, transformed fleeting memories into living archives. She wove them into the fabric of epics, myths and rituals, transmitting the worldview and identity of the community through the ages with a permanence almost like that of the genetic code. With the invention of writing, words gained material permanence, imprinted in clay, engraved in stone or written on papyrus and paper. Writing enabled an unimaginable accumulation of knowledge, the development of abstract thought, and the construction of complex administrative, legal, and philosophical systems that defined great empires and epochs. Each subsequent technological milestone—from Gutenberg's printing press that democratized knowledge, to the telegraph and telephone that bridged spatial distances, to radio, television, and finally the Internet that created the contours of a global community—opened a new chapter in the constant evolution of how people exchange meaning with each other.
+
+
+
+
+
+![](../../docs/diagrams_en/ch01_funkcije_usmene_predaje.svg)
+*Figure 1.4: Functions of oral transmission.*
+
+The modern age is witnessing a technological breakthrough that, with its depth and reach, surpasses many previous ones. It is about the emergence of large language models (English *Large Language Model*, LLM), advanced artificial intelligence systems such as GPT (OpenAI, 2024b), Claude (Anthropic, 2024), Gemini or Llama models. Built on inconceivably huge corpora of digitized human language and knowledge, these systems are trained to recognize and reproduce the most subtle patterns of human communication. They reveal the fascinating duality elegantly summarized by academic Milena Žic Fuchs (Žic-Fuchs, 1991), distinguishing knowledge about the world (facts, concepts, relationships) and knowledge about language (grammar, stylistics, pragmatics). Today's great language models master the language code with exceptional skill, creating texts that are grammatically coherent, stylistically adapted, and often factually accurate and contextually appropriate. They mimic human language production with incredible persuasiveness, often reaching, and in some narrowly defined tasks even surpassing, human performance.
+> **LLM – Large Language Model:** An artificial intelligence system trained on huge text corpora that predicts the next token (word or part of a word) and generates or completes the text based on it; examples include GPT, Claude, Gemini, Llama.
+
+
+![](../../docs/diagrams_en/diag_06.svg)
+*Figure 1.5: Development of active power through literacy.*
+
+But large language models cease to be mere text generators the moment they are transformed into **communication** agents by incorporating them into broader information systems and equipping them with goals, data access tools, and memory mechanisms. Thus, they become our new digital interlocutors, assistants and collaborators - and perhaps true communication partners. Their impact is already evident in the reshaping of the landscape of human interaction: they enable real-time language translation, run service automatons (*chatbots*) that provide personalized customer support, help scientists analyze complex data sets, assist programmers in writing code, stimulate creative processes, and open new vistas of global collaboration and education. They are increasingly assuming the role of universal translators and mediators of knowledge, capable of bridging linguistic, disciplinary and cultural barriers.
+> **Communication agent:** A system based on LLM (or similar language technology) equipped with goals, data access tools, and memory mechanisms, which dialogues with the user and performs tasks; it goes beyond the role of a mere text generator and becomes a participant in the interaction.
+
+
+![](../../docs/diagrams_en/diag_89.svg)
+*Figure 1.6: Historical development of communication to AI-mediated communication.*
+
+The central guiding thought of this book is the assertion that large language models, and the communication agents they trigger, do not represent just a new technological tool, a gadget (English *gadget*), but a fundamental transformation of the very nature of communication. Their potential penetrates deeply into the structure of social relations, human cognition and the very essence of what it means to be a human being who communicates in the digital age. Precisely because they carry with them unimagined possibilities, it is of crucial importance to critically penetrate into their inherent capabilities and limitations. It is equally important to shape their development and application ethically, in order to serve the improvement of human dignity and the general betterment. The book is intended as a systematic review of communication technologies, a journey that begins in the deep past and ends with a reasoned look into the possible future of human-machine interaction.
+
+
+Our journey begins with a detailed overview of the history of communication technologies (**Chapter 2**), from its origins in oral tradition to the digital revolution. Understanding the ways in which previous technologies - the letter, the press, the telegraph, the radio - shaped social structures and human cognition, provides us with the necessary framework for assessing the depth and direction of the changes brought about by the current artificial intelligence revolution.
+
+
+After the historical foundations, we dive into the very heart of the technology that powers today's communication agents: the world of large language models (**Chapter 3**). We will reveal their anatomy, with a special emphasis on the transformer architecture, and we will follow the entire life cycle of the language model. Each of these stages – from collecting unimaginably large sets of text and image data to pre-training on powerful computer clusters, through fine-tuning for specific tasks and the crucial process of matching with human feedback, all the way to rigorous performance evaluation – will be explained in detail. We will also not ignore the darker side of this technology: its significant limitations, risks of built-in biases, security issues and the enormous consumption of resources required by these digital giants.
+
+
+With technological understanding as a basis, we enter into a deeper, conceptual breakdown of the relationship between language, society and artificial intelligence (**Chapter 4**). Here we will deconstruct language as a system of meaning and as a social practice, exploring the ways in which large language models, as new participants in communication, encroach on these processes. We will look at how these systems simulate social interactions, influence our sense of identity and potentially reshape our perception of reality, acting as powerful algorithmic lenses. We will pay special attention to the role of language in the collective creation of knowledge and culture and the new role of communication agents in these processes - from collaboration in scientific research to co-creation in art.
+
+
+Since it is difficult to talk about artificial intelligence without understanding its material basis, we will explore (**Chapter 5**) the inextricable link between the exponential growth of processing power and the progress of artificial intelligence, drawing comparisons with the evolution of the human brain. We will consider how this power enables today's models and what horizons it opens for future, even more powerful systems, including potential multi-agent systems and agent swarms and the long-term quest for artificial general intelligence (AGI).
+> **AGI:** General Artificial Intelligence (English *Artificial General Intelligence*) – a hypothetical system that would possess a human level of general intelligence and could solve a wide range of tasks without being limited to one domain; for now the goal is research, not existing technology.
+
+
+After the theoretical and technological foundations, we move on to the practical construction of communication partners (**Chapter 6**). This chapter details the journey from the core core of a large language model to a functional and useful AI agent. We will explore key techniques such as prompt engineering (eng. *Prompt Engineering*), i.e. the art of precise model management, then enriched data retrieval (eng. *Retrieval-Augmented Generation*, RAG) which enables agents to access external, up-to-date knowledge, and mechanisms for using tools (eng. *Tool Use*) which give them the ability to act in the digital world.
+
+
+How do these agents work in practice? **Chapter 7** provides concrete examples and case studies, illustrating how they are used to transform customer support, personalize educational processes, improve marketing strategies, and find applications in healthcare, business processes, and creative industries. We will analyze the ways in which they create new value, but also the new challenges they bring with them.
+
+
+Finally, in the last chapter (**Chapter 8**), we will venture a speculative but grounded look into the near future (period 2030-2035). Through a narrative sketch of a day in the life and an analysis of key trends such as ambient intelligence, hyperpersonalization and the synergy of agent swarms, we will try to imagine what everyday life permeated by ubiquitous, proactive and autonomous digital companions might look like. We will consider the potential for true human-AI symbiosis, but also the deep social and ethical dilemmas such a future holds, balancing between utopian promises and dystopian risks.
+
+
+Several central thoughts run through the entire book: the evolution of communication as a continuous but accelerated process; large language models as extremely powerful, but also essentially limited technology; communication agents as entities that go beyond the role of a mere tool and become participants in the interaction; and, finally, the permanent need for critical consideration of ethical consequences and responsible shaping of the present reality and the future. Our journey aims to provide the reader with knowledge of how these systems work, as well as a deeper understanding of why they are important and where they might take us.
+
+
+Throughout history, communication has been the key mechanism by which we have built bridges between minds, created shared worlds, and shaped the institutions and cultures that define our civilization. Today, at this historic crossroads, large language models and the agents they drive offer us the opportunity – but also the responsibility – to make that mechanism exponentially faster, more globally accessible, and potentially more intelligent than ever before. This book is an invitation to explore that intersection: the place where the thousand-year history of human communication meets the most advanced technology of the 21st century, technology that reshapes our tools, but also asks anew the fundamental question: what does it mean to be a human being who creates his own world through communication?

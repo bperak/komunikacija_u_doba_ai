@@ -17,7 +17,7 @@ Tako u [Releases](https://github.com/bperak/komunikacija_u_doba_ai/releases) ost
 
 ## Koraci (ručno, GitHub web)
 
-1. Pushaj na `main` ažurirani `manuscript/Perak_Komunikacija_u_doba_AI.pdf` i `.html` kad su finalni za to izdanje.
+1. Pushaj na `main` ažurirani `manuscript/Perak_Komunikacija_u_doba_AI.pdf` i `.html` kad su finalni za to izdanje; ako postoji englesko izdanje, pushaj i `manuscript/Perak_Communication_in_the_Age_of_AI.pdf` te `.html` (generira se s `python scripts/build_pdf.py --locale en`).
 2. Otvori repozitorij → **Releases** → **Draft a new release**.
 3. **Choose a tag**: upiši novi tag, npr. `v1.1.0` → *Create new tag*.
 4. **Release title**: npr. `Izdanje 1.1` ili `Komunikacija u doba AI — izdanje 2026`.

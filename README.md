@@ -31,6 +31,15 @@ Knjiga je javno dostupna u ovom GitHub repozitoriju:
 
 Izvorna poglavlja u Markdownu: mapa [`manuscript/chapters/`](https://github.com/bperak/komunikacija_u_doba_ai/tree/main/manuscript/chapters). Cijeli projekt možete klonirati s [`github.com/bperak/komunikacija_u_doba_ai`](https://github.com/bperak/komunikacija_u_doba_ai).
 
+### English edition
+
+A full English translation of the book (Markdown, diagrams with English labels, glossary) lives in [`manuscript/en/chapters/`](https://github.com/bperak/komunikacija_u_doba_ai/tree/main/manuscript/en/chapters). Build the merged HTML/PDF locally with `python scripts/build_pdf.py --locale en`.
+
+When the English build is published on the `main` branch of the same repository, the same GitHub Pages layout applies:
+
+- [Perak_Communication_in_the_Age_of_AI.pdf](https://github.com/bperak/komunikacija_u_doba_ai/raw/main/manuscript/Perak_Communication_in_the_Age_of_AI.pdf) — full English PDF (after you generate and push it)
+- [Perak_Communication_in_the_Age_of_AI.html](https://bperak.github.io/komunikacija_u_doba_ai/manuscript/Perak_Communication_in_the_Age_of_AI.html) — read in the browser (after you generate and push it)
+
 ---
 
 ## Sadržaj
@@ -65,6 +74,23 @@ Izvorna poglavlja u Markdownu: mapa [`manuscript/chapters/`](https://github.com/
   address   = {Rijeka},
   isbn      = {978-953-361-147-1},
   url       = {https://github.com/bperak/komunikacija_u_doba_ai}
+}
+```
+
+### English (APA 7)
+
+> Perak, Benedikt (2025). *Communication in the Age of Artificial Intelligence: The development of large language models and communication agents*. Rijeka: Faculty of Humanities and Social Sciences, University of Rijeka.
+
+```bibtex
+@book{perak2025communication_en,
+  author    = {Perak, Benedikt},
+  title     = {Communication in the Age of Artificial Intelligence: The development of large language models and communication agents},
+  year      = {2025},
+  publisher = {Faculty of Humanities and Social Sciences, University of Rijeka},
+  address   = {Rijeka},
+  isbn      = {978-953-361-147-1},
+  url       = {https://github.com/bperak/komunikacija_u_doba_ai},
+  note      = {English language edition of the open-access Croatian publication}
 }
 ```
 

@@ -6,6 +6,7 @@ Spaja sva poglavlja i generira:
 
 Obje verzije su potpune i sadrže sve dijagrame.
 """
+import argparse
 import re
 import subprocess
 import sys
@@ -29,6 +30,22 @@ CHAPTERS_DIR = PROJECT_ROOT / "manuscript" / "chapters"
 DIAGRAMS_DIR = PROJECT_ROOT / "docs" / "diagrams"
 OUTPUT_DIR = PROJECT_ROOT / "manuscript"
 BOOK_BASENAME = "Perak_Komunikacija_u_doba_AI"
+# Set by configure_build_locale() when using --locale en
+COVER_README_BASENAME = "cover_naslovnica"
+
+
+def configure_build_locale(locale: str) -> None:
+    """Switch chapter source and output basename (hr = Croatian, en = English)."""
+    global CHAPTERS_DIR, BOOK_BASENAME, COVER_README_BASENAME
+    loc = (locale or "hr").lower().strip()
+    if loc == "en":
+        CHAPTERS_DIR = PROJECT_ROOT / "manuscript" / "en" / "chapters"
+        BOOK_BASENAME = "Perak_Communication_in_the_Age_of_AI"
+        COVER_README_BASENAME = "cover_naslovnica_en"
+    else:
+        CHAPTERS_DIR = PROJECT_ROOT / "manuscript" / "chapters"
+        BOOK_BASENAME = "Perak_Komunikacija_u_doba_AI"
+        COVER_README_BASENAME = "cover_naslovnica"
 
 CHAPTER_FILES = [
     "00_naslovnica.md",
@@ -971,11 +988,14 @@ def remove_duplicate_caption_paragraphs(md_text: str) -> str:
 
 def fix_image_paths_for_manuscript(md_text: str) -> str:
     """Convert relative diagram paths: from chapters/ perspective to manuscript/ perspective.
-    chapters/ uses ../../docs/diagrams/ -> manuscript/ needs ../docs/diagrams/
+    chapters/ uses ../../docs/diagrams/ (or diagrams_en/) -> manuscript/ needs ../docs/...
     """
     def replace_img(m):
         alt = m.group(1)
         rel_path = m.group(2)
+        if "../../docs/diagrams_en/" in rel_path:
+            new_path = rel_path.replace("../../docs/diagrams_en/", "../docs/diagrams_en/")
+            return f"![{alt}]({new_path})"
         if "../../docs/diagrams/" in rel_path:
             new_path = rel_path.replace("../../docs/diagrams/", "../docs/diagrams/")
             return f"![{alt}]({new_path})"
@@ -1012,6 +1032,12 @@ def extract_cover_metadata() -> dict[str, str]:
         "title": "Komunikacija u doba umjetne inteligencije",
         "subtitle": "Razvoj velikih jezičnih modela\ni komunikacijskih agenata",
     }
+    if CHAPTERS_DIR.parent.name == "en":
+        defaults = {
+            "author": "Benedikt Perak",
+            "title": "Communication in the Age of Artificial Intelligence",
+            "subtitle": "The development of large language models\nand communication agents",
+        }
     if not cover_path.exists():
         return defaults
 
@@ -1814,7 +1840,7 @@ def export_cover_for_readme(pdf_path: Path) -> Optional[Path]:
         import fitz  # PyMuPDF
     except ImportError:
         return None
-    out = PROJECT_ROOT / "docs" / "cover_naslovnica.png"
+    out = PROJECT_ROOT / "docs" / f"{COVER_README_BASENAME}.png"
     try:
         doc = fitz.open(str(pdf_path))
         if len(doc) == 0:
@@ -1833,8 +1859,19 @@ def export_cover_for_readme(pdf_path: Path) -> Optional[Path]:
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Build merged HTML/PDF for the book manuscript.")
+    parser.add_argument(
+        "--locale",
+        choices=("hr", "en"),
+        default="hr",
+        help="hr = manuscript/chapters (Croatian), en = manuscript/en/chapters (English)",
+    )
+    args = parser.parse_args()
+    configure_build_locale(args.locale)
+
     print("=" * 60)
     print(" GENERIRANJE INTEGRALNE VERZIJE KNJIGE")
+    print(f" Jezična inačica: {args.locale.upper()} | {CHAPTERS_DIR.relative_to(PROJECT_ROOT)}")
     print("=" * 60)
 
     # Step 1: Merge
