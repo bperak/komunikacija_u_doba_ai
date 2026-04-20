@@ -196,8 +196,24 @@
       margin: 0 auto;
       padding: 2rem;
       text-align: justify;
+      text-justify: inter-word;
+      /* Don't stretch the final line of a paragraph (prevents "rivers"
+         of whitespace on short trailing lines with only a few words). */
+      text-align-last: left;
       hyphens: auto;
       -webkit-hyphens: auto;
+      /* Allow hyphenation only on words >= 6 chars, leaving >= 3 chars
+         on either side; stops ugly single-letter breaks while still
+         letting the justifier work. */
+      -webkit-hyphenate-limit-before: 3;
+      -webkit-hyphenate-limit-after: 3;
+      hyphenate-limit-chars: 6 3 3;
+      /* Hard cap on consecutive hyphenated lines. */
+      hyphenate-limit-lines: 2;
+      /* Never hyphenate the last full line before a paragraph break. */
+      hyphenate-limit-last: always;
+      /* Safety net: break very long unbreakable tokens (URLs, code). */
+      overflow-wrap: break-word;
   }
 
   h1 {
