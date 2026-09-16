@@ -109,6 +109,16 @@ When the English build is published on the `main` branch of the same repository,
 
 ## Licenca
 
+**Predloženo (vidi PR): CC BY-NC 4.0** — Attribution-NonCommercial 4.0 International. Puni tekst: [`LICENSE`](LICENSE); sažetak: https://creativecommons.org/licenses/by-nc/4.0/
+
+Ukratko: knjiga se može slobodno čitati, preuzimati, dijeliti i prerađivati u nekomercijalne svrhe, **ali je navođenje autorstva obvezno**; komercijalna uporaba zahtijeva pisanu suglasnost autora. Strojno čitljiv zapis: [`CITATION.cff`](CITATION.cff).
+
+**Do prihvaćanja ove izmjene vrijedi postojeća napomena o autorskim pravima:**
+
 © 2025 Benedikt Perak, Filozofski fakultet, Sveučilište u Rijeci.
 
 Sva prava pridržana. Niti jedan dio ovog izdanja ne može biti objavljen, pretiskan ili distribuiran bez prethodne suglasnosti izdavača.
+
+## Mreža triju knjiga
+
+Ova knjiga dio je mreže s *Data Science u kulturi* (kako se mjeri) i *Razine i entiteti: ontologija komunikacije u doba umjetne inteligencije* (gdje to ontološki stoji). Podjela posla i upute po poglavljima: [`docs/MREZA-KNJIGA.md`](docs/MREZA-KNJIGA.md).

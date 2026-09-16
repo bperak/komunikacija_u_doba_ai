@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "Ako koristite ovu knjigu (tekst, figure ili podatke), citirajte je kako slijedi."
+title: "Komunikacija u doba umjetne inteligencije: Razvoj velikih jezičnih modela i komunikacijskih agenata"
+abstract: >-
+  Knjiga prati razvoj komunikacijskih tehnologija od usmene predaje i pisma do elektroničkih mreža,
+  velikih jezičnih modela i autonomnih komunikacijskih agenata. Temelji se na relevantnoj literaturi i
+  kritičkom pristupu promjenama u načinu na koji ljudi i institucije komuniciraju sa sustavima sve
+  razvijenijih jezičnih sposobnosti. Dio je mreže triju knjiga autora (uz "Data Science u kulturi" i
+  "Razine i entiteti").
+type: book
+authors:
+  - family-names: "Perak"
+    given-names: "Benedikt"
+    orcid: "https://orcid.org/0000-0003-4177-5307"
+    affiliation: "Filozofski fakultet, Sveučilište u Rijeci"
+    email: "bperak@uniri.hr"
+year: 2025
+language: "hrv"
+isbn: "978-953-361-147-1"
+license: CC-BY-NC-4.0
+license-url: "https://creativecommons.org/licenses/by-nc/4.0/"
+repository-code: "https://github.com/bperak/komunikacija_u_doba_ai"
+url: "https://github.com/bperak/komunikacija_u_doba_ai"
+publisher:
+  name: "Filozofski fakultet u Rijeci"
+  city: "Rijeka"
+keywords:
+  - komunikacija
+  - umjetna inteligencija
+  - veliki jezični modeli
+  - komunikacijski agenti
+preferred-citation:
+  type: book
+  title: "Komunikacija u doba umjetne inteligencije: Razvoj velikih jezičnih modela i komunikacijskih agenata"
+  year: 2025
+  authors:
+    - family-names: "Perak"
+      given-names: "Benedikt"
+      orcid: "https://orcid.org/0000-0003-4177-5307"
+  publisher:
+    name: "Filozofski fakultet u Rijeci"
+    city: "Rijeka"
+  isbn: "978-953-361-147-1"
+  url: "https://github.com/bperak/komunikacija_u_doba_ai"
